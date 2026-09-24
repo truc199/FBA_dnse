@@ -1,0 +1,519 @@
+review_id,rating,date,thumbs_up,spam_flag,is_duplicate,is_generic,themes,keep,text
+14543936549,3,2026-09-13,0,,0,0,stability,1,"App lag. Khi giao dịch phái sinh app ko theo kịp thị trường, như vậy ndt ko đặt lệnh kịp"
+14507886310,3,2026-09-04,0,,0,0,stability,1,"Tốc độ ứng dụng. App chạy chậm, vào xem 1 cổ phiếu xong bị đơ không xem tiếp được, phải thoát ra trang chính để vào lại"
+14480477928,1,2026-08-28,0,,0,0,stability,1,"Lỗi. App siêu tệ. Toàn mất kết nối máy chủ. Thanh trượt lên xuống rất tệ. Tự ý bắt người dùng mua bảo hiểm hàng tháng, không cho huỷ"
+14476667455,1,2026-08-27,0,,0,0,onboarding,1,Không thể xác nhận OTP. Chả hiểu app kiểu gì số dt mình đăng kí thì lại gửi mã otp cho số khác chịu
+14457460055,1,2026-08-22,0,,0,0,onboarding,1,"Quét Căn Cước NFC siêu kém. Quét căn cước NFC rất là mất thời gian, chụp hình camera cũng rất là kém, quá mất thời gian"
+14417600759,1,2026-08-12,0,,0,0,onboarding,1,"eKYC quét mặt quá lởm. Không thể nào hoàn thành được quét mặt eKYC mà app cứ hiển thị yêu cầu hoàn thành eKYC. Cực kỳ bực mình, xoá app cho lành."
+14413444541,1,2026-08-11,0,,0,0,,1,App l. Tháng nào cũng bị trừ tiền oan tốt nhất là ko nên dùng nha mn
+14412896366,2,2026-08-11,0,,0,0,ui,1,Giao diện khó dùng. Giao diện quá khó dùng cập nhật thì liên tục. Thua xa cái app ssi thật sự. Thà ông copy cmn giao diện của binance hay ssi cho rồi
+14410047170,1,2026-08-10,0,,0,0,,1,nhọc ơi là nhọc app lỏ kinh. sao nó hệ thống …. không vào đc là sao 🥲
+14409765375,1,2026-08-10,0,,0,0,,1,"Mắc. Mỗi tháng ăn 33k, phí gd cao, mắc hơn các app khác"
+14408847724,1,2026-08-10,0,,0,0,,1,Nạp rút. Nạp thì dễ mà rút thì khó  Nói chung là ứng dụng rẻ rách!
+14389265933,1,2026-08-05,0,,0,0,stability,1,"Không Login được. Làm một loạt bước xong méo login được, nhấn quên pass thì báo tk không tồn tại??? Chấm hỏi????!"
+14386504568,1,2026-08-04,0,,0,0,fees,1,app tệ. app điém phí cao
+14374292172,3,2026-08-01,0,,0,0,,1,"Bất tiện vào cuối tuần. Cứ cuối tuần là hệ thống nâng cấp, bất tiện"
+14368859148,2,2026-07-31,0,,0,0,,1,có ai k vô đc app như mình k vậy. k
+14353502456,2,2026-07-27,0,,0,0,,1,"Nhận xét. Thu phí quản lý đặt quá ,trong khi các ngân hàng ,hay nền tảng đang miễn phí cho kh .mà app rất lac"
+14332662977,1,2026-07-22,0,,0,0,,1,Ap như con cặc. Cty ck lớn mà xây cái ap như con cặc
+14305669004,1,2026-07-15,0,,0,0,stability|fraud,1,"Bọn lừa đảo. Áp như cut,dùng thì lang,treo máy thì tự động vào lệnh phái sinh mặc dù đéo ấn cái gì.Khuyên ae lên chuyển qua ssi dùng"
+14305213319,1,2026-07-15,0,,0,0,stability,1,đăng nhập k đc
+14302641635,5,2026-07-14,0,,0,0,ui,1,Cần bổ sung giao diện darkmode. Mấy app khác đều có giao diện dark mode rồi tại sao vps vẫn chưa có mong hãng sớm bổ sung giao diện mới để nhìn đẹp mắt hơn
+14296989564,1,2026-07-13,0,,0,0,fraud,1,"Lừa đảo. Bọn chó VPS này lừa đảo đấy anh em Mang tiếng sàn to nhưng thường xuyên dùng chiêu trò cắt lệnh tài khoản, đặt SL rõ ràng thông báo kích hoạt rõ ràng nhưng không khớp vẫn kéo lệnh âm cả vài chục giá . Chúng nó súc vật lắm"
+14284464289,1,2026-07-10,0,,0,0,stability,1,"App lỗi, k đăng nhập dc, màn hình mã opt quay liên tục"
+14268995225,1,2026-07-06,0,,0,0,onboarding,1,"Quá tệ. App cần nhập CCCD , khuôn mặt , nhưng khi làm rất khó khăn, thằng nào làm dô khâu xác thực khuôn mặt xem được không. Tốn thời gian 1 ⭐️"
+14268663271,1,2026-07-06,0,,0,0,,1,"App Đầu Đất. Đầu đất à có sinh trắc học rồi mà cứ 6 tháng bắt đổi mật khẩu 1 lần, ngoosi app"
+14264288382,1,2026-07-05,0,,0,0,stability|ui,1,"Ứng dụng rối rắm, không tường minh, tab tài sản mà nhấn vào không biết có tài sản gì, CP là cái gì, giá là bao nhiêu, đang lỗ lãi thế nào. Tab này hãy học app của VNDIRECT. Đã là tài sản thì phải biết tiền vào tiền ra, kể cả cổ tức bằng tiền hay cổ phiếu cũng phải có thông tin. App load đã hay lỗi giao diện lại kém tường minh. Thằng chủ trì cái app này thay thế được rồi. Tư duy có vấn đề, lãnh đạo phải có cái nhìn tổng quan, mạch lạc, thông suốt, tường minh. Các mục khác cũng vậy, đặt mình vào người dùng để xây dựng app cho tốt."
+14244666645,1,2026-06-30,0,,0,0,onboarding,1,"Xác thực sinh trắc học. Xác thực khuôn mặt quá tệ, chỉnh đúng khuôn mặt nhưng app vẫn không cho xác thực (mình đã cập nhật phiên bản mới nhất), các app khác mình xác thực rất nhanh. Mong các lập trình viên của VPS chỉnh code lại để xác thực được nhanh chóng."
+14243132819,5,2026-06-30,0,,0,0,ui,1,"Dễ sử dụng. App dễ dùng, phí thấp, nhưng thiếu thông báo về phần thu phí... Phải tự tìm lịch sử giao dịch mới có. Nếu có thông báo sẽ hay hơn."
+14227704736,1,2026-06-26,0,,0,0,onboarding,1,"Xác thực khuôn mặt mãi ko được. Trước đó đã cập nhật sinh trắc học, giờ lại bắt cập nhật. Xác thực khuôn mặt làm đúng nhưng app cứ báo tùm lum mãi ko nhận. App lỏ vll"
+14223221927,1,2026-06-25,0,,0,0,,1,Tệ. App gì mà viết tệ quá.Improve performance đi.
+14196365343,1,2026-06-18,0,,0,0,stability,1,App như c. Đăng nhập 20 lần mới vô đc
+14189179654,2,2026-06-16,0,,0,0,stability,1,lỗi !. cập nhật xong lag ! ko giao dịch được ! nhảy loạn lên
+14188444015,1,2026-06-16,0,,0,0,stability|ui,1,"App cùi. Đơ, lag, giao diện thua SSI"
+14188422460,1,2026-06-16,0,,0,0,stability,1,Cứ tới chiều là lỗi liên tục. App gì tới chiều khoảng 1h15 là giao dịch không đc thua DNSE xa
+14187941363,1,2026-06-16,0,,0,0,stability,1,App như lồn lỗi quài. Tệ
+14183522520,2,2026-06-15,0,,0,0,stability,1,Không kết nối được máy chủ. Áp gì báo cập nhật thành công giờ không vào được luôn
+14147382057,1,2026-06-05,0,,0,0,,1,Thu nhiều phí linh tinh. Chán VPS thật thui qua TCBS dùng
+14129580227,1,2026-06-01,0,,0,0,stability,1,Cập nhật càng lỗi. Bọn app này thu phí lắm mà dev với test đần vl. Không test trước khi đẩy à. Càng cập nhật càng lỗi. Vừa tham vừa đần
+14129511397,3,2026-06-01,0,,0,0,ui,1,Giao diện khóa thao tác. Rất khó theo dõi danh mục vì giá không theo thời gian real-time
+14117906948,1,2026-05-29,0,,0,0,,1,"App db gì mà cứ vài ngày lại yêu cầu đổi mật khẩu? Bảo mật kém à? Các cty lớn như fb, apple, ms... cả đời ngta k yêu cầu đổi mk lầm nào!"
+14096207562,1,2026-05-23,0,,0,0,,1,Thu phí tiền không sử dụng để giao dịch. Rất rất bực mình nha vps :)
+14091373452,3,2026-05-22,0,,0,0,,1,"Thiếu chức năng qua trọng. Ko có chức năng tính P&L trọn đời, chỉ tính đc tối đa 1 năm"
+14089063602,1,2026-05-21,0,,0,0,,1,Spam liên tục. App dùng như cẹc. Ngày trước thì blocker suốt ngày gọi rồi spam vào nhóm chèo kéo lệnh. Giờ thì cả app 15p gửi mail 1 bận. Chúng mày hãm nó vừa thôi. Đầu tư chứng khoán cứ làm như đánh bạc không bằng suốt ngày khuyến nghị. Đổi app
+14054876479,1,2026-05-12,0,,0,0,,1,"PHÍ ĐẮT. Phí dịch vụ cao, BẮT ĐÓNG THÊM BẢO HIỂM LINH TINH ĐỂ TRỪ DẦN"
+14011851036,1,2026-04-30,0,,0,0,,1,App tự động ghi nhận các khoản bảo hiểm mà không hỏi trước nhu cầu của khách hàng. Không nên dùng
+13990669945,1,2026-04-24,0,,0,0,,1,Cải thiện hướng dẫn. Cần cài thiện. ra cái thông báo xong r loay hoay không thể tìm được thông tin theo thông báo. ai lm truyền thông nên đổi người đi. ức chế và lm tốn thời gian người sử dụng. nếu k cải thiện thì sẽ qua ứng dụng khác sài.
+13987324168,1,2026-04-23,0,,0,0,,1,Ko nên dùng. Cẩn thận
+13970141047,2,2026-04-18,0,,0,0,,1,"Bất tiện. Suốt ngày nâng cấp hệ thống kbiet nâng cấp gì, bất tiện"
+13969715642,1,2026-04-18,0,,0,0,influencer,1,Broker trẻ ranh lên tiktok nói nhảm. Quản cái hệ thống tư vấn lại. Xem lại chất lượng tư vấn viên cứ lên tiktok nói nhảm trên đó. Cứ tư vấn mua mua bán bán chứ chả có tí giá trị gì.
+13934242054,1,2026-04-08,0,,0,0,stability|fraud,1,"Tệ. Cổ phiếu IPO thì lừa bịp nhà đầu tư, app thì như cái quần què, hôm nào thị trường biến động mạnh là đơ, xách dép cho Tcbs"
+13923152484,1,2026-04-05,0,,0,0,,1,"Lũ khốn nan xỏ lá. Phí gd và lãu vay margin của bọn này siêu cắt cổ, k nên xài app cty choá này nhé. Quá mất dại. Khách gia dịch chủ động mà phí gd nó tính theo có brocker chăm sóc"
+13920326062,1,2026-04-04,0,,0,0,onboarding,1,"App bị ngu. gửi mã otp mở cái rồi tắt, máy chưa kịp nhận diện face ID thì thấy mã đéo đâu, nhập xong rồi cũng thông báo thôi chứ ko chuyển hay tác động gì hết, ko biết đường nào mà lần"
+13920308837,1,2026-04-04,0,,0,0,onboarding,1,"App dở - không cập nhật được CCCD. Thay đổi CCCD, app không nhận diện được mặt sau dù chụp lại rất nhiều lần"
+13891456878,1,2026-03-27,0,,0,0,,1,Ngu. App quét khuôn mặt ngu v.  l ra
+13885821205,1,2026-03-25,0,,0,0,onboarding,1,Chụp 100 lần không xác thực được mặt sau cccd. Fix đi rồi chỉnh 5 sao
+13883723021,1,2026-03-25,0,,0,0,,1,Rác. Dùng rất khó
+13880231506,1,2026-03-24,0,,0,0,money|fraud,1,"Lừa đảo. Cty này có dấu hiệu lừa đảo, tự rút tiền của người dùng nhé, mọi người cẩn thận. Mình mới tập tành chơi chứng khoán, tải app này về và nạp tiền, vài ngày sau thì thấy tài khoản bị trừ tiền dù mình chưa mua bất kỳ cổ phiếu nào, kiểm tra lịch sử giao dịch cũng không rõ là tiền đã đi đâu."
+13871622369,1,2026-03-21,0,,0,0,onboarding,1,"Quá khó tạo tài khoản!. Bước xác thực khuôn mặt khó kinh khủng, vặn vẹo mỏi cả cổ không được"
+13871354524,1,2026-03-21,0,,0,0,money|fees,1,Rút tiền tính phí
+13842384353,1,2026-03-13,0,,0,0,fees,1,Xoá app. Chỉ đc nhiều lệnh tiện giao dịch phái sinh. Phí cao nên huỷ giao dịch bên khác
+13839521229,3,2026-03-12,0,,0,0,stability,1,Lỗi hệ thống. Sao nâng cấp xong đăng nhập bài không đc toàn báo lỗi giờ làm sao giao dịch gì đc
+13839451452,1,2026-03-12,0,,0,0,onboarding,1,"Xác minh ngu. Phần xác minh quá kém tệ hại. Mất thời gian, tao sẽ huỷ và không thèm dùng ok"
+13830487530,1,2026-03-09,0,,0,0,onboarding|stability,1,"Lỗi login. Đã đăng ký tk xong đến đăng nhập lại báo lỗi, dù đã check thông tin mật khẩu."
+13829822108,1,2026-03-09,0,,0,0,stability,1,không thể đăng nhập được. app xoay vòng liên tục và không log in được
+13828849842,1,2026-03-09,0,,0,0,stability,1,"App dùng chán. Đăng nhập lúc được lúc k, báo yêu cầu xử lý quá tg. Ấn lại bn lần cũng k cho đăng nhập vào app. Chịu luôn"
+13821658967,1,2026-03-07,0,,0,0,,1,Suốt ngày nâng cấp
+13812439091,1,2026-03-04,0,,0,0,onboarding,1,Xác thực gương mặt quay nghẹo cả cổ đi cũng ko đc. Làm mãi ko xác thực được
+13804511334,2,2026-03-02,0,,0,0,stability,1,"Lỗi. Đăng nhập báo lỗi liên tục , cần cảu thiện"
+13804195182,1,2026-03-02,0,,0,0,fees,1,"Phí cao quá. Mịa nó nộp tiền vào nó thu phí 0,7 không nên nhé"
+13800729138,1,2026-03-01,0,,0,0,onboarding,1,"Có tuyển BA không ạ?. App tệ quá, vài năm rồi không sửa ứng dụng cho thuận tiện người dùng, thời đại công nghệ số rồi, dùng eKYC từ đời nào rồi mà có tạo cái tài khoản nhỡ nhập sai cmt hay gì ấy mà giờ dùng căn cước công dân cũng không tạo được tài khoản (key là số điện thoại thì khi tạo mới hay kiểm tra tài khoản phải kiểm tra theo số điện thoại chứ?)"
+13791897321,1,2026-02-26,0,,0,0,onboarding|stability,1,"Lỗi với yc đổi mk 6 tháng. 1. Có yc đổi mk 6 tháng 2. Tích vào đổi mk, nhập mk cũ và mới xong rồi 3. Đến bước nhập OTP sau khi đổi mk, nhập đúng OTP không next sang bước sau mà lại báo là mật khẩu k đúng  => đề nghị sửa lỗi để t còn vào ứng dụng"
+13743446585,3,2026-02-13,0,,0,0,,1,Cần tuỳ chỉnh thông báo về giá. Cần theo dõi 1 số mã cỗ phiếu mà k có thời gian vào app thường xuyên mà k có cho tự tạo cảnh báo cho 1 mã cỗ phiếu muốn mua nhỉ
+13741539654,1,2026-02-12,1,,0,0,,1,"Lôm côm, thiếu chuyên nghiệp, không tôn trọng khách hàng. Một công ty chứng khoán nghìn tỷ mà đến nổi không có nổi một cái biển hiệu tử tế để khách hàng tìm thấy văn phòng giao dịch thì thật sự quá coi thường người khác.😡 Tôi mất gần cả buổi đi tới đi lui ở Phạm Ngọc Thạch để tìm địa chỉ ghi rõ ràng là “Số 8 PNT”, nhưng hoàn toàn không có bất kỳ dấu hiệu nhận diện nào. Không bảng tên, không hướng dẫn, không thông báo. Một doanh nghiệp tài chính mà cách tổ chức còn thua cả một cửa hàng tạp hóa đầu ngõ. Hội sở chính thì lặng lẽ chuyển ra ngoại thành, không cập nhật rõ ràng, không có phương án hỗ trợ khách hàng trung tâm. Khách ở Tây Hồ muốn giao dịch thì đi kiểu gì? Hay mặc định khách hàng phải tự xoay xở trong một mớ thông tin mù mờ?😕 Làm tài chính mà vận hành kiểu chắp vá, cẩu thả, thiếu chuyên nghiệp đến vậy thì nói thật, rất khó để tạo được niềm tin. Tiền của khách hàng thì đòi hỏi chính xác từng đồng, nhưng trách nhiệm của mình thì lại làm qua loa, lôm côm. Một công ty lớn không chỉ nằm ở con số vốn điều lệ, mà nằm ở cách họ tôn trọng khách hàng. Và cách làm việc như thế này thì thực sự không thể chấp nhận được.😏"
+13740117234,1,2026-02-12,0,,0,0,ui,1,"Thua vndirect xa lắc xa lơ trong giao diện, các mục nhìn rối mắt. Đề nghĩ qua bên kia mà học hửi ngta"
+13729584688,1,2026-02-09,0,,0,0,,1,"App tệ lắm. App tệ điên ,"
+13722808310,4,2026-02-07,0,,0,0,ui,1,"Cần bản cho iPad. VPS nên phát triển bản cho iPad như các app khác để tiện cho người sử dụng, trên iPad giao diện nhỏ hơi khó chịu"
+13714908039,1,2026-02-05,0,,0,0,,1,App cùi BLĐ và NV ko có đạo đức. BLĐ và NV lùa gà khách gà quá khốn nạn
+13710721280,4,2026-02-04,0,,0,0,,1,"Cần fix UI. [Vấn đề] tại màn hình “Cổ phiếu” > [mã CP] > “Thông tin mã” khi bấm lần đầu thì ok, nhưng khi sang mã khác thì không hiện được, phải chuyển màn hình ra chức năng khác rồi vào lại bấm nó mới hiện. [giải pháp] Có thể trong code xử lý State chưa được tốt, cần sửa lại để nó hoạt động khi chọn ở các mã khác nhau cùng màn hình."
+13706793512,1,2026-02-03,0,,0,0,onboarding,1,"Không thể xác thực CCCD. Mình xác thực CCCD cả chục lần không được, không thể mua, bán, chuyển tiền đi đâu được, rất là bực bội và phiền phức cho nhà đầu tư."
+13704749435,1,2026-02-02,0,,0,0,onboarding,1,Đăng ký khó khăn phần mềm nhận diện ngu như con  lợn. Phần đăng ký chụp bằng cccd mới toanh cứ kêu mất góc ko hợp lệ.
+13704144362,1,2026-02-02,0,,0,0,onboarding,1,App cùi. Bản thân mình là dev nhưng chưa bao giờ thấy AI detect cùi thật sự. Chụp ko biết bao nhiêu lần cái CCCD mà ko xác thực được. Cùi thật sự
+13704054332,1,2026-02-02,0,,0,0,onboarding|stability,1,Quá tệ. Mỗi lần đăng nhập bắt xác thực 2 lớp ko cho tắt đi.
+13695683683,1,2026-01-31,0,,0,0,onboarding,1,App như cc. Xác thực mãi không nhận
+13689119819,1,2026-01-29,0,,0,0,ui,1,Ứng dụng quá tệ. Rất khó dùng và không không thông minh tý nào. Rất rất tệ
+13687962629,1,2026-01-29,0,,0,0,fraud,1,Cty lừa đảo. Môi giới hô hào hứa hẹn lùa nđt mất tiền
+13687565788,1,2026-01-29,0,,0,0,fees|fraud,1,"App phí cao. Ctv nhiều, yêu kém. Ipo lừa"
+13681515081,1,2026-01-27,0,,0,0,,1,"K xác nhận địa chỉ. Cả buổi tối k xác nhận đc địa chỉ Dù bấm đúng địa chỉ, đúng ý vẫn báo k đc Bực cả mình"
+13662595312,1,2026-01-22,0,,0,0,onboarding|stability,1,eKYC lỗi. xác minh căn cước lỗi liên tục mặc dù CCCD rõ nét
+13662568943,1,2026-01-22,0,,0,0,onboarding,1,Có mỗi cái chụp cccd còn k xác nhận dc. App ncc
+13662480016,1,2026-01-22,0,,0,0,onboarding,1,xác thực tk. app ko chụp được cccd để xác nhận tài khoản
+13658231677,1,2026-01-21,0,,0,0,stability|money,1,"App không rút tiền về được. Rút tiền về mà báo 1 chục cái lỗi, không cho rút @@"
+13650101609,2,2026-01-19,0,,0,0,onboarding,1,"App nhận diện CCCD kém, không xác thực được. Không bằng app ngân hàng. Tệ, phiền toái cho người dùng"
+13650093942,1,2026-01-19,0,,0,0,,1,Không thể bỏ ghim mã trong danh mục. Khi đã ghim mã trong danh mục bỏ ghim đi sau vào lại vẫn còn ghim. Danh mục đang nắm giũ bán rồi vẫn còn nguyên.
+13650057065,1,2026-01-19,0,,0,0,,1,Code quá tệ cho phần update thông tin làm người dùng khó chịu
+13649971910,1,2026-01-19,0,,0,0,stability|ui,1,"App chất lượng tồi. Ứng dụng lag nhiều. Giao diện thao tác bấm không hợp lý, mất nhiều thời gian"
+13645750291,1,2026-01-18,0,,0,0,,1,"cập nhật phiên bản mới. App bắt cập nhật phiên mới liên tục, nhưng tải cập nhật k dc, làm sao vào app đây"
+13643182518,2,2026-01-17,0,,0,0,ui,1,Cần thay đổi. Giao diện biến động giá  lên học cvs trên   Momo
+13643211640,1,2026-01-17,0,,0,0,money,1,Tiêu cực. Thái đó broker ở đây ngang ngược ai mà nghe nó tư vấn xong mà thua lỗ thì nó sẽ block luôn người đó. Ipo cổ phiếu thì rớt giá nhà đầu tư ra đảo không biết khi nào về bờ. App thì nạp tiền giao dịch khó khăn bất lợi chia cái gì mà 3 đến 4 ngăn tài khoản rất là khó chịu
+13638445357,1,2026-01-16,0,,0,0,stability,1,"Tệ hại. App thì suốt ngày lỗi với treo không biết có phải cố tình làm lỗi để điều tiết thao túng hay không. Cảm giác sử dụng thật tệ hại, nếu ko phải vì tư vấn viên là người thân quen thì tôi đã chuyển sang sàn khác rồi."
+13638244094,1,2026-01-16,0,,0,0,stability,1,"Quá Tệ. App gì mà lỗi điên, sát giờ giao dịch mà ko thể đăng nhập vào được"
+13631880266,1,2026-01-14,0,,0,0,stability|ui,1,"Không tắt đăng nhập 2 lớp và giao diện trang chủ rất tệ. Trải nghiệm đăng nhập rất tệ, biểu đồ thống kê tài sản có thể tuỳ biến cho ra trang chủ được không , danh mục cổ phiếu không thể sắp xếp danh mục theo dõi lên đầu."
+13627402452,3,2026-01-13,0,,0,0,,1,Áp quá cơ bản bèo. 3/5
+13623757875,5,2026-01-12,0,,0,0,,1,"App xịn. Mới tạo tài khoản và giao dịch thôi cổ đã trần tím hết rồi, app xịn phong thuỷ tốt"
+13623554278,1,2026-01-12,0,,0,0,,1,"Để tiền trên 5.000.000 không mua gì cũng bị trừ tiền , hơn 30.000 / tháng. Tiền trên 5.000.000 không làm gì cũng bị trừ tiền hàng tháng , ăn rút mòn tiền nhà đầu tư , tôi cứ cho 1 sao tệ , xoá áp"
+13623539460,1,2026-01-12,0,,0,0,ui,1,"Giao dịch lệnh lẻ có vấn đề, cp PNJ mình mua lẻ nay tăng gần 50% đặt suốt 1tuần bán hoài không khớp. Nói chung ACBS rất ổn, giao diện rất dễ nhìn, cũng dễ giao dịch"
+13623463213,1,2026-01-12,0,,0,0,,1,Định giá ảo. Lùa nđt
+13623460364,1,2026-01-12,0,,0,0,,1,Lùa gà quá. Đẩy giá quá cao
+13623455571,1,2026-01-12,0,,0,0,,1,Nhiều phí. Lđ
+13623260920,1,2026-01-12,0,,0,0,stability|fraud,1,"App tài chính tệ. App update liên tục, ép người dùng phải update mà ko cho sự lựa chọn, khi thị trường biến động mạnh app hay bảo trì hoặc lỗi hệ thống, vps hoạt động cứ như scam"
+13612687310,1,2026-01-09,0,,0,0,,1,"Uppo nhà đầu tư. Công ty vô đạo đức, bảo người đầu tư mua ipo sau đó uppo nhà đầu tư"
+13604339479,1,2026-01-07,0,,0,0,stability,1,App quá tệ. Dùng app này có khi nửa ngày không vào được. Lúc muốn mua bán rất bất lực. Hết phiên thì vào lại bth Quả app tài chính mà tệ quá tệ
+13597603570,1,2026-01-05,0,,0,0,onboarding,1,"Làm ơn sửa cái xác thực khuôn mặt lại. App như c, quay trái quay phải xác minh không nhận thì mở app ra để làm gì"
+13597285087,1,2026-01-05,0,,0,0,stability,1,Lag quá. Sao mà giá cp ko nhảy ?
+13572421077,1,2025-12-30,0,,0,0,fees,1,PHÍ GIAO DỊCH CAO LÃI MARGIN CAO BROKER KHÔNG CÓ CHUYÊN MÔN. Quá kém
+13571204809,1,2025-12-30,0,,0,0,stability,1,app lag. Có cái app lag lòi suốt ko sửa… đánh phái sinh mà giá không cập nhật realtime được thì chơi kiểu gì ?
+13551739453,1,2025-12-25,0,,0,0,,1,Vps. Có không sao để đánh giá cái  vẫn phải cho 1 sao cay
+13548766915,1,2025-12-24,0,,0,0,fees|fraud,1,"Đảo lửa. Phí giao dịch ca o,đảo lửa khách hàng của chính mình"
+13548554737,1,2025-12-24,0,,0,0,fraud,1,Ipo lừa nhà đầu tư.. Vua lừa
+13548530961,1,2025-12-24,0,,0,0,fraud,1,Công ty lừa đảo nên tránh
+13548343076,1,2025-12-24,0,,0,0,,1,"Phần mềm quá ngu. Đang vội giao dịch thì bắt đổi mật khẩu sau 6 tháng mới được giao dịch. Trả tiền cho tao, bảo mật rắc rối hơn app ngân hàng. Quá màu mè"
+13548337297,1,2025-12-24,0,,0,0,,1,Bọn lùa gà IPO. Quý nhà đầu tư hãy quay xe với công ty rởm này đi .
+13548228129,1,2025-12-24,0,,0,0,fraud,1,App tệ hại. Lừa đảo trắng trợn!
+13545413575,1,2025-12-23,0,,0,0,fraud,1,Lừa dối khách hàng. Lôi kéo khách hàng mua giá cao nè cho 1* Cái tội mình cũng ngu nghe theo cơ
+13544665773,1,2025-12-23,0,,0,0,stability|fees|fraud,1,"Công ty thất đức - app kém phí cao. App kém giật lag. Tính năng kém.  Phí cao. Công ty làm ăn kiểu lùa gà lừa đảo, có dấu hiệu vi phạm pháp luật"
+13544656810,1,2025-12-23,0,,0,0,fraud,1,App lưa đảo. Quá tệ
+13544653292,1,2025-12-23,0,,0,0,fraud,1,VCK. Công ty hô hào lừa mua VCK giá cao gây ảnh hưởng nhà đầu tư bị lỗ nặng
+13541739102,1,2025-12-22,0,,0,0,,1,Úp bô nđt. Bẩn bựa VCK
+13541357376,1,2025-12-22,0,,0,0,,1,Lùa gà. App chứng khoán chuyên úp bô và lùa gà
+13541113153,1,2025-12-22,0,,0,0,,1,BLD. Thất đức
+13541082672,1,2025-12-22,0,,0,0,fraud,1,Ban lãnh đạo bịp bơm. Tẩy chay VPS
+13541009718,1,2025-12-22,0,,0,0,fraud,1,Thất đức. Làm ăn thất đức lừa đảo khách hàng
+13530038717,1,2025-12-19,0,,0,0,,1,Broker chuyên lùa. Ipo lùa gà
+13525935054,1,2025-12-18,0,,0,0,stability,1,"App lỗi đăng nhập liên tục. App j mà đăng nhập k nổi, thị trường biến động giảm muốn vào thoát bớt hàng hoặc vào bắt đáy thì app đơ lỗi đăng nhập, mất tiền oan mấy lần vì cái app này, ai định dùng thì né nhanh k mất tiền oan vs nó. Điên k chịu nổi, cho âm sao luôn"
+13523283720,1,2025-12-17,0,,0,0,,1,Quá ak. Ipo vck quá ác úp bô ndt.
+13522340993,1,2025-12-17,0,,0,0,fraud,1,"Lừa đảo. Công ty lửa đảo chiếm đoạt tiền của nđt khi ipo vck, rồi sẽ đi theo shark bình thôi"
+13520418882,1,2025-12-16,0,,0,0,fees|fraud,1,Cty lừa đảo. Tụi broker dụ dỗ nhà đầu tư mua IPO giá cao để ăn hoa hồng và giờ VCK lên sàn giảm 15%. Cty điêu vãi
+13519425183,1,2025-12-16,0,,0,0,stability,1,Trừ rõ nhiều phí. Trừ nhiều tiền bảo trì nâng cấp thì chả có cái mẹ j mới mẻ gửi tiền vô infy thì chả thấy được bao nhiêu trừ phí thì nhanh🙃🙃
+13519393424,1,2025-12-16,0,,0,0,fraud,1,Lừa đảo. Vck đảo lửa ngáo giá
+13519254553,1,2025-12-16,0,,0,0,fraud,1,"Công ty lừa đảo úp bô nhà đầu tư. Cho đội ngũ nhân viên đi lùa gà mua ipo để rồi úp bô nhà đầu tư, thị phần tóp đầu con khỉ. Đồ lừa đảo"
+13519250723,1,2025-12-16,0,,0,0,stability|fraud,1,"App dỏm, lừa đảo IPO. App lag, brokers lừ đảo dụ mua IPO"
+13511653183,5,2025-12-14,0,,0,0,,1,App đầy đủ thông tin đa dạng. Ok
+13508526300,1,2025-12-13,0,,0,0,stability,1,Chậm trễ trong việc nâng cấp hệ thống. App thông báo 19h30 hoàn thành nâng cấp hệ thống nhưng đến gần 20h vẫn không login vào được. Đề nghị bộ phận IT xem lại cách estimate task
+13507560819,2,2025-12-13,0,,0,0,,1,"Lúc bình thường không update. Thế đéo nào lúc chưa vào phiên thì không update, lúc thị trường mở cửa mới thèm update :)) tao lạy"
+13492666074,1,2025-12-09,0,,0,0,,1,1 sao éo nói nhiều. Lúc bình thường k sao. Cần mua cần bán lagg thoát app. Ai muốn mất tiền thì cứ xài. Trải nghiệm cực kỳ kém
+13488881449,1,2025-12-08,0,,0,0,,1,"Như lổn cù. Báo có bản cập nhật, bấm vào cập nhật k chạy. Dù 5G và wifi căng đét.  Thế là khỏi vào app, dclmm"
+13488305339,2,2025-12-08,0,,0,0,stability,1,App tồi. Cập nhật suốt ngày mà lag liên tục
+13480154049,3,2025-12-06,0,,0,0,,1,chiu. ấn cập nhật ko chịu cập nhật
+13455161983,2,2025-11-29,0,,0,0,stability,1,Chê. Moá k đăng nhập được nhưng cũng k thấy báo lỗi gì chịu đấy app đểu nhất từng dùng
+13423943859,1,2025-11-21,1,,0,0,fraud,1,"Vô đạo đức 😡. Bán thông tin khách hàng, ngay hôm sau khi tải app hàng chục cuộc điện thoại lừa đảo gọi đến. Thiếu điều tao chửi cho thôi!"
+13408009070,1,2025-11-17,0,,0,0,stability,1,không thể đăng nhập. mất hơn 5 phút để đang nhập vào app mặc dù đt và mạng vẫn tốt
+13407884546,1,2025-11-17,1,,0,0,stability,1,App tệ. App gì mà lúc thị trường sập hoặc thị trường bùng nổ là app auto lỗi đăng nhập. Không đăng nhập được. Như cơm bữa luôn. App quá tệ. Qua SSI đi mn.
+13396826408,2,2025-11-14,0,,0,0,stability,1,Kém. Đang nhập đúng mật khẩu rồi mà ko vào đc khó hiểu
+13383639550,2,2025-11-11,0,,0,0,stability,1,"ghim mã ck bị lỗi, tôi ghim cái nhưng một chút là thành cả list lâu r ko thấy fix"
+13352226473,1,2025-11-04,1,,0,0,,1,Nhân viên kém chuyên nghiệp. Khuyên không nên tải keo bị nhân viên khùng điên bên cty này liên hệ làm phiền và nói chuyện đâm họng KH
+13327681582,2,2025-10-29,0,,0,0,stability,1,"Không thị số lượng cổ phiếu đang nắm giữa.. Lỗi không hiển thị cổ phiếu khả dụng, T1, T2,T0 toàn hiển thị dấu ***. ???"
+13325603090,1,2025-10-28,0,,0,0,onboarding,1,"Face authen. Xác thức khuôn mặt cả trăm lần mà mãi ko thành công, trong khi các app bank khi ck đều ok"
+13310621954,1,2025-10-25,0,,0,0,fraud,1,Lừa đảo. 1 lần telesale gọi - 1 lần t vote 1 sao
+13294286037,3,2025-10-21,0,,0,0,onboarding|stability|money,1,"Bỏ xác nhận otp khi đăng nhập faceid. Bỏ cái otp khi đăng nhập dùm cái. Bất tiện muốn chết, nào cần chuyển khoản, đặt lệnh đồ hẵng otp"
+13278761540,1,2025-10-17,0,,0,0,,1,"Update suốt, mỗi lần vào trade là mỗi lần phải update"
+13272270322,3,2025-10-16,0,,0,0,,1,Update version mới. Update quá lâu 2 ngày chưa xong
+13272360159,1,2025-10-16,0,,0,0,,1,Cùi. Cui
+13271455970,5,2025-10-16,0,,0,0,,1,App ok. Mình thấy dùng ok
+13269267838,5,2025-10-15,0,,0,0,,1,Đỉnh chóp luôn. Rất mượt
+13269256502,5,2025-10-15,0,,0,0,,1,Đung đc. Cũng tốt
+13268928498,1,2025-10-15,0,,0,0,stability|fraud,1,Lừa đảo. app cập nhật bảo trì k vào được mà ko thông báo! Như app lừa đảo
+13247208790,1,2025-10-10,0,,0,0,onboarding,1,Không mở đk tài khoản. Hài vcl chưa mở tk bao giờ ap báo chùng tên với chùng ngày tháng năm sinh k mở được tài khoản
+13242670485,2,2025-10-09,0,,0,0,ui,1,App gì hơi tí là cập nhật ?. App giao diện lằng nhằng chả có tính hiệu quả hay thực tiễn mấy mà cứ 1 tháng lại bắt cập nhật 1 lần . Đúng là App made in VN
+13238497278,3,2025-10-08,0,,0,0,ui,1,"phí k hấp dẫn bằng 1 số cty chứng khoán khác. bản cập nhật tải mãi k đc, giao diện phức tạp, khoa theo dõi"
+13238076422,2,2025-10-08,0,,0,0,,1,"Không hài lòng. App không cập nhật để vào xử lý tài khoản được, khiến nhà đầu tư khó khăn"
+13231355646,2,2025-10-06,0,,0,0,onboarding|ui,1,Ko gửi opt. Sử dụng mạng viettel ko gửi mã otp hay load chart toàn dùng 4g. Nản quả app quá
+13226385635,1,2025-10-05,0,,0,0,stability|fees,1,Tệ. App chậm chạp. Phí cao. Đổi điện thoại quét khuôn mặt chuyển đổi báo lỗi liên tục
+13212730298,1,2025-10-02,0,,0,0,onboarding,1,trải nghiệm tồi. app quét mặt để xác thực mãi không được. Team phát triển nên xem lại. rất mệt.
+13202864162,3,2025-09-30,0,,0,0,onboarding|stability,1,Gửi mã otp chậm.
+13172818954,1,2025-09-23,0,,0,0,stability|money|fees,1,"Quá nhiều phí và thông báo vớ vẩn. App liên tục bảo trì, nhiều khoản phí duy trì, nạp tiền lâu, rút mất phí. Ít tính năng mà thông báo vớ vấn lại nhiều."
+13170105696,1,2025-09-22,0,,0,0,,1,Không thu thập face. Không quét được khuôn mặt khu thu thập sinh trắc học trên iphone 15pr ios 26
+13167486615,1,2025-09-22,0,,0,0,onboarding,1,App siêu lỏ. Code lỏ đcđ. Xác thực khuôn mặt quay trái quay phải mãi đ được. Cái app như này mà chúng mày cho lên prod được ???
+13128043754,1,2025-09-12,0,,0,0,fraud,1,"Quấy rối khách hàng. 1 tháng gọi mấy chục cuộc, hơn cả lừa đảo Campuchia"
+13127483245,1,2025-09-12,0,,0,0,stability|fees,1,Công ty làm ăn quá láo. App đơ thuế phí cao. Nhân viên gọi làm phiền khách hàng. Nghi ngờ cố tình làm lộ lọt thông tin khách hàng
+13123740518,1,2025-09-11,0,,0,0,,1,không quét được khuôn mặt. mấy thằng dev ngu đần
+13120262030,3,2025-09-10,0,,0,0,stability,1,Đăng nhập từ nước ngoài. Lỗi kết nối không thể đăng nhập khi ở nước ngoài và phải dùng vpn
+13114282438,1,2025-09-09,0,,0,0,onboarding|stability|money,1,"Lỗi mở tài khoản. Thông tin quá trình mở tài khoản khi chụp CCCD, quét chip và thay đổi không được lưu lại. Xác thực khuôn mặt quay trái phải không hoạt động dù đã thử tháo cường lực. Trong khi các app ngân hàng xác thực khuôn mặt khi chuyển khoản vẫn bình thường."
+13112191922,1,2025-09-08,0,,0,0,,1,"tự động mua bảo hiểm khi chưa đc sự đồng ý của khách hàng. Cái gì mà vừa bấm vài túi bảo vệ là thấy tên mình trên hợp đồng bảo hiểm rồi, ko huỷ đc nữa chứ, làm ăn kiểu đó à"
+13096897594,1,2025-09-04,0,,0,0,ui,1,"Tự ý sinh tiểu khoản, thu phí, giao diện rối. App dở cả về nghiệp vụ và thao tác người dùng."
+13096673299,1,2025-09-04,0,,0,0,,1,Tệ từ app tới dịch vụ. 1h trưa cmay gọi cho t để là cái đ gì vậy? Không để ai nghỉ ngơi à? Cmay không biết cái lịch sự tối thiểu nên gọi vào giờ nào à? Đúng là lũ thiếu ý thức
+13096619832,1,2025-09-04,0,,0,0,stability,1,IT VPS là mấy thằng ngu nhất. Năm nào cũng cải lùi . Đăng nhập bảo mật vừa ngu vừa phức tạp
+13033778723,1,2025-08-19,0,,0,0,onboarding|stability,1,"eKyc làm mãi ko đc. eKyc làm bên nào cũng ok mỗi bên này báo lỗi liên tục,"
+13004498909,1,2025-08-12,0,,0,0,,1,Dởm. Làm cái gì cũng k làm online được mà phải tới tận quầy giao dịch rất phiền hà.
+12990160972,5,2025-08-08,0,,0,0,,1,"Cảnh báo gặp seeding bẩn từ bên khác. Nhiều bên khác, bao gồm cả SSi có xu hướng cài người seeding bẩn cho bên vps, app hoàn toàn ổn, ko có chuyện bán data, cũng ko có vấn đề gì khác lạ so với các bên cùng ngành, mọi người cứ tin dùng nhé"
+12981976248,1,2025-08-06,0,,0,0,,1,"Phiền phức. Lỡ tải 1 lần nó có data xong suốt ngày gọi, ác cảm cái vps này kinh khủng!!!!!!"
+12977560816,1,2025-08-05,0,,0,0,,1,"Bộ phận Telesale, CSKH đúng làm phiền, bớt làm phiền lại. Một ngày gọi nhá máy 4 5 cuộc còn hơn đòi nợ trong khi xoá app mấy năm rồi"
+12959716453,3,2025-08-01,0,,0,0,,1,"thêm tính năng mới. đề nghị thêm phần tra cứu tỷ trọng chứng khoán và tiền mặt, công ty khác có hết rồi mà mỗi VPS là không có"
+12961243865,1,2025-08-01,0,,0,0,,1,"cty quá tệ. bán data khách hàng, ngày nào cũng có nv gọi spam"
+12945753795,1,2025-07-28,0,,0,0,,1,Nạp được tiền vào nhưng không rút được tiền ra
+12945392228,1,2025-07-28,0,,0,0,ui,1,"Tệ hại. App siêu tệ, giao diện nhìn rối cực"
+12945114189,1,2025-07-28,0,,0,0,,1,Làm phiền nhiều quá. Cty chuyên làm phiền
+12920724558,2,2025-07-22,0,,0,0,,1,"Chán. Cập nhật mãi ko nổi, ko chuyển đc tiền nếu ko cập nhật"
+12905548209,1,2025-07-18,0,,0,0,,1,"Khấu trừ ẩn rất nhiều. Mọi người xem xét khi sử dụng ứng dụng, app này trừ tiền mà không có lý do rất đều đặn. Tuy là số tiền lẽ nhưng mỗi ngày vài ngàn mà đều như vắt chanh vậy là biết công ty thu lời bất chính nhiều đến thế nào"
+12885922926,1,2025-07-13,0,,0,0,onboarding|stability,1,App cùi. Lỗi otp toàn sai
+12879730708,1,2025-07-11,0,,0,0,,1,Nhân viên thái độ quá kém. Nhắn tin chèo kéo khong được quay ra cà khịa khách hàng nói giọng rất bất lịch sự. Mặc dù mới tải về để vào sàn gặp quả nhân viên liên tục spam
+12874199573,1,2025-07-10,0,,0,0,,1,Tệ. Quá tệ
+12872860591,1,2025-07-10,0,,0,0,stability,1,"Làm phiền quá nhiều đừng gọi nữa, app rất hay bảo trì lỗi không vào được. Làm phiền quá nhiều đừng gọi nữa gọi năm này qua tháng nọ , app rất hay bảo trì lỗi không vào được"
+12869668166,1,2025-07-09,0,,0,0,,1,"Thủ tục lằng nhằng. Có mỗi cái việc mở lại tài khoản sau khi tạm khoá mà cũng phải ra tận quầy giao dịch, ng dùng phải lên HN làm thủ tục, rất mất thời gian"
+12862149900,1,2025-07-07,0,,0,0,,1,"K tiện lợi, rườm rà. App thiếu tính năng quên pin, contact support rườm rà"
+12853723199,2,2025-07-05,0,,0,0,,1,Liên tục nâng cấp. Rất phiền và mất thời gian.
+12842090399,1,2025-07-02,0,,0,0,,1,Bán thông tin khách hàng. Ngày nào cũng có người gọi điện làm phiền đầu tư rất khó chịu
+12818561942,1,2025-06-26,0,,0,0,,1,Để lộ thông tin khách hàng. Mới mở app lại là liên tục các cty chứng khoán khác gọi làm phiền.
+12814096167,1,2025-06-25,0,,0,0,stability,1,"Muốn bỏ app. App quá khó sử dụng, rất lằng nhằng, lag lỗi liên tục, kêu gửi request về hộp thư rồi vào hộp thư 15p ko thấy gì, nên đổi dev đi"
+12808263168,3,2025-06-23,0,,0,0,stability|fees,1,"Phí quản lý hơi cao. Phí quản lý tận 27.500/1 tháng, phí giao dịch cug cao hơn so với app khác, dễ sử dụng, hay bảo trì, lâu lâu bị lỗi, chuyển id khó nếu ko gắn id ban đầu dki"
+12769593465,1,2025-06-13,0,,0,0,,1,Cái app mò mãi mới biết sử dụng. Thật sự rất khó xài
+12760304032,1,2025-06-11,0,,0,0,,1,App như quần què. App khùng j dùng méo được
+12741522988,1,2025-06-06,0,,0,0,onboarding|stability|money,1,App lỗi hay chơi bẩn?. Chơi bài bòn rút tiền khi chuyển đến ngân hàng. Luôn bị lỗi mã otp khi chuyển tiền liên tục. Quá dở
+12739801961,1,2025-06-06,0,,0,0,stability,1,Quá tệ. Cứ mấy tháng vào bắt đổi mật khẩu mà bắt nhập cái SMARTOTP từ di động trong khi đăng nhập vào Smartone tử di động ko thể lấy SMARTOTP được cũng bắt làm lại mật khẩu như 1 vòng luẩn quẩn
+12720189332,1,2025-06-01,0,,0,0,,1,"App tệ. App ngu quá, nhận diện khuôn mặt hơn chục lần mà không được"
+12711902828,1,2025-05-29,0,,0,0,onboarding,1,"Vui lòng code lại cập nhật thông tin CCCD. Cập nhật thông tin CCCD cả chục lần không được, trải nghiệm quá tệ"
+12711826126,3,2025-05-29,0,,0,0,,1,Ghét. Không có mục tổng vốn nạp
+12700057939,1,2025-05-26,0,,0,0,,1,Quá nhiều tiền phí. Trừ phí tào lao tối ngày
+12698840175,4,2025-05-26,0,,0,0,onboarding,1,Cập nhật cccd. Không thể cập nhật que ứng dụng vneid mà phải có thẻ vật lý sao ?
+12698600580,1,2025-05-26,0,,0,0,,1,"Không mở được TK. Mở 1 cái tk thôi mà 5 ngày không xong, lần nào cũng hệ thống đang bận xử lý thông tin, vui lòng thử lại sau"
+12688822870,5,2025-05-23,0,,0,0,,1,SIÊU ỨNG DỤNG. Một ứng dụng hiện đại nhất hiện nay trên thị trường.
+12681036778,1,2025-05-21,0,,0,0,stability|promo,1,"Lỗi tùm lum. Quảng cáo hiện đại với công nghệ, mà đến đoạn nhận diện khuôn mặt không xong"
+12672260346,1,2025-05-19,0,,0,0,onboarding,1,"Rất phiền. Lỡ đăng ký 1 lần rồi không dùng nữa vì quá bất tiện, bên cs ngày nào cũng gọi làm phiền dù lần nào cũng trả lời là không tham gia nữa rồi, có sđt cái là phiền tới nái luôn"
+12666105503,1,2025-05-17,0,,0,0,,1,bị chặn iD ở nước ngoài quá tệ. quá tệ
+12654094341,1,2025-05-14,0,,0,0,ui,1,"Giao diện khó. Ap này dùng cùi bắp, khó theo dõi mã đã mua tăng giảm hay đi ngang, xem mã mới cũng k thấy đc giá đình giá thấp trong phiên"
+12650221783,1,2025-05-13,0,,0,0,,1,Không cập nhật được lên phiên bản này. Dẫn đến không dùng được ứng dụng.
+12625006071,1,2025-05-06,0,,0,0,onboarding|stability,1,Đổi mật khẩu. Ko đổi được mật khẩu. Nhập OTP tự động mà cứ báo lỗi không đúng
+12622146623,1,2025-05-05,0,,0,0,,1,Ko cập nhật được. Tại sao ko cập nhật đc
+12622131591,1,2025-05-05,0,,0,0,,1,Chất lượng quá kém. Quá hãm
+12622126354,2,2025-05-05,0,,0,0,onboarding|stability,1,"Đề nghị bỏ xac nhan otp khi login app. Chưa từng thấy app nào hãm như này luon, ai lại login vào app còn bắt lấy otp, otp thi thoảng lag như quỷ, tệ hại"
+12621769503,1,2025-05-05,0,,0,0,,1,Apcui that su. Bắt cập Nhật mà ko thể tải xuống tại sao tai sao tai sao
+12621265930,1,2025-05-05,0,,0,0,stability,1,Chuyên lỗi vào những thời điểm nhạy cảm. Cần nghiêm túc hơn khi làm app
+12621244374,2,2025-05-05,0,,0,0,,1,Tôi ko có tải dc. Chán vì ko tải được
+12621049496,1,2025-05-05,0,,0,0,,1,Cập nhật mới. Quay từ sáng đến giờ
+12621038447,1,2025-05-05,0,,0,0,stability,1,Liên tục gặp lỗi. Chẳng hiểu sao liên tục gặp lỗi app đang khởi động :)
+12621017664,1,2025-05-05,0,,0,0,,1,Quá chán. Bực mình ap này thật sự thu phí quản lý mà từ sáng giờ ko vào đc
+12620833422,3,2025-05-05,0,,0,0,,1,Cập nhật liên tục nhưng tất nhiều bất tiện
+12620708334,1,2025-05-05,0,,0,0,,1,Tệ. Ăn no cập nhật app hoài mà app như qq
+12620697836,4,2025-05-05,0,,0,0,,1,5/5 không cập nhật được ứng dụng
+12620667132,3,2025-05-05,0,,0,0,ui,1,"Thiếu tính năng. Nên tích hợp thêm các biểu đồ và chỉ số giống tcbs, đỡ mất công lên fire ant xem"
+12620655860,1,2025-05-05,0,,0,0,,1,K cập nhật được.nên dùng ứng dụng của công ty khác tốt hơn
+12620607176,1,2025-05-05,0,,0,0,,1,"App cùi bắp, trải nghiệm quá tệ, trừ phí tùm lum. Rất rất tệ"
+12620438544,1,2025-05-05,0,,0,0,,1,Dao diện kém. Cập nhật liên tục-làm ảnh hưởng tới quá trình cviec của người khác
+12618704341,1,2025-05-04,0,,0,0,,1,"tệ. app dở, đổi mỗi cái gmail cả tháng không đổi được"
+12618633954,3,2025-05-04,0,,0,0,,1,"App trung bình. Ko có phần thanh toán nợ margin khi tk có tiền, rõ chán"
+12610723682,1,2025-05-02,0,,0,0,stability,1,"Lỗi đăng nhập liên tục, hệ thống cập nhật cl gì nhiều v"
+12610092751,5,2025-05-02,0,,0,0,,1,Luên tục cải tiến tích cực
+12601775534,1,2025-04-30,0,,0,0,onboarding,1,Tào lao. App lỏ à? Có cái chụp CCCD mở tk thôi mà chụp 7749 kiểu vẫn bảo ko hợp lệ???? Chứ hợp lệ là hợp sao má????
+12598111694,1,2025-04-29,0,,0,1,,1,Tệ
+12598109441,1,2025-04-29,0,,0,0,,1,Ghét app này. Đã kh lãi rồi còn thu phí 27.500 ghét
+12594900985,1,2025-04-28,0,,0,0,onboarding,1,SmartOTP. Tôi thậm chí không thể nhận được mã otp dù có thử từ lần này đến lần khác
+12585973843,1,2025-04-26,0,,0,0,,1,Khó sử dụng. Không thân thiện
+12583981820,1,2025-04-25,0,,0,0,ui,1,"Giao diện cực kỳ kém. Giao diện, trình bày rất kém, nhiều bước và rất thiếu khoa học. Đơn cử như màn hình liệt kê sổ lệnh mua bán mà không hề có thông tin cập nhật giá CP realtime, đặt xong cứ như mù phải thoát ra vào liên tục bảng giá để xem. App có giao diện tệ nhất trong các cty chứng khoán."
+12579195123,1,2025-04-24,0,,0,0,ui,1,Đổi giao diện. Nhìn giao diện mới đau mắt bực mình chả muốn sài nữa
+12541761683,2,2025-04-14,0,,0,0,ui,1,Giao diện mua bán. VPS nên dùng giao diện ma và bán tách biệt ra. Để người sử dụng đỡ thao tác nhầm lệnh mua và bán
+12540720285,1,2025-04-14,0,,0,0,stability,1,Trải nghiệm tệ. Tuần nào cũng update mà sáng không vào được app. Đề nghị xem lại
+12529154539,1,2025-04-11,0,,0,0,onboarding,1,"Chịu. Rõ ràng đã cập nhật cccd rồi còn bắt cập nhật tiếp, ko cập nhật được còn ko cho giao dịch"
+12505181312,1,2025-04-05,0,,0,0,,1,Đổi pass làm cái gì. Thằng ngu nào chỉ đạo hệ thống tự đổi pass trong khi người dùng không có nhu cầu
+12501332009,1,2025-04-04,0,,0,0,onboarding,1,"Không cập nhật CCCD được trên app. Ko cập nhật CCCD được trên app, không giao dịch được!"
+12460486073,4,2025-03-25,0,,0,0,ui,1,Giao diện. mục thông báo lãi lỗ hồi xưa đẹp hơn bây giờ
+12453355174,1,2025-03-23,0,,0,0,,1,thái độ khó chịu. không nên dùng
+12433972160,1,2025-03-18,0,,0,0,ui,1,"Giao diện kém. Giao diện sửa làm gì không biết, đang ổn với giao diện cũ sửa khó chịu hẳn ra"
+12429566264,5,2025-03-17,0,,0,0,,1,Ok. Good
+12410212739,1,2025-03-12,0,,0,0,ui,1,Lệnh mua bán gần nhau. Chả hiểu cái app mới này thiết kế kiểu gì mà để nút lệnh MUA & BÁN gần nhau nên rất nhiều lần nhấn nhằm lệnh mua thành lệnh bán & mất tiền oan uổng. App này chỉ đáng 1 sao
+12320631093,1,2025-02-17,0,,0,0,ui,1,"Giao diện vps. Không thể hiểu nổi tư duy của những người chuyên đi cập nhật phần mềm. Sau mỗi lần cập nhật tôi lại càng thất vọng. Hiện tại, sau lần cập nhật cuối cùng, tôi đã quyết định ngừng chơi vps"
+12308139863,2,2025-02-14,0,,0,0,,1,Đánh giá. Không bằng phiên bản củ
+12277522998,5,2025-02-06,0,,0,0,,1,App tiện dụng. Dùng cũng tiện dụng đấy chứ.
+12193530202,1,2025-01-17,0,,0,0,closure,1,Huỷ tài khoản là đòi hỏi lằng nhằng. Tôi chưa thấy công ty nào huỷ tài khoản mà đòi hỏi thủ tục rườm rà hơn cả thời bao cấp. Thời đại công nghệ số rồi còn phải ra tận quầy giao dịch để huỷ. Lằng nhà lằng nhằng.
+12158352389,1,2025-01-08,0,,0,0,ui,1,Năm đổi giao diện 10 lần. Kém
+12151445767,1,2025-01-06,0,,0,0,ui,1,"Thay đổi giao diện quá nhiều. 1 năm thay đổi giao diện 5 lần, 7 lượt. Người dùng chưa qen với giao diện này đã đổi giao diện khác. Đã có lần mua bán nhầm cổ phiếu vì ấn nhầm do chưa quen rồi. Đề nghị bớt làm màu đi. Tập trung vào thân thiện với người dùng"
+12139819002,1,2025-01-03,0,,0,0,ui,1,Quá kém. 2025 rồi app ck mà không có giao diện cho iPad???
+12113919880,1,2024-12-28,0,,0,0,stability,1,Bớt bảo trì lại đi. Muốn biến đổi app để đa dạng dịch vụ hơn ? Muốn phục vụ nhiều mục đích của người dùng hơn nhằm tạo thói quen sử dụng ? Nhưng mà sao bảo trì nhiều thế ? Cứ cuối tuần là bảo trì rồi tiền ở trong đó có việc cần là ốm đòn không thể lấy ra được  Bên Tech xem lại vấn đề này nhé
+12111541215,1,2024-12-27,0,,0,0,,1,Nguuuuuu vkl. Thag IT nào làm bảo mật mà quên não ở nhà
+12105986257,1,2024-12-26,0,,0,0,money,1,"App thu phí, bán thông tin người dùng. mn cẩn thận. app thu phí sử dụng phí rút tiền và bán thông tin người dùng cho bên thứ 3 và các môi giới."
+12104383282,1,2024-12-25,0,,0,0,ui,1,"UIUX chán. Trải nghiệm xem chart theo khung thời gian quá khó hiểu, chịu ông nào thiết kế luôn"
+12104214893,3,2024-12-25,0,,0,0,,1,"Xin hỗ trợ. Không thể update đc, mấy ngày rồi. Dù dùng wifi hay 4G"
+12104102573,2,2024-12-25,0,,0,0,,1,Không có lịch sử danh mục cổ phiếu đã tìm kiếm. Còn thiếu nhiều ứng dụng nhanh
+12095594225,1,2024-12-23,0,,0,0,onboarding,1,Quá tệ. Thật sự rất tệ Mọi người mở tài khoản nên lưu ý  Ở vps rất bất tiện khi thông tin muốn thay đổi Mình mất số điện thoại thôi muốn thay đổi phải công chứng các kiểu cuối cùng cũng k được Ngta yêu cầu phải ra chi nhánh tại hà nội hoặc hồ chí minh mới mở được Mình thật sự rất bực và mất thời gian!
+12086970979,1,2024-12-21,0,,0,0,ui,1,"Giao diện. Loạn hết cả lên, Thiết kế mới chán thực sự, trả lại thiết kế cũ đây 😡😡… khuyên ae chuyển sang ssi hoăc vcbs dùng còn dễ hơn"
+12079566253,1,2024-12-19,0,,0,0,stability,1,"App mới lởm thật sự. Lỗi hiển thị, giao dịch phức tạp, chỉ toàn load và load"
+12072565823,5,2024-12-17,0,,0,0,,1,Tốt. Update phần mềm mới dễ sử dụng và tìm kiếm. Không còn bị rối mắt. Màu sắc đơn giản đẹp. Mình đánh giá cao cập nhập áp lần này
+12069636433,2,2024-12-16,0,,0,0,stability|ui,1,lỗi biểu đồ. App xây lại mới vào biểu đồ lỗi lăng nha lăng nhăng. 0 quan sát đc gì cả
+12068695870,1,2024-12-16,0,,0,0,ui,1,Giao diện mới tím khó nhìn loè loẹt. 1 sao cho cập Nhật giao diện mới
+12068678000,2,2024-12-16,0,,0,0,,1,nến mặc định có thể 3M được ko.. mặc định khung nến 1D. trade theo phút à ??
+12068650318,3,2024-12-16,0,,0,0,,1,Tự trừ phí tk ko rõ
+12068486288,1,2024-12-16,0,,0,0,,1,App quá chán. Càng cập nhật càng gây khó chịu cho người dùng không hiểu người lãnh đạo của vps có dùng cái app của chính họ không nữa rất nhiều phản hồi mà không chịu cải thiện sớm muộn cũng mất khách hàng
+12065494379,3,2024-12-15,0,,0,0,ui,1,"Bản cập nhật mới thiếu tính năng. Bản cập nhật mới thay đổi bố cục các chức năng của ứng dụng, không thể tìm thấy chức năng “ biến động dòng tiền” và “ Lãi lỗ đã thực hiện”"
+12063433581,1,2024-12-15,0,,0,0,,1,"Phiên bản 3.10. Điện thoại đời cũ IOS 12.5 app không khởi động được, bị văng ngay."
+12060689683,2,2024-12-14,0,,0,0,,1,Kém. App thay đổi liên tục biểu tượng quá kém. Mỗi lần update phải mất công tìm và nhớ biểu tượng mới trên nàn hình.
+12042104423,1,2024-12-09,0,,0,0,,1,"đừng xài. app lởm, rất nhiều phí linh tinh"
+11963137351,3,2024-11-18,0,,0,0,ui,1,IOS 14 ko xem đc Chart. Please fix it
+11951584189,1,2024-11-15,0,,0,0,onboarding|stability|fees,1,"Lỗi hệ thống và nhân viên tư vấn. Thị trường sập mà k vào được để bán bỏ , ngày nào cũng có “ em là nhân viên của vps “ lùa gà vào đăng ký dứoi tên lấy hoa hồng mà phím hàng như lol , mất nửa vốn . Ai có ý định đăng ký vps lên suy nghĩ kỹ"
+11943297067,1,2024-11-13,0,,0,0,ui,1,"Giao diện app. Bản cập nhật mới xem biểu đồ giá biến động quá khó khăn, phiên bản cũ xem vậy là thuận tiện, thanh tab tìm kiếm cổ phiếu mỗi lần tìm danh mục phải kéo ngang rất mất thời gian giao dịch. Không biết người tạo ứng dụng có trải nghiệm app không mà để tình trạng như vậy nữa, mỗi lần update là mỗi lần tệ"
+11926127073,5,2024-11-08,1,referral_spam,0,0,,0,Nhập mã giới thiệu BET6 để được hỗ trợ.. Mn lập mới tk nhập mã giới thiệu BET6 để được tư vấn hỗ trợ.
+11907117543,1,2024-11-03,0,,0,0,,1,"Trừ phí lung tung. App của vps thu phí dịch vụ của KH 27k chưa đủ hay sao mà đẻ thêm phí bảo an tài khoản nữa, bảo an k thấy đâu chỉ thấy tối ngày sđt lạ gọi đến mời gọi môi giới"
+11898691604,1,2024-11-01,0,,0,0,,1,Thua SSI. App bao năm vẫn kém.
+11887147953,1,2024-10-29,0,,0,0,,1,Nâng cấp. Hay bắt nâng cấp
+11886595744,2,2024-10-29,0,,0,0,stability,1,App không cho đăng nhập thiết bị mới nên xem lại. Không cho đăng nhập thiết bị mới rất khó chịu
+11860681527,1,2024-10-22,0,,0,0,ui,1,"Phần mềm rất khó dùng. Lệnh mua MP với người mới quá khó biết- bộ phận thiết kế nên tham khảo SSI, lệnh nào cho người dùng chọn ngay khi muốn mua bán, đàng này xoá giá mới hiện, mình đã thiệt hại nhiều vì cái giao diện vớ vẫn này"
+11860642928,2,2024-10-22,0,,0,0,onboarding|stability,1,"Yêu cầu cải tiến phần tuỳ chọn đăng nhập 2 lớp. Bắt buộc phải đăng kí hai lớp trên app, lắm lúc bảng giá trên web toàn bị tự động out ra, lại phải thao tác đăng nhập lại, một buổi chiều cứ 10ph lại bị out ra gây ức chế cho người dùng"
+11839982372,1,2024-10-16,1,,0,0,onboarding,1,"App trừ phí lung tung đủ các loại phí, máy bào. Trừ rất nhiều loại phí các kiểu. Trong khi đã thu phí hàng tháng 27.500đ. Tự ý dùng thông tin khách hàng đăng ký bảo hiểm. “bảo an tài khoản” là gói bảo hiểm gì? Khách hàng đâu có biết, ko hề ký vào giấy tờ nào xác nhận dùng mà vps vẫn tự ý trừ tiền."
+11805294618,1,2024-10-07,0,,0,0,,1,"Dịch vụ KH thảm hại. Coi thường KH, spam, cuộc gọi rác. MG lởm."
+11780025481,1,2024-09-30,0,,0,0,,1,Như b. Nói hơi thô nhưng app dùng như đb v!
+11779906673,1,2024-09-30,0,,0,0,,1,APP LỞM. Cái app càng nâng cấp càng lởm.
+11762041095,3,2024-09-25,0,,0,0,,1,Hơi rối. App lằng nhằng. Khó sử dụng
+11755126687,1,2024-09-23,0,,0,0,money|ui,1,"ĐỪNG NÊN TẢI. Cái app cùi mía, giao diện như chục năm trước, phí còn cao, rút tiền về tài khoản cũng tốn phí và tiền. Nói chung rất kém"
+11744680745,1,2024-09-20,0,,0,0,onboarding|stability,1,"Vô cùng thất vọng. Mình đã từng đăng nhập vào đt mình rồi sau đó một thời gian không dùng vào vẫn bắt xác thực từ thiết bị cũ, trong khi lâu nay mình xài đúng 1 đt đuổi BA với PM đi có đc ko ?"
+11740221077,1,2024-09-19,0,,0,0,stability,1,Cùi bắp. Đăng nhập điện thoại khác không được;
+11734359402,1,2024-09-17,0,,0,0,,1,Mả bà chúng mày. Ăn trên xương máu người khác!
+11630258710,3,2024-08-20,0,,0,0,stability,1,Chất lượng app. Lỗi nhiều
+11612073606,2,2024-08-15,0,,0,0,onboarding,1,Xác thực khuôn mặt quá khó khăn. Đề nghị xem lại cách xác thực khuôn mặt không thể thực hiện trên app đến thời điểm 15/8/2024. Xin cám ơn!
+11604624133,1,2024-08-13,0,,0,0,onboarding,1,Không nhận được mã OTP qua điện thoại. n/t
+11599777406,1,2024-08-12,0,,0,0,ui,1,"Càng cập nhật app càng ngu và khó dùng hơn. Yêu cầu cần phải biểu thị bảng giá mua và giá bán cho nđt nhìn tổng quan hơn, bỏ ngay cái kiểu bấm vào mã mới coi đc giá mua và giá bán"
+11589192497,1,2024-08-09,0,,0,0,,1,"Chất lượng hỗ trợ khách hàng thấp. Mình là khách hàng, gặp vấn đề về giao dịch nhưng cty hỗ trợ kém. Và trả lời cho có lệ"
+11588596243,1,2024-08-09,0,,0,0,stability|ui,1,"UX/UI chưa trực quan, hiệu năng ứng dụng chưa ổn định. Biểu đồ giá cổ phiếu khó coi, nên view các cổ phiếu ở trang chủ đầu tiên, không đo được phần trăm giá tăng giảm của cổ phiếu. Trực quan hơn cho người mới vào app. Đội thiết kế nên tham khảo UX/UI của SSI iBoard Pro, rất trực quan và dễ sử dụng cho người mới đăng nhập vào app"
+11558127480,1,2024-08-01,0,,0,0,onboarding|ui,1,"tồi. Sai lầm nhất là mở tk trên VPS, thay vì đi vào chất lượng VPS chỉ quan tâm số lượng, hãy học tập TCBS đi để thấy VPS làm dịch vụ tồi đến mức nào. Giao diện xấu, khó nhìn, không có thông báo khi có huỷ niêm yết mã CK về mail của khách hành, dịch vụ hỗ trợ 24/7 qua cả tổng đài và email CSKH đều theo tiêu chuẩn có cho đủ chứ chả hỗ trợ được cái gì"
+11550915932,4,2024-07-30,0,,0,0,,1,Hơi thiếu trực quan
+11546975999,1,2024-07-29,0,,0,0,ui,1,"Giao diện mới quá tệ. Các thông tin về khối lượng, bảng giá giao dịch cắt hết, KH phải vào xem chi tiết mới thấy. Biểu đồ lại tách riêng sang 1 tab, cực kì bất tiện để theo dõi. % và +- nên thể hiện ngay cạnh giá hiện tại của cổ phiếu như cũ, thuận mắt và thể hiện rõ hơn rất nhiều. Đội ngũ thiết kế app VPS lần này làm tệ quá!"
+11543590632,1,2024-07-28,0,,0,0,onboarding,1,K hỗ trợ thẻ căn cước. Không hỗ trợ thẻ căn cước mẫu mới nên không đăng kí được tài khoản. Dev team nên xem xét
+11509335310,1,2024-07-19,0,,0,0,stability,1,"Update xong ko vào dc app, lỗi tùm lum bực cả mình =)))))"
+11498689678,1,2024-07-16,0,,0,0,stability,1,"Tệ. Đăng nhập không thể vào được, thường xuyên báo lỗi, quá tệ cho một ngày giao dịch và sử dụng app của vps"
+11488443846,1,2024-07-13,0,,0,0,onboarding,1,Chán. App gì ảo đăng kí quét mặt chục lần không đc
+11483449252,2,2024-07-12,0,,0,0,,1,"Bug. Ở danh sách cổ phiếu nắm giữ, hiện thị sai màu giá, do sai giá tham chiếu"
+11468114543,1,2024-07-08,0,,0,0,onboarding|stability,1,"Tính năng xác thực đăng nhập phiền quá. Mỗi ngày đăng nhập máy tính phải xác nhận 1 lần, rất chi là phiền. Cho 1 cái option lưu vĩnh viễn thiết bị đi"
+11461745665,1,2024-07-06,0,,0,0,,1,"Lộ thông tin người dùng, suốt ngày bị gọi điện chèo kéo làm phiền"
+11448198002,1,2024-07-02,0,,0,0,stability,1,Phiền. Cập nhật xong không vào được
+11446710576,3,2024-07-02,0,,0,0,stability,1,Chậm không load được. Cập nhập xong phát đơ luôn xoá đi tải lại vẫn k load được mình dùng iphone 12
+11443873573,1,2024-07-01,0,,0,0,onboarding,1,Spam. Từ lúc đăng kí cái cty này là bị gọi spam kêu gọi vô nhóm đầu tư vps này kia liên tục. Hầu như ngày nào chúng nó cũng gọi. Quá bực mình. Riết r ko muốn nghe số lạ luôn
+11442829372,1,2024-07-01,0,,0,0,stability,1,"App kém, hay lỗi, bắt thay đổi vùng khi cập nhật. Tôi chưa dùng 1 app kém tnay bao giờ. Tôi ở nước ngoài. Mỗi lần app có cập nhật, tôi phải chuyển vùng appstore về Việt Nam và nhập 1 đống thông tin nhạy cảm như thẻ credit, địa chỉ. Tần suất cập nhật khá nhiều. Tôi nghĩ các bạn nên làm nó có sẵn cả ở app store nước ngoài!!! Rất bất tiện!!!!"
+11442747526,1,2024-07-01,0,,0,0,,1,Dev ngu. Trót chuyển vùng sang turkey giờ báo app not available on regilion. Thế này việt kiều ko xài đc app à?
+11439624272,1,2024-06-30,0,,0,0,,1,Cái app siêu ngu. Cập nhật xong k vào lại được
+11436995601,1,2024-06-29,0,,0,0,onboarding|promo,1,"Bán thông tin khách hàng. Số mới không ai gọi, vừa đăng ký vps là cả ngày không biết bao nhiêu người gọi quảng cáo"
+11428404789,1,2024-06-27,0,,0,0,,1,Hốc phí top 1. Đủ loại phí. Ăn quá dày. Xóa app !
+11394464477,1,2024-06-18,0,,0,0,onboarding|fraud,1,"Lộ thông tin khách hàng, không bảo mật. Dùng bao nhiêu app cty chứng khoán khác không sao nhưng ngay sau khi đăng ký bên vps này, ngày 2 chục cuộc điện thoại spam chứng khoán & lừa đảo. Từ ngày đấy đến giờ ngày nào cũng đều đặn. Không biết có bán dữ liệu khách hàng cho bên thứ 3 không hay bảo mật kém quá nên hacker tự do lấy được số điện thoại khách hàng như thế."
+11394219372,1,2024-06-18,0,,0,0,ui,1,"App cùi, thu phí từa lưa. Giao diện áp rắm rối thôi chưa đủ, thu phí từa lưa, thậm chí cả phí chuyển tiền vào tk ngân hàng.  Có quá nhiều lựa chọn khác tốt hơn."
+11389946367,1,2024-06-17,0,,0,0,,1,"Cầu thị kém, app tự đổi giá. Mất gần cả trăm triệu vì giá tự đổi về tham chiếu khi đặt lệnh, dù kiểm tra kĩ giá trước khi nhập số lượng. Nhập xong giá chuyển qua số lượng là giá âm thầm đổi về tham chiếu. Báo CSKH không dưới 5 lần vẫn vậy. Đổ cho KH là xong."
+11380207027,1,2024-06-14,0,,0,0,,1,Cùi bắt nhất các sàn. Cùi
+11371282507,3,2024-06-12,0,,0,0,stability,1,Lỗi hiển thị chậm    giá cổ phiếu danh mục trên hệ điều hành ios. Hiển thị giá cổ phiếu trên danh mục chậm nửa tiếng
+11367949442,1,2024-06-11,0,,0,0,stability,1,App cùi. App đơ Phí ứng cao.ứng hơn 3tr mà phí 50k
+11365081346,1,2024-06-10,0,,0,0,,1,"Cùi bắp, app lởm, ko thuận tiện cho sử dụng. App lởm mà suốt ngày bắt cập nhật. Mắc mệt"
+11364899691,5,2024-06-10,0,,0,0,,1,Tuyệt vời vps
+11364460270,5,2024-06-10,0,,0,0,,1,VPS SỐ 1 app số 1. Số lượng nđt sử dụng app nói lên tất cả
+11344365958,1,2024-06-05,2,,0,0,money,1,"PHÍ QUÁ NHIỀU. THAM vừa thôi. Thu phí rút tiền, rồi phí quản lý tài khoản. Tao qua chỗ khác dùng, thiếu gì"
+11342432910,3,2024-06-04,0,,0,0,,1,App kém nhất. Phải chuyển sang fts vì app dùng quá dở
+11328899031,1,2024-06-01,0,,0,0,,1,"Báo cáo không rõ ràng, tiền hụt đi không rõ nguyên nhân. Khuyên các bạn không nên dùng. Tiền hụt đi k rõ nguyên nhân. Báo cáo mập mờ khó thao tác."
+11326416008,2,2024-05-31,0,,0,0,onboarding|stability,1,"Lỗi đăng nhập. Tính năng smart OTP gì mà bị lỗi tùm lum, lúc được lúc không."
+11305671523,1,2024-05-25,0,,0,0,,1,"Bán thông tin người dùng. Ngưng sd app và gd chứng khoán 2 năm rồi nhưng vẫn bị môi giới gọi làm phiền, gthieu các kiểu từ đó đến giờ k ngớt :))"
+11302292065,1,2024-05-24,0,,0,0,,1,Nhận diện cực kì ngu. Dell tin đc 2024 có app nhận diện khuôn mặt mất gần 30p
+11300963583,1,2024-05-24,0,,0,0,,1,"Trải nghiệm Khách hàng quá tệ. App mất rất nhiều công xác nhận khi đổi thiết bị Hiển thị thông tin không có dễ theo dõi Trừ phí dịch vụ với tk >5tr????! Df Nhân viên hỗ trợ thái độ kém, làm khó khách hàng, khó chịu vô cùng 1 sao là vì ko thể trừ nốt"
+11296695458,1,2024-05-23,0,,0,0,stability|money,1,"Tệ quá tệ, lỗi. App tệ kinh khủng, bảo trì thường xuyên, nạp tiền hay rút tiền đều gặp vấn đề trục trặc k giải quyết ngay được mà phải giải quyết 1-3 ngày nên tiền nằm im trong app. Tính năng gọi điện qua app cũng không xài được, rõ ràng đường truyền tốt nhưng nhân viên trả lời không nghe và tự động cúp máy.. trải nghiệm TỆ"
+11279550348,1,2024-05-18,0,,0,0,onboarding,1,"Làm phiền. Có đợt đăng ký app để chơi ck nhưng đã bỏ từ lâu, hàng ngày vẫn liên tục bị làm phiền bởi nhân viên công ty 😀"
+11265836334,1,2024-05-14,0,,0,0,,1,Không cho đổi CGTV. Không hiểu sao có cái quy định ko cho đổi CGTV về người cũ.
+11263441569,2,2024-05-13,0,,0,0,ui,1,"Đánh giá giao diện người dùng. Giao diện khó tiếp cận và sử dụng, đã sử dụng qua SSI và thấy thân thiện dễ sử dụng hơn hẳn. Đội ngũ phát triển nên học theo để thiết kế ứng dụng"
+11262646363,1,2024-05-13,0,,0,0,ui,1,"thu quá nhiều phí. Chuyển tiền ra cũng thu, duy trì tk cũng thu . gận thu mà giao giao diện quá xấu"
+11155749634,1,2024-04-14,0,,0,0,ui,1,Không có giao diện cho ipad Pro 12.9. Trải nghiệm thiết bị kém
+11148776326,2,2024-04-12,0,,0,0,,1,Không truy vấn lãi lỗ được. Vào truy vấn lãi lỗ bị crash app nhé các bạn.
+11144382928,4,2024-04-11,0,,0,0,,1,Ứng dụng không có sao kê lịch sử lãi lỗ. Phiên
+11115997488,1,2024-04-03,1,,0,0,,1,App siêu cùi. Cứ lúc thị trường đỏ mạnh là k vào được app nhé. Ai đầu tư nên cân nhắc
+11108131897,1,2024-04-01,0,,0,0,fees,1,"Phí giao dịch. Thua luôn mới chuyển tiền vào tài khoản chưa giao dịch gì hết rút ra tk ngân hàng mất phí 4.300 cho giao dịch 2,200,000 thua chia tay"
+11100294057,1,2024-03-30,0,,0,0,,1,Tự ý trừ tiền khách hàng. Nạp 11tr vào app tự ý trừ 31k mà không hề có thông báo chi tiết về khoản trừ
+11068551924,1,2024-03-21,0,,0,0,onboarding|stability,1,Tệ.. Yêu cầu nhập OTP để đăng nhập nhưng ko gửi mã cho người ta.
+11060610958,3,2024-03-19,0,,0,0,,1,"Sao k học theo mấy app về tiền điện tử ấy như binance chẳng hạn, chứ app này sài quá khó chịu. chịu luôn"
+11060559907,1,2024-03-19,0,,0,0,,1,App kém. Không có cả phần tính hiệu xuất đầu tư
+11060335106,2,2024-03-19,0,,0,0,,1,Tính năng bắt cập nhật phiên bản quá bất tiện. Khi thông báo có phiên bản mới cần cho người dùng tuỳ chọn để sau.
+11060226881,1,2024-03-19,1,,0,0,,1,"Bán thông tin người dùng!. App thu thập thông tin và bán cho bên thứ ba. Từ ngày bắt đầu dùng app liên tục bị các công ty tài chính, chứng khoán gọi làm phiền."
+11060204723,3,2024-03-19,0,,0,0,ui,1,"Giao diện rối. Quá rối rắm. Cần tinh gọn thôi, đã muốn dùng app cho tiện mà nó rối quá rối."
+11060167916,1,2024-03-19,0,,0,0,,1,"Phiền và nhiều phí. Ngày nào cũng gọi mời vào nhóm, thu phí 27,5k duy trì quá đắt."
+11057181642,1,2024-03-18,0,,0,0,,1,App dỏm. Xử lý thông tin / hỗ trợ khách hàng quá lâu. Đã ngưng xài app này
+11045591354,1,2024-03-15,0,,0,0,stability,1,"App lỗi. Đang chỉnh giá cái báo lỗi treo, thoát ra vô lại mua cmn cổ phiếu rồi. Xàm, app vậy à?"
+11009578594,5,2024-03-05,0,referral_spam,0,0,onboarding,0,"HỖ TRỢ TƯ VẤN CHO NĐT MỚI. NĐT mở tài khoản và nhập mã người giới thiệu BG1S - NGUYEN KIM TRUNG. Hoàn tất liên hệ 0915.800.558 ( Nguyễn Trung ). Để đc tư vấn trực tiếp, tặng tài liệu kiến thức từ cơ bản đến nâng cao, tham gia hệ thống KH,…"
+10987858688,1,2024-02-28,0,,0,0,ui,1,UI - UX. Thiết kế app khó dùng
+10982329973,2,2024-02-26,0,,0,0,,1,Nhận diện khuôn mặt ko dc app cùi quá. App cùi
+10969843909,1,2024-02-23,0,,0,0,stability,1,Kết nối. Đơ nhiều. Lúc quan trọng là ko đăng nhập đc
+10936327639,1,2024-02-14,0,,0,0,money,1,Nạp tiền chờ hơn 1 ngày không vào :)))
+10910917327,1,2024-02-07,0,,0,0,promo,1,Không tắt được thông báo quảng cáo từ vps. Vào cài đặt off tin VPS rồi quay lại vẫn thấy on
+10890413059,1,2024-02-02,0,,0,0,stability,1,App như máu loz. Dcm đăng nhập báo hệ thống đang khởi động khởi cái máu loz à
+10887090278,1,2024-02-01,0,,0,0,,1,"Nhiều cái rối lắm. Bản cũ của những năm 2022 dùng ngon hơn, các bạn cứ cập nhật sau nhét lắm thứ vào app chẳng tối ưu trải nghiệm khách gì cả"
+10880008268,1,2024-01-30,0,,0,0,ui,1,"Giao diện quá rối không thân thiện người dùng, đặt mua bán trên app khác tiện hơn"
+10879692433,1,2024-01-30,0,,0,0,,1,"mức giá nhảy lên nhảy xuống . tăng giá hiện đỏ, tham chiếu hiện xanh .k hiểu bắt nâng cấp làm gì. ."
+10877158384,2,2024-01-29,0,,0,0,stability,1,"App chậm. Tải app chậm, không thân thiện khi dùng để giao dịch cổ phiếu"
+10876064520,1,2024-01-29,1,,0,0,,1,"Spam gọi khách hàng. Cty làm ơn dừng gọi cho khách hàng ko có nhu cầu đi. 1 ngày gọi hơn cả chục cuộc. Bộ ko thấy phiền à. Nếu còn gọi, tôi sẽ kiện cty theo nghị định 91/2020/NĐ-CP"
+10875996450,1,2024-01-29,0,,0,0,,1,Chán. Cập nhật để có đc phiên bản tốt hơn chứ k phải phiên bản tệ như này. Đề nghị k cập nhật vớ vẩn nữa
+10875563315,1,2024-01-29,0,,0,0,,1,Chuyển app. Càng cập nhật càng tệ. 1 sao
+10875557976,1,2024-01-29,0,,0,0,stability,1,"Suốt ngày bảo trì và nâng cấp. Dell có cái app nào mà suốt ngày bảo trì, tạm ngưng, rồi đang khởi động hệ thống. Bắt cập nhật mới liên tục mà nhìn càng ngày càng chán"
+10875554835,1,2024-01-29,1,,0,0,,1,"Quá bẩn. Bán thông tin khách hàng, bị các bên môi giới gọi điện làm phiền liên tục"
+10788971883,1,2024-01-06,1,,0,0,,1,Ăn cắp thông tin người dùng. Spam gọi điện làm phiền.
+10773184665,1,2024-01-02,0,,0,0,,1,"Bất tiện. Càng nâng cấp càng bất tiện, riếc làm biếng vào app luôn"
+10754306764,1,2023-12-28,0,,0,0,fraud,1,"App lừa đảo. Mua cổ phiếu trên app sau đó bán trên app thi không thể bán đc, đặt lệnh thấy trạng thái chờ rồi thoát ra cái vào lại ko thấy lệnh bán nữa"
+10753011346,1,2023-12-28,0,,0,0,ui,1,Tồi tệ. Giao diện kém. Gọi làm phiền suốt ngày.
+10749325729,1,2023-12-27,0,,0,0,,1,Bị làm phiền bởi CSKH
+10746622563,1,2023-12-26,0,,0,0,stability|fees,1,"App tào lao. Khó đăng nhập và thao tác, tính phí cao"
+10725891954,1,2023-12-21,1,,0,0,,1,Bớt bán thông tin người dùng lại. Yêu cầu VPS không”CHIA SẺ” thông tin người dùng cho bên thứ 3
+10725813264,3,2023-12-21,0,,0,0,,1,Mất mã chứng khoán đã lưu. Hi dev team Không biết trong quá trình migrate dữ liệu như nào nhưng mình thấy thỉnh thoảng mã danh mục đã lưu của mình bị mất Mong đội dev kiểm tra và fix bug
+10722593269,1,2023-12-20,0,,0,0,,1,rất kém. mọi người không nên cài app này sử dụng. Nhân viên cskh gọi làm phiền rất nhiều!!!
+10721976756,1,2023-12-20,1,,0,0,onboarding|fraud,1,lộ thông tin khách hàng. mới đăng ký dùng xong bị leak data ra 1 đống thằng lừa đảo chứng khoán ngày nào cũng gọi rủ tham gia
+10684623493,1,2023-12-12,0,,0,0,ui,1,"Giao diện mới kém, giao diện cũ đang đẹp.. Tôi dùng giao diện cũ quen, và rất khó chịu khi dùng giao diện mới. Vps hạn chế đổi giao diện gây khó sử dụng"
+10684008702,3,2023-12-12,0,,0,0,,1,"UI và UX quá kém. Phần cần thiết nhất là danh sách cổ phiếu lại không hiển thị đầu tiên, hãy làm như các cty khác đã làm như Vndirect, Ssi Phần thông báo nên có nút bấm “đánh dấu đã đọc hết”"
+10669640373,1,2023-12-08,1,,0,0,,1,"CÔNG TY BÁN THÔNG TIN KHÁCH HÀNG. Đã có tài khoản và có người tư vấn nhưng mỗi ngày vẫn nhận trên dưới 10 cuộc từ nhân viên môi giới bên công ty mời chào vào nhóm,thông tin khách hàng không được công ty tôn trọng,làm phiền liên tục"
+10665490089,1,2023-12-07,0,,0,0,,1,"App lởm vcc. Càng thay đổi càng chán lởm vcc , phức tạp hoá các lệnh mua bán"
+10659100412,2,2023-12-05,0,,0,0,stability,1,App chưa tốt. Cần bổ sung thêm đồng hồ thời gian  Hay bị đơ và tự đăng xuất Các phím lệnh nên tô màu khi chọn cho dễ nhìn Bổ sung thêm thông tin tổng số ngàn tỷ giao dịch trong 1 ngày
+10649104751,1,2023-12-02,0,,0,0,stability,1,"Bảo trì. Kết hợp với ngân hàng nhưng hay bảo trì, và thời gian bảo trì quá thời gian trong thông báo"
+10634761312,1,2023-11-28,0,,0,0,ui,1,Trải nghiệm kém. Thiết kế danh mục và xem thông tin khó khăn. Không bảng giá theo dõi. Trải nghiệm không tốt như SSI.
+10611019946,1,2023-11-22,1,,0,0,,1,"Nhân viên VPS làm phiền quá nhiều!. Cả tháng nay,hầu như ngày nào cũng nhận cuộc gọi từ nhân viên VPS. Không thể chịu nổi"
+10593574985,1,2023-11-17,1,,0,0,,1,Gọi điện làm phiền quá nhiều. Gọi quá nhiều cuộc gọi mời vào nhóm rồi học hành chia sẻ các thứ. Dù đã bảo k có nhu cầu rất nhiều lần. Ngày nào cũng vài cuộc ai mà chịu nổi
+10587657507,1,2023-11-15,0,,0,0,stability|ui,1,"Xấu, khó sử dụng. Giao diện kém, đơ làm khó người dùng. Càng update càng khó sử dụng, giao diện KHÔNG thông minh. Kém nhất trong các công ty CK."
+10586722071,1,2023-11-15,1,,0,0,,1,"Gọi làm phiền quá nhiều. Gọi làm phiền KH liên tục, spam kinh khủng dù KH đã từ chối rất nhiều lần và đề nghị bỏ thông tin ra k gọi nữa. Lần đầu tiên phải review ntn vì rất bức xúc, quá tệ"
+10583533496,1,2023-11-14,0,,0,0,stability,1,"App chán. Suốt ngày cập nhật và sửa lỗi, lại phải Đăng nhập mất thời gian"
+10555724254,1,2023-11-06,0,,0,0,onboarding|stability,1,Tệ. Vps không vào được app bắt đăng nhập để lấy otp đăng nhập. App ngu hay gì
+10555178373,1,2023-11-06,0,,0,0,,1,"Siêu tệ. App smart gì mà rất ngu, cải tiến lần sau tồi hơn lần trước, theo dõi thị trường rất khó khăn. Chỉ muốn đấm vào mặt cái thằng phụ trách làm app này"
+10540719312,2,2023-11-02,0,,0,0,ui,1,"Kém và ngu ngốc. Cải cách liên tục, nhưng mà cải lùi, càng ngày càng kém, giao diện càng ngày càng khó nhìn cho người sử dụng. Nếu không phải còn cp chưa bán hết chắc chắn sẽ đổi không xài VPS.  Quá tệ"
+10540672191,2,2023-11-02,0,,0,0,onboarding|stability,1,"Lỗi không đăng ký được tài khoản. Lỗi trùng tên và ngày sinh không đăng lý được tài khoản, mặc dù chưa đăng ký bao giờ"
+10530436527,1,2023-10-30,0,,0,0,,1,đánh giá tiêu cực. dịch vụ hỗ trợ khách hàng quá kém toàn bost tl rất khó chịu
+10519312031,1,2023-10-27,0,,0,0,,1,Ngu dốt. App rất đần và ngu + vô tri
+10515864923,1,2023-10-26,0,,0,0,stability|money,1,"App cực kì đơ. Chuyển rút tiền không được, app quá đơ sau lần update tháng 10/203"
+10512866946,1,2023-10-25,0,,0,0,ui,1,Phiên bản mới chán Dùng phiên bản cũ hơn. Khó dùng phiên bản cũ dùng ôke hơn
+10512462646,1,2023-10-25,0,,0,0,onboarding|stability,1,"Cực kỳ bực mình. Tự dưng không thể vào được tài khoản, gọi tổng đài hướng dẫn lằng nhằng! Kêu bảo mật 2 lớp nhưng tự dưng khiến khách hàng không thể vào được, bảo cần nhập smart otp mới đăng nhập được nhưng muốn lấy smart otp lại cần đăng nhập! Con gà đẻ ra quả trứng hay quả trứng nở ra con gà!"
+10509635459,1,2023-10-24,1,,0,0,,1,"App thu thập data của khách hàng. App lấy data của khách hàng rồi bán cho các bên hội nhóm, bị làm phiền rất nhiều mỗi khi có phát sinh giao dịch trên app. Yêu cầu ban lãnh đạo của app làm nghiêm ngặt hơn về vấn đề này !"
+10509019202,1,2023-10-24,0,,0,0,,1,"Chán. Càng cải tiến càng lùi, không hiểu kiểu gì, 1 sao là còn cao"
+10508974429,1,2023-10-24,0,,0,0,,1,Đề nghị. Tông màu nền lệnh và mã cp đưa về trạng thái cũ tông màu tối.sáng quá rối mắt
+10508854432,1,2023-10-24,0,,0,0,ui,1,"Càng update càng dở. Phiên bản mới chán ko chịu nổi, danh mục theo dõi đâu, càng update càng khó dùng. Thay máu IT đi :)"
+10498571096,3,2023-10-21,0,,0,0,stability|money|fees,1,"Tạm. Giao dịch thông suốt, ko bị đơ khi tt biến động như app khác. Nhược điểm phí gd cao hơn tb, nhiều chức năng ko dùng đến, rút tiền mất phí, đặt lệnh khó"
+10495012569,1,2023-10-20,0,,0,0,onboarding,1,"Hết cíu!. K đăng ký smart otp, xong gọi báo tổng đài mãi k đưa về sms otp được để vào đăng ký smart otp"
+10478250386,5,2023-10-15,0,referral_spam,0,0,,0,Nhập mã G72033. Mọi người nhập mã giới thiệu tui ii G72033
+10459208070,1,2023-10-10,0,,0,0,money|fees|ui,1,"Giao diện kém, thu phí cao. Giao diện kém, khó thao tác, không hỗ trợ tool phân tích chuyên sâu, không cập nhật liên kết tin tức cho người dùng, nhân viên tư vấn không am hiểu kiến thức, toàn kiểu lùa gà, phí dịch vụ cao. Ngoài thu phí duy trì, còn thu phí chuyển tiền về tài khoản ngân hàng của chính người dùng . Thôi đổi qua công ty ck khác cho lành."
+10444242722,1,2023-10-06,0,,0,0,onboarding|ui,1,"App thiết kế ngu. Đã login bằng faceid rồi, mà còn bắt nhập passcode otp ngay sau đó"
+10412997141,1,2023-09-27,0,,0,0,,1,Cùi bắp. App cùi bắp bảo mật kém
+10384064412,1,2023-09-19,0,,0,0,,1,Không hài lòng. Tiền ra lâu hơn tiền nạp vào Lúc cần không biết phải làm sao
+10362863804,1,2023-09-13,0,,0,0,ui,1,App dõm. giao diện rất chán quét thông tin không chính xác nhân viên hỗ trợ nghiệp vụ kém
+10357997965,1,2023-09-11,0,,0,0,,1,App chứng khoán hay game???. Update còn nhiều hơn game bọn con nít Tuần nào cũng update
+10356119315,3,2023-09-11,0,,0,0,,1,Cập nhật. Trên appstore hiện cập nhật mà ko báo trên app smartone để biết mà cập nhật Cần làm notification rõ ràng hơn để người dùng nắm đc thông tin mà cập nhật
+10346406744,1,2023-09-08,0,,0,0,money,1,chán. rút tiền lằng nhằng
+10343303027,1,2023-09-07,0,,0,0,,1,"App ngu như bò. Dmm suốt ngày bắt cập nhập, app ngu như bò"
+10342193300,1,2023-09-07,0,,0,0,,1,"Góp ý. Khó sử dụng hơn Vndirect nhiều,  Tôi mới chuyển từ đó sang mà khó check lãi lỗ  Nên tham khảo thêm app bên VND và nhiều bên khác app nhé"
+10338912246,5,2023-09-06,0,,0,0,ui,1,"Chất lượng. App tốt, giao diện đẹp"
+10337128943,1,2023-09-05,0,,0,0,onboarding|stability,1,"Suốt ngày lỗi ko gửi otp, cứ 1 thời gian là bị lỗi ko gửi otp sau khi nhập mật khẩu lớp 2. Lởm quá.. Lởm quá. Từ ngày sinh ra cái mật khẩu lớp 2. Suốt ngày lỗi"
+10337118455,1,2023-09-05,0,,0,0,stability,1,"Lỗi liên tục, app dởm. App quá tệ, hay lỗi, đăng nhập SmartOTP đúng mà cứ báo tài khoản & mật khẩu k đúng . App dởm 👎👎👎👎"
+10307478151,1,2023-08-28,0,,0,0,ui,1,Cập nhật quá nhiều. App cập nhật liên tục. Giao diện không tối ưu
+10307102434,1,2023-08-28,0,,0,0,ui,1,"Giao diện khó. Không tìm nhanh mã được. Giao diện rườm rà. Cứ đơn giản như vndirect rất dễ hiểu, dễ tìm mã nhanh"
+10306883952,1,2023-08-28,0,,0,0,,1,Hix. Cập nhật suốt mà chưa ưng. Oải
+10306882703,3,2023-08-28,0,,0,0,,1,Vps trừ phí. Trừ phí quá nhiều
+10306857786,1,2023-08-28,0,,0,0,,1,"App cùi. Thay đội ngũ DEF khác đi, nhìn các app khác mà học tập, làm cái app vừa cùi vừa bảo thủ, khách hàng góp ý không thấy thay đổi."
+10305322940,5,2023-08-27,0,,0,0,,1,Vps dùng app mượt. Dùng rất tốt
+10292638355,1,2023-08-24,1,,0,0,onboarding,1,"VPS bán thông tin khách cho rất nhiều công ty tài chính. Hồi trước đăng ký Mbs ko sao, từ ngày mở tk VPS đến nay hơn 2 năm mà cứ vài ngày là có công ty tài chính gọi. DỊCH VỤ KÉM"
+10287484331,1,2023-08-22,0,,0,0,onboarding,1,Mang bực vào người. Áp gì mà tài song đăng kí hết rồi thoát ra vào lại nó bảo tài khoản quý khách trưa tồn tại Ko hiểu logic thằng tạo ra áp sáng này luôn anh em không nên tải mang vực vào người
+10280014900,1,2023-08-20,0,,0,0,,1,Nhận xét. Dao diện trên đt ko quay ngang được
+10271360725,1,2023-08-18,0,,0,0,,1,Tệ. suốy ngày cập nhật
+10270767279,1,2023-08-18,0,,0,0,,1,"Tẩy chay. Bị bọn nhân viên lùa vô xài cái app như c, phí đắt, khuyên mọi người đừng tải app này"
+10267623914,5,2023-08-17,0,,0,0,stability,1,"App mượt. App bảo mật tốt, giao dịch nhanh ít bị lỗi thích hợp nhiều sản phẩm và giao dịch uy tín. Rất hài lòng"
+10259856096,1,2023-08-15,0,,0,0,stability,1,"Xóa app hộ cái. App bị ngu à, bực mình dã man, đổi mk làm theo hướng dẫn rồi, đổi mấy chục lần ko đc là ko đc, tạo app kiểu gì v, có cái đổi mk ko cũng lỗi lên lỗi xuống, mặc dù đã làm theo hướng dẫn thông báo, xóa cái app đi"
+10255308467,1,2023-08-14,0,,0,0,onboarding|stability,1,"App tệ. App thường xuyên lỗi đăng nhập làm lỡ giờ giao dịch, liên hệ tổng đài hỗ trợ 2 ngày liên tiếp không thấy phản hồi, mọi người nên cân nhắc về việc chọn công ty để mở tài khoản giao dịch. Đây là trải nghiệp tệ, quá tệ"
+10242119455,1,2023-08-10,0,,0,0,,1,app như bòi. thằng ngu nào thêm tính năng bảo mật 2 lớp thế
+10235744559,1,2023-08-09,0,,0,0,stability,1,"App quá kém. App đơ, đứng im vcl"
+10235594288,5,2023-08-09,0,referral_spam,0,0,onboarding|promo,0,"Good. App dễ sử dụng và trực quan nhất trong các sàn mua bán chứng khoán!! Nhập mã giới thiệu 601157 để mở tài khoản với nhiều ưu đãi, mình sử dụng được nhiều gói VIP."
+10235188115,2,2023-08-09,0,,0,0,stability,1,Lỗi đăng nhập. Gì mà đăng nhập cứ báo hệ thống đang khởi động là sao
+10233886348,3,2023-08-08,0,,0,0,ui,1,"Bổ sung tính năng liệt kê top tăng, giảm (theo tuần, tháng). Bổ sung tính năng như trên và bổ sung giao diện tối"
+10230577183,1,2023-08-08,0,,0,0,onboarding|stability,1,Ứng dụng không hoạt động. Không biết là smart OTP hay là stupid OTP. Tôi không thể mở được ứng dụng để lấy mã OTP và không còn phương án nào để đăng nhẬp tài khoản
+10229349861,1,2023-08-07,0,,0,0,stability,1,Lỗi. Tôi bị văng app trên iphone ios 13.4. Ko thể vào app được.
+10229070250,3,2023-08-07,0,,0,0,stability,1,Lỗi. Sao mình cập Nhật xong không vào được nữa
+10228589899,1,2023-08-07,0,,0,0,stability,1,Lỗi không đăng nhập được vào. App tự dưng update bản mới xong không vào được là saoo nhỉ?
+10228569037,1,2023-08-07,0,,0,0,,1,Crash ứng dụng. Ứng dụng sau khi cập nhật phiên bản mới bị crash..rất khó chịu
+10227915071,1,2023-08-07,0,,0,0,money,1,Nạp tiền và thời gian xử lý. Nạp tiền vào đã chưa về tài khoản còn nhùng nhằng quá chán
+10212993255,1,2023-08-03,0,,0,0,yield,1,"Lãi suất Margin 14% tối đa là mắc hơn những công ty khác. Chất lượng không bằng ssi mà lãi suất ký quỹ 14% tối đa quá cao , yêu cầu dưới 13% !"
+10209800780,5,2023-08-02,0,referral_spam,0,0,ui,0,Chứng khoáng. App để đầu tư chứng khoáng ok dễ dùng Ai tải về dùng mã giới thiệu của mình G19201 sẽ có ngay 1tr trong tài khoản
+10179989826,1,2023-07-25,0,,0,0,,1,"Hiển thị lãi/lỗ. Phần lãi màu xanh lá nhìn rõ, phần lỗ màu đỏ với nền xám rất khó nhìn, đề nghị chỉnh lại nền hoặc màu chữ để tiện theo dõi"
+10156876378,1,2023-07-19,0,,0,0,ui,1,Giao diện ssi hay hơn. Làm giống ssi đi bạn
+10148577630,2,2023-07-17,0,,0,0,,1,Không có phiên bản dùng cho ipad. Nên làm phiên bản cho ipad
+10139535288,1,2023-07-14,0,,0,0,onboarding|stability,1,App này quá tuỳ tiện. Sim tự nhiên yêu cầu đăng nhập bằng mã otp mà ko thông báo qua gmail cho khách hàng. Bực mình cái otp
+10138255958,5,2023-07-14,0,referral_spam,0,0,onboarding|fees,0,Miễn phí 6 tháng. Nhập mã X771 khi mở tk để miễn phí giao dịch 6 tháng
+10136160918,4,2023-07-13,0,,0,0,ui,1,Góp ý xây dựng. Mong nhà phát triển sớm đưa giao diện tối lên app để quan sát bảng giá đỡ bị chói mắt hơn ạ
+10114129262,3,2023-07-07,0,,0,0,ui,1,"K hay. App này kém, mỗi lần vô là mỗi lần bắt uodate phiên bản mới. Giao diện k hay"
+10112262539,5,2023-07-07,0,,0,0,,1,"Chân Chính 0908.35.7968. Chân chính - Thật thà - Dũng cảm ACE đầu tư chứng khoán add Zalo em hỗ trợ thông tin, tư vấn, cập nhật phân tích cho anh chị nhé. Trân trọng! 0908.35.7968"
+10101901484,3,2023-07-04,0,,0,0,stability,1,Lỗi không hiện danh mục. Phần những danh mục đã lưu vào theo dõi liên tục gặp lỗi lúc hiện lúc không yêu cầu khắc phục sớm!
+10092945421,3,2023-07-01,0,,0,0,ui,1,"Kém. Giao diện rối mắt, thiếu nhiều chức năng. Không tiện lợi logic như TCBS"
+10083907601,1,2023-06-29,0,,0,0,stability,1,"App hỗ trợ quá tệ. App không đăng nhập được, gọi hỗ trợ liên tục không có sự trợ giúp"
+10083865515,1,2023-06-29,0,,0,0,stability|ui,1,App tệ. App gì càng update càng khó dùng. Chs bắt đăng nhập 2 lớp. Ai rảnh đâu.
+10062545725,1,2023-06-23,0,,0,0,,1,Cập nhật quá nhiều. A
+10058868115,1,2023-06-22,0,,0,0,fees,1,"app quá tệ. app rất tệ, thu phí giao dịch cao mà app tệ dã man, hotline gọi ai nghe máy"
+10055655653,1,2023-06-21,0,,0,0,money,1,Phí app cao quá. Phí app vs phí rút tiền cao quá
+10049021731,2,2023-06-19,0,,0,0,,1,"Tệ. Bắt cập nhật quá nhiều, không cho bỏ qua, cứ lúc cần vào là cập nhật"
+10048875357,1,2023-06-19,0,,0,0,,1,Chán. Lúc nào cũng yêu cầu cạp nhật vậy?
+10048738650,5,2023-06-19,0,,0,0,,1,Cập cccc. Tuần nào mở cũng bắt cập nhật phát điên
+10048689494,1,2023-06-19,0,,0,0,,1,Bỏ. Chẳng hiểu thu phí 27k làm gì
+10048670381,2,2023-06-19,0,,0,0,money|fees,1,Cập nhật mãi. Mới 2 3 ngày không vào app là phải cập Nhật mới cho vào. Rồi còn dịch vụ sim tính phí các kiểu. Rút tiền xoá app đã. Mệt app quá.
+10048615124,2,2023-06-19,0,,0,0,,1,App kém. Vài bữa lại thấy báo cập nhật.
+10048584143,1,2023-06-19,0,,0,0,stability,1,Thu phí hàng tháng là thấy ghét rồi. Chả có bên nào thu phí hàng tháng cả. Đúng là làm ăn chộp giật. Vớ vẩn
+10048439501,1,2023-06-19,0,,0,0,ui,1,"Giao diện khó dùng, ko xem được đồ thị của các mã cổ phiếu trong danh mục toàn phải dùng app khác để xem"
+10037980123,5,2023-06-16,0,,0,0,,1,"app nhiều cái tien, để su dung. ok"
+10036285877,1,2023-06-15,0,,0,0,ui,1,User. Tự nhiên nhét cái safy và hedging vào làm chiếm 1 mớ diện tích màn hình. Thiết kế xứng đáng 1 sao
+10035078648,1,2023-06-15,0,,0,0,onboarding|stability|ui,1,Càng ngày càng tệ. Tự nhiên vào app là không thoát khỏi giao diện chọn sử dụng smart OTP App càng ngày càng tệ và lỗi thời. Đang còn cầm cổ phiếu chưa bán thôi chứ tư duy và cách làm ăn của các bạn sẽ không giữ chân khách hang duoc lau dau
+10034852369,1,2023-06-15,0,,0,0,stability,1,"Bất tiện. Xử dụng toàn lỗi, bất tiện, cùi bắp"
+10031271755,1,2023-06-14,0,,0,0,,1,"Tự nhiên nâng cấp , ko báo khách hàng, tư vấn cũng không biết. Coi thường khách hàng, đến cả tư vấn viên cũng bất ngờ ko biết về bảo mật mới."
+10024867662,1,2023-06-12,0,,0,0,,1,Siêu tệ. Nhân viên tổng đài gì gọ hoài ko đc? Hay chê khách hàng vậy hả
+10024550153,1,2023-06-12,0,,0,0,stability|ui,1,"App thu cực nhiều phí. App lỗi, thu nhiều phí, giao diện khó dùng"
+10012668234,1,2023-06-08,0,,0,0,,1,App tồi!. 1 doanh nghiệp tệ nạn cho Xã Hội
+10007830285,1,2023-06-07,0,,0,0,stability|ui,1,"Tu. Về như cũ còn biết cách giao dịch,giao diện mới thế này thao tác chậm thôi chuyển sang v"
+10006005431,1,2023-06-07,0,,0,0,,1,"Không đáng dùng. App rất tệ, thu phí cũng cao hơn các sàn khác"
+9997009466,1,2023-06-04,0,,0,0,,1,Kém. Thấy làm ăn lời là thu phí tiền. Haizzz....
+9989641284,1,2023-06-02,0,,0,0,,1,"App quá kém. Mở 1 tính năng như Safy , chẳng có cách nào quay lại màn hình chính. App cực kỳ tệ."
+9986142285,3,2023-06-01,0,,0,0,,1,Cần thêm nút đã đọc hết thông báo. Không có nút đọc hết hoặc xác nhận đọc hết thông báo nên nó cứ hiện thông báo chưa đọc. Nhiều khi nhiều thông báo chọn từng thông báo rất bực mình. Hầu hết ứng dụng nào cũng có tính năng này.
+9982719535,5,2023-05-31,0,,0,0,,1,SmartOne. App nhiều tính năng Dễ dàng thao tác
+9982716330,5,2023-05-31,0,,0,0,,1,"Quá hay. Có nhiều sản phẩm, nên sử dụng"
+9982677731,5,2023-05-31,0,,0,0,ui,1,"App tiên tiến. App có nhiều sản phẩm hay, giao diện update thường xuyên"
+9980961784,5,2023-05-30,0,,0,0,,1,Service. Sp tốt ❤️❤️❤️❤️❤️❤️
+9796021703,5,2023-04-07,1,,0,0,ui,1,Đánh giá. Giao diện dễ nhìn dễ sử dụng
+9663424215,1,2023-02-28,1,,0,0,promo,1,Rất bức xúc. Thật sự rất bức xúc Nhân viên gọi điện quảng cáo quá nhiều Đã nói ko có nhu cầu Mà spam liên tục
+9624197755,1,2023-02-17,1,,0,0,,1,Để lộ thông tin khách hàng. Không nên tin tưởng app này
+9516160142,1,2023-01-17,1,,0,0,,1,Kém. Cập nhật lên không biết xem sàn hose như thế nào
+9313776627,5,2022-11-21,2,,0,0,,1,"Công nghệ. Công nhận công ty này rất nỗ lực update công nghệ, rất nhiều tính năng mới bên khác không có nên vote 5 sao nhé"
+8861561463,1,2022-07-11,1,,0,0,,1,Tuần nào cũng cập nhật mà không biết là cập nhật cái gì. Chê
+8432645267,1,2022-03-08,1,,0,0,stability|money,1,"app như cái củ lol. cứ hở tí là đớp, tiền vè chứng khoán t1 hay t0 ứng tiền cũng đớp 50k, bán chứng khoán cũng đớp phí, mỗi tháng đóng 30k bảo trì. rác vcl"
+8205496119,4,2022-01-05,1,,0,0,money,1,"giúp. sao ko rút tiền ra đc,báo tk không được thực hiện chuyển cùng tk"
+7780034315,1,2021-09-07,5,,0,0,promo|closure,1,"App bắn quá nhiều thông báo. Quá nhiều thông báo linh tinh mà không thể tìm ra chỗ tắt, đành phải tắt tất cả. Tôi chỉ muốn nhận thông báo biến động tài khoản chứ ko phải quảng cáo mấy cái livestream từ sáng đến tối."
+7701587294,1,2021-08-17,2,,0,0,ui,1,Cần cải thiện lại giao diện. Cải thiện lại giao diện... nên học tập vndirect
+7658440969,1,2021-08-05,2,,0,0,,1,Ứng dụng quá tệ khuyên mọi người không nên dùng.. Không hiểu sai mật khẩu ở đâu mà cứ báo sai mật khẩu.
+7529499002,3,2021-07-02,34,,0,0,ui,1,"App cùi. Giao diện kém, vuốt thị trường khựng khựng để load, ko có ô tìm mã nhanh. Nên học theo app của SSI để phát triển. Một trải nghiệm dùng rất khó chịu"
+7464268448,1,2021-06-14,6,,0,0,stability,1,"Service fee. App của vps thu thêm phí của KH 27k mà không có thêm tiện ích nào, thu phí duy trì tài khoản còn đắt hơn xài dịch vụ banking, trong khi hệ thống app vẫn còn lỗi và trong thời gian hose chưa được ổn định"
+7463184391,1,2021-06-14,4,,0,0,,1,"Chả hiểu sao lại thu phí 27,5k. Tẩy chay vps. Tự dưng thu phí người dùng. Mua bán đã tốn phí rồi còn thu thêm phí. Tẩy chay vps"
+7254484654,1,2021-04-23,1,,0,0,stability,1,Phí SMS phi lý và mạng còn chậm quá. SMS phi lý và mạng còn chậm quá. Chỉ tập trung nâng cấp tính năng mà dung lượng mạng nội bộ VPS không tăng
+7142545148,1,2021-03-25,1,,0,0,onboarding,1,Cccd mới có gắn chip ko nhận dạng dc. Mình xài căn cước công dân mới có gắn chíp mà hệ thống không nhận dạng được nên không thể đăng kí tài khoản được
+7021846546,2,2021-02-21,1,,0,0,,1,Cần hoàn thiện hơn. Phần xem các mã ck nên có mục lưu một số mã ck để theo dõi được nhiều một lúc
+6816428843,4,2021-01-01,5,,0,0,ui,1,Giao diện app khó nhìn. Giao diện đang rất khó nhìn.. Mong cải thiện sớm.

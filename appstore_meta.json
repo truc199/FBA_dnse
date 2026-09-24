@@ -1,0 +1,32 @@
+{
+  "pulled": "2026-09-24",
+  "apps": {
+    "vn.com.encapital.arrow": {
+      "app_store_id": 1529981425,
+      "track_name": "Entrade X by DNSE: Stocks",
+      "rating_count": 1490,
+      "rating_average": 4.04161,
+      "written_reviews_pulled": 332,
+      "first_date": "2020-11-02",
+      "last_date": "2026-09-21"
+    },
+    "vn.com.vpbs.smartone": {
+      "app_store_id": 1431656423,
+      "track_name": "VPS SmartOne",
+      "rating_count": 5756,
+      "rating_average": 3.02901,
+      "written_reviews_pulled": 518,
+      "first_date": "2021-01-01",
+      "last_date": "2026-09-13"
+    },
+    "com.fpts.eztrade": {
+      "app_store_id": 6737305302,
+      "track_name": "FPTS EzTrade",
+      "rating_count": 76,
+      "rating_average": 2.81579,
+      "written_reviews_pulled": 205,
+      "first_date": "2025-02-24",
+      "last_date": "2026-09-08"
+    }
+  }
+}
