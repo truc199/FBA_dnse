@@ -2,19 +2,25 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
-import os, sys
+import json, os, sys
 
 _HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, _HERE)
 import brokers as BR
 
+with open(os.path.join(_HERE, "dnse_financials.json"), encoding="utf-8") as _f:
+    FS = json.load(_f)
+FSQ, FSH, FSY = FS["quarterly"], FS["half_year"], FS["annual"]
+TARGET_REVENUE, TARGET_PBT = 1736.0, 550.0     # 2026 AGM resolution
+
 OUT = os.path.join(_HERE, "fig")
 os.makedirs(OUT, exist_ok=True)
 
-# validated categorical slots 1-3 from the reference palette
+# validated categorical slots 1-4 from the reference palette
 BLUE   = "#2a78d6"
 ORANGE = "#eb6834"
 AQUA   = "#1baf7a"
+YELLOW = "#eda100"
 INK    = "#1a1a1a"
 MUTED  = "#6b6b6b"
 GRID   = "#d9d9d9"
@@ -87,13 +93,15 @@ save(fig, "fig1_derivatives_share")
 
 # ---------------------------------------------------------------- Fig 3
 # Pre-tax profit margin by reporting period (single scale, no mixed-length bars)
-per = ["FY2025", "Q1 2026", "Q2 2026", "H1 2026"]
-rev = [1467.0, 395.0, 453.1, 848.2]
-pbt = [340.2, 14.2, 98.9, 113.1]
+periods3 = [("FY2025", FSY["FY2025"]), ("Q4 2025", FSQ["2025Q4"]), ("Q1 2026", FSQ["2026Q1"]),
+            ("Q2 2026", FSQ["2026Q2"]), ("H1 2026", FSH["2026H1"])]
+per = [p for p, _ in periods3]
+rev = [d["revenue"] for _, d in periods3]
+pbt = [d["pbt"] for _, d in periods3]
 mar = [p / r * 100 for p, r in zip(pbt, rev)]
 
 fig, ax = plt.subplots(figsize=(7.0, 3.0))
-bars = ax.bar(per, mar, color=[BLUE, ORANGE, ORANGE, ORANGE], width=0.5, zorder=3)
+bars = ax.bar(per, mar, color=[BLUE] + [ORANGE] * (len(per) - 1), width=0.5, zorder=3)
 for b in bars: b.set_linewidth(2); b.set_edgecolor(SURF)
 for i, (m, r, p) in enumerate(zip(mar, rev, pbt)):
     ax.text(i, m + 0.9, f"{m:.1f}%", ha="center", fontsize=9.5, color=INK, fontweight="bold")
@@ -108,21 +116,24 @@ save(fig, "fig3_revenue_margin")
 
 # ---------------------------------------------------------------- Fig 4
 # H1 2026 revenue composition
+h1 = FSH["2026H1"]
 comp_l = ["Interest on lending\nand receivables", "Brokerage\ncommissions",
-          "Investment\nincome", "Other"]
-comp_v = [336.1, 222.1, 193.4, 96.6]
-tot = sum(comp_v)
+          "Interest on\nheld-to-maturity\ninvestments", "Trading\ngains", "Other"]
+comp_v = [h1["rev_lending"], h1["rev_brokerage"], h1["rev_htm"], h1["rev_fvtpl"]]
+comp_v.append(h1["revenue"] - sum(comp_v))
+tot = h1["revenue"]
 
-fig, ax = plt.subplots(figsize=(7.0, 1.55))
+fig, ax = plt.subplots(figsize=(7.0, 1.7))
 left = 0
-colors = [BLUE, ORANGE, AQUA, "#b9c0c7"]
-for v, c, l in zip(comp_v, colors, comp_l):
+colors = [BLUE, ORANGE, AQUA, YELLOW, "#b9c0c7"]
+for i, (v, c, l) in enumerate(zip(comp_v, colors, comp_l)):
     ax.barh([0], [v], left=left, color=c, height=0.5, edgecolor=SURF, linewidth=2, zorder=3)
-    ax.text(left + v / 2, 0, f"{v / tot * 100:.1f}%", ha="center", va="center",
-            fontsize=9, color="white", fontweight="bold")
-    ax.text(left + v / 2, -0.44, l, ha="center", va="top", fontsize=8, color=INK)
+    if v / tot < 0.05:   # too narrow to carry a label underneath without colliding
+        ax.text(left + v, 0.3, f"{l} {v / tot * 100:.1f}%", ha="right", va="bottom", fontsize=8, color=INK)
+    else:
+        ax.text(left + v / 2, -0.4, f"{l}\n{v / tot * 100:.1f}%", ha="center", va="top", fontsize=8, color=INK)
     left += v
-ax.set_xlim(0, tot); ax.set_ylim(-1.15, 0.45)
+ax.set_xlim(0, tot); ax.set_ylim(-1.3, 0.45)
 ax.axis("off")
 ax.text(0, 0.42, f"H1 2026 operating revenue: VND {tot:,.1f} billion",
         fontsize=8.5, color=MUTED)
@@ -130,8 +141,9 @@ save(fig, "fig4_revenue_mix")
 
 # ---------------------------------------------------------------- Fig 5
 # Progress against the 2026 plan at the half year
-lab5 = ["Operating revenue\nVND 848.2bn of 1,736bn", "Pre-tax profit\nVND 113.1bn of 550bn"]
-pct5 = [48.9, 20.6]
+lab5 = [f"Operating revenue\nVND {h1['revenue']:,.1f}bn of {TARGET_REVENUE:,.0f}bn",
+        f"Pre-tax profit\nVND {h1['pbt']:,.1f}bn of {TARGET_PBT:,.0f}bn"]
+pct5 = [h1["revenue"] / TARGET_REVENUE * 100, h1["pbt"] / TARGET_PBT * 100]
 
 fig, ax = plt.subplots(figsize=(7.0, 2.3))
 bars = ax.barh(range(2), pct5, color=[BLUE, ORANGE], height=0.5, zorder=3)
@@ -139,7 +151,8 @@ for b in bars: b.set_linewidth(2); b.set_edgecolor(SURF)
 ax.axvline(50, color=INK, linewidth=1.4, linestyle=(0, (4, 3)), zorder=4)
 ax.text(51, -0.62, "Half-year pace", fontsize=8.5, color=INK)
 for i, v in enumerate(pct5):
-    ax.text(v + 1.2, i, f"{v:.1f}%", va="center", fontsize=9.5, color=INK, fontweight="bold")
+    x = 51.2 if 44 < v <= 50 else v + 1.2     # a label just short of 50 would sit on the dashed line
+    ax.text(x, i, f"{v:.1f}%", va="center", fontsize=9.5, color=INK, fontweight="bold")
 ax.set_yticks(range(2)); ax.set_yticklabels(lab5, fontsize=8.5)
 ax.invert_yaxis(); ax.set_xlim(0, 65)
 ax.xaxis.set_major_formatter(FuncFormatter(lambda v, p: f"{v:.0f}%"))

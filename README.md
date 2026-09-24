@@ -20,6 +20,7 @@ PATH or in the default install folder.
 | Step | File | What it does | Writes |
 |---|---|---|---|
 | 1 | `01_findex_fetch.py` | Pulls the whole Global Findex record for Vietnam from the World Bank API and checks every value in `findex_data.py` against it | `findex_raw.json` |
+| 1b | `01b_dnse_financials_fetch.py` | Pulls DNSE's full financial statements (income statement, balance sheet, cash flow, notes; every quarter since 2018) from Vietcap's data service and checks the figures typed into `07` against them | `dnse_financials_raw.json`, `dnse_financials_quarterly.csv`, `dnse_financials_annual.csv`, `dnse_financials.json` |
 | 2a | `02a_playstore_scrape_browser.js` | Google Play review collector, pasted into the browser console | CSV via clipboard |
 | 2b | `02b_playstore_scrape_python.py` | The same collector as a standalone script | `reviews_raw_<package>.csv` |
 | 2c | `02c_appstore_scrape.py` | Written reviews of the same apps from the Vietnamese App Store, plus Apple's star-rating counts; merges with earlier runs | `reviews_raw_ios_<package>.csv`, `appstore_meta.json` |
@@ -28,11 +29,13 @@ PATH or in the default install folder.
 | 4 | `04_segment_model.py` | Builds the two Findex indices and ranks the segments | `segment_model.json` |
 | 5a | `05a_charts_financial.py` | Figures 2, 7, 8, 9, 11 | `fig/*.png` |
 | 5b | `05b_charts_evidence.py` | Figures 1, 3, 4, 5, 6, 10 | `fig/*.png` |
+| 5c | `05c_charts_bctc.py` | Ten long-run charts of the filed statements, 2018 to Q2 2026, and a check of press figures against them; findings in `bctc_analysis.md` | `fig/bctc/*.png` |
 | 6 | `06_build_report.js` | Builds the Word report and prints the main-body word count | `FBAR2_2026_DNSE_Analysis.docx` |
 | 7 | `07_build_workbook.py` | Builds the 14-tab workbook | `FBA_Round2_DNSE_data_pack.xlsx` |
 
 ```bash
 python3 01_findex_fetch.py                 # optional, findex_data.py is already here
+python3 01b_dnse_financials_fetch.py
 python3 02b_playstore_scrape_python.py
 python3 02c_appstore_scrape.py             # about 4 minutes; run twice to fill gaps
 python3 03_reviews_clean.py --selftest
@@ -45,9 +48,10 @@ python3 07_build_workbook.py
 python3 recalc.py FBA_Round2_DNSE_data_pack.xlsx     # caches formula values
 ```
 
-`06` reads `reviews_tables.json` and `segment_model.json`, so every review and
-segment number in the report comes from the pipeline rather than being typed into
-the prose. If the top three segments ever change, `06` stops with an error, because
+`06` reads `reviews_tables.json`, `segment_model.json` and `dnse_financials.json`, so
+every review, segment and DNSE financial number in the report comes from the pipeline
+rather than being typed into the prose; `brokers.py`, `05a` and `07` read the same
+financials file. If the top three segments ever change, `06` stops with an error, because
 Sections 4.2 and 6 name that group in words.
 
 ## Network note
@@ -93,8 +97,28 @@ the published figures used; the old code and text said four words.
 built interactively and not saved. The current lists put the complaint themes in the
 same rank order.
 
+**DNSE's statements are pulled, not typed.** `01b` takes every line of the filings as
+Vietcap maps them onto the securities-company template, so brokerage, lending and
+proprietary revenue each come with their own direct cost. The half-year figures match
+the KPMG-reviewed statements of 14 August 2026 (on `ir.dnse.com.vn`) to the dong:
+pre-tax profit 111.6 billion, against the 113.1 of the quarterly statement of 20 July,
+so Q2 2026 is 97.4 rather than the 98.9 the press reported. The same pull corrected
+2025 revenue (1,457.9, not 1,467) and investment income, which the earlier pack took
+from trading gains for 2025 and from held-to-maturity interest for 2026.
+
+Three cautions. Template line 24 (`iss168`) reports loan-loss provisions and the
+borrowing cost of the loan book as one figure; the allowance on the balance sheet
+moves by a few billion a quarter while the line runs at 70 to 130 billion, so most of
+it is funding cost, and funding cost in the pack is estimated by removing the change
+in the allowance. Investors' securities off the balance sheet (`nos379`) are at par
+value, as note 26 of the statements says, so they understate market value and cannot
+be set against the annual report's 52,000 billion. And the press figure of 405 per
+cent growth in proprietary provisions for Q1 2026 is not reproduced by any line of
+the filings, so it was dropped.
+
 **Hand-entered, with sources.** `brokers.py` holds the exchange market-share tables,
-industry lending balances and quarterly profits. These come from HOSE and HNX
+industry lending balances and quarterly profits; its DNSE rows are read from
+`dnse_financials.json`. These come from HOSE and HNX
 announcements and from published financial statements; each block names its source.
 They are typed in rather than scraped, so check them against the source before citing.
 The FTSE constituent count is marked unverified there.
@@ -106,6 +130,8 @@ The FTSE constituent count is marked unverified there.
 | `findex_data.py` | `SEGMENTS`, `SEG2024` (51 indicators × 13 segments), `NATIONAL2024`, `TRENDS`; labels and themes hand-written, values checked by step 1 |
 | `reviews.py` | Generated by step 3b: cleaning log, ratings by year, generic-flag sensitivity, theme table, three-app comparison, 50 selected quotes |
 | `brokers.py` | HOSE, HNX and derivatives market share; lending balances; Q2 2026 profits; market totals |
+| `dnse_financials.json` | Step 1b output: DNSE key lines by quarter, half year and year, with derived ratios and their definitions |
+| `dnse_financials_quarterly.csv`, `dnse_financials_annual.csv` | Step 1b output: every line of the filed statements |
 | `segment_model.json` | Step 4 output read by the report |
 | `reviews_tables.json` | Step 3b output read by the report |
 | `reviews_raw_ios_*.csv`, `appstore_meta.json` | Step 2c output: App Store written reviews and star-rating counts |

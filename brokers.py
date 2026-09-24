@@ -18,7 +18,19 @@ SOURCES = {
              "Vietstock, 'Du no margin lap ky luc 454 ngan ty dong', July 2026",
     "profit":"Q2 2026 financial statements as tabulated by Mekong Asean, "
              "'So ke loi nhuan nhom cong ty chung khoan dau nganh'",
+    "dnse": "DNSE's own filings, pulled line by line by 01b_dnse_financials_fetch.py; Q2 2026 is the "
+            "KPMG-reviewed half year less the first quarter",
 }
+
+import json as _json
+import os as _os
+
+with open(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "dnse_financials.json"),
+          encoding="utf-8") as _f:
+    _FS = _json.load(_f)["quarterly"]
+DNSE_LENDING_Q2 = round(_FS["2026Q2"]["loans"], 1)
+DNSE_PBT_Q2 = round(_FS["2026Q2"]["pbt"], 1)
+DNSE_PBT_Q2_YOY = f"{(_FS['2026Q2']['pbt'] / _FS['2025Q2']['pbt'] - 1) * 100:+.1f}%"
 
 # ---------------------------------------------------------------- HOSE cash equities
 # rank, company, Q2 2026 share %, Q1 2026 share %
@@ -89,7 +101,7 @@ MARGIN_Q2_2026 = [
     ("VPBankS", 38200),
     ("VPS",     31300),
     ("HSC",     29000),
-    ("DNSE",     6303),
+    ("DNSE",     DNSE_LENDING_Q2),
 ]
 
 # ---------------------------------------------------------------- Profitability
@@ -100,7 +112,7 @@ PBT_Q2_2026 = [
     ("SSI",      1511, "+32%"),
     ("VPS",      1378, "+57%"),
     ("VNDirect", 1100, "+127%"),
-    ("DNSE",     98.9, "+8.7%"),
+    ("DNSE",     DNSE_PBT_Q2, DNSE_PBT_Q2_YOY),
     ("VIX",        75, "-95%"),
 ]
 
@@ -126,6 +138,7 @@ DNSE_POSITION = [
     ("Derivatives brokerage", 25.38, "% share", 100.0, 25.38),
     ("HNX listed-share brokerage", 2.88, "% share", 100.0, 2.88),
     ("HOSE listed-share brokerage", None, "% share", 100.0, None),
-    ("Lending balance", 6303, "VND bn", 453800, 1.39),
-    ("Q2 2026 pre-tax profit", 98.9, "VND bn", None, None),
+    ("Lending balance", DNSE_LENDING_Q2, "VND bn", MARGIN_TOTAL_Q2,
+     round(DNSE_LENDING_Q2 / MARGIN_TOTAL_Q2 * 100, 2)),
+    ("Q2 2026 pre-tax profit", DNSE_PBT_Q2, "VND bn", None, None),
 ]

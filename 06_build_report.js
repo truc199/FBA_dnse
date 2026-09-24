@@ -43,6 +43,33 @@ const store = name => RV.STORE_COMPARE.find(r => r[0].startsWith(name));
 const SG = RV.STORE_GROUPS;
 const IOS_N = RV.IOS_CLEANING_LOG.reduce((t, r) => t + r[1], 0);
 
+// DNSE's filed statements, pulled by 01b. Costs are negative, as filed.
+const FS = require('./dnse_financials.json');
+const FQ = FS.quarterly, FH = FS.half_year, FYR = FS.annual, FD = FS.derived;
+const Q1 = FQ["2026Q1"], Q2 = FQ["2026Q2"], Q4 = FQ["2025Q4"], HY = FH["2026H1"], FY25 = FYR["FY2025"];
+const TARGET_REV = 1736, TARGET_PBT = 550;
+const f0 = x => Math.round(x).toString();
+const money = x => x.toLocaleString('en-US', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+const whole = x => Math.round(x).toLocaleString('en-US');
+const growth = (a, b) => (a / b - 1) * 100;
+const margin = d => d.pbt / d.revenue * 100;
+const share = k => HY[k] / HY.revenue * 100;
+const fvtplNet = d => d.rev_fvtpl + d.cost_fvtpl;
+const debt = d => d.short_term_borrowing + (d.bonds_short || 0) + (d.bonds_long || 0);
+const QLIST = Object.keys(FQ);
+const BROKE_RUN = QLIST.length - QLIST.findIndex((p, i) => QLIST.slice(i).every(q => (FD[q].brokerage_net ?? 0) < 0));
+const OPEX_Q1 = growth(Q1.operating_cost, FQ["2025Q1"].operating_cost);
+// Same basis as the workbook's derived measures: average of the end-2025, Q1 and Q2 balances, annualised.
+const YIELD = HY.rev_lending / ((FY25.loans + Q1.loans + Q2.loans) / 3) * 2 * 100;
+const FUND = (-(HY.interest_expense + HY.cost_provision_and_loan_funding) - (FY25.loan_allowance - Q2.loan_allowance))
+  / ((debt(FY25) + debt(Q1) + debt(Q2)) / 3) * 2 * 100;
+const GROSS_GAIN = 1000 * YIELD / 100, NET_GAIN = 1000 * (YIELD - FUND) / 100;
+const L2E = Q2.loans / Q2.equity * 100;
+const BS_SHARE = share("rev_lending") + share("rev_htm") + share("rev_fvtpl");
+if (!(fvtplNet(Q4) < 0 && fvtplNet(Q1) < 0)) {
+  throw new Error("Trading assets no longer lost money in Q4 2025 and Q1 2026. Rewrite Section 4.4 and Table 4.");
+}
+
 // ---------------- word counter ----------------
 let BODY = false;
 let WORDS = 0;
@@ -223,8 +250,8 @@ c.push(new Paragraph({ children: [new PageBreak()] }));
 // ======================================================= EXECUTIVE SUMMARY
 c.push(H1("Executive summary"));
 c.push(P("DNSE Securities removed the price of trading. It was the first Vietnamese securities company to offer commission-free trading for life, and acquisition followed. By the middle of 2026 it served more than 1.7 million customers, roughly one eighth of all securities accounts in Vietnam, and it held 25.38 per cent of derivatives brokerage on the Hanoi Stock Exchange, second only to VPS."));
-c.push(P("Activity has not followed acquisition. In the same quarter DNSE intermediated 2.88 per cent of listed share trading on the Hanoi exchange and did not appear in the top ten on the larger Ho Chi Minh exchange, where tenth place required 2.94 per cent. Its lending book of VND 6,303 billion was 1.39 per cent of the industry total. Setting account share against trading share, an average DNSE account generates about a quarter of the cash equity trading value of an average market account."));
-c.push(P("The income statement shows what that costs. Operating revenue rose 58.9 per cent year on year in the first half of 2026 while the pre-tax profit margin fell from 23.2 per cent across 2025 to 13.3 per cent in the half year. Operating expenses rose 120 per cent in the first quarter of 2026 and provisions against the proprietary portfolio rose 405 per cent. At the half-year the firm had delivered 48.9 per cent of its revenue target and 20.6 per cent of its profit target."));
+c.push(P(`Activity has not followed acquisition. In the same quarter DNSE intermediated 2.88 per cent of listed share trading on the Hanoi exchange and did not appear in the top ten on the larger Ho Chi Minh exchange, where tenth place required 2.94 per cent. Its lending book of VND ${whole(Q2.loans)} billion was 1.39 per cent of the industry total.` + " Setting account share against trading share, an average DNSE account generates about a quarter of the cash equity trading value of an average market account."));
+c.push(P(`The income statement shows what that costs. Operating revenue rose ${f1(growth(HY.revenue, FH["2025H1"].revenue))} per cent year on year in the first half of 2026 while the pre-tax profit margin fell from ${f1(margin(FY25))} per cent across 2025 to ${f1(margin(HY))} per cent in the half year. Direct brokerage costs have exceeded brokerage commissions in each of the last ${BROKE_RUN} quarters, and operating expenses rose ${f0(OPEX_Q1)} per cent in the first quarter of 2026. At the half-year the firm had delivered ${f1(HY.revenue / TARGET_REV * 100)} per cent of its revenue target and ${f1(HY.pbt / TARGET_PBT * 100)} per cent of its profit target.`));
 c.push(P(`This report draws on company disclosures, exchange market share reports, World Bank Global Findex 2024 segment data for Vietnam and ${int(D.raw_n)} Google Play reviews of DNSE, with ${int(VPS[2] + FPTS[2])} reviews of two competitor applications, collected and cleaned for this study. The review evidence locates the friction. Among ${D.negative_1_2} cleaned negative reviews, ${f1(theme("stability")[5])} per cent concern crashes and login failures and ${f1(theme("onboarding")[5])} per cent concern account opening. A further ${f1(theme("fraud")[5])} per cent accuse the firm of deception.` + " Around a third of those name a cause, most often a sign-up bonus that requires a VND 2 million deposit or an account closure fee of VND 100,000; the rest are one-line accusations."));
 c.push(P(`Scoring the Findex segment matrix produces the priority customer group rather than assuming it. Adults with secondary education or more, adults in the labour force and the upper 60 per cent of the income distribution rank first, second and third, and the priority group is where they overlap: employed, secondary-educated adults in the upper income group. These segments combine a high propensity to hold investable balances with the largest unconverted pools, between ${f1(Math.min(...TOP3.map(r => r.unactivated_adults_m)))} and ${f1(Math.max(...TOP3.map(r => r.unactivated_adults_m)))} million adults each who hold an account and do not save through a financial institution.` + " The segment with the widest gap between digital habit and accumulated surplus is adults aged 15 to 24, which is the group a free application acquires most cheaply and monetises least."));
 c.push(P("The priority problem is revenue per account. The recommendation is a cash management and fund distribution layer that converts idle balances into funded, yield-bearing accounts, priced against bank deposit rates near 7 per cent. Higher assets per account expand the collateral base for margin lending, which is already the firm's largest revenue line. The 2026 annual general meeting approved a VND 3,500 billion bond programme that funds it, although it did not approve a fund management vehicle, so a licence or a distribution partner is the first step. Round 3 should test willingness to pay, the activation sequence and the effect on lending balances."));
@@ -264,10 +291,10 @@ BODY = true;
 c.push(H1("1. Introduction and business context"));
 
 c.push(H2("1.1 The organisation"));
-c.push(P("DNSE Securities Joint Stock Company is a Vietnamese securities firm listed on the Ho Chi Minh Stock Exchange under the code DSE. Its 2024 listing was the only initial public offering on the Vietnamese market that year. Charter capital stands at approximately VND 4,286 billion and total assets passed VND 15,000 billion at the end of 2025."));
+c.push(P("DNSE Securities Joint Stock Company is a Vietnamese securities firm listed on the Ho Chi Minh Stock Exchange under the code DSE. Its 2024 listing was the only initial public offering on the Vietnamese market that year." + ` Charter capital stands at VND ${money(Q2.charter_capital)} billion and total assets reached VND ${whole(FY25.total_assets)} billion at the end of 2025.`));
 c.push(P("The firm distributes entirely through its Entrade X platform and operates without a branch network. It became the first Vietnamese securities company to offer lifetime commission-free trading, so order execution is free and revenue comes from margin lending, advances against sale proceeds, custody and proprietary investment. In December 2022 it launched Vietnam's first per-position margin system, which manages leverage on an individual position rather than across the whole account. From May 2025 it has absorbed derivatives margin management fees on behalf of customers."));
 
-c.push(P("The market DNSE competes in is crowded and fragmenting. The ten largest firms accounted for 65.19 per cent of trading on the Ho Chi Minh exchange in the second quarter of 2026, down from 69.05 per cent three months earlier. Almost four percentage points of share moved to smaller firms in one quarter. Industry profit comes mainly from lending rather than from commissions, with VND 453,800 billion outstanding at the end of June 2026 against a regulatory cap of 200 per cent of equity. Pre-tax profit in that quarter ranged from VND 2,159 billion at VPBankS down to VND 98.9 billion at DNSE, which shows the scale difference between DNSE and the firms whose accounts it is winning."));
+c.push(P("The market DNSE competes in is crowded and fragmenting. The ten largest firms accounted for 65.19 per cent of trading on the Ho Chi Minh exchange in the second quarter of 2026, down from 69.05 per cent three months earlier. Almost four percentage points of share moved to smaller firms in one quarter. Industry profit comes mainly from lending rather than from commissions, with VND 453,800 billion outstanding at the end of June 2026 against a regulatory cap of 200 per cent of equity. Pre-tax profit in that quarter ranged from VND 2,159 billion at VPBankS down to VND " + money(Q2.pbt) + " billion at DNSE, which shows the scale difference between DNSE and the firms whose accounts it is winning."));
 c.push(Fig("fig11_peer_profit", 530));
 c.push(Cap("Figure 1. Pre-tax profit of selected Vietnamese securities firms, second quarter of 2026. DNSE ranks second in derivatives brokerage and last of these six firms by earnings."));
 
@@ -285,7 +312,7 @@ c.push(P("Five datasets were assembled. Four are secondary and published. One is
 c.push(T([2500, 3300, 3220],
   ["Dataset", "Content", "Source and period"],
   [
-    ["Company financials", "Quarterly and half-year revenue, profit, revenue lines, lending balance, accounts, plan targets", "DNSE investor relations disclosures and financial statements, FY2024 to Q2 2026"],
+    ["Company financials", "Every line of the income statement, balance sheet, cash flow and notes; accounts and plan targets", `DNSE filed statements, Q1 2018 to Q2 2026, retrieved from Vietcap's data service ${DATE(FS.pulled)}; investor relations releases`],
     ["Exchange market share", "Brokerage share on HOSE, HNX, UPCoM and derivatives for every firm in the top ten", "HOSE and HNX quarterly announcements, Q1 2024 to Q2 2026"],
     ["Industry cross-section", "Lending balances, pre-tax profit and revenue for the largest securities firms", "Q2 2026 financial statements compiled by Vietstock and Mekong Asean"],
     ["Financial inclusion", "51 Findex indicators for Vietnam across 13 demographic segments, plus five survey waves from 2011 to 2024", "World Bank Global Findex, open data interface source 28, retrieved 20 September 2026"],
@@ -328,7 +355,7 @@ c.push(Fig("fig1_derivatives_share", 555));
 c.push(Cap("Figure 2. DNSE derivatives brokerage market share, Hanoi Stock Exchange. The horizontal axis is in quarters. The second and third quarters of 2024 were not found in the sources consulted, so the line joins the first quarter of 2024 directly to the fourth."));
 
 c.push(H2("3.2 Conversion is not"));
-c.push(P("The same firm looks very different once activity replaces registration as the measure. In the second quarter of 2026 DNSE intermediated 2.88 per cent of listed share trading on the Hanoi exchange, ranking eighth of ten. It did not enter the top ten on the Ho Chi Minh exchange, where tenth place required 2.94 per cent. Its margin loan and advance balance of VND 6,303 billion, a record for the firm, was 1.39 per cent of the VND 453,800 billion lent across the industry."));
+c.push(P("The same firm looks very different once activity replaces registration as the measure. In the second quarter of 2026 DNSE intermediated 2.88 per cent of listed share trading on the Hanoi exchange, ranking eighth of ten. It did not enter the top ten on the Ho Chi Minh exchange, where tenth place required 2.94 per cent. Its margin loan and advance balance of VND " + whole(Q2.loans) + " billion, a record for the firm, was 1.39 per cent of the VND 453,800 billion lent across the industry."));
 c.push(Fig("fig2_monetisation_gap", 555));
 c.push(Cap("Figure 3. DNSE share of the Vietnamese market on five measures, second quarter of 2026. Each percentage is a share of its own market, and the five denominators differ."));
 c.push(P("Dividing trading share by account share gives the relative intensity of an average account. DNSE holds 12.27 per cent of the 13.85 million securities accounts in the market and produces 2.88 per cent of Hanoi listed share trading. An average DNSE account therefore trades at about 23 per cent of the value of an average market account. Both sides of that ratio count accounts rather than people, and one investor may hold accounts at several firms. The Ho Chi Minh exchange gives only an upper bound, because DNSE is outside its top ten: below 24 per cent. Lending shows the same pattern more sharply, at 1.39 per cent of industry balances against 12.27 per cent of accounts."));
@@ -350,13 +377,13 @@ c.push(Cap(`Figure 6. Mean ratings of three Vietnamese broker applications under
 }
 
 c.push(H2("3.4 What the gap costs"));
-c.push(P("Revenue growth has continued while profitability has not. Operating revenue reached VND 1,467 billion in 2025, up 77 per cent, and VND 848.2 billion in the first half of 2026, up 58.9 per cent. Pre-tax profit moved differently, from VND 340.2 billion in 2025 to VND 113.1 billion in the first half of 2026. The pre-tax margin fell from 23.2 per cent to 13.3 per cent, and touched 3.6 per cent in the first quarter."));
+c.push(P(`Revenue growth has continued while profitability has not. Operating revenue reached VND ${money(FY25.revenue)} billion in 2025, up ${f1(growth(FY25.revenue, FYR["FY2024"].revenue))} per cent, and VND ${money(HY.revenue)} billion in the first half of 2026, up ${f1(growth(HY.revenue, FH["2025H1"].revenue))} per cent. Pre-tax profit moved differently, from VND ${money(FY25.pbt)} billion in 2025 to VND ${money(HY.pbt)} billion in the first half of 2026. The pre-tax margin fell from ${f1(margin(FY25))} per cent to ${f1(margin(HY))} per cent, and was ${f1(margin(Q4))} and ${f1(margin(Q1))} per cent in the two quarters to March 2026.`));
 c.push(Fig("fig3_revenue_margin", 545));
-c.push(Cap("Figure 7. Pre-tax profit margin by reporting period. The first quarter of 2026 carried a 120 per cent increase in operating expenses, a 125 per cent increase in brokerage costs and a 405 per cent increase in provisions against the proprietary portfolio."));
-c.push(P("The composition of revenue explains the exposure. Interest on lending and receivables contributed 39.6 per cent of first half revenue and investment income 22.8 per cent, so a majority of revenue depends on balance sheet size and market direction rather than on customer transactions. Brokerage commissions, at 26.2 per cent, come mostly from derivatives."));
+c.push(Cap(`Figure 7. Pre-tax profit margin by reporting period. In the first quarter of 2026 operating expenses rose ${f0(OPEX_Q1)} per cent and brokerage costs ${f0(growth(Q1.cost_brokerage, FQ["2025Q1"].cost_brokerage))} per cent on a year earlier, and trading assets lost VND ${money(-fvtplNet(Q1))} billion net.`));
+c.push(P(`The composition of revenue explains the exposure. Interest on lending and receivables contributed ${f1(share("rev_lending"))} per cent of first half revenue, interest on held-to-maturity investments ${f1(share("rev_htm"))} per cent and gross trading gains ${f1(share("rev_fvtpl"))} per cent, so ${f1(BS_SHARE)} per cent of revenue depends on balance sheet size and market direction rather than on customer transactions. Brokerage commissions, at ${f1(share("rev_brokerage"))} per cent, come mostly from derivatives, and direct brokerage costs exceeded them by VND ${money(-(HY.rev_brokerage + HY.cost_brokerage))} billion in the half year.`));
 c.push(Fig("fig4_revenue_mix", 545));
 c.push(Cap("Figure 8. Composition of DNSE operating revenue, first half of 2026."));
-c.push(P("Against plan the position is clear. DNSE targets VND 1,736 billion of revenue and VND 550 billion of pre-tax profit for 2026. The half-year delivered 48.9 per cent of the revenue target and 20.6 per cent of the profit target, so the second half must produce VND 436.9 billion of pre-tax profit, which is 3.9 times the first half."));
+c.push(P("Against plan the position is clear. DNSE targets VND 1,736 billion of revenue and VND 550 billion of pre-tax profit for 2026. " + `The half-year delivered ${f1(HY.revenue / TARGET_REV * 100)} per cent of the revenue target and ${f1(HY.pbt / TARGET_PBT * 100)} per cent of the profit target, so the second half must produce VND ${money(TARGET_PBT - HY.pbt)} billion of pre-tax profit, which is ${f1((TARGET_PBT - HY.pbt) / HY.pbt)} times the first half.`));
 c.push(Fig("fig5_plan_progress", 545));
 c.push(Cap("Figure 9. Progress against the 2026 plan at the half year."));
 
@@ -366,7 +393,7 @@ c.push(H1("4. Discussion and main analysis"));
 c.push(H2("4.1 Why the gap exists"));
 c.push(P("Free execution attracts the customers for whom price is the deciding factor. Those customers are, by construction, the ones with the smallest balances, since a commission saving only matters when it is large relative to the amount invested. The review data supports this reading directly, because a visible share of DNSE customers arrived through YouTube promotion and sign-up bonuses rather than through an investment decision. Reviews mentioning a social media referral appear at 1.8 per cent of negatives and 2.7 per cent of positives, and the most common complaint among them is that the promised bonus did not arrive."));
 c.push(P("Derivatives compounds the effect. A derivatives account needs a margin deposit and turns over quickly, so it produces visible market share from a small pool of capital. In the second quarter of 2026 the VN30 futures market averaged VND 43,925 billion of daily notional value, against VND 17,336 billion of daily value on the Ho Chi Minh cash market in August. Futures notional is not directly comparable with cash turnover, because a contract controls a notional amount many times the margin posted against it, and that is the point. High share in derivatives is compatible with a small asset base, which is exactly what DNSE reports."));
-c.push(P("The firm has also absorbed cost to sustain both effects. Free execution, absorbed derivatives fees and acquisition spending all appear in the operating expense line that rose 120 per cent in the first quarter of 2026. Growth in accounts is being bought, and the revenue per account has not risen to match."));
+c.push(P(`The firm has also absorbed cost to sustain both effects. Free execution, absorbed derivatives fees and acquisition spending all appear in the operating expense line that rose ${f0(OPEX_Q1)} per cent in the first quarter of 2026. Growth in accounts is being bought, and the revenue per account has not risen to match.`));
 
 c.push(H2("4.2 Where the money actually sits"));
 c.push(P("Choosing a target segment by assertion would not survive scrutiny, so the Findex segment matrix was scored instead. Two indices were built from indicators the survey reports for every demographic cut. Index A measures investable surplus held formally, averaging six indicators covering saving at an institution, monthly saving into an account, storing money in an account, receiving interest, saving for old age and the ability to cover more than two months without income. Index B measures digital transacting habit, averaging six indicators covering digitally enabled accounts, daily internet use, smartphone ownership, weekly card or mobile payment in store, mobile balance checking and wage receipt into an account. Both use unweighted means of percentages. Because they average different indicators, each index compares segments with one another, and the level of one says nothing about the level of the other."));
@@ -396,14 +423,14 @@ c.push(P("Third, the reclassification of Vietnam to FTSE Russell secondary emerg
 c.push(H2("4.4 Prioritising the problem"));
 c.push(P("The three candidate problems from Section 1.3 were scored on three criteria. Size of effect asks how much of the revenue base the problem governs. Control asks whether DNSE can change the outcome with decisions it already has authority to make. Evidence strength asks how many independent sources support the diagnosis."));
 c.push(P("Low revenue per funded account ranks first on all three. It governs lending, brokerage and fee revenue at the same time, because each depends on the customer holding assets on the platform. It sits within product and pricing decisions the firm already controls. Three independent measures point to it, namely the ratio of trading share to account share, the ratio of lending share to account share, and the review evidence that acquisition runs through promotional bonuses rather than investment intent."));
-c.push(P("The scale of the prize can be stated from disclosed figures. Interest income of VND 336.1 billion in the first half of 2026 on an average lending balance of about VND 6,015 billion, the mean of the balances at the end of 2025 and of each quarter, implies a yield near 11 per cent a year. Raising the lending book by VND 1,000 billion, an increase of 16 per cent on the current balance, would add roughly VND 110 billion of annual interest income before funding costs. That is 20 per cent of the 2026 pre-tax profit target. Closing the full distance between DNSE's 1.39 per cent lending share and its 12.27 per cent account share would imply a book near VND 55,000 billion, which exceeds the firm's capital and is not a realistic target. The point is that even a small movement toward the account share is material."));
-c.push(P("Derivatives concentration ranks second. The effect is large, since a quarter of brokerage revenue would be exposed to a regulatory or volatility shock, and the evidence is strong because the share series is published. It ranks below revenue per account because DNSE cannot control the structure of the derivatives market. Proprietary trading volatility ranks third. Provisions rising 405 per cent in one quarter is a real signal, and risk limits are adjustable, but one quarter is a thin evidentiary base and the exposure is smaller than the other two."));
+c.push(P(`The scale of the prize can be stated from the filed statements. Interest income of VND ${money(HY.rev_lending)} billion in the first half of 2026 on an average lending balance of about VND ${whole((FY25.loans + Q1.loans + Q2.loans) / 3)} billion, the mean of the balances at the end of 2025 and of each quarter, implies a yield near ${f0(YIELD)} per cent a year, against an estimated funding cost of ${f1(FUND)} per cent. Raising the lending book by VND 1,000 billion, an increase of ${f0(1000 / Q2.loans * 100)} per cent, would add roughly VND ${f0(GROSS_GAIN)} billion of annual interest income, or about VND ${f0(NET_GAIN)} billion after funding costs, which is ${f0(NET_GAIN / TARGET_PBT * 100)} per cent of the 2026 pre-tax profit target.` + " Closing the full distance between DNSE's 1.39 per cent lending share and its 12.27 per cent account share would imply a book near VND 55,000 billion, which exceeds the firm's capital and is not a realistic target. The point is that even a small movement toward the account share is material."));
+c.push(P("Derivatives concentration ranks second. The effect is large, since a quarter of brokerage revenue would be exposed to a regulatory or volatility shock, and the evidence is strong because the share series is published. It ranks below revenue per account because DNSE cannot control the structure of the derivatives market. Proprietary trading volatility ranks third. Net trading losses in the two quarters to March 2026 are a real signal, and risk limits are adjustable, but two quarters is a thin evidentiary base and the exposure is smaller than the other two."));
 c.push(T([2600, 1600, 1600, 1600, 1620],
   ["Candidate problem", "Size of effect", "Within firm control", "Evidence strength", "Rank"],
   [
     ["Low revenue per funded account", "High. Governs lending, brokerage and fee revenue together", "High. Product and pricing decisions", "Strong. Three independent share measures plus review themes", "1"],
     ["Concentration in derivatives", "Medium. Regulatory or volatility shock would remove a quarter of brokerage revenue", "Low. Depends on market structure", "Strong. Published share series", "2"],
-    ["Proprietary trading volatility", "Medium. Provisions rose 405 per cent in one quarter", "Medium. Risk limits are adjustable", "Moderate. One quarter of evidence", "3"]
+    ["Proprietary trading volatility", "Medium. Trading assets lost money net in two consecutive quarters", "Medium. Risk limits are adjustable", "Moderate. Two quarters of evidence", "3"]
   ],
   { bs: 18, hs: 18 }));
 c.push(TabCap("Table 4. Problem prioritisation. Resolving revenue per account raises funded balances, which expands the collateral base for lending and reduces the need to earn through proprietary positions."));
@@ -415,7 +442,7 @@ c.push(T([1900, 2900, 2200, 2020],
   ["Option", "Mechanism", "Strengths", "Weaknesses"],
   [
     ["A. Continue acquiring", "Spend further on promotion and referral to add accounts at the current conversion rate",
-     "Protects the new-account share that supports the brand", "Adds accounts from the segment with the least investable surplus and raises the expense line already growing at 120 per cent"],
+     "Protects the new-account share that supports the brand", `Adds accounts from the segment with the least investable surplus and raises the expense line already growing at ${f0(OPEX_Q1)} per cent`],
     ["B. Cash management and fund distribution", "Pay a competitive return on idle balances and distribute investment certificates, converting deposits into on-platform assets",
      "Raises assets per account, expands the collateral base for lending and answers the rate benchmark directly. Funding is already authorised",
      "Needs a funding rate credible against deposits paying 6 to 9 per cent, a fund management licence or a distribution partner, and scale before the margin works"],
@@ -431,7 +458,7 @@ c.push(P("Option A raises the cost base without addressing conversion. Option C 
 // ---------------------------------------- 6. RECOMMENDATION
 c.push(H1("6. Preliminary recommendation"));
 c.push(P("DNSE should build a cash management and fund distribution layer that converts idle account balances into funded, yield-bearing positions, and should target it at employed, secondary-educated adults in the upper 60 per cent of the income distribution who already hold bank savings."));
-c.push(P("The mechanism runs through the balance sheet in a specific order. Customer cash held on the platform earns a return. Higher on-platform assets raise the collateral available for margin lending, which was the largest revenue line in the first half of 2026 at 39.6 per cent. Higher lending balances raise interest income without requiring an increase in the trading activity of individual customers. Fund distribution adds a recurring fee that does not depend on market direction, which addresses the proprietary volatility identified in Table 4."));
+c.push(P("The mechanism runs through the balance sheet in a specific order. Customer cash held on the platform earns a return. Higher on-platform assets raise the collateral available for margin lending, which was the largest revenue line in the first half of 2026 at " + f1(share("rev_lending")) + " per cent. Higher lending balances raise interest income without requiring an increase in the trading activity of individual customers. Fund distribution adds a recurring fee that does not depend on market direction, which addresses the proprietary volatility identified in Table 4."));
 c.push(P("Two conditions make this feasible now. The 2026 annual general meeting approved a bond programme of VND 2,500 billion non-convertible and VND 1,000 billion convertible, which provides the funding a cash management product needs. Customers already recognise the feature, since the idle cash earning function is the capability they praise most often without being asked about it. One condition is missing. The same meeting approved a securities company at the Ho Chi Minh City International Financial Centre, a VND 10 billion stake in a digital asset company and participation in the carbon credit exchange, and it did not approve a fund management vehicle. Distributing investment certificates therefore requires either a licence application or a partnership with an existing fund manager, and that is the first decision Round 3 should resolve."));
 c.push(P("The first constraint is price. A product competing with deposits paying 6 to 9 per cent, and offering less protection than a bank deposit, must justify the difference through liquidity, integration with trading or tax treatment. The second constraint is trust. The " + f1(theme("fraud")[5]) + " per cent of negative reviews accusing the firm of deception concern promotional terms and closure fees, and a savings product launched from that starting position needs its terms stated plainly. Removing the VND 100,000 account closure fee and restating the sign-up promotion are low cost actions that address the most frequent complaints directly."));
 
@@ -440,12 +467,12 @@ c.push(H1("7. Validation direction"));
 c.push(P("Four tests would confirm or reject the recommendation before commitment."));
 c.push(Num("Measure the distribution of account balances at DNSE. This report infers low balances per account from the ratio of trading share to account share. The company holds the distribution directly, and it would confirm whether inactivity concentrates in a small tail or runs across the base."));
 c.push(Num("Test willingness to pay against deposits. A conjoint or price ladder survey of the priority segment would establish the return at which customers move cash from a bank to a broker, and whether liquidity or integration substitutes for rate."));
-c.push(Num("Estimate the lending response. The link from on-platform assets to margin balances is the core of the recommendation. Regressing historical margin balances on customer assets, using the disclosed series, would size the effect and test whether the 200 per cent regulatory cap binds before the commercial opportunity is exhausted."));
+c.push(Num("Estimate the lending response. The link from on-platform assets to margin balances is the core of the recommendation. Regressing historical margin balances on customer assets, using the disclosed series, would size the effect; with lending at " + f0(L2E) + " per cent of equity, the 200 per cent regulatory cap is not yet the constraint."));
 c.push(Num("Verify the review evidence against internal data. App store reviews are self-selected and skew negative. Comparing the theme frequencies in Figure 5 with the firm's support ticket categories would show whether crashes, onboarding and promotional disputes hold the same rank internally."));
 
 // ---------------------------------------- 8. CONCLUSION
 c.push(H1("8. Conclusion"));
-c.push(P("DNSE built an acquisition engine that works and a monetisation engine that has not kept pace. It holds one eighth of Vietnam's securities accounts, a quarter of the derivatives market, under three per cent of cash equity trading and 1.39 per cent of industry lending. The gap between those numbers is the business problem, and it is visible in a pre-tax margin that fell from 23.2 per cent to 13.3 per cent while revenue grew 59 per cent. The Findex evidence shows that the adults who hold investable savings are the ones already transacting digitally, and that their savings are now accumulating quickly. Converting existing accounts into funded accounts addresses the constraint using a mandate the firm already holds."));
+c.push(P("DNSE built an acquisition engine that works and a monetisation engine that has not kept pace. It holds one eighth of Vietnam's securities accounts, a quarter of the derivatives market, under three per cent of cash equity trading and 1.39 per cent of industry lending. The gap between those numbers is the business problem, and it is visible in a pre-tax margin that fell from " + `${f1(margin(FY25))} per cent to ${f1(margin(HY))} per cent while revenue grew ${f0(growth(HY.revenue, FH["2025H1"].revenue))} per cent.` + " The Findex evidence shows that the adults who hold investable savings are the ones already transacting digitally, and that their savings are now accumulating quickly. Converting existing accounts into funded accounts addresses the constraint using a mandate the firm already holds."));
 
 BODY = false;
 c.push(new Paragraph({ children: [new PageBreak()] }));
@@ -457,18 +484,22 @@ c.push(H2("A1. DNSE financial series"));
 c.push(T([2500, 1620, 1620, 1620, 1660],
   ["VND billion unless stated", "FY2025", "Q1 2026", "Q2 2026", "H1 2026"],
   [
-    ["Operating revenue", "1,467.0", "395.0", "453.1", "848.2"],
-    ["Interest on lending and receivables", "555.8", "147.5", "188.6", "336.1"],
-    ["Brokerage commissions", "404.0", "119.5", "102.5", "222.1"],
-    ["Investment income", "171.4", "98.4", "95.0", "193.4"],
-    ["Pre-tax profit", "340.2", "14.2", "98.9", "113.1"],
-    ["Profit after tax", "272.5", "11.3", "83.0", "94.3"],
-    ["Pre-tax margin, per cent", "23.2", "3.6", "21.8", "13.3"],
-    ["Margin loans and advances", "5,832", "5,910", "6,303", "6,303"],
+    ["Operating revenue", d => money(d.revenue)],
+    ["Interest on lending and receivables", d => money(d.rev_lending)],
+    ["Brokerage commissions", d => money(d.rev_brokerage)],
+    ["Brokerage direct costs", d => money(d.cost_brokerage)],
+    ["Interest on held-to-maturity investments", d => money(d.rev_htm)],
+    ["Gross trading gains", d => money(d.rev_fvtpl)],
+    ["Pre-tax profit", d => money(d.pbt)],
+    ["Profit after tax", d => money(d.pat)],
+    ["Pre-tax margin, per cent", d => f1(margin(d))],
+    ["Margin loans and advances", d => whole(d.loans)],
+    ["Shareholders' equity", d => whole(d.equity)]
+  ].map(([lab, fmt]) => [lab, ...[FY25, Q1, Q2, HY].map(fmt)]).concat([
     ["Customer accounts, millions", "1.50", "1.65", "1.70", "1.70"],
     ["Share of new accounts, per cent", "20", "18", "", ""]
-  ], { bs: 18, hs: 18, numCols: [1, 2, 3, 4] }));
-c.push(TabCap("Table A1. Sources are DNSE quarterly financial statements and investor relations releases."));
+  ]), { bs: 18, hs: 18, numCols: [1, 2, 3, 4] }));
+c.push(TabCap("Table A1. DNSE filed statements, retrieved from Vietcap's data service by step 01b; costs are negative. The second quarter of 2026 is the KPMG-reviewed half year less the first quarter. Accounts and new-account shares are from investor relations releases."));
 
 c.push(H2("A2. Market share, second quarter of 2026"));
 c.push(T([2600, 1900, 1900, 1900, 1120],
@@ -485,7 +516,7 @@ c.push(T([2600, 1900, 1900, 1900, 1120],
     ["KIS Vietnam", "2.99", "outside top ten", "", ""],
     ["Mirae Asset Vietnam", "2.94", "outside top ten", "below 2", ""],
     ["BSC", "outside top ten", "3.58", "", ""],
-    ["DNSE", "outside top ten", "2.88", "25.38", "6,303"],
+    ["DNSE", "outside top ten", "2.88", "25.38", whole(Q2.loans)],
     ["VIX", "outside top ten", "2.66", "", ""],
     ["Top ten combined", "65.19", "63.20", "94.52", "453,800 industry"]
   ], { bs: 17, hs: 17, numCols: [1, 2, 3, 4] }));
@@ -525,6 +556,8 @@ c.push(T([2700, 6320],
   ["Dataset", "Address"],
   [
     ["DNSE investor relations", "https://www.dnse.com.vn/quan-he-nha-dau-tu"],
+    ["DNSE financial statements", "https://ir.dnse.com.vn/vi/ctype-finance_report"],
+    ["DNSE statements, every line", "https://iq.vietcap.com.vn/api/iq-insight-service/v1/company/DSE/financial-statement"],
     ["HOSE market share announcements", "https://www.hsx.vn"],
     ["HNX market share announcements", "https://www.hnx.vn"],
     ["Vietnam Securities Depository account statistics", "https://vsdc.vn"],
@@ -569,7 +602,8 @@ c.push(P("All currency figures are Vietnamese dong unless stated. Market share o
 c.push(P("Account share uses 13.80 million domestic individual accounts plus 52,633 foreign accounts at the end of August 2026 as the denominator. One investor may hold accounts at several firms, so the denominator counts accounts rather than people."));
 
 c.push(H2("B2. Assumptions stated"));
-c.push(Bullet("Half-year operating revenue is VND 848.2 billion, which reconciles with the two quarterly figures of VND 395.0 billion and VND 453.1 billion to within rounding."));
+c.push(Bullet(`Half-year figures add the two quarters for income and take the 30 June balance for stocks. The second quarter is the KPMG-reviewed half year less the first quarter, so its pre-tax profit of VND ${money(Q2.pbt)} billion is below the VND 98.9 billion first reported on 20 July 2026.`));
+c.push(Bullet("Funding cost is estimated as interest expense plus template line 24 less the rise in the loan-loss allowance, because the securities-company template reports loan-loss provisions and the borrowing cost of the loan book as one line."));
 c.push(Bullet("DNSE's HOSE share is treated as below 2.94 per cent because the firm does not appear in the top ten and tenth place held 2.94 per cent. No point estimate is used."));
 c.push(Bullet("Segment population shares applied in Table A3 are recovered from the Findex estimates themselves. Each pair of segments splits all adults in two, so the national figure for any indicator is a weighted average of the two halves, which fixes the weights; the income pair comes back as its defined 40 and 60 per cent. They are applied to 80.6 million adults aged 15 and over."));
 c.push(Bullet("Derivatives share for the second and third quarters of 2024 was not found in the sources consulted, and Figure 2 shows that gap on a quarterly axis rather than interpolating across it."));
@@ -577,12 +611,13 @@ c.push(Bullet("Segment indices use unweighted means. Any weighting chosen after 
 
 c.push(H2("B3. Limitations"));
 c.push(P("Four limitations affect the strength of the conclusions. Per-broker account counts are not published by any firm other than DNSE, so the account-to-activity comparison in Section 3.2 cannot be repeated for competitors and the finding rests on DNSE against the market average rather than against a named peer."));
-c.push(P("Shareholders' equity for the relevant quarters appears only in scanned statements without a text layer, so lending headroom against the 200 per cent regulatory cap was not calculated and no ratio depending on it appears in this report."));
+c.push(P("The funding cost in Section 4.4 is an estimate. Template line 24 holds loan-loss provisions and the borrowing cost of the loan book together, and the estimate removes the change in the balance-sheet allowance; write-offs would make it overstate funding cost and understate the net gain from extra lending."));
 c.push(P("App store reviews are self-selected and over-represent dissatisfied users, so the theme frequencies in Figure 5 describe the composition of complaints rather than the incidence of problems across the customer base. The peer comparison in Figure 6 mitigates this partially, because the same selection bias applies to all three applications under the same cleaning rule." + ` The VPS sample is its ${int(VPS[2])} most recent reviews, back to ${DATE(RV.VPS_SPAN[0])}, so it is weighted toward recent years; the listing itself goes back further.` + (iosLog("DNSE") && iosLog("DNSE")[11] ? ` Written reviews are also harsher than ratings as a whole: on the App Store DNSE averages ${f2(iosLog("DNSE")[12])} stars from ${int(iosLog("DNSE")[11])} ratings, most given without text, against ${f2(iosLog("DNSE")[7])} in its cleaned written reviews. Apple's feed serves recent reviews only, so the App Store evidence is a cross-check rather than a second time series.` : "")));
 c.push(P("Findex segments are reported one dimension at a time, so the intersection identified in Section 4.2 is inferred from three separate rankings rather than measured directly. The microdata file would allow the intersection to be measured, and that is the first extension proposed for Round 3."));
 
 c.push(H2("B4. Accuracy checks performed"));
 c.push(P("Every figure was traced to a primary disclosure or an exchange announcement. A verification pass against the first draft of this analysis corrected twelve figures. Three were material. An 8.8 per cent digital adoption rate belongs to micro enterprises and not to all small and medium enterprises. A count of 132.4 million biometric verifications measures customer records and not individuals. A share comparison set DNSE's Hanoi exchange position against competitor positions on the Ho Chi Minh exchange. That last error would have overstated the gap described in Section 3.2, and correcting it is why every market share figure in this report carries the name of its exchange."));
+c.push(P(`DNSE's financial figures were replaced on ${DATE(FS.pulled)} by a line-by-line pull of its filed statements, checked against the reviewed half-year statements. The pull corrected 2025 revenue from VND 1,467 billion to VND ${money(FY25.revenue)} billion, first-half pre-tax profit from VND 113.1 billion to the reviewed VND ${money(HY.pbt)} billion, and investment income, which the earlier draft had taken from trading gains for 2025 and from held-to-maturity interest for 2026. It also dropped a press figure of 405 per cent growth in proprietary provisions that no line of the filings reproduces; the line it appears to describe mostly holds the borrowing cost of the loan book.`));
 c.push(P("The review cleaning rules were revised on 23 September 2026 after an audit of the code. The referral rule had caught genuine complaints about one-time passwords, the duplicate rule had removed identical short reviews written by different people, and several theme keywords matched unrelated words once Vietnamese tone marks were removed. Every review figure in this report uses the revised rules, and re-running the previous rules on the same pull reproduces the earlier cleaning log exactly. Segment population shares were also recovered from the Findex estimates themselves in place of typed-in values, which moved adults with secondary education or more to first place in the priority ranking."));
 
 // ======================================================= REFERENCES
@@ -590,7 +625,7 @@ c.push(new Paragraph({ children: [new PageBreak()] }));
 c.push(H1("References"));
 const refs = [
   `Apple Inc. (2026) App Store customer reviews, Vietnam storefront, for Entrade X by DNSE, VPS SmartOne and FPTS EzTrade. Public review feed, retrieved ${DATE(RV.APPSTORE_PULLED)}.`,
-  "DNSE Securities Joint Stock Company (2026) Consolidated financial statements for the second quarter of 2026 and investor relations releases for the first half of 2026. Hanoi.",
+  "DNSE Securities Joint Stock Company (2026) Financial statements for the second quarter of 2026, 20 July 2026, and interim financial statements for the six months to 30 June 2026, reviewed by KPMG, 14 August 2026. Hanoi.",
   "DNSE Securities Joint Stock Company (2026) Resolutions of the 2026 annual general meeting of shareholders. Hanoi.",
   "DNSE Securities Joint Stock Company (2026) Annual report 2025. Hanoi.",
   "FiinRatings (2026) Vietnam banking sector outlook 2026. Hanoi.",
@@ -603,6 +638,7 @@ const refs = [
   "National Statistics Office of Vietnam (2026) Socio-economic performance in the second quarter and first half of 2026. Hanoi.",
   "State Bank of Vietnam (2026) Payment system statistics and biometric verification data, first half of 2026.",
   "UOB, PwC Singapore and the Singapore FinTech Association (2025) FinTech in ASEAN 2025.",
+  `Vietcap Securities (2026) IQ Insight financial statement data for DSE, first quarter of 2018 to second quarter of 2026. Retrieved ${DATE(FS.pulled)}.`,
   "Vietnam Securities Depository and Clearing Corporation (2026) Monthly securities account statistics, August 2026.",
   "Vietstock (2026) Margin lending reaches a record VND 454 trillion, with divergence across the field. July 2026.",
   "The Investor (2026) FTSE Russell names 32 Vietnamese stocks eligible for emerging-market index inclusion. 8 April 2026.",

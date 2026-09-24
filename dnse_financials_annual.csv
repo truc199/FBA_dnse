@@ -1,0 +1,371 @@
+﻿section,field,level,parent,item_vi,item_en,unit,FY2018,FY2019,FY2020,FY2021,FY2022,FY2023,FY2024,FY2025
+INCOME_STATEMENT,isa1,1,,DOANH THU HOẠT ĐỘNG,OPERATING SALES,VND bn,27.4968,18.4284,21.6313,180.6909,452.0877,714.5136,807.412,1457.9122
+INCOME_STATEMENT,iss115,2,ISA1,Lãi từ các tài sản tài chính ghi nhận thông qua lãi/lỗ ( FVTPL),Income from financial assets recognized through profit/loss (FVTPL),VND bn,6.2302,1.2105,3.3629,20.4431,18.7182,157.8592,47.8677,171.3898
+INCOME_STATEMENT,iss116,3,ISS115,Lãi bán các tài sản tài chính FVTPL,Income from selling financial assets FVTPL,VND bn,5.5535,0.872,0.0,17.225,15.7917,135.1686,48.6001,134.9354
+INCOME_STATEMENT,iss117,3,ISS115,Chênh lệch tăng đánh giá lại các TSTC thông qua lãi/lỗ,FVTPL revaluation gain,VND bn,0.5617,0.2235,3.3629,3.1176,-6.4795,0.3056,-0.0081,0.3529
+INCOME_STATEMENT,iss118,3,ISS115,"Cổ tức, tiền lãi phát sinh từ tài sản tài chính FVTPL","Dividend, interest from FVTPL financial assets",VND bn,0.115,0.115,0.0,0.1005,9.4059,22.3849,-0.7243,36.1015
+INCOME_STATEMENT,iss119,2,ISA1,Lãi từ các khoản đầu tư nắm giữ đến ngày đáo hạn,Income from held to maturity investment (HTM),VND bn,6.9909,7.9991,6.5163,20.1035,112.8851,195.9759,245.0316,303.9099
+INCOME_STATEMENT,iss120,2,ISA1,Lãi từ các khoản cho vay và phải thu,Income from loans and receivables,VND bn,2.6215,3.0229,2.7412,42.6934,223.0749,286.2237,360.5485,555.7965
+INCOME_STATEMENT,iss42,2,ISA1,Doanh thu nghiệp vụ môi giới chứng khoán,Revenue in Brokerage services,VND bn,10.1632,5.084,6.8094,90.0339,84.848,67.6454,144.8386,404.0201
+INCOME_STATEMENT,iss44,2,ISA1,Doanh thu nghiệp vụ bảo lãnh phát hành chứng khoán,Revenue in Underwriting services,VND bn,0.0,0.0,0.0,0.0,0.25,0.1,0.0,2.918
+INCOME_STATEMENT,iss46,2,ISA1,Doanh thu nghiệp vụ tư vấn đầu tư chứng khoán,Revenue in Stock Investment Advisory services,VND bn,0.0545,0.0818,0.8311,5.2968,6.6542,0.559,0.6828,0.9263
+INCOME_STATEMENT,iss47,2,ISA1,Doanh thu lưu ký chứng khoán,Revenue in Securities custody services,VND bn,1.2635,0.9434,0.6823,1.543,2.835,4.2073,5.6471,7.932
+INCOME_STATEMENT,iss123,2,ISA1,Doanh thu hoạt động tư vấn tài chính,Revenue in Financial Advisory services,VND bn,0.0,0.0,0.4407,0.05,0.09,0.2,0.0,2.0446
+INCOME_STATEMENT,iss50,2,ISA1,Doanh thu khác,Others revenue,VND bn,0.1729,0.0866,0.2474,0.5272,2.7323,1.7431,2.7956,8.9749
+INCOME_STATEMENT,isa3,1,,Doanh thu thuần về hoạt động kinh doanh,Net sales,VND bn,27.4968,18.4284,21.6313,180.6909,452.0877,714.5136,807.412,1457.9122
+INCOME_STATEMENT,isa4,1,,CHI PHÍ HOẠT ĐỘNG,OPERATING EXPENSE,VND bn,-15.7124,-12.3631,-12.0208,-100.6033,-304.5623,-334.0043,-419.4775,-877.2294
+INCOME_STATEMENT,iss124,2,ISA4,Lỗ các tài sản tài chính ghi nhận thông qua lãi lỗ (FVTPL),Loss from financial assets recognized through profit/loss (FVTPL),VND bn,-1.0644,-0.6156,-0.0113,-24.8143,-80.0135,0.1743,-41.0779,-25.2095
+INCOME_STATEMENT,iss125,3,ISS124,Lỗ bán các tài sản tài chính,Loss from selling financial assets FVTPL,VND bn,0.0,0.0,-0.006,-24.748,-1.7617,-71.1373,-10.2503,-31.326
+INCOME_STATEMENT,iss126,3,ISS124,Chênh lệch giảm đánh giá lại các TSTC thông qua lãi/lỗ,FVTPL financial assets revaluation loss,VND bn,-0.8631,-0.5545,0.0,-0.0039,-78.1765,71.7414,-28.2577,9.2813
+INCOME_STATEMENT,iss127,3,ISS124,Chi phí giao dịch mua các tài sản tài chính FVTPL,FVTPL financial assets purchase transaction costs,VND bn,-0.2013,-0.0611,-0.0053,-0.0624,-0.0753,-0.4298,-2.5699,-3.1649
+INCOME_STATEMENT,iss168,2,ISA4,"CP dự phòng TSTC, xử lý tổn thất các khoản phải thu khó đòi là lỗ suy giảm TSTC và CP đi vay","Provision for losses from mortgage assets, uncollectible receivables, and loan expenses",VND bn,-0.884,-1.2116,-1.3043,-21.2345,-142.4676,-211.4959,-182.5608,-362.9883
+INCOME_STATEMENT,iss132,2,ISA4,Chi phí hoạt động tự doanh,Proprietary trading services expenses,VND bn,-0.1883,-0.0548,-0.0208,-0.007,-0.1453,-0.1223,-0.0605,-0.5027
+INCOME_STATEMENT,iss133,2,ISA4,Chi phí nghiệp vụ môi giới chứng khoán,Brokerage expenses,VND bn,-11.2302,-8.4588,-9.3056,-51.4917,-74.4047,-111.1155,-174.8279,-464.8561
+INCOME_STATEMENT,iss134,2,ISA4,"Chi phí nghiệp vụ bảo lãnh, đại lý phát hành chứng khoán","Underwriting, securities issuance expenses",VND bn,0.0,0.0,0.0,0.0,-0.2048,-0.1404,-0.0934,-0.026
+INCOME_STATEMENT,iss135,2,ISA4,Chi phí nghiệp vụ tư vấn đầu tư chứng khoán,Expenses for securities advisory,VND bn,-0.5556,-0.5656,-0.24,0.0,-0.0186,-2.5157,-2.4779,-2.9945
+INCOME_STATEMENT,iss137,2,ISA4,Chi phí nghiệp vụ lưu ký chứng khoán,Investors' securities depository expenses,VND bn,-1.3569,-1.0434,-0.7463,-1.4686,-2.7368,-4.9049,-10.8771,-11.5704
+INCOME_STATEMENT,iss139,2,ISA4,Chi phí các dịch vụ khác,Other expenses,VND bn,-0.433,-0.4133,-0.3925,-1.5872,-4.5709,-3.8838,-7.5019,-9.0819
+INCOME_STATEMENT,isa5,1,,LỢI NHUẬN GỘP,GROSS PROFIT,VND bn,11.7844,6.0653,9.6105,80.0876,147.5254,380.5093,387.9344,580.6829
+INCOME_STATEMENT,iss141,1,,DOANH THU HOẠT ĐỘNG TÀI CHÍNH,REVENUE FROM FINANCIAL ACTIVITIES,VND bn,0.1401,0.073,0.1469,0.7733,4.7812,6.4402,5.5656,7.5324
+INCOME_STATEMENT,iss142,2,ISS141,Chênh lệch lãi tỷ giá hối đoái đã và chưa thực hiện,Realized and unrealized foreign exchange gain,VND bn,0.0,0.0,0.0,0.005,0.0207,0.0009,0.6,0.0
+INCOME_STATEMENT,iss143,2,ISS141,"Doanh thu, dự thu cổ tức, lãi tiền gửi không cố định phát sinh trong kỳ",Income from non fixed accrued dividend and interest,VND bn,0.1401,0.073,0.1469,0.7684,1.8541,3.4574,4.9439,7.5324
+INCOME_STATEMENT,iss145,2,ISS141,Doanh thu khác về đầu tư,Other revenue from investments,VND bn,0.0,0.0,0.0,0.0,2.9063,2.9819,0.0217,0.0
+INCOME_STATEMENT,iss146,1,,CHI PHÍ TÀI CHÍNH,EXPENSE FROM FINANCIAL ACTIVITIES,VND bn,0.0,0.0,-0.0713,-2.8295,-30.2804,-22.1028,-28.0511,-67.5595
+INCOME_STATEMENT,iss147,2,ISS146,Chênh lệch lỗ tỷ giá hối đoái đã và chưa thực hiện,Realized and unrealized foreign exchange loss,VND bn,0.0,0.0,0.0,0.0,-0.0002,-0.0006,-0.0,0.0
+INCOME_STATEMENT,iss148,2,ISS146,Chi phí lãi vay,Interests expenses,VND bn,0.0,0.0,-0.0713,-2.7233,-29.8364,-22.1023,-28.0398,-66.827
+INCOME_STATEMENT,iss151,2,ISS146,Chi phí đầu tư khác,Other investment expenses,VND bn,0.0,0.0,0.0,-0.1062,-0.4438,0.0,-0.0113,-0.7325
+INCOME_STATEMENT,isa10,1,,CHI PHÍ QUẢN LÝ CÔNG TY CHỨNG KHOÁN,GENERAL AND ADMINISTRATIVE EXPENSES,VND bn,-6.1371,-5.8032,-6.8325,-14.8615,-37.072,-94.3131,-151.9095,-181.4043
+INCOME_STATEMENT,isa11,1,,KẾT QUẢ HOẠT ĐỘNG,OPERATING PROFIT/(LOSS),VND bn,5.7875,0.335,2.8536,63.1699,84.9542,270.5337,213.5394,339.2514
+INCOME_STATEMENT,isa16,1,,TỔNG LỢI NHUẬN KẾ TOÁN TRƯỚC THUẾ,NET ACCOUNTING PROFIT/(LOSS) BEFORE TAX,VND bn,5.5981,0.0753,2.8252,68.126,94.9238,285.6361,227.5015,340.225
+INCOME_STATEMENT,iss153,2,ISA16,Lợi nhuận đã thực hiện,Realized profit,VND bn,5.8995,0.4063,-0.5377,65.0123,179.5798,213.5891,255.7673,330.5908
+INCOME_STATEMENT,iss154,2,ISA16,Lợi nhuận chưa thực hiện,Unrealized profit,VND bn,-0.3014,-0.331,3.3629,3.1137,-84.656,72.047,-28.2658,9.6342
+INCOME_STATEMENT,isa17,2,ISA16,Chi phí thuế thu nhập hiện hành,Business income tax - current,VND bn,-1.1345,-0.1876,0.0,-13.0337,-18.4561,-56.5907,-45.7325,-67.6248
+INCOME_STATEMENT,isa18,2,ISA16,Chi phí thuế thu nhập hoãn lại,Business income tax - deferred,VND bn,0.0,0.0,-0.6726,-0.6227,1.2951,-0.0611,0.0016,-0.0706
+INCOME_STATEMENT,isa20,1,,LỢI NHUẬN KẾ TOÁN SAU THUẾ,NET PROFIT/(LOSS) AFTER TAX,VND bn,4.4636,-0.1123,2.1526,54.4695,77.7628,228.9843,181.7706,272.5296
+INCOME_STATEMENT,isa22,2,ISA20,Lợi nhuận sau thuế phân bổ cho chủ sở hữu,Attributable to parent company,VND bn,4.4636,-0.1123,2.1526,54.4695,77.7628,228.9843,181.7706,272.5296
+INCOME_STATEMENT,iss164,1,,Tổng thu nhập toàn diện,Total comprehensive income,VND bn,4.4636,-0.1123,2.1526,54.4695,77.7628,228.9843,181.7706,272.5296
+INCOME_STATEMENT,iss165,2,ISS164,Thu nhập toàn diện phân bổ cho chủ sở hữu,Comprehensive income distributed to shareholders,VND bn,4.4636,-0.1123,2.1526,54.4695,77.7628,228.9843,181.7706,272.5296
+BALANCE_SHEET,bsa1,1,,TÀI SẢN NGẮN HẠN,CURRENT ASSETS,VND bn,129.47,142.7416,170.8462,2284.3526,5429.7894,6597.7644,8172.0434,13285.8364
+BALANCE_SHEET,bss214,1,,Tài sản tài chính ngắn hạn,Short term financial assets,VND bn,128.9454,142.4483,170.1197,2282.1209,5401.6698,6568.7,8165.5353,13275.5823
+BALANCE_SHEET,bsa2,2,BSS214,Tiền và tương đương tiền,Cash and cash equivalents,VND bn,12.6156,5.1063,1.0963,21.0219,431.9361,505.2759,1093.1621,510.5788
+BALANCE_SHEET,bsa3,3,BSA2,Tiền,Cash,VND bn,0.3156,0.1063,0.0963,0.6844,431.9361,505.2759,943.1621,510.5788
+BALANCE_SHEET,bsa4,3,BSA2,Các khoản tương đương tiền,Cash equivalents,VND bn,12.3,5.0,1.0,20.3376,0.0,0.0,150.0,0.0
+BALANCE_SHEET,bsa6,2,BSS214,Các tài sản tài chính ghi nhận thông qua lãi lỗ (FVTPL),Financial assets at fair value through profit or loss (FVTPL),VND bn,20.9978,20.6668,23.0,84.0931,575.6007,298.5847,167.0846,2085.4708
+BALANCE_SHEET,bsb108,2,BSS214,Các khoản đầu tư nắm giữ đến ngày đáo hạn (HTM),Held-to-maturity investment,VND bn,78.5,85.9,82.4332,882.871,1902.8767,2765.5,2774.75,4561.75
+BALANCE_SHEET,bss215,2,BSS214,Các khoản cho vay,Loans,VND bn,18.7363,31.0106,23.0967,1192.4954,2280.3767,2483.0686,3881.5855,5832.1911
+BALANCE_SHEET,bsa7,2,BSS214,Dự phòng suy giảm giá trị tài sản tài chính và tài sản thế chấp,Provision for diminution,VND bn,-7.7727,-7.7727,0.0,0.0,-39.5861,-44.5567,-42.1622,-54.1188
+BALANCE_SHEET,bsa8,2,BSS214,Tổng các khoản phải thu,Accounts receivable,VND bn,5.8684,7.5373,40.4936,101.6395,250.4657,560.8275,291.1153,339.7103
+BALANCE_SHEET,bss217,3,BSA8,Các khoản phải thu (từ 2016),Receivables (from 2016),VND bn,5.2782,6.7646,1.2091,27.2673,125.9626,550.3349,279.409,310.0478
+BALANCE_SHEET,bss218,3,BSA8,Phải thu bán các tài sản tài chính,Account receivables,VND bn,0.0,0.0,0.0,0.0,0.0,345.1501,0.5434,0.01
+BALANCE_SHEET,bss219,3,BSA8,"Phải thu và dự thu cổ tức, tiền lãi các tài sản tài chính",Receivables and accrued dividend/interest of financial assets,VND bn,5.2782,6.7646,1.2091,27.2673,125.9626,205.1848,278.8656,310.0378
+BALANCE_SHEET,bss220,3,BSA8,"Phải thu cổ tức, tiền lãi đến ngày nhận",Due or overdue receivables on dividend/interest,VND bn,0.0,0.0,0.0,0.0001,0.0,0.0,0.0,0.0
+BALANCE_SHEET,bss222,3,BSA8,"Dự thu cổ tức , tiền lãi chưa đến ngày nhận",Undue accrued dividend/interest,VND bn,5.2782,6.7646,1.2091,27.2672,125.9626,205.1848,278.8656,310.0378
+BALANCE_SHEET,bsa10,3,BSA8,Trả trước người bán,Prepayments to suppliers,VND bn,0.0063,0.0,38.9631,72.9584,123.4244,2.5125,5.398,17.1486
+BALANCE_SHEET,bss224,3,BSA8,Phải thu các dịch vụ CTCK cung cấp,Receivables form services provided by the stock company,VND bn,0.5719,0.7291,0.2851,1.2637,0.9993,1.1143,1.7769,7.4151
+BALANCE_SHEET,bsa13,3,BSA8,Phải thu khác,Other receivables,VND bn,0.012,0.0436,0.0363,0.15,0.0794,6.9286,4.6193,5.2243
+BALANCE_SHEET,bss226,3,BSA8,Dự phòng suy giảm giá trị các khoản phải thu,Provision for short term receivables,VND bn,0.0,0.0,0.0,0.0,0.0,-0.0628,-0.0879,-0.1256
+BALANCE_SHEET,bsa18,1,,Tài sản ngắn hạn khác,Other current assets,VND bn,0.5246,0.2933,0.7264,2.2317,28.1196,29.0644,6.5081,10.2541
+BALANCE_SHEET,bss227,2,BSA18,Tạm ứng,Advance,VND bn,0.0253,0.0234,0.2308,1.246,26.1528,23.6351,1.7869,3.2856
+BALANCE_SHEET,bss228,2,BSA18,"Vật tư văn phòng, công cụ, dụng cụ",Tools and equipments,VND bn,0.0,0.2599,0.0,0.0,0.0,0.0,0.0,0.069
+BALANCE_SHEET,bsa19,2,BSA18,Chi phí trả trước ngắn hạn,Short-term prepayments,VND bn,0.4887,0.01,0.3729,0.9587,1.9398,5.4023,4.6103,6.6606
+BALANCE_SHEET,bss229,2,BSA18,"Cầm cố, thế chấp, ký quý , ký cược ngắn hạn",Short term Collaterals,VND bn,0.0106,0.0,0.02,0.027,0.027,0.027,0.1109,0.2389
+BALANCE_SHEET,bsa21,2,BSA18,Thuế và các khoản khác phải thu Nhà nước,Other taxes receivable,VND bn,0.0,0.0,0.1028,0.0,0.0,0.0,0.0,0.0
+BALANCE_SHEET,bsa23,1,,TÀI SẢN DÀI HẠN,LONG-TERM ASSETS,VND bn,35.2601,33.8504,16.4632,30.8736,979.3554,848.2983,2465.2087,1853.3903
+BALANCE_SHEET,bss231,1,,Tài sản tài chính dài hạn,Long term financial assets,VND bn,25.0,25.0,0.0,0.0,920.6089,729.6817,2328.6064,1704.7362
+BALANCE_SHEET,bsa43,2,BSS231,Đầu tư dài hạn,Long-term investments,VND bn,25.0,25.0,0.0,0.0,920.6089,729.6817,2328.6064,1704.7362
+BALANCE_SHEET,bsa29,1,,Tài sản cố định,Fixed assets,VND bn,2.1084,0.6201,6.2432,19.7309,41.7059,84.7203,96.2097,105.8011
+BALANCE_SHEET,bsa30,2,BSA29,GTCL TSCĐ hữu hình,Tangible fixed assets,VND bn,1.0619,0.476,3.818,6.1099,6.6426,12.2793,11.829,12.3067
+BALANCE_SHEET,bsa31,3,BSA30,Nguyên giá TSCĐ hữu hình,Historical Cost,VND bn,5.0223,5.0223,7.2032,10.7541,11.2638,19.5189,23.3349,28.9
+BALANCE_SHEET,bsa32,3,BSA30,Khấu hao lũy kế TSCĐ hữu hình,Accumulated depreciation,VND bn,-3.9604,-4.5463,-3.3852,-4.6441,-4.6211,-7.2397,-11.5058,-16.5933
+BALANCE_SHEET,bsa33,2,BSA29,GTCL Tài sản thuê tài chính,Finance lease assets,VND bn,0.0,0.0,0.0,0.0,0.0,19.8848,44.7135,68.6201
+BALANCE_SHEET,bsa34,3,BSA33,Nguyên giá tài sản thuê tài chính,Historical Cost,VND bn,0.0,0.0,0.0,0.0,0.0,20.9918,51.8233,89.9333
+BALANCE_SHEET,bsa35,3,BSA33,Khấu hao lũy kế tài sản thuê tài chính,Accumulated depreciation,VND bn,0.0,0.0,0.0,0.0,0.0,-1.1071,-7.1098,-21.3132
+BALANCE_SHEET,bsa36,2,BSA29,GTCL tài sản cố định vô hình,Intangible fixed assets,VND bn,1.0465,0.144,2.4251,13.6209,35.0632,52.5563,39.6671,24.8744
+BALANCE_SHEET,bsa37,3,BSA36,Nguyên giá TSCĐ vô hình,Historical Cost,VND bn,4.95,5.105,7.5772,19.9592,44.7376,74.7543,77.2736,78.6037
+BALANCE_SHEET,bsa38,3,BSA36,Khấu khao lũy kế TSCĐ vô hình,Accumulated depreciation,VND bn,-3.9035,-4.961,-5.1521,-6.3382,-9.6744,-22.198,-37.6065,-53.7293
+BALANCE_SHEET,bsa163,1,,Tài sản dở dang dài hạn,Long-term incomplete assets,VND bn,0.0,0.0,0.0,0.0,0.0,0.0,0.512,0.0
+BALANCE_SHEET,bsa188,2,BSA163,Chi phí xây dựng cơ bản dở dang,Construction in progress,VND bn,0.0,0.0,0.0,0.0,0.0,0.0,0.512,0.0
+BALANCE_SHEET,bsa49,1,,Tài sản dài hạn khác,Other long-term assets,VND bn,8.1517,8.2303,10.22,11.1427,17.0407,33.8963,39.8806,42.853
+BALANCE_SHEET,bss236,2,BSA49,"Cầm cố, thế chấp, kỹ quỹ, Ký cược dài hạn",Long term collaterals,VND bn,0.0015,0.0015,0.6004,0.4544,1.9816,2.9263,4.5702,7.7861
+BALANCE_SHEET,bsa50,2,BSA49,Chi phí trả trước dài hạn,Long-term prepayments,VND bn,1.0208,0.4058,1.4164,2.0593,3.9603,7.1664,8.6975,6.09
+BALANCE_SHEET,bss212,2,BSA49,Tiền chi nộp Quỹ Hỗ trợ thanh toán,Payments to Settlement Assistance Fund,VND bn,7.1293,7.823,8.2031,8.6291,11.0988,13.789,16.5766,18.9206
+BALANCE_SHEET,bsa52,2,BSA49,Các tài sản dài hạn khác,Other long-term assets,VND bn,0.0,0.0,0.0,0.0,0.0,10.0146,10.0363,10.0563
+BALANCE_SHEET,bsa53,1,,TỔNG CỘNG TÀI SẢN,TOTAL ASSETS,VND bn,164.7301,176.592,187.3093,2315.2262,6409.1448,7446.0627,10637.2521,15139.2267
+BALANCE_SHEET,bsa54,1,,NỢ PHẢI TRẢ,LIABILITIES,VND bn,2.6832,14.6574,23.2221,1256.6585,3272.7837,4140.7173,6607.4519,10836.8969
+BALANCE_SHEET,bsa55,1,,Nợ phải trả ngắn hạn,Current liabilities,VND bn,2.6832,14.6574,22.5496,1255.3631,3272.7835,4126.429,6589.0497,9511.8695
+BALANCE_SHEET,bsa56,2,BSA55,Vay và nợ thuê tài sản tài chính ngắn hạn,Short-term borrowings,VND bn,0.0,12.92,19.205,1103.86,2584.8427,3643.0561,6505.9295,9321.8212
+BALANCE_SHEET,bss238,3,BSA56,Vay ngắn hạn,Short term borrowings,VND bn,0.0,12.92,19.205,1103.86,2584.8427,3643.0561,6494.2972,9302.1722
+BALANCE_SHEET,bss239,3,BSA56,Nợ thuê tài sản tài chính ngắn hạn,Short term finance lease,VND bn,0.0,0.0,0.0,0.0,0.0,0.0,11.6323,19.649
+BALANCE_SHEET,bss242,2,BSA55,Trái phiếu phát hành ngắn hạn,Short term bonds issued,VND bn,0.0,0.0,0.0,120.0,150.0,0.0,0.0,0.0
+BALANCE_SHEET,bss135,2,BSA55,Phải trả hoạt động giao dịch chứng khoán,Payables to securities trading,VND bn,0.1579,0.2287,0.5859,3.0423,1.7808,3.0327,7.1361,21.7774
+BALANCE_SHEET,bsa57,2,BSA55,Phải trả người bán ngắn hạn,Trade accounts payable,VND bn,0.0154,0.0488,0.1553,0.2408,0.3591,0.5318,1.7971,3.9808
+BALANCE_SHEET,bsa58,2,BSA55,Người mua trả tiền trước ngắn hạn,Advances from customers,VND bn,0.13,0.13,0.0,0.105,0.16,0.0,0.0,0.0
+BALANCE_SHEET,bsa59,2,BSA55,Thuế và các khoản phải nộp nhà nước,Taxes and other payable to State Budget,VND bn,1.3154,0.3886,0.5299,16.2761,16.2359,30.278,25.6525,34.3184
+BALANCE_SHEET,bsa60,2,BSA55,Phải trả người lao động,Payable to employees,VND bn,0.8705,0.7373,0.2564,6.6254,6.6515,16.1494,18.5534,39.2019
+BALANCE_SHEET,bss245,2,BSA55,Các khoản trích nộp phúc lợi nhân viên,Employees' welfare payable to authorities,VND bn,0.0733,0.0989,0.113,0.1787,0.2632,0.5263,1.0531,1.6811
+BALANCE_SHEET,bsa61,2,BSA55,Chi phí phải trả ngắn hạn,Accrued expenses,VND bn,0.1094,0.0975,1.6643,3.5091,7.8041,17.583,24.1016,88.3966
+BALANCE_SHEET,bsa64,2,BSA55,"Các khoản phải trả, phải nộp khác ngắn hạn",Other payables,VND bn,0.0112,0.0074,0.0395,1.5255,504.6861,415.2715,4.8263,0.6919
+BALANCE_SHEET,bsa66,2,BSA55,Quỹ khen thưởng phúc lợi,Bonus and welfare funds,VND bn,0.0002,0.0002,0.0002,0.0002,0.0002,0.0002,0.0002,0.0002
+BALANCE_SHEET,bsa67,1,,Nợ phải trả dài hạn,Long-term liabilities,VND bn,0.0,0.0,0.6726,1.2953,0.0002,14.2883,18.4022,1325.0274
+BALANCE_SHEET,bsa71,2,BSA67,Vay và nợ thuê tài sản tài chính dài hạn,Long-term borrowings,VND bn,0.0,0.0,0.0,0.0,0.0,14.227,18.3425,27.0444
+BALANCE_SHEET,bss248,3,BSA71,Nợ thuê tài chính dài hạn,Long term financial lease,VND bn,0.0,0.0,0.0,0.0,0.0,14.227,18.3425,27.0444
+BALANCE_SHEET,bss250,2,BSA67,Trái phiếu phát hành dài hạn,Long term bonds,VND bn,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1297.8528
+BALANCE_SHEET,bsa72,2,BSA67,Thuế thu nhập hoãn lại phải trả,Deferred income tax liabilities,VND bn,0.0,0.0,0.6726,1.2953,0.0002,0.0613,0.0597,0.1302
+BALANCE_SHEET,bsa78,1,,Vốn chủ sở hữu,Owner's Equity,VND bn,162.0468,161.9346,164.0872,1058.5677,3136.3611,3305.3454,4029.8002,4302.3298
+BALANCE_SHEET,bss252,2,BSA78,Vốn đầu tư của chủ sở hữu,Shareholders' equity,VND bn,160.0,160.0,160.0,1000.011,3000.0416,3000.0416,3872.7257,3872.7257
+BALANCE_SHEET,bsa80,2,BSA78,Vốn góp của chủ sở hữu,Paid-in capital,VND bn,160.0,160.0,160.0,1000.0,3000.0,3000.0,3300.0,3426.0
+BALANCE_SHEET,bsa175,2,BSA78,Cổ phiếu phổ thông có quyền biểu quyết,Common shares,VND bn,160.0,160.0,160.0,1000.0,3000.0,3000.0,3300.0,3426.0
+BALANCE_SHEET,bsa81,2,BSA78,Thặng dư vốn cổ phần,Capital surplus,VND bn,0.0,0.0,0.0,0.011,0.0416,0.0416,572.7257,446.7257
+BALANCE_SHEET,bss253,2,BSA78,Quỹ dự trữ bổ sung vốn điều lệ,Charter reserve,VND bn,0.0,0.0,0.0,2.5989,2.5989,2.5989,2.5989,2.5989
+BALANCE_SHEET,bsa87,2,BSA78,Quỹ dự phòng tài chính và rủi ro nghiệp vụ,Financial reserve funds,VND bn,0.636,0.636,0.636,3.2349,3.2349,3.2349,3.2349,0.0
+BALANCE_SHEET,bsa90,2,BSA78,Lợi nhuận chưa phân phối,Undistributed earnings,VND bn,1.4108,1.2986,3.4512,52.7229,130.4857,299.47,151.2406,427.0052
+BALANCE_SHEET,bss254,2,BSA78,Lợi nhuận đã thực hiện,Realized gain,VND bn,8.4736,8.6923,3.4512,47.5416,208.6653,305.6637,185.6986,451.8995
+BALANCE_SHEET,bsa178,2,BSA78,LNST chưa phân phối kỳ này,Current period undistributed earnings,VND bn,8.4736,8.6923,3.4512,47.5416,208.6653,305.6637,185.6986,451.8995
+BALANCE_SHEET,bss255,2,BSA78,Lợi nhuận chưa thực hiện,Unrealized gain,VND bn,-7.0628,-7.3937,0.0,5.1812,-78.1796,-6.1938,-34.458,-24.8943
+BALANCE_SHEET,bsa96,1,,TỔNG CỘNG NGUỒN VỐN,TOTAL RESOURCES,VND bn,164.7301,176.592,187.3093,2315.2262,6409.1448,7446.0627,10637.2521,15139.2267
+BALANCE_SHEET,nos360,2,ASSETS_OF_THE_COMPANY_AND_ASSETS_MANAGED_UNDER_AGREEMENTS,Cổ phiếu đang lưu hành (Số lượng),Outstanding Shares (Volume),units,16000000.0,16000000.0,16000000.0,100000000.0,300000000.0,300000000.0,330000000.0,342600000.0
+BALANCE_SHEET,nos362,2,ASSETS_OF_THE_COMPANY_AND_ASSETS_MANAGED_UNDER_AGREEMENTS,Tài sản tài chính niêm yết/đăng ký giao dịch tại VSD của CTCK,Financial assets of company listed on Stock Exchanges or registered at the VSD,VND bn,1.6088,1.6088,10.0,29.8719,100.6333,35.7589,285.9553,2005.9508
+BALANCE_SHEET,nos370,2,ASSETS_OF_THE_COMPANY_AND_ASSETS_MANAGED_UNDER_AGREEMENTS,Tài sản tài chính đã lưu ký tại VSD và chưa giao dịch của CTCK,Financial assets deposited at VSD and not yet available for transaction,VND bn,0.0,0.0,0.0,0.0001,0.0003,0.0002,0.001,0.0
+BALANCE_SHEET,nos375,2,ASSETS_OF_THE_COMPANY_AND_ASSETS_MANAGED_UNDER_AGREEMENTS,Tài sản tài chính chờ về của CTCK,Financial assets with pending receipt (of the assets),VND bn,0.0,0.0,0.0,0.0,0.0,0.0,0.1249,1.9492
+BALANCE_SHEET,nos377,2,ASSETS_OF_THE_COMPANY_AND_ASSETS_MANAGED_UNDER_AGREEMENTS,Tài sản tài chính chưa lưu ký tại VSD của CTCK,Financial assets which have not been registered at VSD of the Securities company,VND bn,19.54,19.54,0.0,0.0,0.0,0.0,0.0,0.0
+BALANCE_SHEET,nos378,2,ASSETS_OF_THE_COMPANY_AND_ASSETS_MANAGED_UNDER_AGREEMENTS,Tài sản tài chính được hưởng quyền của CTCK,Financial assets with rights entitled of the Securities company,VND bn,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1115
+BALANCE_SHEET,nos379,2,ASSETS_OF_AND_LIABILITIES_TO_CUSTOMERS,Tài sản tài chính niêm yết/đăng ký giao dịch tại VSD của NĐT,Financial assets listed/registered at VSD of the investor,VND bn,2357.7899,2007.4675,2544.4803,5622.856,8568.6394,11700.4774,16734.762,18471.4058
+BALANCE_SHEET,nos380,2,ASSETS_OF_AND_LIABILITIES_TO_CUSTOMERS,Tài sản tài chính giao dịch tự do chuyển nhượng,Financial assets that can be freely traded,VND bn,2277.0983,1898.9321,2437.4354,5388.9616,7919.8286,10832.8839,13607.4039,15996.3702
+BALANCE_SHEET,nos381,2,ASSETS_OF_AND_LIABILITIES_TO_CUSTOMERS,Tài sản tài chính hạn chế chuyển nhượng,Financial assets of which trading is restricted,VND bn,3.0503,4.9864,3.1803,3.2104,29.0535,3.1495,2491.1655,533.6823
+BALANCE_SHEET,nos382,2,ASSETS_OF_AND_LIABILITIES_TO_CUSTOMERS,Tài sản tài chính giao dịch cầm cố,Collateral financial assets,VND bn,74.9598,82.1001,82.1001,160.1364,560.8625,699.0839,469.8375,1145.9097
+BALANCE_SHEET,nos383,2,ASSETS_OF_AND_LIABILITIES_TO_CUSTOMERS,"Tài sản tài chính phong tỏa, tạm giữ",Financial assets frozen/on custody,VND bn,0.0,0.0,0.0,0.0,0.0,0.0,0.0,89.6863
+BALANCE_SHEET,nos384,2,ASSETS_OF_AND_LIABILITIES_TO_CUSTOMERS,Tài sản tài chính chờ thanh toán,Financial assets with pending payment,VND bn,2.6815,21.4488,21.7645,70.5477,58.8948,165.3601,166.3551,705.7572
+BALANCE_SHEET,nos386,2,ASSETS_OF_AND_LIABILITIES_TO_CUSTOMERS,Tài sản tài chính đã lưu ký tại VSD và chưa giao dịch của NĐT,"Financial assets deposited at VSD, not yet available for transaction",VND bn,4.3133,0.2001,35.885,31.293,125.4429,1301.3667,491.3847,292.3955
+BALANCE_SHEET,nos387,2,ASSETS_OF_AND_LIABILITIES_TO_CUSTOMERS,"Tài sản tài chính đã lưu ký tại VSD và chưa giao dịch, tự do chuyển nhượng","FA deposited at VSD, not yet available for transaction, freely traded",VND bn,0.7236,0.2001,35.885,31.293,1.3579,844.2961,33.8984,129.9793
+BALANCE_SHEET,nos388,2,ASSETS_OF_AND_LIABILITIES_TO_CUSTOMERS,"Tài sản tài chính đã lưu ký tại VSD và chưa giao dịch, hạn chế chuyển nhượng","FA deposited at VSD, not yet available for transaction, trading restricted",VND bn,3.5897,0.0,0.0,0.0,124.085,457.0706,457.4863,162.4162
+BALANCE_SHEET,nos391,2,ASSETS_OF_AND_LIABILITIES_TO_CUSTOMERS,Tài sản tài chính chờ về của NĐT,Financial assets with pending receipt (of the assets),VND bn,4.5864,49.9881,19.0668,99.6585,66.0447,193.5166,193.2945,436.2997
+BALANCE_SHEET,nos394,2,ASSETS_OF_AND_LIABILITIES_TO_CUSTOMERS,Tài sản tài chính được hưởng quyền của Nhà đầu tư,Enititled financial assets of investors,VND bn,0.0,0.0,0.0,0.0,0.0,0.0,0.0,282.3344
+BALANCE_SHEET,nos395,2,ASSETS_OF_AND_LIABILITIES_TO_CUSTOMERS,Tiền gửi của khách hàng,Customers's deposits,VND bn,24.7909,72.0643,166.7224,444.9473,293.7249,877.3345,1384.8008,3156.682
+BALANCE_SHEET,nos396,2,ASSETS_OF_AND_LIABILITIES_TO_CUSTOMERS,Tiền gửi của Nhà đầu tư về giao dịch chứng khoán,Customers's deposits for securities trading,VND bn,6.9114,18.7613,113.7289,434.6719,251.0355,790.4168,1339.6848,2902.9607
+BALANCE_SHEET,nos399,2,ASSETS_OF_AND_LIABILITIES_TO_CUSTOMERS,Tiền gửi tổng hợp giao dịch chứng khoán cho khách hàng,Investors' synthesizing deposits for securities trading activities,VND bn,8.4609,52.9934,52.9675,0.0073,0.007,0.0071,0.0071,0.0594
+BALANCE_SHEET,nos413,2,ASSETS_OF_AND_LIABILITIES_TO_CUSTOMERS,"Phải trả cổ tức, gốc và lãi trái phiếu","Dividend, bond principal and interest payables",VND bn,0.0,0.0,0.1348,0.0003,0.0006,0.0001,0.0,0.0
+CASH_FLOW,cfa1,2,CFA_OPERATION_ACTIVITIES,LỢI NHUẬN TRƯỚC THUẾ,NET PROFIT/(LOSS) BEFORE TAX,VND bn,5.5981,0.0753,2.8252,68.126,94.9238,285.6361,227.5015,340.225
+CASH_FLOW,cfs165,1,,Điều chỉnh cho các khoản,Adjustment,VND bn,1.432,1.5283,0.614,-6.0538,23.7388,-56.2419,-81.874,-21.1663
+CASH_FLOW,cfa2,2,CFS165,Khấu hao tài sản cố định,Depreciation and amortization,VND bn,1.547,1.6433,0.8139,2.4451,5.0353,16.2492,25.9387,35.4137
+CASH_FLOW,cfa3,2,CFS165,Các khoản dự phòng,Provisions,VND bn,0.0,0.0,0.0,0.0,39.5861,5.0334,-2.3694,11.9942
+CASH_FLOW,cfa7,2,CFS165,Chi phí lãi vay,Interest expense,VND bn,0.0,0.0,0.0713,2.7233,29.8364,22.1023,28.0398,66.827
+CASH_FLOW,cfa6,2,CFS165,"Lãi, lỗ hoạt động đầu tư",Profit/(loss) from investing activities,VND bn,-0.115,-0.115,-0.1469,-0.7684,-1.8541,-3.4574,-4.5924,-7.5324
+CASH_FLOW,cfa8,2,CFS165,Dự thu lãi và cổ tức,Interest income and dividend,VND bn,0.0,0.0,-0.1244,-10.4538,-48.8648,-96.1693,-128.8908,-127.8688
+CASH_FLOW,cfs167,1,,Tăng các chi phí phi tiền tệ,Increase in non-cash expense,VND bn,0.8631,0.5545,0.0,0.0039,78.1765,-71.7414,28.2577,-9.2813
+CASH_FLOW,cfs168,2,CFS167,Lỗ đánh giá giá trị các tài sản tài chính ghi nhận thông qua lãi/lỗ FVTPL,Loss on valuation of fair value through profit/loss financial assets,VND bn,0.8631,0.5545,0.0,0.0039,78.1765,-71.7414,28.2577,-9.2813
+CASH_FLOW,cfs182,1,,Giảm các doanh thu phi tiền tệ,Decrease in non-cash revenue,VND bn,-0.5617,-0.2235,-3.3629,-3.1176,6.4795,-0.3056,0.0081,-0.3529
+CASH_FLOW,cfs183,2,CFS182,Lãi đánh giá giá trị các tài sản chính ghi nhận thông qua lãi/lỗ FVTPL,Profit from revaluation of fair value through profit and loss financial assets,VND bn,-0.5617,-0.2235,-3.3629,-3.1176,6.4795,-0.3056,0.0081,-0.3529
+CASH_FLOW,cfa9,1,,Lợi nhuận từ hoạt động kinh doanh trước thay đổi vốn lưu động,Operating profit/(loss) before changes in WC,VND bn,-12.4514,-22.3239,-4.0812,-2068.5344,-3278.2616,-890.6416,-2962.3326,-4965.5256
+CASH_FLOW,cfs195,2,CFA9,Tăng (giảm) tài sản tài chính ghi nhận thông qua lãi/ lỗ (FVTPL),Increase (decrease) in fair value through profit and loss financial assets,VND bn,0.0,0.0,1.0297,-57.9795,-576.1635,349.063,103.2342,-1908.752
+CASH_FLOW,cfs196,2,CFA9,Tăng (giảm) các khoản đầu tư giữ đến ngày đáo hạn (HTM),Increase (decrease) in held to marturity investments,VND bn,-16.0167,-7.4,28.4668,-800.4378,-1940.6146,-671.6961,-1608.1747,-1163.1298
+CASH_FLOW,cfs197,2,CFA9,Tăng(giảm) các khoản cho vay,Increase (decrease) in loans given,VND bn,9.4773,-12.2743,0.1412,-1169.3987,-1087.8814,-202.6919,-1398.5168,-1950.6056
+CASH_FLOW,cfs207,2,CFA9,"(-) Tăng, (+) giảm phải thu và dự thu cổ tức, tiền lãi các tài sản tài chính",Increase (decrease) in receivable from interest of financial assets,VND bn,-1.5923,-1.4864,5.6798,-15.6043,-49.8304,16.9471,55.21,96.6966
+CASH_FLOW,cfs208,2,CFA9,"(-) Tăng, (+) giảm các khoản phải thu các dịch vụ CTCK cung cấp",Increase (decrease) in receivable from services rendered,VND bn,0.0866,-0.1572,0.444,-0.9787,0.2644,-0.115,-0.6626,-5.6383
+CASH_FLOW,cfa10,2,CFA9,"(-) Tăng, (+) giảm các khoản phải thu khác",Increase/(decrease) in receivables,VND bn,-0.9998,-0.0248,-38.9658,-34.116,-50.3954,114.0628,-0.6602,-0.5157
+CASH_FLOW,cfs199,2,CFA9,Tăng/giảm các tài sản khác,Increase (decrease) in other assets,VND bn,-0.0003,0.0019,-0.2074,-1.0152,-24.9068,2.5177,21.8481,-1.5677
+CASH_FLOW,cfs223,2,CFA9,"(-) Tăng, (+) giảm chi phí phải trả (không bao gồm chi phí lãi vay)",Increase/ (decrease) in payable expenses (excluding interest expenses),VND bn,0.0,-0.0119,2.8708,22.3171,102.8815,206.5253,184.9302,350.9942
+CASH_FLOW,cfa13,2,CFA9,Tăng/giảm chi phí trả trước,Increase/(decrease) in prepaid expenses,VND bn,-0.1475,0.8439,-1.1237,-1.2286,-2.8821,-6.6687,-0.7391,0.5572
+CASH_FLOW,cfa15,2,CFA9,Thuế TNDN CTCK đã nộp,Business Income Tax paid,VND bn,0.0,-1.2266,-0.1089,-11.4801,-8.9021,-42.9845,-61.874,-67.9208
+CASH_FLOW,cfa14,2,CFA9,Tiền lãi vay đã trả,Interest paid,VND bn,0.0,0.0,-1.3753,-23.1957,-128.4229,-218.8487,-206.4514,-353.5262
+CASH_FLOW,cfs210,2,CFA9,"(+) Tăng, (-) giảm phải trả cho người bán",Increase (decrease) in trade payables,VND bn,-1.0006,0.1042,0.1066,0.0854,0.1183,0.1727,1.2653,2.1837
+CASH_FLOW,cfs212,2,CFA9,"(+) Tăng, (-) giảm các khoản trích nộp phúc lợi nhân viên",Increase (decrease) in contribution to employees' welfare,VND bn,0.0302,0.0256,0.0141,0.0657,0.0844,0.2632,0.5268,0.6279
+CASH_FLOW,cfs213,2,CFA9,"(+) Tăng, (-) giảm thuế và các khoản phải nộp Nhà nước",Increase (decrease) in tax and payables to authority,VND bn,0.7039,0.1122,0.1474,14.2954,-9.5942,0.4359,11.516,8.9619
+CASH_FLOW,cfs214,2,CFA9,"(+) Tăng, (-) giảm phải trả người lao động",Increase (decrease) in payables to employees,VND bn,-1.7042,-0.1331,-0.481,6.369,0.0261,9.4979,2.4039,20.6485
+CASH_FLOW,cfa12,2,CFA9,"(+) Tăng, (-) giảm các khoản phải trả, phải nộp khác",(Increase)/decrease in payables,VND bn,-0.0673,-0.0038,0.2594,4.0474,501.9541,-88.3227,-406.3418,10.5068
+CASH_FLOW,cfa17,2,CFA9,Tiền chi khác cho hoạt động kinh doanh,Other payments on operating activitie,VND bn,-1.2207,-0.6937,-0.979,-0.2799,-3.997,-13.6495,-4.4532,-5.5799
+CASH_FLOW,cfs220,2,CFA9,Các khoản chi khác,Other expenses,VND bn,-1.2207,-0.6937,-0.979,-0.2799,-3.997,-13.6495,-4.4532,-5.5799
+CASH_FLOW,cfs194,2,CFA9,Thay đổi tài sản và nợ phải trả hoạt động (Trước năm 2016),Change in assets and operating liabilities (Before 2016),VND bn,-6.5397,-19.6724,29.4304,-2028.8312,-3629.5664,-867.9574,-2537.0024,-5023.5217
+CASH_FLOW,cfs200,2,CFA9,Tăng/giảm các khoản phải thu (Trước năm 2016),Increase (decrease) in receivable (Before 2016),VND bn,0.0,0.0,0.0,0.0,0.0,-345.1501,344.6067,0.5334
+CASH_FLOW,cfa18,1,,Lưu chuyển thuần từ hoạt động kinh doanh,Net cash inflows/(outflows) from operating activities,VND bn,-5.1198,-20.3893,-4.0048,-2009.5759,-3074.943,-733.2944,-2788.4392,-4656.101
+CASH_FLOW,cfa19,2,CFA_INVESTMENT_ACTIVITIES,"Tiền chi để mua sắm, xây dựng TSCĐ, BĐSĐT và các tài sản dài hạn khác",Purchases of fixed assets and other long term assets,VND bn,-0.2743,-0.155,-6.4371,-15.9328,-27.0103,-44.0276,-16.127,-23.0978
+CASH_FLOW,cfa20,2,CFA_INVESTMENT_ACTIVITIES,"Tiền thu từ thanh lý, nhượng bán TSCĐ, BĐSĐT và các tài sản dài hạn khác",Proceeds from disposal of fixed assets,VND bn,0.0,0.0,0.0,0.0,0.0,0.0,0.9591,0.0
+CASH_FLOW,cfa25,2,CFA_INVESTMENT_ACTIVITIES,Tiền thu về cổ tức lợi nhuận được chia từ các khoản đầu tư tài chính dài hạn,Dividends and interest received,VND bn,0.115,0.115,0.1469,0.7684,1.8541,3.4574,4.9439,7.5324
+CASH_FLOW,cfa26,1,,Lưu chuyển tiền thuần từ hoạt động đầu tư,Net cash inflows/(outflows) from investing activities,VND bn,-0.1593,-0.04,-6.2902,-15.1644,-25.1561,-40.5702,-10.224,-15.5655
+CASH_FLOW,cfa27,2,CFA_FINANCING_ACTIVITIES,"Tiền thu từ phát hành cổ phiếu, nhận vốn góp của chủ sở hữu",Proceeds from issue of shares,VND bn,0.0,0.0,0.0,840.011,2000.0306,0.0,872.6842,0.0
+CASH_FLOW,cfa29,2,CFA_FINANCING_ACTIVITIES,Tiền vay gốc,Proceeds from borrowings,VND bn,1003.544,417.2452,374.301,3928.8766,9434.8615,14905.4802,31668.5047,49711.5011
+CASH_FLOW,cfs114,2,CFA_FINANCING_ACTIVITIES,Tiền vay khác,Other loans received,VND bn,1003.544,417.2452,374.301,3928.8766,9434.8615,14905.4802,31668.5047,49711.5011
+CASH_FLOW,cfa30,2,CFA_FINANCING_ACTIVITIES,Tiền chi trả nợ gốc vay,Repayment of borrowings,VND bn,-1008.244,-404.3252,-368.016,-2724.2216,-7923.8788,-13997.2669,-28817.2636,-45605.7733
+CASH_FLOW,cfs117,2,CFA_FINANCING_ACTIVITIES,Tiền chi trả gốc nợ vay khác,Other Loans principal repaid,VND bn,-1008.244,-404.3252,-368.016,-2724.2216,-7923.8788,-13997.2669,-28817.2636,-45605.7733
+CASH_FLOW,cfa31,2,CFA_FINANCING_ACTIVITIES,Tiền chi trả nợ thuê tài chính,Finance lease principal payments,VND bn,0.0,0.0,0.0,0.0,0.0,-1.009,-7.3758,-16.6447
+CASH_FLOW,cfa32,2,CFA_FINANCING_ACTIVITIES,"Cổ tức, lợi nhuận đã trả cho chủ sở hữu",Dividends paid,VND bn,0.0,0.0,0.0,0.0,0.0,-60.0,-330.0,0.0
+CASH_FLOW,cfa34,1,,Lưu chuyển thuần từ hoạt động tài chính,Net cash inflows/(outflows) from financing activities,VND bn,-4.7,12.92,6.285,2044.666,3511.0133,847.2044,3386.5495,4089.0832
+CASH_FLOW,cfa35,1,,LƯU CHUYỂN TIỀN THUẦN TRONG KỲ,NET CASH INFLOWS/(OUTFLOWS),VND bn,-9.9791,-7.5093,-4.01,19.9257,410.9142,73.3398,587.8862,-582.5833
+CASH_FLOW,cfa36,1,,TIỀN VÀ CÁC KHOẢN TƯƠNG ĐƯƠNG TIỀN ĐẦU KỲ,CASH AND CASH EQUIVALENTS AT THE BEGINNING OF PERIOD,VND bn,22.5917,12.6156,5.1063,1.0963,21.0219,431.9361,505.2759,1093.1621
+CASH_FLOW,cfs118,2,CFA36,"Tiền mặt, tiền gửi ngân hàng đầu kỳ",Cash and bank deposit at the beginning of the period,VND bn,0.0917,0.3156,0.1063,0.0963,0.6844,431.9361,505.2759,943.1621
+CASH_FLOW,cfs120,2,CFA36,Các khoản tương đương tiền,Cash equivalents,VND bn,22.5,12.3,5.0,1.0,20.3376,0.0,0.0,150.0
+CASH_FLOW,cfa38,1,,TIỀN VÀ CÁC KHOẢN TƯƠNG ĐƯƠNG TIỀN CUỐI KỲ,CASH AND CASH EQUIVALENTS AT THE END OF PERIOD,VND bn,12.6126,5.1063,1.0963,21.0219,431.9361,505.2759,1093.1621,510.5788
+CASH_FLOW,cfs121,2,CFA38,"Tiền mặt, tiền gửi ngân hàng kỳ",Cash and bank deposit during the period,VND bn,0.3156,0.1063,0.0963,0.6844,431.9361,505.2759,943.1621,510.5788
+CASH_FLOW,cfs123,2,CFA38,Các khoản tương đương tiền,Cash equivalents,VND bn,12.3,5.0,1.0,20.3376,0.0,0.0,150.0,0.0
+CASH_FLOW,cfs125,2,CFA_TRUST_ACTIVITIES,Tiền thu bán chứng khoán môi giới cho khách hàng,Cash inflow from securities sales broking,VND bn,3202.5489,1589.2452,1805.4003,23205.9134,37934.9707,41690.2789,74694.6369,136782.9982
+CASH_FLOW,cfs126,2,CFA_TRUST_ACTIVITIES,Tiền chi mua chứng khoán môi giới cho khách hàng,Cash outflow from securities purchase broking,VND bn,-2806.8237,-1366.1514,-2849.1002,-32693.1007,-37964.1099,-44313.4294,-71625.1868,-135961.3105
+CASH_FLOW,cfs128,2,CFA_TRUST_ACTIVITIES,Tiền chi bán chứng khoán ủy thác của khách hàng,Cash outflow from mandated securities sales,VND bn,-4932.202,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+CASH_FLOW,cfs133,2,CFA_TRUST_ACTIVITIES,Nhận tiền gửi để thanh toán giao dịch chứng khoán của khách hàng,Cash received for the purpose of transaction of clients,VND bn,4493.6224,2353.5112,4571.207,25857.815,67486.3789,80257.5899,150629.8166,369173.4282
+CASH_FLOW,cfs224,2,CFA_TRUST_ACTIVITIES,Chi trả thanh toán giao dịch chứng khoán của khách hàng,Cash outflow on securities transaction settlement of clients,VND bn,0.0,-2528.5453,-3431.8576,-16090.811,-67605.8281,-77046.9644,-153185.3905,-368214.2097
+CASH_FLOW,cfs135,2,CFA_TRUST_ACTIVITIES,Chi trả phí lưu ký chứng khoán của khách hàng,Cash paid for depository fee of clients,VND bn,-1.3501,-0.7863,-1.1263,-1.3569,-2.6343,-3.865,-6.4097,-9.025
+CASH_FLOW,cfs138,2,CFA_TRUST_ACTIVITIES,Tiền thu của Tổ chức phát hành chứng khoán,Cash received from issuing organizations,VND bn,49.3141,13.8249,19.2275,50.8359,79.5616,576.9583,448.8615,743.437
+CASH_FLOW,cfs139,2,CFA_TRUST_ACTIVITIES,Tiền chi trả Tổ chức phát hành chứng khoán,Cash paid to issuing organizations,VND bn,-49.3141,-13.8249,-19.0927,-51.0709,-79.5613,-576.9587,-448.8617,-743.437
+CASH_FLOW,cfs140,1,,"Lưu chuyển tiền hoạt động môi giới, ủy thác của khách hàng",Net cash inflows/(outflows) from brokerage and trust activities,VND bn,-44.2045,47.2733,94.6581,278.2249,-151.2224,583.6096,507.4663,1771.8812
+CASH_FLOW,cfs141,1,,TIỀN VÀ CÁC KHOẢN TƯƠNG ĐƯƠNG TIỀN ĐẦU KỲ CỦA KHÁCH HÀNG,CASH AND CASH EQUIVALENTS OF CUSTOMERS AT THE BEGINNING OF PERIOD,VND bn,68.9954,24.7909,72.0643,166.7224,444.9473,293.7249,877.3345,1384.8008
+CASH_FLOW,cfs142,2,CFS141,Tiền gửi ngân hàng đầu kỳ,Cash and cash equivalent at the beginning of period,VND bn,68.9954,24.7909,72.0643,166.7224,444.9473,293.7249,877.3345,1384.8008
+CASH_FLOW,cfs143,2,CFS141,Tiền gửi của NĐT về GDCK theo phương thức CTCK quản lý,Investors' deposit for securities transaction by Securities company managed method,VND bn,17.8912,6.9114,18.7613,113.7289,434.6719,251.0355,790.4168,1339.6848
+CASH_FLOW,cfs147,2,CFS141,Tiền gửi của tổ chức phát hành,Issuing organization's deposit,VND bn,1.1017,9.4187,0.3097,0.0261,10.2681,42.6824,86.9107,45.1089
+CASH_FLOW,cfs148,2,CFS141,Trong đó: có kỳ hạn,In which: amounts which have specific term,VND bn,50.0026,8.4609,52.9934,52.9675,0.0073,0.007,0.0071,0.0071
+CASH_FLOW,cfs153,1,,TIỀN VÀ CÁC KHOẢN TƯƠNG ĐƯƠNG TIỀN CUỐI KỲ CỦA KHÁCH HÀNG,CASH AND CASH EQUIVALENTS OF CUSTOMERS AT THE END OF PERIOD,VND bn,24.7909,72.0643,166.7224,444.9473,293.7249,877.3345,1384.8008,3156.682
+CASH_FLOW,cfs154,2,CFS153,Tiền gửi ngân hàng cuối kỳ,Cash and cash equivalent at the end of period,VND bn,24.7909,72.0643,166.7224,444.9473,293.7249,877.3345,1384.8008,3156.682
+CASH_FLOW,cfs155,2,CFS153,Tiền gửi của NĐT về GDCK theo phương thức CTCK quản lý,Investors' deposit for securities transaction by Securities company managed method,VND bn,6.9114,18.7613,113.7289,434.6719,251.0355,790.4168,1339.6848,2902.9607
+CASH_FLOW,cfs159,2,CFS153,Tiền gửi tổng hợp GDCK cho khách hàng,Customers' general deposit for securities transactions,VND bn,8.4609,52.9934,52.9675,0.0073,0.007,0.0071,0.0071,0.0594
+CASH_FLOW,cfs160,2,CFS153,Tiền gửi bù trừ và thanh toán GDCK,Deposit for securities clearing,VND bn,9.4187,0.3097,0.0261,10.2681,42.6824,86.9107,45.1089,253.6619
+NOTE,nos88,1,,TIỀN VÀ TƯƠNG ĐƯƠNG TIỀN,CASH AND CASH EQUIVALENT,VND bn,12.6156,5.1063,1.0963,21.0219,431.9361,505.2759,1093.1621,510.5788
+NOTE,nos89,2,NOS88,Tiền mặt,Cash,VND bn,0.0024,0.0192,0.0933,0.0,0.0,378.8864,861.2805,496.7425
+NOTE,nos90,2,NOS88,Tiền gửi ngân hàng,Cash in bank,VND bn,0.2972,0.0707,0.0,0.6814,431.9332,0.0,0.0,0.0
+NOTE,nos94,2,NOS88,Tiền gửi thanh toán bù trừ giao dịch CK,Deposits clearing securities trading,VND bn,0.0159,0.0164,0.003,0.0029,0.0029,126.3895,81.8816,13.8364
+NOTE,nos95,2,NOS88,Tiền và tương đương tiền,Cash and cash equivalents,VND bn,12.3,5.0,1.0,20.3376,0.0,0.0,150.0,0.0
+NOTE,nos96,1,,KHỐI LƯỢNG GIAO DỊCH THỰC HIỆN TRONG KỲ CỦA CTCK,TRADING VOLUME IN PERIOD OF SECURITIES CORPORATIONS,VND bn,0.0151,0.003,0.0014,0.0136,0.0533,0.0703,0.2633,0.6312
+NOTE,nos97,2,NOS96,Khối lượng Cổ phiếu,Stock volume,units,2140000.0,0.0,1160885.0,13632532.0,8946238.0,31352218.0,10699942.0,82602573.0
+NOTE,nos98,2,NOS96,Khối lượng Trái phiếu,Bond volume,units,13000000.0,3000000.0,250000.0,0.0,43741163.0,32141297.0,243046528.0,527451462.0
+NOTE,nos99,2,NOS96,Khối lượng chứng khoán khác,Others,units,0.0,0.0,0.0,0.0,577590.0,6784269.0,9541906.0,21144039.0
+NOTE,nos100,1,,GIÁ TRỊ GIAO DỊCH THỰC HIỆN TRONG KỲ CỦA CTCK,TRADING VALUE IN PERIOD OF SECURITIES CORPORATION,VND bn,1674.2845,305.614,50.6228,399.9977,11947.4138,23853.465,48286.3203,69003.4857
+NOTE,nos101,2,NOS100,Giá trị Cổ phiếu,Value of shares,VND bn,23.112,0.0,20.866,399.9977,339.7911,962.6581,236.7701,1320.711
+NOTE,nos102,2,NOS100,Giá trị Trái phiếu,Value of bonds,VND bn,1651.1725,305.614,29.7568,0.0,4936.3652,5871.8038,31571.6026,63756.5711
+NOTE,nos103,2,NOS100,Giá trị chứng khoán khác,Value of others,VND bn,0.0,0.0,0.0,0.0,6671.2575,17019.0031,16477.9477,3926.2036
+NOTE,nos104,1,,KHỐI LƯỢNG GIAO DỊCH THỰC HIỆN TRONG KỲ CỦA NĐT,TRADING VOLUME IN PERIOD OF INVESTORS,VND bn,0.4103,0.2701,0.3687,1.8915,3.1913,4.9206,7.2502,12.1999
+NOTE,nos105,2,NOS104,Khối lượng Cổ phiếu,Stock volume,units,410290543.0,270092914.0,368708192.0,1891489181.0,3191324461.0,4920549193.0,6885774484.0,11466103380.0
+NOTE,nos106,2,NOS104,Khối lượng Trái phiếu,Bond volume,units,0.0,0.0,0.0,0.0,0.0,30100.0,3200189.0,68609361.0
+NOTE,nos107,2,NOS104,Khối lượng chứng khoán khác,Other volume,units,0.0,0.0,0.0,0.0,0.0,0.0,361268536.0,665187044.0
+NOTE,nos108,1,,GIÁ TRỊ GIAO DỊCH THỰC HIỆN TRONG KỲ CỦA NĐT,TRADING VALUE IN PERIOD OF INVESTORS,VND bn,5949.9123,3018.1329,5553.568,57048.4216,75610.5031,86483.9048,146682.402,281469.5817
+NOTE,nos109,2,NOS108,Giá trị Cổ phiếu,Value of shares,VND bn,5949.9123,3018.1329,5553.568,57048.4216,75610.5031,85948.6792,144943.9501,272389.2029
+NOTE,nos110,2,NOS108,Giá trị Trái phiếu,Value of bonds,VND bn,0.0,0.0,0.0,0.0,0.0,535.2257,1325.3851,7997.4087
+NOTE,nos111,2,NOS108,Giá trị chứng khoán khác,Value of others,VND bn,0.0,0.0,0.0,0.0,0.0,0.0,413.0668,1082.9701
+NOTE,nos119,1,,GIÁ GỐC ĐẦU TƯ TÀI CHÍNH,COST OF FINANCIAL INVESTMENTS,VND bn,150.2969,169.9712,125.167,2152.9829,5564.9103,5553.2858,6857.8184,12504.176
+NOTE,nos120,2,NOS119,Đầu tư tài chính ngắn hạn,Short-term investments,VND bn,28.0606,28.0606,19.6371,77.6166,653.7801,304.7171,201.4829,2110.2349
+NOTE,nos121,2,NOS119,Chứng khoán thương mại,Trading Securities,VND bn,28.0606,28.0606,19.6371,77.6166,653.7801,100.5989,201.4829,2072.6349
+NOTE,nos122,2,NOS119,Cổ phiếu niêm yết,Listed Shares,VND bn,8.6286,8.6286,0.0,77.6166,373.7801,99.5937,135.4688,371.4771
+NOTE,nos123,2,NOS119,Cổ phiếu chưa niêm yết,Unlisted Share,VND bn,19.432,19.432,19.6371,0.0,280.0,0.0,0.0,0.0
+NOTE,nos124,2,NOS119,Chứng chỉ quỹ,Fund certificates,VND bn,0.0,0.0,0.0,0.0,0.0,1.0052,2.0039,6.8284
+NOTE,nos125,2,NOS119,Trái phiếu,Bonds,VND bn,0.0,0.0,0.0,0.0,0.0,0.0,64.0102,1694.3294
+NOTE,nos126,2,NOS119,Đầu tư tài chính ngắn hạn khác,Other short-term investments,VND bn,0.0,0.0,0.0,0.0,0.0,204.1182,0.0,37.6
+NOTE,nos414,2,NOS119,Công cụ thị trường tiền tệ,Money Market Instruments,VND bn,0.0,0.0,0.0,0.0,0.0,204.1182,0.0,37.6
+NOTE,nos433,2,NOS119,Giá trị ghi sổ Các khoản đầu tư giữ đến ngày đáo hạn (HTM),Carrying amount of Held-to-maturity investments,VND bn,78.5,85.9,82.4332,882.871,2630.7535,2765.5,2774.75,4561.75
+NOTE,nos435,2,NOS119,Cổ phiếu chưa niêm yết,Unlisted shares,VND bn,78.5,85.9,82.4332,882.871,1902.8767,955.0,2574.75,4461.75
+NOTE,nos438,2,NOS119,Công cụ thị trường tiền tệ,Money Market Instruments,VND bn,0.0,0.0,0.0,0.0,727.8767,1810.5,200.0,100.0
+NOTE,nos445,2,NOS119,Các khoản cho vay và phải thu,Loans and Receivables,VND bn,18.7363,31.0106,23.0967,1192.4954,2280.3767,2483.0686,3881.5855,5832.1911
+NOTE,nos446,2,NOS119,Cho vay nghiệp vụ ký quỹ (margin),Margin Loan,VND bn,18.6901,29.5894,16.5832,1107.0255,2250.1721,2411.8292,3783.9689,5248.0854
+NOTE,nos447,2,NOS119,Cho vay ứng trước tiền bán chứng khoán của khách hàng,Advanced selling customers' securities lending,VND bn,0.0462,1.4212,6.5134,85.4698,30.2047,71.2395,97.6166,584.1057
+NOTE,nos127,2,NOS119,Đầu tư tài chính dài hạn,Long-term investments,VND bn,25.0,25.0,0.0,0.0,0.0,0.0,0.0,0.0
+NOTE,nos133,2,NOS119,Chứng khoán nắm giữ đến ngày đáo hạn,Securities held to maturity,VND bn,25.0,25.0,0.0,0.0,0.0,0.0,0.0,0.0
+NOTE,nos137,2,NOS119,Trái phiếu,Bonds,VND bn,0.0,25.0,0.0,0.0,0.0,0.0,0.0,0.0
+NOTE,nos146,1,,GIÁ THỊ TRƯỜNG ĐẦU TƯ TÀI CHÍNH,MARKET VALUE OF FINANCIAL INVESTMENTS,VND bn,20.9978,20.6668,23.0,84.0931,575.6007,298.5847,167.0846,2085.4708
+NOTE,nos147,2,NOS146,Đầu tư tài chính dài hạn,Long-term financial investment,VND bn,20.9978,20.6668,23.0,84.0931,575.6007,298.5847,167.0846,2085.4708
+NOTE,nos148,2,NOS146,Chứng khoán thương mại,Trading Securities,VND bn,20.9978,20.6668,23.0,84.0931,575.6007,94.4664,167.0846,2047.8708
+NOTE,nos149,2,NOS146,Cổ phiếu niêm yết,Listed Shares,VND bn,1.5658,1.2348,0.0,84.0931,295.6007,93.177,104.3074,355.9446
+NOTE,nos150,2,NOS146,Cổ phiếu chưa niêm yết,Unlisted Share,VND bn,19.432,19.432,23.0,0.0,280.0,0.0,0.0,0.0
+NOTE,nos151,2,NOS146,Chứng chỉ quỹ,Fund certificates,VND bn,0.0,0.0,0.0,0.0,0.0,1.2894,2.1463,6.9314
+NOTE,nos152,2,NOS146,Trái phiếu,Bond,VND bn,0.0,0.0,0.0,0.0,0.0,0.0,60.6309,1684.9949
+NOTE,nos153,2,NOS146,Đầu tư tài chính ngắn hạn khác,Other short-term investments,VND bn,0.0,0.0,0.0,0.0,0.0,204.1182,0.0,37.6
+NOTE,nos453,2,NOS146,Công cụ thị trường tiền tệ,Money Market Instruments,VND bn,0.0,0.0,0.0,0.0,0.0,204.1182,0.0,37.6
+NOTE,nos494,1,,TRÍCH LẬP DỰ PHÒNG GIẢM GIÁ CÁC TÀI SẢN TÀI CHÍNH,PROVISION FOR DEVALUATION OF FINANCIAL ASSETS,VND bn,0.0,0.0,0.0,0.0,0.0,0.0,42.1622,54.1188
+NOTE,nos498,2,NOS494,Các khoản cho vay và phải thu,Loans and Receivables,VND bn,0.0,0.0,0.0,0.0,0.0,0.0,42.1622,54.1188
+NOTE,nos505,1,,CÁC KHOẢN PHẢI THU BÁN CÁC KHOẢN ĐẦU TƯ,RECEIVABLES FROM SELLING INVESTMENTS,VND bn,0.0,0.0,0.0,0.0,0.0,345.1501,0.5434,0.01
+NOTE,nos506,2,NOS505,Phải thu bán cổ phiếu,Receivables from selling shares,VND bn,0.0,0.0,0.0,0.0,0.0,345.15,0.0,0.0
+NOTE,nos511,2,NOS505,Phải thu khác,Other Receivables,VND bn,0.0,0.0,0.0,0.0,0.0,0.0001,0.5434,0.01
+NOTE,nos512,1,,"CÁC KHOẢN PHẢI THU VÀ DỰ THU CỔ TỨC, TIỀN LÃI CÁC KHOẢN ĐẦU TƯ","RECEIVABLES AND ACCRUED DIVIDENDS, INTERESTS ON INVESTMENTS",VND bn,5.2782,6.7646,1.2091,27.2673,125.9626,205.1848,278.8656,310.0378
+NOTE,nos513,2,NOS512,"Phải thu cổ tức, tiền lãi phát sinh trong kỳ",Receivables from dividends and interests,VND bn,0.0,0.0,0.0,0.0001,0.0,0.0,0.0,0.0
+NOTE,nos514,2,NOS512,"Dự thu cổ tức, tiền lãi phát sinh trong kỳ chưa đến ngày thu trong kỳ",Accrued dividends and interests not yet due,VND bn,5.2782,6.7646,1.2091,27.2672,125.9626,205.1848,278.8656,310.0378
+NOTE,nos523,1,,PHẢI THU CÁC DỊCH VỤ CTCK CUNG CẤP,RECEIVABLES FROM SERVICES PROVIDED BY THE COMPANY,VND bn,0.5719,0.7291,0.2851,1.2637,0.9993,1.1143,1.7769,7.4151
+NOTE,nos524,2,NOS523,Phải thu hoạt động môi giới chứng khoán,Receivables of providing securities brokerage services,VND bn,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.6155
+NOTE,nos525,2,NOS523,"Phải thu hoạt động bảo lãnh, đại lý phát hành chứng khoán","Receivables from securities issuance underwriting, issue agency",VND bn,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0
+NOTE,nos526,2,NOS523,Phải thu hoạt động tư vấn,Receivables from consultancy services,VND bn,0.0,0.0,0.0,0.7925,0.3274,0.1,0.0,1.9191
+NOTE,nos527,2,NOS523,Phải thu hoạt động lưu ký chứng khoán,Receivables from securities depository,VND bn,0.0,0.0,0.0,0.4712,0.6719,1.0143,1.7769,2.8699
+NOTE,nos534,2,NOS523,Phải thu các dịch vụ CTCK cung cấp khác,Other receivables from services provided by the Company,VND bn,0.5719,0.7291,0.2851,0.0,0.0,0.0,0.0,0.0107
+NOTE,nos192,1,,PHẢI THU NGẮN HẠN KHÁC,SHORT-TERM RECEIVABLES FROM OTHER ACTIVITIES,VND bn,0.012,0.0436,0.0363,0.15,0.0794,6.9286,4.6193,5.2243
+NOTE,nos201,2,NOS192,Các khoản phải thu ngắn hạn khác,Other Short-term receivables,VND bn,0.012,0.0436,0.0363,0.15,0.0794,6.9286,4.6193,5.2243
+NOTE,nos207,1,,NGUYÊN GIÁ TSCĐHH,TANGIBLE FIXED ASSETS - HISTORICAL COST,VND bn,5.0223,5.0223,7.2032,10.7541,11.2638,19.5189,23.3349,28.9
+NOTE,nos208,2,NOS207,Nguyên giá đầu kỳ,Historical cost,VND bn,4.748,5.0223,5.0223,7.2032,10.7541,11.2638,19.5189,23.3349
+NOTE,nos209,2,NOS207,Tăng trong kỳ,Increases,VND bn,0.2743,0.0,3.9648,3.5508,2.2318,8.2552,5.3878,5.5651
+NOTE,nos210,2,NOS207,Giảm trong kỳ,Decreases,VND bn,0.0,0.0,-1.7839,0.0,-1.7221,0.0,-1.5719,0.0
+NOTE,nos211,1,,HAO MÒN TSCĐHH,TANGIBLE FIXED ASSETS - ACCUMULATED DEPRECIATION,VND bn,3.9604,4.5463,3.3852,4.6441,4.6211,7.2397,11.5058,16.5933
+NOTE,nos212,2,NOS211,Đầu kỳ,Historical cost,VND bn,3.4033,3.9604,4.5463,3.3852,4.6441,4.6211,7.2397,11.5058
+NOTE,nos213,2,NOS211,Tăng trong kỳ,Increases,VND bn,0.557,0.5859,0.6228,1.259,1.6991,2.6185,4.5274,5.0875
+NOTE,nos214,2,NOS211,Giảm trong kỳ,Decreases,VND bn,0.0,0.0,-1.7839,0.0,-1.7221,0.0,-0.2613,0.0
+NOTE,nos215,1,,NGUYÊN GIÁ TSCĐ TTC,FINANCE LEASE ASSETS - HISTORICAL COST,VND bn,0.0,0.0,0.0,0.0,0.0,20.9918,51.8233,89.9333
+NOTE,nos216,2,NOS215,Nguyên giá đầu kỳ,Historical cost,VND bn,0.0,0.0,0.0,0.0,0.0,20.9918,20.9918,51.8233
+NOTE,nos217,2,NOS215,Tăng trong kỳ,Increases,VND bn,0.0,0.0,0.0,0.0,0.0,0.0,30.8315,38.1099
+NOTE,nos219,1,,HAO MÒN TSCĐ TTC,FINANCE LEASE ASSETS - ACCUMULATED DEPRECIATION,VND bn,0.0,0.0,0.0,0.0,0.0,1.1071,7.1098,21.3132
+NOTE,nos220,2,NOS219,Đầu kỳ,Historical cost,VND bn,0.0,0.0,0.0,0.0,0.0,1.1071,1.1071,7.1098
+NOTE,nos221,2,NOS219,Tăng trong kỳ,Increases,VND bn,0.0,0.0,0.0,0.0,0.0,0.0,6.0027,14.2034
+NOTE,nos223,1,,NGUYÊN GIÁ TSCĐVH,INTANGIBLE FIXED ASSETS - HISTORICAL COST,VND bn,4.95,5.105,7.5772,19.9592,44.7376,74.7543,77.2736,78.6037
+NOTE,nos224,2,NOS223,Nguyên giá đầu kỳ,Historical cost,VND bn,4.95,4.95,5.105,7.5772,19.9592,44.7376,74.7543,77.2736
+NOTE,nos225,2,NOS223,Tăng trong kỳ,Increases,VND bn,0.0,0.155,2.4722,12.3819,24.7785,30.0167,2.5193,1.33
+NOTE,nos227,1,,HAO MÒN TSCĐVH,INTANGIBLE FIXED ASSETS - ACCUMULATED AMORTIZATION,VND bn,3.9035,4.961,5.1521,6.3382,9.6744,22.198,37.6065,53.7293
+NOTE,nos228,2,NOS227,Đầu kỳ,Historical cost,VND bn,2.9135,3.9035,4.961,5.1521,6.3382,9.6744,22.198,37.6065
+NOTE,nos229,2,NOS227,Tăng trong kỳ,Increases,VND bn,0.99,1.0574,0.1911,1.1862,3.3362,12.5236,15.4085,16.1228
+NOTE,nos231,1,,VAY VÀ NỢ NGẮN HẠN,SHORT-TERM LOANS AND LIABILITIES,VND bn,0.0,12.92,19.205,1103.86,2584.8427,3643.0561,6494.2972,9302.1722
+NOTE,nos232,2,NOS231,Vay ngắn hạn,Short-term loans,VND bn,0.0,12.92,18.205,1103.86,2584.8427,3643.0561,6494.2972,9302.1722
+NOTE,nos233,2,NOS231,Vay dài hạn đến hạn trả,Long-term loans due to date,VND bn,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+NOTE,nos234,1,,PHẢI TRẢ HOẠT ĐỘNG GIAO DỊCH CHỨNG KHOÁN,PAYABLES FOR SECURITIES TRADING ACTIVITIES,VND bn,0.1579,0.2287,0.5859,3.0423,1.7808,3.0327,7.1361,21.7774
+NOTE,nos235,2,NOS234,Phải trả sở GDCK,Payable to the Stock Exchange,VND bn,0.0562,0.1567,0.5216,2.8539,1.4888,2.3508,5.934,13.7302
+NOTE,nos236,2,NOS234,Phải trả trung tâm lưu ký,Payable to Vietnam Securities Depository,VND bn,0.1017,0.072,0.0643,0.1885,0.2921,0.6819,1.2021,8.0472
+NOTE,nos241,1,,"PHẢI TRẢ, PHẢI NỘP NGẮN HẠN KHÁC",OTHER PAYABLES,VND bn,0.0,0.0074,0.0395,1.5255,504.6861,415.2715,4.8263,0.6919
+NOTE,nos252,2,NOS241,"Các khoản phải trả, phải nộp khác",Other payables,VND bn,0.0,0.0074,0.0395,1.5255,504.6861,415.2715,4.8263,0.6919
+NOTE,nos253,1,,CÁC KHOẢN PHẢI TRẢ VỀ THUẾ,TAXES PAYABLE,VND bn,1.3154,0.3886,0.5299,16.2761,16.2359,30.278,25.6525,34.3184
+NOTE,nos254,2,NOS253,Thuế GTGT,Value added tax,VND bn,0.0061,0.0094,0.0101,0.0554,0.0898,0.0057,0.1579,0.5818
+NOTE,nos257,2,NOS253,Thuế TNDN,Corporate income Tax,VND bn,1.039,0.0061,0.0,1.4509,5.1109,24.611,8.4695,8.1735
+NOTE,nos258,2,NOS253,Thuế TNCN,Personal Income Tax,VND bn,0.2703,0.3191,0.5197,14.7699,11.0048,5.6214,16.8679,25.4832
+NOTE,nos261,2,NOS253,Các loại thuế khác,Other taxes,VND bn,0.0,0.0539,0.0,0.0,0.0304,0.0399,0.1572,0.0799
+NOTE,nos263,1,,CHI PHÍ PHẢI TRẢ,ACCRUALS,VND bn,0.0,0.0975,1.6643,3.5091,7.8041,17.583,24.1016,88.3966
+NOTE,nos267,2,NOS263,Khác,Others,VND bn,0.0,0.0975,1.6643,3.5091,7.8041,17.583,24.1016,88.3966
+NOTE,nos274,1,,VỐN CHỦ SỞ HỮU,OWNER'S EQUITY,VND bn,160.0,160.0,0.0,0.0,0.0,0.0,0.0,0.0
+NOTE,nos276,2,NOS274,Vốn đầu tư của đối tượng khác,Capital contributed by other entities,VND bn,160.0,160.0,0.0,0.0,0.0,0.0,0.0,0.0
+NOTE,nos652,1,,LÃI/LỖ BÁN CÁC TÀI SẢN TÀI CHÍNH,GAIN/LOSS FROM DISPOSAL OF FINANCIAL ASSETS,VND bn,0.0,0.872,0.0,-7.523,14.03,64.0313,38.3498,103.6095
+NOTE,nos653,2,NOS652,Cổ phiếu niêm yết,Listed shares,VND bn,0.0,0.0,0.0,17.0101,2.2663,-36.4476,1.2277,56.5114
+NOTE,nos654,2,NOS652,Cổ phiếu chưa niêm yết,Unlisted shares,VND bn,0.0,0.0,0.0,-24.4316,0.0,65.15,0.0,0.0
+NOTE,nos655,2,NOS652,Chứng chỉ quỹ,Fund certificates,VND bn,0.0,0.0,0.0,0.0,0.2353,0.0,0.0,0.7242
+NOTE,nos656,2,NOS652,Trái phiếu,Bonds,VND bn,0.0,0.872,0.0,0.0,11.5284,17.616,9.1585,38.8905
+NOTE,nos657,2,NOS652,Công cụ thị trường tiền tệ,Money Market Instruments,VND bn,0.0,0.0,0.0,-0.1015,0.0,17.7129,27.9636,7.4822
+NOTE,nos658,2,NOS652,TSTC phái sinh niêm yết,Listed derivative financial assets,VND bn,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0013
+NOTE,nos664,1,,CHÊNH LỆCH ĐÁNH GIÁ LẠI CÁC TÀI SẢN TÀI CHÍNH,DIFFERENCE FROM REVALUATION OF FINANCIAL ASSETS,VND bn,0.0,0.0,0.0,3.1137,-84.656,-71.4358,-28.2658,9.6342
+NOTE,nos665,2,NOS664,Loại FVTPL,Except FVTPL,VND bn,0.0,0.0,0.0,3.1137,-84.656,-71.4358,-28.2658,9.6342
+NOTE,nos666,2,NOS664,Cổ phiếu niêm yết,Listed shares,VND bn,0.0,0.0,0.0,3.1137,-84.656,-71.4358,-24.7448,15.6289
+NOTE,nos668,2,NOS664,Chứng chỉ quỹ,Fund certificates,VND bn,0.0,0.0,0.0,0.0,0.0,0.0,-0.1417,-0.0395
+NOTE,nos669,2,NOS664,Trái phiếu,Bonds,VND bn,0.0,0.0,0.0,0.0,0.0,0.0,-3.3793,-5.9552
+NOTE,nos680,1,,CỔ TỨC VÀ TIỀN LÃI PHÁT SINH,"DIVIDEND, INTEREST INCOME",VND bn,9.7275,11.137,9.2575,62.8974,345.3659,504.5846,604.8558,895.808
+NOTE,nos681,2,NOS680,Từ tài sản tài chính FVTPL,"Dividend, interest income from financial assets at FVTPL",VND bn,0.115,0.115,0.0,0.1005,9.4059,22.3849,-0.7243,36.1015
+NOTE,nos682,2,NOS680,Từ tài sản tài chính HTM,"Dividend, interest income from financial assets at HTM",VND bn,6.9909,7.9991,6.5163,20.1035,112.8851,195.9759,245.0316,303.9099
+NOTE,nos684,2,NOS680,Từ các khoản cho vay,"Dividend, interest income from loans",VND bn,2.6215,3.0229,2.7412,42.6934,223.0749,286.2237,360.5485,555.7965
+NOTE,nos685,1,,DOANH THU NGOÀI THU NHẬP CÁC TÀI SẢN TÀI CHÍNH,REVENUE EXCEPT INCOME FROM FINANCIAL ASSETS,VND bn,11.4813,6.1093,8.7635,96.9237,94.6772,72.7117,151.1686,417.841
+NOTE,nos686,2,NOS685,Doanh thu hoạt động môi giới chứng khoán,Revenue from brokerage services,VND bn,10.1632,5.084,6.8094,90.0339,84.848,67.6454,144.8386,404.0201
+NOTE,nos687,2,NOS685,Doanh thu ban đầu,Revenue,VND bn,10.1632,5.084,6.8094,90.0339,84.848,67.6454,144.8386,404.0201
+NOTE,nos689,2,NOS685,Doanh thu thuần,Net sales,VND bn,10.1632,5.084,6.8094,90.0339,84.848,67.6454,144.8386,404.0201
+NOTE,nos690,2,NOS685,"Doanh thu hoạt động bảo lãnh, đại lý phát hành chứng khoán",Revenue from underwriting and issuance agency services,VND bn,0.0,0.0,0.0,0.0,0.25,0.1,0.0,2.918
+NOTE,nos691,2,NOS685,Doanh thu ban đầu,Revenue,VND bn,0.0,0.0,0.0,0.0,0.25,0.1,0.0,2.918
+NOTE,nos693,2,NOS685,Doanh thu thuần,Net sales,VND bn,0.0,0.0,0.0,0.0,0.25,0.1,0.0,2.918
+NOTE,nos694,2,NOS685,Doanh thu hoạt động tư vấn,Revenue from advisory services,VND bn,0.0545,0.0818,1.2719,5.3468,6.7442,0.759,0.6828,2.9709
+NOTE,nos695,2,NOS685,Doanh thu khác,Other revenue,VND bn,1.2635,0.9434,0.6823,1.543,2.835,4.2073,5.6471,7.932
+NOTE,nos277,1,,DOANH THU KHÁC,OTHER REVENUE,VND bn,0.1729,0.0866,0.2474,0.5272,2.7323,1.7431,2.7956,8.9749
+NOTE,nos283,2,NOS277,Doanh thu khác,Other revenue,VND bn,0.1729,0.0866,0.2474,0.5272,2.7323,1.7431,2.7956,8.9749
+NOTE,nos284,1,,CHI PHÍ HOẠT ĐỘNG KINH DOANH,OPERATING EXPENSES,VND bn,14.6479,11.7474,10.7105,54.5475,224.5488,334.1786,378.3996,852.0199
+NOTE,nos285,2,NOS284,"Chi phí môi giới, lưu ký chứng khoán",Brokerage and custody expenses,VND bn,12.5871,9.5022,10.0519,52.9603,77.1415,116.0204,185.7051,476.4265
+NOTE,nos286,2,NOS284,"Chi phí hoạt động đầu tư chứng khoán, góp vốn",Securities investment expense,VND bn,0.1883,0.0548,0.0208,0.0,0.1453,0.1223,0.0605,0.5027
+NOTE,nos287,2,NOS284,Chi phí/hoàn nhập dự phòng hoạt động kinh doanh chứng khoán,Expense/(reversal) of provision,VND bn,0.884,1.2116,0.0053,0.0,142.4676,211.4959,182.5608,362.9883
+NOTE,nos292,2,NOS284,"Chi phí hoạt động tư vấn đầu tư chứng khoán, tư vấn đầu tư tài chính, tư vấn khác","Investment advisory, financial advisory and other advisory expenses",VND bn,0.5556,0.5656,0.24,0.0,0.0186,2.5157,2.4779,2.9945
+NOTE,nos293,2,NOS284,CHI PHÍ TRỰC TIẾP KHÁC VỀ KINH DOANH CHỨNG KHOÁN,OTHER DIRECT EXPENSES FOR OPERATING ACTIVITIES,VND bn,0.433,0.4133,0.3925,1.5872,4.7757,4.0242,7.5953,9.1079
+NOTE,nos299,2,NOS284,Chi phí khác,Other expenses,VND bn,0.433,0.4133,0.3925,1.5872,4.7757,4.0242,7.5953,9.1079
+NOTE,nos300,1,,CHI PHÍ QUẢN LY DOANH NGHIỆP,GENERAL AND ADMINISTRATIVE EXPENSES,VND bn,6.1371,5.8032,6.8325,14.8615,37.072,94.3131,151.9095,181.4043
+NOTE,nos301,2,NOS300,Chi phí nhân viên,Labor costs,VND bn,1.8802,1.7577,2.2786,8.56,12.1455,41.1624,80.024,99.3956
+NOTE,nos302,2,NOS300,Chi phí dịch vụ mua ngoài,Outsourced service expenses,VND bn,4.0618,3.8341,4.0247,4.7984,21.5489,40.4081,52.83,62.6885
+NOTE,nos304,2,NOS300,Chi phí khấu hao TSCĐ,Depreciation and amortization,VND bn,0.0423,0.0423,0.0196,0.0672,0.1267,0.7835,2.4455,3.205
+NOTE,nos305,2,NOS300,"Chi phí công cụ, đồ dùng văn phòng",Office supply expenses,VND bn,0.0644,0.0487,0.132,0.5336,0.4946,4.0451,4.8207,4.5001
+NOTE,nos307,2,NOS300,"Thuế, phí và lệ phí",Corporate income Tax and fee,VND bn,0.044,0.0441,0.0334,0.2293,0.1907,0.3683,1.5924,1.2789
+NOTE,nos308,2,NOS300,Chi phí khác bằng tiền,Other expenses on cash,VND bn,0.0445,0.0763,0.3442,0.673,2.5657,7.5458,10.1969,10.3361
+NOTE,nos330,1,,DOANH THU TÀI CHÍNH,FINANCIAL INCOME,VND bn,0.0,0.073,0.1469,0.7733,4.7812,6.4402,5.5656,7.5324
+NOTE,nos331,2,NOS330,"Lãi tiền gửi, tiền cho vay",Interest income on loans and Deposits granted,VND bn,0.0,0.073,0.1469,0.7684,1.8541,3.4574,4.9439,7.5324
+NOTE,nos336,2,NOS330,Lãi chênh lệch tỷ giá chưa thực hiện,Unrealized foreign exchange gains,VND bn,0.0,0.0,0.0,0.005,0.0207,0.0009,0.6,0.0
+NOTE,nos338,2,NOS330,Doanh thu hoạt động tài chính khác,Others,VND bn,0.0,0.0,0.0,0.0,2.9063,2.9819,0.0217,0.0
+NOTE,nos339,1,,CHI PHÍ TÀI CHÍNH,FINANCIAL EXPENSES,VND bn,0.0,0.0,0.0,0.0,0.0,0.0,28.0398,67.5595
+NOTE,nos340,2,NOS339,Lãi tiền vay,Interest expenses on loans,VND bn,0.0,0.0,0.0,0.0,0.0,0.0,28.0398,66.827
+NOTE,nos347,2,NOS339,Chi phí tài chính khác,Others,VND bn,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.7325
+NOTE,nos348,1,,CHI PHÍ SẢN XUẤT THEO YẾU TỐ,COST BY FACTORS,VND bn,6.1371,5.8032,6.8325,14.8615,37.072,94.3131,151.9095,181.4043
+NOTE,nos350,2,NOS348,Chi phí nhân công,Labor costs,VND bn,1.8802,1.7577,2.2786,8.56,12.1455,41.1624,80.024,99.3956
+NOTE,nos351,2,NOS348,Chi phí khấu hao tài sản cố định,Depreciation and amortization,VND bn,0.0423,0.0423,0.0196,0.0672,0.1267,0.7835,2.4455,3.205
+NOTE,nos352,2,NOS348,Chi phí dịch vụ mua ngoài,Outside service expenses,VND bn,4.0618,3.8341,4.0247,4.7984,21.5489,40.4081,52.83,62.6885
+NOTE,nos353,2,NOS348,Chi phí khác bằng tiền,Other cash expenses,VND bn,0.1528,0.1691,0.5095,1.4359,3.251,11.9591,16.61,16.1151
