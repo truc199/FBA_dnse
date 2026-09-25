@@ -21,6 +21,8 @@ PATH or in the default install folder.
 |---|---|---|---|
 | 1 | `01_findex_fetch.py` | Pulls the whole Global Findex record for Vietnam from the World Bank API and checks every value in `findex_data.py` against it | `findex_raw.json` |
 | 1b | `01b_dnse_financials_fetch.py` | Pulls DNSE's full financial statements (income statement, balance sheet, cash flow, notes; every quarter since 2018) from Vietcap's data service and checks the figures typed into `07` against them | `dnse_financials_raw.json`, `dnse_financials_quarterly.csv`, `dnse_financials_annual.csv`, `dnse_financials.json` |
+| 1c | `01c_peer_financials_fetch.py` | The same key lines for every securities company Vietcap covers (44 tickers, VPS as VCK included), 2018 onwards, with quarterly industry totals; ten are flagged as the report's peers | `peer_financials.json` |
+| 1d | `01d_market_macro_fetch.py` | Brokerage market share from every HOSE and HNX quarterly announcement it can find (HNX from Q4 2017, HOSE 2023 onwards plus two older quarters); daily VN-Index, HNX-Index, UPCoM-Index, VN30 futures and DSE prices; VSDC year-end accounts 2018 to 2025 and the homepage counter; World Bank WDI 2018 to 2025; NSO 2026 releases | `market_macro.json` |
 | 2a | `02a_playstore_scrape_browser.js` | Google Play review collector, pasted into the browser console | CSV via clipboard |
 | 2b | `02b_playstore_scrape_python.py` | The same collector as a standalone script | `reviews_raw_<package>.csv` |
 | 2c | `02c_appstore_scrape.py` | Written reviews of the same apps from the Vietnamese App Store, plus Apple's star-rating counts; merges with earlier runs | `reviews_raw_ios_<package>.csv`, `appstore_meta.json` |
@@ -29,13 +31,15 @@ PATH or in the default install folder.
 | 4 | `04_segment_model.py` | Builds the two Findex indices and ranks the segments | `segment_model.json` |
 | 5a | `05a_charts_financial.py` | Figures 2, 7, 8, 9, 11 | `fig/*.png` |
 | 5b | `05b_charts_evidence.py` | Figures 1, 3, 4, 5, 6, 10 | `fig/*.png` |
-| 5c | `05c_charts_bctc.py` | Ten long-run charts of the filed statements, 2018 to Q2 2026, and a check of press figures against them; findings in `bctc_analysis.md` | `fig/bctc/*.png` |
+| 5c | `05c_charts_bctc.py` | Fourteen long-run charts: the filed statements 2018 to Q2 2026, DNSE's share of accounts, derivatives and lending over time, the market and DSE against the VN-Index; a check of press figures against the filings; findings in `bctc_analysis.md` | `fig/bctc/*.png` |
 | 6 | `06_build_report.js` | Builds the Word report and prints the main-body word count | `FBAR2_2026_DNSE_Analysis.docx` |
-| 7 | `07_build_workbook.py` | Builds the 14-tab workbook | `FBA_Round2_DNSE_data_pack.xlsx` |
+| 7 | `07_build_workbook.py` | Builds the 18-tab workbook | `FBA_Round2_DNSE_data_pack.xlsx` |
 
 ```bash
 python3 01_findex_fetch.py                 # optional, findex_data.py is already here
 python3 01b_dnse_financials_fetch.py
+python3 01c_peer_financials_fetch.py        # 44 firms
+python3 01d_market_macro_fetch.py          # reads about 140 HNX notices; needs pypdf
 python3 02b_playstore_scrape_python.py
 python3 02c_appstore_scrape.py             # about 4 minutes; run twice to fill gaps
 python3 03_reviews_clean.py --selftest
@@ -43,15 +47,16 @@ python3 03_reviews_clean.py reviews_raw_vn.com.encapital.arrow.csv   # per-app a
 python3 03b_reviews_tables.py
 python3 04_segment_model.py
 python3 05a_charts_financial.py && python3 05b_charts_evidence.py
+python3 05c_charts_bctc.py
 node 06_build_report.js
 python3 07_build_workbook.py
 python3 recalc.py FBA_Round2_DNSE_data_pack.xlsx     # caches formula values
 ```
 
-`06` reads `reviews_tables.json`, `segment_model.json` and `dnse_financials.json`, so
-every review, segment and DNSE financial number in the report comes from the pipeline
-rather than being typed into the prose; `brokers.py`, `05a` and `07` read the same
-financials file. If the top three segments ever change, `06` stops with an error, because
+`06` reads `reviews_tables.json`, `segment_model.json`, `dnse_financials.json`,
+`peer_financials.json` and `market_macro.json`, so every review, segment, financial and
+market-share number in the report comes from the pipeline rather than being typed into
+the prose; `brokers.py`, `05a`, `05b`, `05c` and `07` read the same files. If the top three segments ever change, `06` stops with an error, because
 Sections 4.2 and 6 name that group in words.
 
 ## Network note
@@ -102,9 +107,32 @@ Vietcap maps them onto the securities-company template, so brokerage, lending an
 proprietary revenue each come with their own direct cost. The half-year figures match
 the KPMG-reviewed statements of 14 August 2026 (on `ir.dnse.com.vn`) to the dong:
 pre-tax profit 111.6 billion, against the 113.1 of the quarterly statement of 20 July,
-so Q2 2026 is 97.4 rather than the 98.9 the press reported. The same pull corrected
-2025 revenue (1,457.9, not 1,467) and investment income, which the earlier pack took
-from trading gains for 2025 and from held-to-maturity interest for 2026.
+so Q2 2026 is 97.4 rather than the 98.9 the press reported. The 1,467 billion of 2025
+revenue in the annual report is total revenue (operating revenue 1,457.9 plus financial
+and other income); the 2026 plan of 1,736 is set on the same total basis, so plan
+progress uses operating revenue plus financial income. The pull also corrected
+investment income, which the earlier pack took from trading gains for 2025 and from
+held-to-maturity interest for 2026.
+
+**Company facts come from DNSE's own documents.** Account counts, active customers and
+assets under management are from the 2025 annual report (pages 29 and 30); the plan,
+bond programmes, the fund management acquisition and the IFC company from AGM
+Resolution 01/2026 and its proposals. Q1 and H1 2026 account counts (1.65 and 1.7
+million) are company statements known only through press reports.
+
+**Market share, accounts and market data come from the primary publishers.** Both
+exchange sites render with JavaScript, but each has an API behind it: HOSE's news
+service (`api.hsx.vn`) returns every announcement with its table in the summary HTML,
+and HNX's search endpoint returns every notice, with the table as HTML from 2025 and as
+an attached .doc or PDF before that (`hnx.vn` serves an incomplete certificate chain, so
+`01d` skips verification for that host only). Early notices use old firm names: VPBS,
+"... Ngan hang TMCP Viet Nam Thinh Vuong", is today's VPS, and `brokers._short` maps
+it so; today's VPBankS is a different firm. VPS Securities is listed on HOSE as VCK,
+so its lending and profit are filed figures. The Vietcap price service reports value in
+dong until 11 August 2025 and in VND million after, which `01d` converts; its futures
+value field is unusable before 22 July 2024, so futures notional is contracts x close x
+VND 100,000 throughout (within about 1 per cent of the service's own figure after that
+date).
 
 Three cautions. Template line 24 (`iss168`) reports loan-loss provisions and the
 borrowing cost of the loan book as one figure; the allowance on the balance sheet
@@ -116,12 +144,14 @@ be set against the annual report's 52,000 billion. And the press figure of 405 p
 cent growth in proprietary provisions for Q1 2026 is not reproduced by any line of
 the filings, so it was dropped.
 
-**Hand-entered, with sources.** `brokers.py` holds the exchange market-share tables,
-industry lending balances and quarterly profits; its DNSE rows are read from
-`dnse_financials.json`. These come from HOSE and HNX
-announcements and from published financial statements; each block names its source.
-They are typed in rather than scraped, so check them against the source before citing.
-The FTSE constituent count is marked unverified there.
+**Still hand-entered, with sources.** In `brokers.py`: the industry lending total of
+453,800 billion (Vietstock; the 42 filing brokers sum to 76 per cent of it), DNSE's
+year-end account counts from the annual report, and a few press context figures (foreign
+participation in futures, foreign net selling, FTSE counts) that the report does not use.
+In `01d`: the VSDC year-end account totals read from the annual report PDFs and the
+homepage counter, and the NSO 2026 figures, each with its URL. DNSE's 1.65 and 1.7
+million accounts for 2026 are still company statements seen only in the press. The
+'Vietnam reference' tab of the workbook is typed and only its market rows were re-checked.
 
 ## Data files
 
@@ -129,9 +159,11 @@ The FTSE constituent count is marked unverified there.
 |---|---|
 | `findex_data.py` | `SEGMENTS`, `SEG2024` (51 indicators × 13 segments), `NATIONAL2024`, `TRENDS`; labels and themes hand-written, values checked by step 1 |
 | `reviews.py` | Generated by step 3b: cleaning log, ratings by year, generic-flag sensitivity, theme table, three-app comparison, 50 selected quotes |
-| `brokers.py` | HOSE, HNX and derivatives market share; lending balances; Q2 2026 profits; market totals |
+| `brokers.py` | Reads the three JSON files into the Q2 2026 market-share tables, lending and profit rankings, DNSE's position and share series, and market totals |
 | `dnse_financials.json` | Step 1b output: DNSE key lines by quarter, half year and year, with derived ratios and their definitions |
 | `dnse_financials_quarterly.csv`, `dnse_financials_annual.csv` | Step 1b output: every line of the filed statements |
+| `peer_financials.json` | Step 1c output: key lines of every securities company with filings, Q1 2018 onwards, and quarterly totals with DNSE's share of lending |
+| `market_macro.json` | Step 1d output: exchange market-share tables by quarter and DNSE's position in each, daily and annual prices, VSDC accounts, WDI and NSO figures, with the URL of every HNX notice used |
 | `segment_model.json` | Step 4 output read by the report |
 | `reviews_tables.json` | Step 3b output read by the report |
 | `reviews_raw_ios_*.csv`, `appstore_meta.json` | Step 2c output: App Store written reviews and star-rating counts |

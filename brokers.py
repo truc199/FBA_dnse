@@ -1,23 +1,23 @@
 # -*- coding: utf-8 -*-
 """Vietnamese securities-industry cross-section, Q2 2026.
 
-All figures are as published by the two exchanges or taken from the brokers' own
-quarterly financial statements as summarised by the financial press. Percentages are
-share of value traded on the named market, which is how HOSE and HNX define market share.
-A broker's position on one market cannot be compared with another broker's position on a
-different market, so each market is kept in its own column.
+Market shares are read from the exchanges' own announcements (01d); lending and profit from each
+broker's filed statements (01b, 01c). Only the industry lending total is a press compilation.
+Percentages are share of value traded on the named market, which is how HOSE and HNX define
+market share. A broker's position on one market cannot be compared with another broker's
+position on a different market, so each market is kept in its own column.
 """
 
 SOURCES = {
-    "hose": "HOSE quarterly market-share announcement, Q2 2026, as tabulated by "
-            "Tin nhanh Chung khoan and Nguoi Quan Sat, 7 July 2026",
-    "hnx":  "HNX quarterly market-share announcement, Q2 2026, as tabulated by "
-            "Vietstock and Nguoi Quan Sat, 7 July 2026",
-    "deriv":"HNX derivatives market-share announcement, Q2 2026",
-    "margin":"Q2 2026 separate and consolidated financial statements, as tabulated by "
-             "Vietstock, 'Du no margin lap ky luc 454 ngan ty dong', July 2026",
-    "profit":"Q2 2026 financial statements as tabulated by Mekong Asean, "
-             "'So ke loi nhuan nhom cong ty chung khoan dau nganh'",
+    "hose": "HOSE announcement 'Thi phan gia tri giao dich moi gioi Quy II va Ban nien nam 2026', "
+            "read from api.hsx.vn by 01d_market_macro_fetch.py",
+    "hnx":  "HNX announcement of Q2 2026 listed-share brokerage market share, read from hnx.vn by 01d",
+    "deriv":"HNX announcement of Q2 2026 derivatives brokerage market share, read from hnx.vn by 01d",
+    "accounts": "VSDC homepage counter of investor trading accounts, 24 September 2026, recorded by 01d",
+    "liquidity": "Daily index and futures trading value from Vietcap's price service, averaged by 01d",
+    "margin":"Each firm's filed statements, 30 June 2026, pulled by 01c_peer_financials_fetch.py. Industry "
+             "total: Vietstock, 'Du no margin lap ky luc 454 ngan ty dong', July 2026",
+    "profit":"Each firm's filed statements, Q2 2026, pulled by 01c (consolidated where the firm has subsidiaries)",
     "dnse": "DNSE's own filings, pulled line by line by 01b_dnse_financials_fetch.py; Q2 2026 is the "
             "KPMG-reviewed half year less the first quarter",
 }
@@ -25,68 +25,78 @@ SOURCES = {
 import json as _json
 import os as _os
 
-with open(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "dnse_financials.json"),
-          encoding="utf-8") as _f:
+_HERE = _os.path.dirname(_os.path.abspath(__file__))
+with open(_os.path.join(_HERE, "dnse_financials.json"), encoding="utf-8") as _f:
     _FS = _json.load(_f)["quarterly"]
+with open(_os.path.join(_HERE, "peer_financials.json"), encoding="utf-8") as _f:
+    _PANEL = _json.load(_f)
+_PEERS = {n: d["quarterly"] for n, d in _PANEL["firms"].items() if d["focus"]}
+# Lending of every securities company with filings on Vietcap, DNSE included; unlisted brokers are absent.
+LISTED_LENDING_TOTAL_Q2 = round(_PANEL["totals"]["2026Q2"]["loans"], 1)
+LISTED_FIRMS_Q2 = _PANEL["totals"]["2026Q2"]["firms_reporting_loans"]
 DNSE_LENDING_Q2 = round(_FS["2026Q2"]["loans"], 1)
 DNSE_PBT_Q2 = round(_FS["2026Q2"]["pbt"], 1)
 DNSE_PBT_Q2_YOY = f"{(_FS['2026Q2']['pbt'] / _FS['2025Q2']['pbt'] - 1) * 100:+.1f}%"
 
+
+def _filed(name, key):
+    return round(_PEERS[name]["2026Q2"][key], 1)
+
+
+def _yoy(name):
+    return f"{(_PEERS[name]['2026Q2']['pbt'] / _PEERS[name]['2025Q2']['pbt'] - 1) * 100:+.1f}%"
+
+
+with open(_os.path.join(_HERE, "market_macro.json"), encoding="utf-8") as _f:
+    _MM = _json.load(_f)
+# Exchange announcements give full legal names, including names since changed; most specific keys first.
+# VPBS ("... Ngan hang TMCP Viet Nam Thinh Vuong") became VPS in 2019; today's VPBankS is a different firm.
+_SHORT = [("Thịnh Vượng", "VPS"), ("Kỹ Thương", "TCBS"), ("VPBank", "VPBankS"), ("VNDIRECT", "VNDirect"),
+          ("Thành phố Hồ Chí Minh", "HSC"), ("TP. Hồ Chí Minh", "HSC"), ("Mirae", "Mirae Asset Vietnam"),
+          ("KIS", "KIS Vietnam"), ("BIDV", "BSC"), ("Đầu tư và Phát triển", "BSC"), ("Phú Hưng", "PHS"),
+          ("FPT", "FPTS"), ("Ngoại thương", "VCBS"), ("Rồng Việt", "VDSC"), ("Bản Việt", "Vietcap"),
+          ("Bảo Việt", "BVSC"), ("An Bình", "ABS"), ("Sài Gòn Hà Nội", "SHS"), ("Sài Gòn - Hà Nội", "SHS"),
+          ("khoán Sài Gòn", "SSI"), ("ACB", "ACBS"), ("Yuanta", "Yuanta Vietnam"), ("DNSE", "DNSE"),
+          ("Vietcap", "Vietcap"), ("VIX", "VIX"), ("SSI", "SSI"), ("VPS", "VPS"), ("khoán MB", "MBS")]
+
+
+def _short(name):
+    return next((s for k, s in _SHORT if k.lower() in name.lower()), name)
+
+
+def _table(rows):
+    """(rank, short name, share) for the top ten; a few early notices list every firm."""
+    return [(r[0], _short(r[1]), r[2]) for r in rows if r[0] <= 10]
+
+
+def top_ten(rows):
+    return round(sum(r[2] for r in rows if r[0] <= 10), 2)
+
+
+_HOSE = _MM["hose_market_share"]["tables"]
+_HNX = _MM["hnx_market_share"]["tables"]
+
 # ---------------------------------------------------------------- HOSE cash equities
-# rank, company, Q2 2026 share %, Q1 2026 share %
-HOSE_Q2_2026 = [
-    (1,  "VPS",                 12.61, 15.32),
-    (2,  "SSI",                 11.17, 11.14),
-    (3,  "TCBS",                 9.36,  8.85),
-    (4,  "Vietcap",              7.00,  7.35),
-    (5,  "HSC",                  6.80,  7.30),
-    (6,  "MBS",                  4.79,  5.29),
-    (7,  "VNDirect",             3.96,  4.78),
-    (8,  "VPBankS",              3.57,  2.94),
-    (9,  "KIS Vietnam",          2.99,  3.21),
-    (10, "Mirae Asset Vietnam",  2.94,  2.82),
-]
-HOSE_TOP10_Q2 = 65.19      # %, equals the sum of the ten rows above
-HOSE_TOP10_Q1 = 69.05      # %
-# DNSE does not appear in the HOSE top ten in Q2 2026, so its HOSE share is below 2.94%.
+# rank, company, Q2 2026 share %, Q1 2026 share % (None where the firm was outside the Q1 top ten)
+_hose_q1 = {n: v for _, n, v in _table(_HOSE["2026Q1"])}
+HOSE_Q2_2026 = [(rk, n, v, _hose_q1.get(n)) for rk, n, v in _table(_HOSE["2026Q2"])]
+HOSE_TOP10_Q2 = round(sum(r[2] for r in HOSE_Q2_2026), 2)
+HOSE_TOP10_Q1 = round(sum(_hose_q1.values()), 2)
+# DNSE does not appear in the HOSE top ten, so its HOSE share is below the tenth-place share.
 DNSE_HOSE_Q2 = None
 
 # ---------------------------------------------------------------- HNX listed shares
-# rank, company, Q2 2026 share %. Ranks 4 to 6 were published without figures in the
-# sources consulted; the exchange listed them in this order.
-HNX_Q2_2026 = [
-    (1,  "VPS",      17.71),
-    (2,  "TCBS",      9.00),
-    (3,  "VPBankS",   6.71),
-    (4,  "SSI",       None),
-    (5,  "VNDirect",  None),
-    (6,  "MBS",       None),
-    (7,  "BSC",       3.58),
-    (8,  "DNSE",      2.88),
-    (9,  "Vietcap",   2.86),
-    (10, "VIX",       2.66),
-]
-HNX_TOP10_Q2 = 63.2        # %
+HNX_Q2_2026 = _table(_HNX["listed"]["2026Q2"])
+HNX_TOP10_Q2 = round(sum(r[2] for r in HNX_Q2_2026), 2)
 
 # ---------------------------------------------------------------- Derivatives
-DERIV_Q2_2026 = [
-    (1, "VPS",      33.84),
-    (2, "DNSE",     25.38),
-    (3, "SSI",       8.21),
-    (4, "VNDirect",  None),   # about 4%
-    (5, "MBS",       None),   # about 4%
-]
-DERIV_TOP10_Q2 = 94.52
-DERIV_TOP10_Q1 = 93.53
+DERIV_Q2_2026 = _table(_HNX["derivatives"]["2026Q2"])
+DERIV_TOP10_Q2 = round(sum(r[2] for r in DERIV_Q2_2026), 2)
+DERIV_TOP10_Q1 = top_ten(_HNX["derivatives"]["2026Q1"])
 
-# DNSE derivatives share by quarter, from HNX announcements. Q2 and Q3 2024 were not
-# found in the sources consulted. Q4 2024 is from the HNX figures tabulated by
-# Vietstock, "Thi truong phai sinh 2025: VPS danh roi thi phan, DNSE tao buoc nhay vot",
-# January 2026, which also gives full-year shares of 6.14% (2024) and 21.47% (2025).
-DNSE_DERIV_SERIES = [
-    ("Q1 2024",  4.01), ("Q4 2024",  9.98), ("Q1 2025", 16.70), ("Q2 2025", 17.33),
-    ("Q3 2025", 23.67), ("Q4 2025", 24.26), ("Q1 2026", 25.50), ("Q2 2026", 25.38),
-]
+# DNSE derivatives share for every quarter it has been in the HNX top ten.
+DNSE_DERIV_SERIES = [(f"Q{p[-1]} {p[:4]}", d["share"])
+                     for p, d in sorted(_MM["hnx_market_share"]["dnse"]["derivatives"].items()) if d["share"] is not None]
 
 # ---------------------------------------------------------------- Margin lending
 # company, balance at 30 June 2026 in VND billion, share of industry total %
@@ -94,34 +104,28 @@ MARGIN_TOTAL_Q2 = 453800.0   # VND bn, total lending of all securities companies
 MARGIN_TOTAL_Q1 = 424100.0   # VND bn, implied by the reported 7% quarterly increase
 MARGIN_NOTE = ("The 453,800 figure is total lending, which includes advances against "
                "sale proceeds. Press estimates of margin lending alone for the same "
-               "date cluster around 445,000.")
-MARGIN_Q2_2026 = [
-    ("TCBS",    51500),
-    ("SSI",     40500),
-    ("VPBankS", 38200),
-    ("VPS",     31300),
-    ("HSC",     29000),
-    ("DNSE",     DNSE_LENDING_Q2),
-]
+               "date cluster around 445,000. The firms with filings on Vietcap, listed and "
+               "UPCoM brokers, account for about three quarters of it.")
+MARGIN_Q2_2026 = sorted([(n, _filed(n, "loans")) for n in _PEERS] + [("DNSE", DNSE_LENDING_Q2)],
+                        key=lambda r: -r[1])
 
 # ---------------------------------------------------------------- Profitability
 # company, Q2 2026 pre-tax profit VND bn, year-on-year change
-PBT_Q2_2026 = [
-    ("VPBankS",  2159, "about four times"),
-    ("TCBS",     2097, "+21%"),
-    ("SSI",      1511, "+32%"),
-    ("VPS",      1378, "+57%"),
-    ("VNDirect", 1100, "+127%"),
-    ("DNSE",     DNSE_PBT_Q2, DNSE_PBT_Q2_YOY),
-    ("VIX",        75, "-95%"),
-]
+PBT_Q2_2026 = sorted([(n, _filed(n, "pbt"), _yoy(n)) for n in _PEERS] + [("DNSE", DNSE_PBT_Q2, DNSE_PBT_Q2_YOY)],
+                     key=lambda r: -r[1])
 
 # ---------------------------------------------------------------- Market totals
+def _avg_value(symbol, first, last):
+    vals = [r[3] for r in _MM["prices"][symbol]["daily"] if first <= r[0][:7] <= last and r[3]]
+    return round(sum(vals) / len(vals), 1)
+
+
 MARKET = {
-    "domestic_individual_accounts_end_aug_2026": 13_800_000,
-    "foreign_accounts_end_aug_2026": 52_633,
-    "hose_adv_value_aug_2026_vnd_bn": 17_336,
-    "vn30_futures_adv_value_vnd_bn": 43_925,
+    "investor_trading_accounts": _MM["vsdc_latest"]["investor_trading_accounts"],
+    "investor_trading_accounts_date": _MM["vsdc_latest"]["date"],
+    "hose_adv_value_aug_2026_vnd_bn": _avg_value("VNINDEX", "2026-08", "2026-08"),
+    "vn30f1m_adv_value_q2_2026_vnd_bn": _avg_value("VN30F1M", "2026-04", "2026-06"),
+    # Press figures kept for context only.
     "vn30_futures_foreign_participation_pct": 3.84,
     "hose_foreign_net_sell_ytd_2026_vnd_bn": 90_704,
     "margin_cap_pct_of_equity": 200,
@@ -131,12 +135,22 @@ MARKET = {
     "ftse_indicative_list_apr_2026": 32,
 }
 
+# Year-end accounts: DNSE from its annual report 2025 (figure 22, p. 29), market from VSDC annual reports.
+DNSE_ACCOUNTS_AR = {"2020": 5_548, "2021": 44_727, "2022": 189_845, "2023": 561_279, "2024": 994_811, "2025": 1_512_920}
+VSDC_ACCOUNTS = {y: d["total"] for y, d in _MM["vsdc_accounts"].items()}
+DNSE_ACCOUNT_SHARE = {y: round(v / VSDC_ACCOUNTS[y] * 100, 2) for y, v in DNSE_ACCOUNTS_AR.items()}
+# DNSE share of the loan book of every broker with filings, by quarter (step 01c).
+DNSE_LENDING_SHARE = {p: t["dnse_share_of_loans_pct"] for p, t in _PANEL["totals"].items()}
+
 # ---------------------------------------------------------------- DNSE position
 DNSE_POSITION = [
     # measure, DNSE value, unit, market total, DNSE share %
-    ("Customer accounts", 1_700_000, "accounts", 13_852_633, 12.27),
-    ("Derivatives brokerage", 25.38, "% share", 100.0, 25.38),
-    ("HNX listed-share brokerage", 2.88, "% share", 100.0, 2.88),
+    ("Customer accounts", 1_700_000, "accounts", MARKET["investor_trading_accounts"],
+     round(1_700_000 / MARKET["investor_trading_accounts"] * 100, 2)),
+    ("Derivatives brokerage", dict((n, v) for _, n, v in DERIV_Q2_2026)["DNSE"], "% share", 100.0,
+     dict((n, v) for _, n, v in DERIV_Q2_2026)["DNSE"]),
+    ("HNX listed-share brokerage", dict((n, v) for _, n, v in HNX_Q2_2026)["DNSE"], "% share", 100.0,
+     dict((n, v) for _, n, v in HNX_Q2_2026)["DNSE"]),
     ("HOSE listed-share brokerage", None, "% share", 100.0, None),
     ("Lending balance", DNSE_LENDING_Q2, "VND bn", MARGIN_TOTAL_Q2,
      round(DNSE_LENDING_Q2 / MARGIN_TOTAL_Q2 * 100, 2)),

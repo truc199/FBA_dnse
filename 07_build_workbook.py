@@ -9,6 +9,7 @@ import csv, json
 with open(os.path.join(_HERE, "dnse_financials.json"), encoding="utf-8") as _f:
     FS = json.load(_f)
 FSQ, FSH, FSY, FSD = FS["quarterly"], FS["half_year"], FS["annual"], FS["derived"]
+MM_REF = BR._MM
 yoy = lambda a, b: (a / b - 1) * 100
 BROKERAGE_LOSS_SINCE = next(p for p in FSQ if all(FSD[q].get("brokerage_net", 0) < 0
                                                   for q in list(FSQ)[list(FSQ).index(p):]))
@@ -56,7 +57,7 @@ rows = [
  ("What this is",
   "Five datasets in one workbook. DNSE company financials and market position, the Vietnamese securities industry cross-section, 868 cleaned Google Play reviews of DNSE and two competitors, the complete Global Findex record for Vietnam, and a macro reference sheet. Every computed cell is a formula, so editing an input updates everything downstream."),
  ("Where the data came from",
-  f"DNSE financials from its filed statements, every line, pulled from Vietcap's data service on {FS['pulled']} and checked against the KPMG-reviewed half-year statements; accounts and plan targets from investor relations releases and the 2026 annual general meeting. Market share from the HOSE and HNX quarterly announcements of 7 July 2026. Industry lending and profit from Q2 2026 financial statements as compiled by Vietstock and Mekong Asean. Findex from the World Bank Open Data API, source 28, country VNM, endpoint api.worldbank.org/v2/sources/28/country/VNM/series/all/data?format=json, which returned 19,878 observations of which 3,022 are non-null. Reviews from the public Google Play listings for vn.com.encapital.arrow, vn.com.vpbs.smartone and com.fpts.eztrade."),
+  f"DNSE financials from its filed statements, every line, pulled from Vietcap's data service on {FS['pulled']} and checked against the KPMG-reviewed half-year statements; accounts and plan targets from investor relations releases and the 2026 annual general meeting. Market share from every HOSE and HNX quarterly announcement found for 2018 to Q2 2026, read from the exchanges' own sites by step 01d. Lending and profit for all {BR.LISTED_FIRMS_Q2} securities companies with filings, VPS (HOSE: VCK) included, via the same service; only the industry lending total is from the press (Vietstock). Accounts from VSDC annual reports and its homepage counter; index levels and traded value from Vietcap's price service; macro from the World Bank WDI API and NSO releases. Customer figures from the DNSE annual report 2025 and the 2026 plan from the AGM proposals. Findex from the World Bank Open Data API, source 28, country VNM, endpoint api.worldbank.org/v2/sources/28/country/VNM/series/all/data?format=json, which returned 19,878 observations of which 3,022 are non-null. Reviews from the public Google Play listings for vn.com.encapital.arrow, vn.com.vpbs.smartone and com.fpts.eztrade."),
  ("How to read the colours",
   "Blue figures are inputs taken directly from a source. Green figures are links to another sheet. Black figures are formulas computed in this workbook. Yellow fill marks an assumption you may want to change. Editing a blue or yellow cell updates every black cell that depends on it."),
  ("The review data",
@@ -93,8 +94,11 @@ for lab, txt in [
  ("DNSE financials", "Revenue, cost, profit and balance-sheet lines from the filed statements, with computed margins, revenue mix, funding cost and a quarterly series."),
  ("DNSE statements", "Every line of DNSE's filed statements, Q1 2024 to Q2 2026, as pulled by step 01b."),
  ("Market share", "HOSE, HNX and derivatives brokerage share for every firm in the top ten, second quarter of 2026."),
+ ("Market share history", "DNSE, VPS and tenth-place shares on each market by quarter, 2018 to Q2 2026, with DNSE's share of filed lending."),
  ("Industry cross-section", "Lending balances and pre-tax profit for the largest securities firms, with shares of the industry total."),
+ ("Broker totals", "Lending, equity, revenue, brokerage and profit summed across every filing broker, by quarter from 2018."),
  ("DNSE position", "The five share measures that define the monetisation gap, each against its own denominator."),
+ ("Market and macro", "Index levels, traded value, VSDC accounts with DNSE's share, World Bank indicators 2018 to 2025, NSO 2026."),
  ("Review analysis", "Cleaning log, ratings by year, complaint themes and the three-app comparison."),
  ("Review quotes", "Fifty selected reviews with rating, date, helpfulness votes and theme tags."),
  ("Segment model", "The derived priority segment. Every index cell is a formula reading from Segments 2024."),
@@ -265,7 +269,7 @@ ws.freeze_panes = "A5"
 REF = [
 ("Macro","GDP growth","8.18%","H1 2026","National Statistics Office"),
 ("Macro","GDP growth","8.39%","Q2 2026","National Statistics Office"),
-("Macro","GDP growth","7.83%","Q1 2026","National Statistics Office"),
+("Macro","GDP growth","7.94%","Q1 2026","National Statistics Office, revised in the Q2 release (first estimate 7.83%)"),
 ("Macro","GDP growth forecast","7.3%","FY2026","Bloomberg survey, July 2026"),
 ("Macro","GDP growth forecast","6.8%","FY2026","World Bank, May 2026"),
 ("Macro","GDP growth forecast","7.2%","FY2026","AMRO"),
@@ -369,22 +373,21 @@ REF = [
 ("Business","E-invoice threshold","VND 1 billion revenue","From 2026","Decree 68/2026/ND-CP"),
 ("Business","Net income method threshold","VND 3 billion revenue","From 2026","Decree 68/2026/ND-CP"),
 
-("Markets","Domestic individual securities accounts","13.8 million, about 14% of the population","End-August 2026","VSDC"),
-("Markets","Foreign securities accounts","52,633","End-August 2026","VSDC"),
-("Markets","New accounts in 2026","Over 2 million, about 230,000 in August","To end-August 2026","VSDC"),
-
-("Markets","Retail share of account growth","Over 99%","2026","VSDC"),
-("Markets","Margin lending outstanding","Over VND 420 trillion","Q1 2026","Securities company filings"),
-("Markets","Industry margin to equity","About 83%, ceiling 200%","Q1 2026","Securities company filings"),
-("Markets","Brokerage share, VPS","12.61%","Q2 2026 HOSE","HOSE"),
-("Markets","Brokerage share, SSI","11.17%","Q2 2026 HOSE","HOSE"),
-("Markets","Brokerage share, TCBS","9.36%","Q2 2026 HOSE","HOSE"),
-("Markets","Brokerage share, VPS on HNX","17.71%","Q2 2026 HNX","HNX"),
-("Markets","Brokerage share, TCBS on HNX","9.00%","Q2 2026 HNX","HNX"),
-("Markets","Derivatives share, VPS","33.84%, first place","Q2 2026","HNX"),
-("Markets","DNSE derivatives share","25.38%, second behind VPS","Q2 2026","DNSE investor relations"),
+("Markets","Investor accounts, all types",f"{BR.VSDC_ACCOUNTS['2025']:,}; domestic {MM_REF['vsdc_accounts']['2025']['domestic']:,}, foreign {MM_REF['vsdc_accounts']['2025']['foreign']:,}","31 December 2025","VSDC annual report 2025"),
+("Markets","Investor trading accounts, all types",f"{BR.MARKET['investor_trading_accounts']:,}",BR.MARKET["investor_trading_accounts_date"],"VSDC homepage counter, recorded by step 01d"),
+("Markets","Net new accounts in 2026",f"{BR.MARKET['investor_trading_accounts'] - BR.VSDC_ACCOUNTS['2025']:,}","1 January to " + BR.MARKET["investor_trading_accounts_date"],"Derived: VSDC counter less the VSDC year-end 2025 total"),
+("Markets","Domestic share of account growth",f"{(MM_REF['vsdc_accounts']['2025']['domestic'] - MM_REF['vsdc_accounts']['2024']['domestic']) / (BR.VSDC_ACCOUNTS['2025'] - BR.VSDC_ACCOUNTS['2024']) * 100:.1f}%","2025","Derived from VSDC annual reports 2024 and 2025"),
+("Markets","Lending, all brokers with filings",f"VND {BR._PANEL['totals']['2026Q1']['loans']:,.0f} billion ({BR._PANEL['totals']['2026Q1']['firms_reporting_loans']} firms)","31 March 2026","Securities company filings, step 01c"),
+("Markets","Lending to equity, all brokers with filings",f"{BR._PANEL['totals']['2026Q1']['loans'] / BR._PANEL['totals']['2026Q1']['equity'] * 100:.0f}%, ceiling 200%","31 March 2026","Securities company filings, step 01c"),
+("Markets","Brokerage share, VPS",f"{BR.HOSE_Q2_2026[0][2]:.2f}%","Q2 2026 HOSE","HOSE announcement, api.hsx.vn"),
+("Markets","Brokerage share, SSI",f"{BR.HOSE_Q2_2026[1][2]:.2f}%","Q2 2026 HOSE","HOSE announcement, api.hsx.vn"),
+("Markets","Brokerage share, TCBS",f"{BR.HOSE_Q2_2026[2][2]:.2f}%","Q2 2026 HOSE","HOSE announcement, api.hsx.vn"),
+("Markets","Brokerage share, VPS on HNX",f"{BR.HNX_Q2_2026[0][2]:.2f}%","Q2 2026 HNX","HNX announcement, hnx.vn"),
+("Markets","Brokerage share, TCBS on HNX",f"{BR.HNX_Q2_2026[1][2]:.2f}%","Q2 2026 HNX","HNX announcement, hnx.vn"),
+("Markets","Derivatives share, VPS",f"{BR.DERIV_Q2_2026[0][2]:.2f}%, first place","Q2 2026","HNX announcement, hnx.vn"),
+("Markets","DNSE derivatives share",f"{BR.DERIV_Q2_2026[1][2]:.2f}%, second behind VPS","Q2 2026","HNX announcement, hnx.vn"),
 ("Markets","DNSE derivatives share","25.47%, second place","H1 2026","DNSE investor relations"),
-("Markets","DNSE listed stock share on HNX","2.88%, eighth","Q2 2026","DNSE investor relations"),
+("Markets","DNSE listed stock share on HNX","2.88%, eighth","Q2 2026","HNX announcement, hnx.vn"),
 ("Markets","DNSE operating revenue",f"VND {FSQ['2026Q2']['revenue']:,.1f} billion, {yoy(FSQ['2026Q2']['revenue'], FSQ['2025Q2']['revenue']):+.1f}% y/y","Q2 2026","DNSE filed statements, step 01b"),
 ("Markets","DNSE operating revenue",f"VND {FSH['2026H1']['revenue']:,.1f} billion, {yoy(FSH['2026H1']['revenue'], FSH['2025H1']['revenue']):+.1f}% y/y","H1 2026","DNSE reviewed half-year statements, step 01b"),
 ("Markets","DNSE pre-tax profit",f"VND {FSQ['2026Q2']['pbt']:,.1f} billion, {yoy(FSQ['2026Q2']['pbt'], FSQ['2025Q2']['pbt']):+.1f}% y/y","Q2 2026","Reviewed half year less Q1, step 01b. The quarterly statement of 20 July gave 98.9"),
@@ -445,12 +448,16 @@ SRC = [
 ("CafeF","Listed company financials","s.cafef.vn","Alternative structure, useful as a cross-check against Vietstock"),
 ("VPBank investor relations","VPB filings and investor decks","vpbank.com.vn/en/quan-he-nha-dau-tu","Verified: statements 2011 to 2026, VAS and IFRS, consolidated and separate, searchable PDFs. Quarterly Performance Packs carry segment detail"),
 ("DNSE investor relations","DSE filings and market share","ir.dnse.com.vn/vi/ctype-finance_report","Verified: quarterly, half-year and annual statements 2019 to 2026, annual reports 2024 and 2025, earnings releases with market share. Statements are scanned PDFs without a text layer"),
-("Vietcap IQ data service","DSE statements, every line, Q1 2018 onwards","iq.vietcap.com.vn/api/iq-insight-service/v1/company/DSE/financial-statement",f"Verified {FS['pulled']}: income statement, balance sheet, cash flow and notes on the securities-company template. Pulled by 01b; H1 2026 matches the reviewed statement to the dong"),
+("Vietcap IQ data service","DSE statements, every line, Q1 2018 onwards; key lines of every securities company","iq.vietcap.com.vn/api/iq-insight-service/v1/company/DSE/financial-statement",f"Verified {FS['pulled']}: income statement, balance sheet, cash flow and notes on the securities-company template. Pulled by 01b (DNSE) and 01c (every securities company covered, {BR.LISTED_FIRMS_Q2} filing in Q2 2026, VPS as VCK included); H1 2026 matches DNSE's reviewed statement to the dong. Consolidated where a firm has subsidiaries"),
+("DNSE annual report 2025","Accounts, new-account share, active customers, assets under management","cdn.dnse.com.vn/dnse-assets/CBTT/DSE - BCTN 2025.pdf","Verified 24 September 2026: text PDF. Customer figures on pages 29 and 30"),
+("DNSE 2026 AGM resolution and proposals","2026 plan, bond programmes, fund management company, IFC company","ir.dnse.com.vn/vi/ntag-dai-hoi-dong-co-dong-19","Resolution 01/2026 (scanned) approves 22 articles; the proposals file has a text layer. No article covers a digital-asset stake or carbon credits"),
 ("Techcombank investor relations","TCB investor presentation","techcombank.com","The most detailed investor deck in Vietnamese banking"),
 ("MB","MBB filings","mbbank.com.vn","English investor pages were partly unavailable when checked. Use Vietstock and HOSE instead"),
-("HOSE","Listings, filings, brokerage share","hsx.vn","Quarterly brokerage market share tables"),
-("HNX","Listings, derivatives market share","hnx.vn","Source of the DNSE derivatives share figures"),
-("VSDC","Securities account statistics","vsdc.vn","Monthly account openings split by investor type"),
+("HOSE","Quarterly brokerage market share","api.hsx.vn/n/api/v1/1/news/newstype/-1/1","Verified: the site renders with JavaScript but its news API returns each announcement, table in the summary HTML. Holds 2023 onwards plus Q4 2018 and Q1 2019. Read by 01d"),
+("HNX","Listed, UPCoM and derivatives brokerage market share","hnx.vn/ModuleSearchALL/SearchDataHNX/SearchArticleByKey","Verified: search endpoint returns every announcement from 2018; tables are HTML from 2025 and attached .doc or PDF files before. Read by 01d"),
+("VSDC","Securities account statistics","vsd.vn; annual reports at vsdc.vn:9994/VSD_PORTAL","Verified: year-end accounts 2018 to 2025 from the annual report PDFs, and the homepage account counter"),
+("Vietcap price service","Daily VN-Index, HNX-Index, UPCoM-Index, VN30 futures and DSE","trading.vietcap.com.vn/api/chart/OHLCChart/gap-chart","Verified: daily close, volume and value from 2018. Value switches from dong to VND million on 12 August 2025; futures value unusable before July 2024. Read by 01d"),
+("World Bank WDI API","Vietnam macro 2018 to 2025","api.worldbank.org/v2/country/VNM/indicator/...?source=2","Verified: fifteen indicators, no key needed. Read by 01d"),
 ("NAPAS","Interbank switching, VietQR","napas.com.vn","Aggregate payment statistics"),
 ("FiinRatings and FiinGroup","Banking and consumer finance research","fiinratings.vn, fiingroup.vn","Some reports free. Source of most banking metrics in this workbook"),
 ("VinaCapital","Monthly macro commentary","vof.vinacapital.com","Free, current, well sourced"),
@@ -533,6 +540,10 @@ FIN = [
     ("Interest on held-to-maturity investments", "rev_htm", "flow", MONEY, ""),
     ("Gains on FVTPL financial assets", "rev_fvtpl", "flow", MONEY, "Proprietary trading gains, before the losses below"),
     ("Other revenue", None, "residual", MONEY, "Operating revenue less the four lines above: custody, advisory, underwriting and other"),
+    ("Financial income", "financial_income", "flow", MONEY, "Outside operating revenue: interest on demand deposits"),
+    ("Revenue including financial income", None, "total", MONEY,
+     "The basis of the 2026 plan (Proposal 05/2026: 'total revenue'). With other income of about 1.6 it gives "
+     "the annual report's VND 1,467 billion for 2025"),
     ("Brokerage direct costs", "cost_brokerage", "flow", MONEY, "Costs are negative, as filed"),
     ("Losses on FVTPL financial assets", "cost_fvtpl", "flow", MONEY, ""),
     ("Provisions and loan funding cost", "cost_provision_and_loan_funding", "flow", MONEY,
@@ -563,6 +574,10 @@ for lab, key, kind, fmt, note in FIN:
         for col in "BCD":
             put(ws, r, "BCD".index(col) + 2,
                 f"={col}{rowmap['Operating revenue']}-SUM({col}{rev_lines[0]}:{col}{rev_lines[-1]})", N, fmt, fill)
+    elif kind == "total":
+        for col in "BCD":
+            put(ws, r, "BCD".index(col) + 2,
+                f"={col}{rowmap['Operating revenue']}+{col}{rowmap['Financial income']}", N, fmt, fill)
     else:
         for i, d in enumerate(FIN_COLS):
             put(ws, r, i + 2, round(fs_val(d, key), 3), BLUE_IN, fmt, fill)
@@ -618,19 +633,25 @@ ws.cell(r, 1, "Customers, plan and yield").font = Font(name=F, size=11, bold=Tru
 r += 1
 head(ws, r, ["Item", "Value", "Unit", "", "", "", "Source or formula"], 1)
 r += 1
+AR25 = "DNSE annual report 2025"
+AGM26 = "Proposal 05/2026/TTr-DNSE-HDQT, approved by AGM Resolution 01/2026/NQ-DNSE-DHDCD, Article 9"
 ACC = [
-    ("Customer accounts, end 2025", 1500000, "accounts", "DNSE annual report 2025"),
-    ("Customer accounts, Q1 2026", 1650000, "accounts", "Q1 2026 release"),
-    ("Customer accounts, H1 2026", 1700000, "accounts", "H1 2026 release, stated as over 1.7 million"),
-    ("Share of new accounts opened, 2025", 20.0, "per cent", "DNSE annual report 2025"),
-    ("Share of new accounts opened, Q1 2026", 18.0, "per cent", "Q1 2026 release, 142,000 accounts"),
-    ("2026 revenue target", 1736.0, "VND bn", "2026 annual general meeting"),
-    ("2026 pre-tax profit target", 550.0, "VND bn", "2026 annual general meeting"),
+    ("Customer accounts, end 2025", 1512920, "accounts", f"{AR25}, p. 29: 1,512,920 accounts at 31 December 2025"),
+    ("Customer accounts, Q1 2026", 1650000, "accounts", "DNSE statement with Q1 2026 results, as reported by the press"),
+    ("Customer accounts, H1 2026", 1700000, "accounts",
+     "DNSE statement with H1 2026 results, 'over 1.7 million', as reported by the press"),
+    ("New accounts opened, 2025", 518514, "accounts", f"{AR25}, p. 29"),
+    ("Share of new accounts opened, 2025", 20.0, "per cent", f"{AR25}, p. 29: 518,514 of 2,573,945 market-wide"),
+    ("Share of new accounts opened, Q1 2026", 18.0, "per cent",
+     "DNSE statement with Q1 2026 results, 142,000 accounts, as reported by the press"),
+    ("Active customers, December 2025", 85739, "accounts", f"{AR25}, p. 30: used at least one product in the month"),
+    ("Customers with net assets of VND 10 million or more, end 2025", 27100, "accounts", f"{AR25}, p. 30"),
+    ("2026 total revenue target", 1736.0, "VND bn", AGM26 + ". Total revenue, including financial income"),
+    ("2026 pre-tax profit target", 550.0, "VND bn", AGM26),
     ("Charter capital", round(FSQ["2026Q2"]["charter_capital"], 1), "VND bn",
      "Filed statements, 30 June 2026, after the rights issue"),
-    ("Customer assets, end 2025", 52000.0, "VND bn",
-     "DNSE annual report 2025, approximate. Not reconciled to the filed statements, whose off-balance-sheet "
-     "securities are at par value"),
+    ("Customer assets under management, end 2025", 53471.0, "VND bn",
+     f"{AR25}, p. 29, at market value. The filed statements carry customer securities at par value"),
 ]
 first_acc = r
 for lab, val, unit, src in ACC:
@@ -653,8 +674,14 @@ DERIVED = [
      f"=E{rowmap['Brokerage commissions']}*1000000/B{rowmap['Customer accounts, H1 2026']}", '#,##0',
      "Half-year brokerage commissions divided by accounts"),
     ("Customer assets per account, end 2025, VND million",
-     f"=B{rowmap['Customer assets, end 2025']}*1000/B{rowmap['Customer accounts, end 2025']}", '#,##0.0',
-     "Approximate customer assets divided by accounts"),
+     f"=B{rowmap['Customer assets under management, end 2025']}*1000/B{rowmap['Customer accounts, end 2025']}", '#,##0.0',
+     "Customer assets under management divided by accounts"),
+    ("Active customers as a share of accounts, December 2025, per cent",
+     f"=B{rowmap['Active customers, December 2025']}/B{rowmap['Customer accounts, end 2025']}*100", PCT1,
+     "Customers who used at least one product in December 2025"),
+    ("Customers with net assets of VND 10 million or more, share of accounts, per cent",
+     f"=B{rowmap['Customers with net assets of VND 10 million or more, end 2025']}/B{rowmap['Customer accounts, end 2025']}*100",
+     PCT1, "End 2025"),
     ("Customer cash per account, H1 2026, VND thousand",
      f"=E{rowmap['Customer cash held for trading, period end']}*1000000/B{rowmap['Customer accounts, H1 2026']}", '#,##0',
      "Investors' cash held for trading at 30 June 2026 divided by accounts"),
@@ -675,7 +702,8 @@ DERIVED = [
     ("Lending headroom to the 200 per cent ceiling, VND bn", f"=2*D{equity_row}-D{loans_row}", INT,
      "Twice equity less the lending balance, 30 June 2026"),
     ("H1 revenue as a share of the 2026 target, per cent",
-     f"=E{rev}/B{rowmap['2026 revenue target']}*100", PCT1, "Half-year pace would be 50"),
+     f"=E{rowmap['Revenue including financial income']}/B{rowmap['2026 total revenue target']}*100", PCT1,
+     "Revenue including financial income, the plan's basis. Half-year pace would be 50"),
     ("H1 profit as a share of the 2026 target, per cent",
      f"=E{pbt}/B{rowmap['2026 pre-tax profit target']}*100", PCT1, "Half-year pace would be 50"),
     ("Pre-tax profit still required in H2 2026, VND bn",
@@ -757,41 +785,32 @@ with open(os.path.join(_HERE, "dnse_financials_quarterly.csv"), encoding="utf-8-
 ws = sheet("Market share",
            "Brokerage market share, second quarter of 2026",
            "Each percentage is a share of traded value on the named market. Shares from different markets are not comparable "
-           "with one another. Sources: HOSE and HNX quarterly announcements of 7 July 2026.",
+           "with one another. Sources: the HOSE and HNX quarterly announcements themselves, read by 01d_market_macro_fetch.py. "
+           "A blank cell means the firm was outside that market's published top ten.",
            [30, 16, 16, 16, 16, 16, 40])
 hr = 4
 head(ws, hr, ["Firm", "HOSE Q2 2026", "HOSE Q1 2026", "HOSE change, points",
               "HNX Q2 2026", "Derivatives Q2 2026", "Note"], 1)
 ws.freeze_panes = "B5"
 
+hose_q2 = {n: v for _, n, v, _ in BR.HOSE_Q2_2026}
+hose_q1 = {n: v for _, n, v in BR._table(BR._HOSE["2026Q1"])}
 hnx_map = {n: v for _, n, v in BR.HNX_Q2_2026}
 der_map = {n: v for _, n, v in BR.DERIV_Q2_2026}
 notes = {"VPS": "Leads every market but lost 2.71 points of HOSE share in one quarter",
          "VPBankS": "Largest gainer of the quarter on both exchanges",
          "DNSE": "Second in derivatives, eighth on HNX, outside the top ten on HOSE",
-         "TCBS": "Largest lending book in the industry"}
+         "TCBS": "Largest lending book among filing brokers",
+         "VCBS": "In the HOSE top ten in Q1 only"}
 r = hr + 1
-firms = []
-for _, name, q2, q1 in BR.HOSE_Q2_2026:
-    firms.append(name)
+firms = list(dict.fromkeys(list(hose_q2) + list(hose_q1) + list(hnx_map) + list(der_map)))
+for name in firms:
     fill = alt_fill if (r - hr) % 2 == 0 else None
     put(ws, r, 1, name, B, fill=fill)
-    put(ws, r, 2, q2, BLUE_IN, PCT2, fill)
-    put(ws, r, 3, q1, BLUE_IN, PCT2, fill)
+    put(ws, r, 2, hose_q2.get(name), BLUE_IN, PCT2, fill)
+    put(ws, r, 3, hose_q1.get(name), BLUE_IN, PCT2, fill)
     put(ws, r, 4, f'=IF(OR(B{r}="",C{r}=""),"",B{r}-C{r})', N, PCT2, fill)
     put(ws, r, 5, hnx_map.get(name), BLUE_IN, PCT2, fill)
-    put(ws, r, 6, der_map.get(name), BLUE_IN, PCT2, fill)
-    put(ws, r, 7, notes.get(name, ""), SM, fill=fill, wrap=True)
-    r += 1
-for _, name, v in BR.HNX_Q2_2026:
-    if name in firms or v is None:
-        continue
-    fill = alt_fill if (r - hr) % 2 == 0 else None
-    put(ws, r, 1, name, B, fill=fill)
-    put(ws, r, 2, "outside top ten", N, fill=fill)
-    put(ws, r, 3, None, N, fill=fill)
-    put(ws, r, 4, None, N, fill=fill)
-    put(ws, r, 5, v, BLUE_IN, PCT2, fill)
     put(ws, r, 6, der_map.get(name), BLUE_IN, PCT2, fill)
     put(ws, r, 7, notes.get(name, ""), SM, fill=fill, wrap=True)
     r += 1
@@ -802,15 +821,15 @@ put(ws, r, 3, f"=SUM(C{hr+1}:C{last_ms})", N, PCT2)
 put(ws, r, 4, None, N)
 put(ws, r, 5, f"=SUM(E{hr+1}:E{last_ms})", N, PCT2)
 put(ws, r, 6, f"=SUM(F{hr+1}:F{last_ms})", N, PCT2)
-put(ws, r, 7, f"HOSE column should reconcile to the top-ten total of {BR.HOSE_TOP10_Q2}", SM, wrap=True)
+put(ws, r, 7, "Each column is a full top ten, so each sum equals the top-ten total below", SM, wrap=True)
 r += 1
-put(ws, r, 1, "Published top ten total", B)
+put(ws, r, 1, "Top ten combined", B)
 put(ws, r, 2, BR.HOSE_TOP10_Q2, BLUE_IN, PCT2)
 put(ws, r, 3, BR.HOSE_TOP10_Q1, BLUE_IN, PCT2)
 put(ws, r, 4, None, N)
 put(ws, r, 5, BR.HNX_TOP10_Q2, BLUE_IN, PCT2)
 put(ws, r, 6, BR.DERIV_TOP10_Q2, BLUE_IN, PCT2)
-put(ws, r, 7, "HNX and derivatives columns include only the firms whose figures were published", SM, wrap=True)
+put(ws, r, 7, "Share left to every firm outside the top ten = 100 less this row", SM, wrap=True)
 r += 3
 
 ws.cell(r, 1, "DNSE derivatives brokerage share by quarter").font = Font(name=F, size=11, bold=True, color=ACCENT)
@@ -827,6 +846,9 @@ for i, (q, v) in enumerate(BR.DNSE_DERIV_SERIES):
         put(ws, r, cc, None, N, fill=fill)
     put(ws, r, 7, "HNX quarterly announcement", SM, fill=fill)
     r += 1
+put(ws, r, 1, "DNSE entered the derivatives top ten in Q1 2024; the full quarterly history from 2018 is on the "
+              "Market share history tab.", SM)
+r += 1
 
 # ---------------------------------------------------------------- INDUSTRY CROSS-SECTION
 ws = sheet("Industry cross-section",
@@ -878,6 +900,21 @@ put(ws, r, 3, f"=(B{ind_total_row}-B{r})/B{r}*100", N, PCT1)
 put(ws, r, 4, None, N)
 put(ws, r, 5, None, N)
 put(ws, r, 6, "Quarterly growth in industry lending, per cent, reported as 7", SM, wrap=True)
+r += 1
+_tot = BR._PANEL["totals"]
+put(ws, r, 1, f"All {BR.LISTED_FIRMS_Q2} brokers with filings, lending 30 June 2026", N)
+put(ws, r, 2, BR.LISTED_LENDING_TOTAL_Q2, BLUE_IN, INT)
+put(ws, r, 3, f"=B{r}/B{ind_total_row}*100", N, PCT1)
+put(ws, r, 4, None, N)
+put(ws, r, 5, None, N)
+put(ws, r, 6, "Sum of every securities company's filed loan book (step 01c); share of the press industry total", SM, wrap=True)
+r += 1
+put(ws, r, 1, "Same brokers, 31 March 2026", N)
+put(ws, r, 2, round(_tot["2026Q1"]["loans"], 1), BLUE_IN, INT)
+put(ws, r, 3, f"=(B{r-1}-B{r})/B{r}*100", N, PCT1)
+put(ws, r, 4, None, N)
+put(ws, r, 5, None, N)
+put(ws, r, 6, "Quarterly growth of the filed total, per cent: a check on the reported 7", SM, wrap=True)
 
 # ---------------------------------------------------------------- DNSE POSITION
 ws = sheet("DNSE position",
@@ -887,13 +924,17 @@ ws = sheet("DNSE position",
            [42, 20, 20, 22, 18, 44])
 hr = 4
 head(ws, hr, ["Measure", "DNSE", "Market total", "Unit", "DNSE share, per cent", "Source"], 1)
+_posv = {m: v for m, v, *_ in BR.DNSE_POSITION}
 POS = [
-    ("Customer accounts", 1700000, 13852633, "accounts",
-     "13.80 million domestic individual accounts plus 52,633 foreign accounts, end August 2026, VSDC"),
-    ("Derivatives brokerage", 25.38, 100.0, "per cent of traded value", "HNX Q2 2026 announcement"),
-    ("HNX listed-share brokerage", 2.88, 100.0, "per cent of traded value", "HNX Q2 2026 announcement, rank 8 of 10"),
+    ("Customer accounts", 1700000, BR.MARKET["investor_trading_accounts"], "accounts",
+     f"DNSE: 1.7 million at 30 June 2026, company statement. Market: VSDC homepage counter of investor trading "
+     f"accounts, {BR.MARKET['investor_trading_accounts_date']}. The dates differ, which understates DNSE's share slightly"),
+    ("Derivatives brokerage", _posv["Derivatives brokerage"], 100.0, "per cent of traded value",
+     "HNX Q2 2026 announcement, rank 2 of 10"),
+    ("HNX listed-share brokerage", _posv["HNX listed-share brokerage"], 100.0, "per cent of traded value",
+     "HNX Q2 2026 announcement, rank 8 of 10"),
     ("HOSE listed-share brokerage", None, 100.0, "per cent of traded value",
-     "Not in the top ten. Tenth place held 2.94 per cent, so DNSE is below that"),
+     f"Not in the top ten. Tenth place held {BR.HOSE_Q2_2026[-1][2]:.2f} per cent, so DNSE is below that"),
     ("Lending balance", BR.DNSE_LENDING_Q2, BR.MARGIN_TOTAL_Q2, "VND bn",
      "DNSE filed statements, 30 June 2026; industry total from Vietstock"),
     # linked, not typed: an earlier version typed 9,977 here against a true sum of 8,418.9
@@ -935,6 +976,195 @@ put(ws, r, 2, f"=E{first_p+1}/E{acc_row}", N, '0.000')
 for cc in (3, 4, 5):
     put(ws, r, cc, None, N)
 put(ws, r, 6, "Above one, so the derivatives franchise runs ahead of the account base", SM, wrap=True)
+
+# ---------------------------------------------------------------- MARKET SHARE HISTORY
+MM = BR._MM
+ws = sheet("Market share history",
+           "Brokerage market share by quarter, 2018 to Q2 2026",
+           "Read from every HOSE and HNX quarterly announcement that 01d could find. A blank DNSE cell means DNSE was outside "
+           "that market's top ten, so its share was below the tenth-place figure beside it. A row with no figures at all "
+           "means no announcement was found for that quarter. HOSE's news service holds 2023 onwards plus two older quarters.",
+           [10, 12, 12, 12, 12, 12, 12, 12, 12, 10, 12, 12, 12, 13, 10])
+hr = 4
+head(ws, hr, ["Quarter", "HOSE top ten combined", "HOSE tenth place", "HOSE VPS",
+              "HNX listed DNSE", "HNX listed tenth place", "UPCoM DNSE", "UPCoM tenth place",
+              "Derivatives DNSE", "Derivatives DNSE rank", "Derivatives tenth place", "Derivatives VPS",
+              "Derivatives top ten combined", "DNSE share of filed lending", "Brokers filing"], 1)
+ws.freeze_panes = "B5"
+ws.row_dimensions[hr].height = 44
+HOSE_T, HNX_T = MM["hose_market_share"]["tables"], MM["hnx_market_share"]["tables"]
+HOSE_D, HNX_D = MM["hose_market_share"]["dnse"], MM["hnx_market_share"]["dnse"]
+
+
+def _share_of(rows, firm):
+    return next((v for _, n, v in BR._table(rows) if n == firm), None) if rows else None
+
+
+quarters = [f"{y}Q{q}" for y in range(2018, 2027) for q in range(1, 5) if f"{y}Q{q}" <= "2026Q2"]
+r = hr + 1
+first_h = r
+for p in quarters:
+    fill = alt_fill if (r - first_h) % 2 == 0 else None
+    dl, du, dd = (HNX_D[m].get(p) or {} for m in ("listed", "upcom", "derivatives"))
+    tot = BR._PANEL["totals"].get(p, {})
+    vals = [(HOSE_D.get(p) or {}).get("top_ten_combined"), (HOSE_D.get(p) or {}).get("tenth_place_share"),
+            _share_of(HOSE_T.get(p), "VPS"),
+            dl.get("share"), dl.get("tenth_place_share"), du.get("share"), du.get("tenth_place_share"),
+            dd.get("share"), dd.get("rank"), dd.get("tenth_place_share"), _share_of(HNX_T["derivatives"].get(p), "VPS"),
+            BR.top_ten(HNX_T["derivatives"][p]) if p in HNX_T["derivatives"] else None,
+            tot.get("dnse_share_of_loans_pct"), tot.get("firms_reporting_loans")]
+    put(ws, r, 1, f"Q{p[-1]} {p[:4]}", N, fill=fill)
+    for j, v in enumerate(vals, start=2):
+        put(ws, r, j, v, BLUE_IN, INT if j in (10, 15) else PCT2, fill)
+    r += 1
+r += 1
+put(ws, r, 1, "HNX announcements used", B)
+put(ws, r, 2, len(MM["hnx_market_share"]["notices_used"]), N, INT)
+put(ws, r, 3, "Links to each are in market_macro.json under hnx_market_share.notices_used", SM)
+r += 1
+put(ws, r, 1, "Filed lending", B)
+put(ws, r, 3, "DNSE's loan book over the sum of loan books of every securities company with filings on Vietcap's service "
+              "(step 01c). The number of firms filing changes over time, which is shown in the last column.", SM)
+
+# ---------------------------------------------------------------- BROKER TOTALS
+ws = sheet("Broker totals",
+           "Every securities company with filings, summed by quarter",
+           "VND billion. Each line is the sum across every firm that reported it that quarter, DNSE included, from the "
+           "statements pulled by 01c. Unlisted foreign-owned brokers do not file here, so the lending total sits about a "
+           "quarter below the industry figure the press compiles.",
+           [10, 10, 14, 14, 12, 14, 14, 14, 14, 14, 14, 12])
+hr = 4
+head(ws, hr, ["Quarter", "Firms filing", "Lending", "Equity", "Lending to equity, per cent", "Operating revenue",
+              "Brokerage revenue", "Brokerage direct cost", "Pre-tax profit", "Customer cash for trading",
+              "DNSE lending", "DNSE share of lending, per cent"], 1)
+ws.freeze_panes = "B5"
+ws.row_dimensions[hr].height = 44
+r = hr + 1
+first_t = r
+for p, t in BR._PANEL["totals"].items():
+    fill = alt_fill if (r - first_t) % 2 == 0 else None
+    put(ws, r, 1, f"Q{p[-1]} {p[:4]}", N, fill=fill)
+    put(ws, r, 2, t["firms_reporting_loans"], BLUE_IN, INT, fill)
+    put(ws, r, 3, t["loans"], BLUE_IN, INT, fill)
+    put(ws, r, 4, t["equity"], BLUE_IN, INT, fill)
+    put(ws, r, 5, f'=IF(D{r}=0,"",C{r}/D{r}*100)', N, PCT1, fill)
+    put(ws, r, 6, t["revenue"], BLUE_IN, INT, fill)
+    put(ws, r, 7, t["rev_brokerage"], BLUE_IN, INT, fill)
+    put(ws, r, 8, t["cost_brokerage"], BLUE_IN, INT, fill)
+    put(ws, r, 9, t["pbt"], BLUE_IN, INT, fill)
+    put(ws, r, 10, t["customer_cash_trading"], BLUE_IN, INT, fill)
+    put(ws, r, 11, FSQ[p]["loans"], BLUE_IN, MONEY, fill)
+    put(ws, r, 12, f'=IF(C{r}=0,"",K{r}/C{r}*100)', N, PCT2, fill)
+    r += 1
+
+# ---------------------------------------------------------------- MARKET AND MACRO
+ws = sheet("Market and macro",
+           "Vietnamese market and macro series, 2018 to 2026",
+           "Index levels and traded value from Vietcap's daily price service; accounts from VSDC annual reports and its "
+           "homepage counter; macro from the World Bank WDI API and NSO releases. 2026 market rows run to "
+           f"{MM['prices']['VNINDEX']['annual']['2026']['last_date']}.",
+           [44, 12, 12, 12, 12, 12, 12, 12, 12, 12, 40])
+years = [str(y) for y in range(2018, 2027)]
+r = 4
+ws.cell(r, 1, "Markets, by year").font = Font(name=F, size=11, bold=True, color=ACCENT)
+r += 1
+head(ws, r, ["Series"] + years + ["Note"], 1)
+r += 1
+PX = MM["prices"]
+mkt_rows = [
+    ("VN-Index, year-end close", "VNINDEX", "close", '#,##0.00', ""),
+    ("VN-Index, change on year, per cent", "VNINDEX", "change_pct", PCT1, ""),
+    ("HOSE average daily traded value, VND bn", "VNINDEX", "avg_daily_value_bn", INT, "Order matching and put-through"),
+    ("HNX-Index, year-end close", "HNXIndex", "close", '#,##0.00', ""),
+    ("HNX average daily traded value, VND bn", "HNXIndex", "avg_daily_value_bn", INT, ""),
+    ("UPCoM-Index, year-end close", "HNXUpcomIndex", "close", '#,##0.00', ""),
+    ("UPCoM average daily traded value, VND bn", "HNXUpcomIndex", "avg_daily_value_bn", INT, ""),
+    ("VN30 futures front month, average daily value, VND bn", "VN30F1M", "avg_daily_value_bn", INT,
+     "Contracts x close x VND 100,000; the service's own value field is unusable before July 2024"),
+    ("DSE share price, year-end close, VND", "DSE", "close", INT, "Listed on HOSE in 2024; prices adjusted"),
+]
+for lab, sym, key, fmt, note in mkt_rows:
+    fill = alt_fill if r % 2 == 0 else None
+    put(ws, r, 1, lab, N, fill=fill)
+    for j, y in enumerate(years, start=2):
+        put(ws, r, j, (PX[sym]["annual"].get(y) or {}).get(key), BLUE_IN, fmt, fill)
+    put(ws, r, 11, note, SM, fill=fill, wrap=True)
+    r += 1
+
+r += 1
+ws.cell(r, 1, "Securities accounts, year end").font = Font(name=F, size=11, bold=True, color=ACCENT)
+r += 1
+head(ws, r, ["Series"] + years + ["Note"], 1)
+r += 1
+VS = MM["vsdc_accounts"]
+acc_first = r
+for lab, key in [("All investor accounts, VSDC", "total"), ("Domestic investors", "domestic"),
+                 ("Foreign investors", "foreign"), ("Opened during the year", "opened")]:
+    fill = alt_fill if r % 2 == 0 else None
+    put(ws, r, 1, lab, N, fill=fill)
+    for j, y in enumerate(years, start=2):
+        v = (VS.get(y) or {}).get(key)
+        if y == "2026" and key == "total":
+            v = BR.MARKET["investor_trading_accounts"]
+        put(ws, r, j, v, BLUE_IN, INT, fill)
+    put(ws, r, 11, "VSDC annual reports; 2026 is the homepage counter on " + BR.MARKET["investor_trading_accounts_date"]
+        if key == "total" else "VSDC annual reports", SM, fill=fill, wrap=True)
+    r += 1
+put(ws, r, 1, "Growth in all accounts, per cent", N)
+for j in range(3, 11):
+    col, prev = get_column_letter(j), get_column_letter(j - 1)
+    put(ws, r, j, f'=IF(OR({col}{acc_first}="",{prev}{acc_first}=""),"",({col}{acc_first}/{prev}{acc_first}-1)*100)', N, PCT1)
+put(ws, r, 2, None, N)
+put(ws, r, 11, "2026 is year to date", SM)
+r += 1
+dnse_acc_row = r
+put(ws, r, 1, "DNSE accounts", N)
+DNSE_ACC = {**BR.DNSE_ACCOUNTS_AR, "2026": 1_700_000}
+for j, y in enumerate(years, start=2):
+    put(ws, r, j, DNSE_ACC.get(y), BLUE_IN, INT)
+put(ws, r, 11, "DNSE annual report 2025, figure 22; 2026 is 30 June, company statement", SM, wrap=True)
+r += 1
+put(ws, r, 1, "DNSE share of all accounts, per cent", B)
+for j in range(2, 11):
+    col = get_column_letter(j)
+    put(ws, r, j, f'=IF(OR({col}{dnse_acc_row}="",{col}{acc_first}=""),"",{col}{dnse_acc_row}/{col}{acc_first}*100)', N, PCT2)
+put(ws, r, 11, "2026 mixes 30 June for DNSE with September for the market", SM, wrap=True)
+r += 1
+put(ws, r, 1, "DNSE share of accounts opened, per cent", N)
+for j in range(2, 11):
+    col = get_column_letter(j)
+    put(ws, r, j, f'=IF(OR({col}{acc_first+3}="",{col}{dnse_acc_row}="",{get_column_letter(j-1)}{dnse_acc_row}=""),"",'
+                  f'({col}{dnse_acc_row}-{get_column_letter(j-1)}{dnse_acc_row})/{col}{acc_first+3}*100)' if j > 2 else None,
+        N, PCT1)
+put(ws, r, 11, "Net increase in DNSE accounts over VSDC openings, so a floor on DNSE's share of gross openings", SM, wrap=True)
+r += 2
+
+ws.cell(r, 1, f"Macro, World Bank WDI (last updated {MM['wdi_updated']})").font = Font(name=F, size=11, bold=True, color=ACCENT)
+r += 1
+head(ws, r, ["Indicator"] + years + ["WDI code"], 1)
+r += 1
+for code, d in MM["wdi"].items():
+    fill = alt_fill if r % 2 == 0 else None
+    put(ws, r, 1, d["label"], N, fill=fill)
+    for j, y in enumerate(years, start=2):
+        v = d["values"].get(y)
+        put(ws, r, j, None if v is None else round(v, 2), BLUE_IN, '#,##0.00' if v is None or abs(v) < 1e5 else INT, fill)
+    put(ws, r, 11, code, SM, fill=fill)
+    r += 1
+r += 1
+ws.cell(r, 1, "2026 releases, National Statistics Office").font = Font(name=F, size=11, bold=True, color=ACCENT)
+r += 1
+head(ws, r, ["Indicator", "Value", "Unit", "", "", "", "", "", "", "", "Source"], 1)
+r += 1
+for row in MM["nso_2026"]:
+    fill = alt_fill if r % 2 == 0 else None
+    put(ws, r, 1, row["indicator"], N, fill=fill)
+    put(ws, r, 2, row["value"], BLUE_IN, '0.00', fill)
+    put(ws, r, 3, row["unit"], SM, fill=fill)
+    for cc in range(4, 11):
+        put(ws, r, cc, None, N, fill=fill)
+    put(ws, r, 11, row["source"], SM, fill=fill)
+    r += 1
 
 # ---------------------------------------------------------------- REVIEW ANALYSIS
 ws = sheet("Review analysis",
@@ -1341,8 +1571,8 @@ put(ws, r, 3, "Array formula. The widest spread belongs to adults aged 15 to 24.
 ws.merge_cells(start_row=r, start_column=3, end_row=r, end_column=11)
 
 # ---------------------------------------------------------------- REORDER AND SAVE
-order = ["Read me", "DNSE financials", "DNSE statements", "Market share", "Industry cross-section", "DNSE position",
-         "Review analysis", "Review quotes", "Segment model", "Segments 2024", "Segment gaps",
+order = ["Read me", "DNSE financials", "DNSE statements", "Market share", "Market share history", "Industry cross-section",
+         "Broker totals", "DNSE position", "Market and macro", "Review analysis", "Review quotes", "Segment model", "Segments 2024", "Segment gaps",
          "National 2024", "Trends", "Vietnam reference", "Sources"]
 wb._sheets = [wb[n] for n in order if n in wb.sheetnames] + \
              [s for s in wb._sheets if s.title not in order]

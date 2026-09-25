@@ -42,7 +42,7 @@ deriv = dict((n, v) for _, n, v in BR.DERIV_Q2_2026)["DNSE"]
 hnx = dict((n, v) for _, n, v in BR.HNX_Q2_2026)["DNSE"]
 hose_cut = BR.HOSE_Q2_2026[-1][2]                 # tenth place; DNSE is below it
 acc_share = _pos["Customer accounts"][0] / _pos["Customer accounts"][1] * 100
-lend_share = BR.MARGIN_Q2_2026[-1][1] / BR.MARGIN_TOTAL_Q2 * 100
+lend_share = dict(BR.MARGIN_Q2_2026)["DNSE"] / BR.MARGIN_TOTAL_Q2 * 100
 cats = ["Derivatives brokerage\n(HNX, Q2 2026)",
         f"Customer accounts\n(share of {_pos['Customer accounts'][1] / 1e6:.2f}m market accounts)",
         "HNX listed-share brokerage\n(Q2 2026)",
@@ -188,12 +188,11 @@ save(fig, "fig10_segment_model")
 
 # =============================================================== Fig 11
 # Where the industry earns, Q2 2026
-pb = [r for r in BR.PBT_Q2_2026 if r[0] != "VIX"]
-pb.sort(key=lambda r: r[1])
+pb = sorted(BR.PBT_Q2_2026, key=lambda r: r[1])
 lab11 = [r[0] for r in pb]; val11 = [r[1] for r in pb]
 cols11 = [ORANGE if n == "DNSE" else "#b9c0c7" for n in lab11]
 
-fig, ax = plt.subplots(figsize=(7.0, 2.9))
+fig, ax = plt.subplots(figsize=(7.0, 0.3 * len(pb) + 0.8))
 bars = ax.barh(range(len(lab11)), val11, color=cols11, height=0.6, zorder=3)
 for b in bars: b.set_linewidth(2); b.set_edgecolor(SURF)
 for i, v in enumerate(val11):

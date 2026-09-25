@@ -35,6 +35,8 @@ KEY_LINES = {
     "rev_custody":             (IS, "iss47"),
     "rev_financial_advice":    (IS, "iss123"),
     "rev_other":               (IS, "iss50"),
+    # Outside operating revenue. The 2026 plan and the annual report's revenue headline both include it.
+    "financial_income":        (IS, "iss141"),
     "operating_cost":          (IS, "isa4"),
     "cost_fvtpl":              (IS, "iss124"),
     # Template line 24: loan-loss provisions and the borrowing cost of the loan book, reported as one figure.

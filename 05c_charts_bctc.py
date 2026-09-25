@@ -252,11 +252,102 @@ ax.legend(frameon=False, fontsize=7.8, ncol=3, loc="upper center", bbox_to_ancho
 style(ax)
 save(fig, "bctc_10_core_profit")
 
+# ---------------------------------------------------------------- 11. brokerage result against listed peers
+with open(os.path.join(HERE, "peer_financials.json"), encoding="utf-8") as f:
+    PANEL = json.load(f)
+PEERS = {n: d for n, d in PANEL["firms"].items() if d["focus"]}
+brok = {n: d["half_year"]["2026H1"]["rev_brokerage"] + d["half_year"]["2026H1"]["cost_brokerage"] for n, d in PEERS.items()}
+brok["DNSE"] = H["2026H1"]["rev_brokerage"] + H["2026H1"]["cost_brokerage"]
+order = sorted(brok, key=brok.get)
+fig, ax = plt.subplots(figsize=(7.2, 0.3 * len(order) + 0.9))
+ax.barh(range(len(order)), [brok[n] for n in order], 0.6, color=[ORANGE if n == "DNSE" else GREY for n in order], zorder=3)
+for i, n in enumerate(order):
+    v = brok[n]
+    ax.text(v + (6 if v >= 0 else -6), i, f"{v:,.1f}", va="center", ha="left" if v >= 0 else "right", fontsize=8, color=INK)
+ax.axvline(0, color=MUTED, linewidth=0.8)
+ax.set_yticks(range(len(order))); ax.set_yticklabels(order)
+ax.set_xlim(min(brok.values()) - 60, max(brok.values()) + 60)
+ax.set_xlabel("Brokerage commissions less direct brokerage costs, H1 2026, VND billion")
+style(ax, grid="x")
+save(fig, "bctc_11_peer_brokerage")
+
+# ---------------------------------------------------------------- 12. DNSE's share of three markets over time
+with open(os.path.join(HERE, "market_macro.json"), encoding="utf-8") as f:
+    MM = json.load(f)
+ACC_AR = {"2020": 5_548, "2021": 44_727, "2022": 189_845, "2023": 561_279, "2024": 994_811, "2025": 1_512_920}
+acc_share = {f"{y}Q4": v / MM["vsdc_accounts"][y]["total"] * 100 for y, v in ACC_AR.items()}
+lend_share = {p: t["dnse_share_of_loans_pct"] for p, t in PANEL["totals"].items() if p >= "2020Q1"}
+der_share = {p: d["share"] for p, d in MM["hnx_market_share"]["dnse"]["derivatives"].items() if d["share"] is not None}
+QX = [p for p in lend_share]
+fig, ax = plt.subplots(figsize=(7.2, 3.3))
+for series, colour, label in [(acc_share, BLUE, "Share of all securities accounts (year end, VSDC)"),
+                              (der_share, ORANGE, "Share of derivatives brokerage (HNX)"),
+                              (lend_share, AQUA, "Share of lending by filing brokers (filings)")]:
+    xs = [QX.index(p) for p in series if p in QX]
+    ys = [series[p] for p in series if p in QX]
+    ax.plot(xs, ys, color=colour, linewidth=2, marker="o", markersize=3.2, label=label, zorder=3)
+    ax.text(xs[-1] + 0.4, ys[-1], f"{ys[-1]:.1f}%", va="center", fontsize=7.8, color=colour, fontweight="bold")
+ax.set_xticks([i for i, p in enumerate(QX) if p.endswith("Q1")])
+ax.set_xticklabels([p[:4] for p in QX if p.endswith("Q1")])
+ax.set_xlim(-0.5, len(QX) + 1.8)
+ax.yaxis.set_major_formatter(PCT)
+ax.legend(frameon=False, fontsize=7.8, loc="upper left")
+style(ax)
+save(fig, "bctc_12_dnse_shares")
+
+# ---------------------------------------------------------------- 13. the market DNSE grew in
+YRS = [str(y) for y in range(2018, 2027)]
+PX = MM["prices"]
+fig, (a1, a2) = plt.subplots(1, 2, figsize=(7.4, 3.0))
+hose = [PX["VNINDEX"]["annual"][y]["avg_daily_value_bn"] / 1000 for y in YRS]
+fut = [PX["VN30F1M"]["annual"][y]["avg_daily_value_bn"] / 1000 for y in YRS]
+w = 0.4
+a1.bar([i - w / 2 for i in range(len(YRS))], hose, w, color=BLUE, label="HOSE shares", zorder=3)
+a1.bar([i + w / 2 for i in range(len(YRS))], fut, w, color=ORANGE, label="VN30 futures, front month", zorder=3)
+a1.set_xticks(range(len(YRS))); a1.set_xticklabels([y[2:] if y != "2026" else "26\nYTD" for y in YRS], fontsize=7.6)
+a1.set_ylabel("Average daily value, VND trillion")
+a1.legend(frameon=False, fontsize=7.4, loc="upper left")
+style(a1)
+accs = [MM["vsdc_accounts"][y]["total"] / 1e6 for y in YRS[:-1]] + [MM["vsdc_latest"]["investor_trading_accounts"] / 1e6]
+dn = [ACC_AR.get(y, 0) / 1e6 for y in YRS[:-1]] + [1.7]
+a2.bar(range(len(YRS)), accs, 0.6, color=GREY, label="All accounts (VSDC)", zorder=3)
+a2.bar(range(len(YRS)), dn, 0.6, color=ORANGE, label="DNSE accounts", zorder=3)
+for i in (0, len(YRS) - 1):
+    a2.text(i, accs[i] + 0.25, f"{accs[i]:.1f}", ha="center", fontsize=7.4, color=INK)
+a2.set_xticks(range(len(YRS))); a2.set_xticklabels([y[2:] if y != "2026" else "26\nSep" for y in YRS], fontsize=7.6)
+a2.set_ylabel("Accounts, million")
+a2.legend(frameon=False, fontsize=7.4, loc="upper left")
+style(a2)
+fig.tight_layout(w_pad=2)
+save(fig, "bctc_13_market_context")
+
+# ---------------------------------------------------------------- 14. DSE against the VN-Index since listing
+dse = PX["DSE"]["daily"]
+vni = {r[0]: r[1] for r in PX["VNINDEX"]["daily"]}
+days = [r[0] for r in dse if r[0] in vni]
+d0, v0 = dse[0][1], vni[days[0]]
+dse_idx = [r[1] / d0 * 100 for r in dse if r[0] in vni]
+vni_idx = [vni[d] / v0 * 100 for d in days]
+fig, ax = plt.subplots(figsize=(7.2, 2.9))
+ax.plot(range(len(days)), vni_idx, color=GREY, linewidth=1.6, label="VN-Index")
+ax.plot(range(len(days)), dse_idx, color=ORANGE, linewidth=1.6, label="DSE (adjusted)")
+for s, c in ((vni_idx, MUTED), (dse_idx, ORANGE)):
+    ax.text(len(days) + 3, s[-1], f"{s[-1]:.0f}", va="center", fontsize=7.8, color=c, fontweight="bold")
+ticks = [i for i, d in enumerate(days) if d[5:7] in ("01", "07") and (i == 0 or days[i - 1][5:7] != d[5:7])]
+ax.set_xticks(ticks); ax.set_xticklabels([days[i][:7] for i in ticks], fontsize=7.6)
+ax.axhline(100, color=MUTED, linewidth=0.6, linestyle=":")
+ax.set_ylabel(f"Index, first trading day {days[0]} = 100")
+ax.legend(frameon=False, fontsize=7.8, loc="upper left")
+style(ax)
+save(fig, "bctc_14_dse_vs_vnindex")
+
 # ---------------------------------------------------------------- press figures against the filings
 g = lambda a, b: (a / b - 1) * 100
 checks = [
-    ("Doanh thu FY2025", 1467.0, Y["FY2025"]["revenue"]),
-    ("Tăng trưởng doanh thu FY2025, %", 77.0, g(Y["FY2025"]["revenue"], Y["FY2024"]["revenue"])),
+    ("Doanh thu hoạt động FY2025 (báo chí ghi 1.467 là tổng doanh thu)", 1467.0, Y["FY2025"]["revenue"]),
+    ("Doanh thu hoạt động + tài chính FY2025 (thiếu thu nhập khác)", 1467.0,
+     Y["FY2025"]["revenue"] + Y["FY2025"]["financial_income"]),
+    ("Tăng trưởng doanh thu hoạt động FY2025, %", 77.0, g(Y["FY2025"]["revenue"], Y["FY2024"]["revenue"])),
     ("Doanh thu Q4/2025", 434.0, Q["2025Q4"]["revenue"]),
     ("Doanh thu Q1/2026", 395.0, Q["2026Q1"]["revenue"]),
     ("Doanh thu Q2/2026", 453.1, Q["2026Q2"]["revenue"]),

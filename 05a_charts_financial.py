@@ -141,9 +141,11 @@ save(fig, "fig4_revenue_mix")
 
 # ---------------------------------------------------------------- Fig 5
 # Progress against the 2026 plan at the half year
-lab5 = [f"Operating revenue\nVND {h1['revenue']:,.1f}bn of {TARGET_REVENUE:,.0f}bn",
+# The plan's revenue is total revenue, which includes financial income.
+total_rev = h1["revenue"] + h1["financial_income"]
+lab5 = [f"Total revenue\nVND {total_rev:,.1f}bn of {TARGET_REVENUE:,.0f}bn",
         f"Pre-tax profit\nVND {h1['pbt']:,.1f}bn of {TARGET_PBT:,.0f}bn"]
-pct5 = [h1["revenue"] / TARGET_REVENUE * 100, h1["pbt"] / TARGET_PBT * 100]
+pct5 = [total_rev / TARGET_REVENUE * 100, h1["pbt"] / TARGET_PBT * 100]
 
 fig, ax = plt.subplots(figsize=(7.0, 2.3))
 bars = ax.barh(range(2), pct5, color=[BLUE, ORANGE], height=0.5, zorder=3)

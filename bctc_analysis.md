@@ -11,7 +11,7 @@
 
 1. **Báo chí chép số đúng ở phần lớn chỉ tiêu.** 27 trên 36 chỉ tiêu khớp trong phạm vi làm tròn. Chín chỗ lệch gồm:
    - Bốn chỉ tiêu lấy từ bản BCTC chưa soát xét, ví dụ LNTT Q2/2026 là 98,9 thay vì 97,4.
-   - Doanh thu và tăng trưởng doanh thu FY2025.
+   - Doanh thu và tăng trưởng doanh thu FY2025: đây là khác biệt định nghĩa, không phải sai số (mục 1).
    - Một con số không có dòng nào trong BCTC tái lập được: "dự phòng tự doanh +405%".
    - Nhầm LNTT với LNST ở tăng trưởng 9 tháng 2023, và vốn điều lệ lệch 3,5 tỷ.
 
@@ -24,7 +24,12 @@
 5. **Chi phí vốn tăng nhanh.** Chi phí vốn ước tính tăng từ 3,6% (Q2–Q3/2024) lên 6,5% (Q2/2026), trong khi lợi suất cho vay giữ quanh 10–12%. Cho vay vẫn là mảng duy nhất có chênh lệch lãi dày, khoảng 6 điểm phần trăm.
 6. **DNSE không thiếu vốn để cho vay.** Dư nợ bằng 116% vốn chủ, so với trần 200%, tức còn khoảng 4.600 tỷ dư địa. Điểm nghẽn là tài sản và nhu cầu vay của khách, khớp với luận điểm P1 của báo cáo.
 7. **ROE thấp.** ROE dao động 3,7–8,9% từ 2021 và khoảng 3,8% (quy năm) trong H1/2026, thấp hơn lãi tiết kiệm 12 tháng khoảng 7%.
-8. **Tiền của khách trên nền tảng nhỏ và biến động mạnh.** Q2/2026 còn 1.961 tỷ, giảm 32% so với quý trước, tức khoảng 1,15 triệu đồng mỗi tài khoản.
+8. **Tiền của khách trên nền tảng nhỏ và biến động mạnh.** Q2/2026 còn 1.961 tỷ, giảm 32% so với quý trước, tức khoảng 1,15 triệu đồng mỗi tài khoản. Theo báo cáo thường niên 2025, chỉ 5,7% tài khoản có hoạt động trong tháng 12/2025 và 1,8% có tài sản ròng từ 10 triệu đồng.
+9. **DNSE lỗ môi giới nặng nhất ngành.** Trong 11 công ty lớn được so sánh (có VPS), chỉ DNSE lỗ sau chi phí trực tiếp ở H1/2026. Tính trên cả 42 công ty có BCTC thì 19 công ty lỗ, đa số là công ty nhỏ; khoản lỗ của DNSE (−44,5 tỷ) lớn nhất, gấp 2,6 lần công ty đứng sau (PSI, −17,1 tỷ). Cộng cả ngành, môi giới vẫn có lãi.
+10. **Tài liệu ĐHCĐ 2026 sửa hai điểm trong báo cáo:**
+    - ĐHCĐ **có** thông qua chủ trương sở hữu một công ty quản lý quỹ làm công ty con (năm thứ hai liên tiếp, chưa thực hiện). Kế hoạch 2026 cũng dự kiến hợp tác với Vietcombank, VietinBank và BIDV cho sản phẩm Trứng Vàng, gồm trái phiếu và chứng chỉ quỹ.
+    - Không có điều khoản nào về khoản góp 10 tỷ vào VNDA hay việc tham gia sàn tín chỉ carbon.
+11. **Tỷ trọng tài khoản và tỷ trọng cho vay đi ngược chiều (mục 10).** Từ 2022 đến 2025, tỷ trọng tài khoản của DNSE tăng từ 2,75% lên 12,74% (VSDC). Cùng lúc, tỷ trọng dư nợ trong tổng các công ty có BCTC giảm từ đỉnh 2,86% (Q1/2023) xuống 1,82% (Q2/2026). Ở phái sinh, VPS mất 25 điểm thị phần và DNSE tăng 20 điểm trong cùng hai năm, nên phần lớn thị phần DNSE giành được nhiều khả năng đến từ VPS.
 
 ---
 
@@ -34,8 +39,8 @@ Bảng đầy đủ 36 chỉ tiêu được in khi chạy `python 05c_charts_bct
 
 | Chỉ tiêu | Báo chí / data pack cũ | BCTC | Vì sao lệch |
 |---|---:|---:|---|
-| Doanh thu FY2025 | 1.467,0 | **1.457,9** | Báo chí sai; BCTC năm bằng tổng 4 quý |
-| Tăng trưởng doanh thu FY2025 | +77% | **+80,6%** | Hệ quả của dòng trên (FY2024 là 807,4) |
+| Doanh thu FY2025 | 1.467,0 | **1.457,9** (hoạt động) | **Khác định nghĩa.** 1.467 là "tổng doanh thu" trong báo cáo thường niên (trang 13), gồm doanh thu hoạt động, thu nhập tài chính 7,5 và thu nhập khác khoảng 1,6. Kế hoạch 2026 (1.736) cũng dùng tổng doanh thu |
+| Tăng trưởng doanh thu FY2025 | +77% | **+80,6%** (hoạt động) | Như trên: +77% là tăng trưởng của tổng doanh thu |
 | LNTT Q2/2026 | 98,9 | **97,4** | Báo chí dùng bản tự lập 20/7; bản soát xét 14/8 tăng chi phí quản lý thêm 1,5 tỷ |
 | Tăng trưởng LNTT Q2/2026 | +8,7% | **+7,0%** | Như trên |
 | LNTT H1/2026 | 113,1 | **111,6** | Như trên |
@@ -44,7 +49,7 @@ Bảng đầy đủ 36 chỉ tiêu được in khi chạy `python 05c_charts_bct
 | "Investment income" / tỷ trọng | 171,4 / 98,4 / 95,0; 22,8% | FVTPL + HTM: 475,3 / 121,9 / 148,8 | Lỗi của data pack: năm 2025 lấy lãi FVTPL, năm 2026 lấy lãi HTM |
 | Lợi nhuận 9 tháng 2023 | +334% | LNTT +349%; **LNST +334%** | Tài liệu cũ không nói rõ loại lợi nhuận; con số khớp LNST |
 | Vốn điều lệ 30/6/2026 | 4.286 | **4.282,5** | Lệch nhỏ |
-| Tài sản khách hàng cuối 2025 | 52.000 (BCTN) | không kiểm được | Ngoại bảng ghi chứng khoán **theo mệnh giá** (thuyết minh 26), nên không so được với giá thị trường |
+| Tài sản khách hàng cuối 2025 | "khoảng 52.000" | **53.471** (báo cáo thường niên, trang 29) | Số gốc theo giá thị trường. BCTC không dùng được vì ngoại bảng ghi chứng khoán **theo mệnh giá** (thuyết minh 26) |
 
 **Các chỉ tiêu khớp:**
 - Doanh thu Q4/2025, Q1/2026, Q2/2026 và H1/2026 cùng tăng trưởng H1.
@@ -158,6 +163,10 @@ Biên LNTT dao động mạnh, 15–57%, do lãi/lỗ tự doanh. Có ba quý d�
 
 *Hình 7. Doanh thu phí môi giới và chi phí môi giới trực tiếp theo quý (trên); kết quả sau chi phí trực tiếp (dưới).*
 
+![Môi giới: DNSE so với đối thủ](fig/bctc/bctc_11_peer_brokerage.png)
+
+*Hình 7b. Doanh thu phí môi giới trừ chi phí môi giới trực tiếp, H1/2026: DNSE và 9 công ty chứng khoán niêm yết. VPS chưa niêm yết nên không có số.*
+
 | | 2021 | 2022 | 2023 | 2024 | 2025 | H1/2026 |
 |---|---:|---:|---:|---:|---:|---:|
 | Doanh thu môi giới | 90,0 | 84,8 | 67,6 | 144,8 | 404,0 | 222,1 |
@@ -167,6 +176,7 @@ Biên LNTT dao động mạnh, 15–57%, do lãi/lỗ tự doanh. Có ba quý d�
 
 - Môi giới lỗ ở mức chi phí trực tiếp liên tục **16 quý** từ Q3/2022, lũy kế **−190 tỷ**. Con số này chưa tính chi phí quản lý chung phân bổ, nên lỗ thực tế còn lớn hơn.
 - Phái sinh kéo doanh thu môi giới tăng mạnh từ 2025, nhưng chi phí tăng cùng nhịp. Mỗi đồng phí thu thêm đi kèm hơn một đồng chi phí.
+- **DNSE là công ty duy nhất lỗ ở mảng môi giới.** Trong H1/2026, cả 9 công ty chứng khoán niêm yết khác đều có lãi sau chi phí môi giới trực tiếp: SSI +362, TCBS +283, Vietcap +216, HSC +119, VNDirect +114, MBS +56, VIX +48, SHS +17, VPBankS +3 tỷ. Riêng DNSE là −44,5 tỷ (Hình 7b). Số liệu lấy từ BCTC của từng công ty qua `01c_peer_financials_fetch.py`, cùng mẫu BCTC công ty chứng khoán.
 - Q2/2026 lỗ nặng nhất từ trước đến nay (−26,2 tỷ), dù doanh thu giảm nhẹ. Chi phí không giảm theo doanh thu, nên có dấu hiệu chi phí cố định hoặc chi phí thu hút khách. 🔎 Thuyết minh chỉ gộp "chi phí môi giới, lưu ký", không tách phí sở giao dịch, hoa hồng đối tác hay marketing.
 
 ---
@@ -214,7 +224,12 @@ Biên LNTT dao động mạnh, 15–57%, do lãi/lỗ tự doanh. Có ba quý d�
 
 - Tiền của khách tăng từ 6,9 tỷ (2018) lên đỉnh 3.192 tỷ (Q3/2025), rồi giảm còn **1.961 tỷ** (Q2/2026, −32% so với quý trước).
 - Tính trên mỗi tài khoản: khoảng **1,94 triệu đồng** cuối 2025 và **1,15 triệu đồng** tại 30/6/2026. Đây là bằng chứng sơ cấp cho luận điểm "tài khoản nhiều nhưng ít tiền" (P1). Trước đây luận điểm này chỉ được suy ra gián tiếp từ tỷ số thị phần.
-- Số dư Q1/2025 (429 tỷ) giảm đột ngột rồi hồi lại ngay quý sau. 🔎 Có thể do thời điểm chốt số hoặc cách phân loại; chưa kiểm.
+- **Báo cáo thường niên 2025 (trang 29–30) còn cho bằng chứng mạnh hơn:**
+  - Có 1.512.920 tài khoản cuối 2025, nhưng chỉ **85.739 khách active** (dùng ít nhất một sản phẩm) trong tháng 12/2025, tức **5,7%**.
+  - Chỉ **27.100 khách có tài sản ròng từ 10 triệu đồng trở lên** (1,8%), và hơn 2.000 khách từ 1 tỷ đồng trở lên.
+  - Tổng tài sản quản lý là 53.471 tỷ đồng theo giá thị trường, tức khoảng 35,3 triệu đồng mỗi tài khoản. Con số này lệch về số ít khách lớn.
+  - Chuỗi số tài khoản: 5.548 (2020), 44.727 (2021), 189.845 (2022), 561.279 (2023), 994.811 (2024), 1.512.920 (2025). Tài khoản mở mới năm 2025 là 518.514, chiếm 20% toàn thị trường; riêng Q1/2025 chiếm 34%.
+- Báo cáo thường niên ghi tiền khách ("CASA") Q1/2025 là 2.464 tỷ, trong khi dữ liệu Vietcap cho 429 tỷ. Vì vậy **số Q1/2025 trong Hình 10 nhiều khả năng là lỗi dữ liệu nguồn**, không phải tiền khách rút ra thật.
 - Chứng khoán khách lưu ký qua DNSE được ghi **theo mệnh giá** (23.231 tỷ tại 30/6/2026), nên không dùng để tính tài sản khách hàng theo giá thị trường.
 
 ---
@@ -223,7 +238,7 @@ Biên LNTT dao động mạnh, 15–57%, do lãi/lỗ tự doanh. Có ba quý d�
 
 **Lý do:** data pack ban đầu được dựng từ tin báo chí và thông cáo IR. Các nguồn này chỉ đưa tin về các kỳ gần nhất (FY2025, Q1 và Q2/2026). BCTC gốc trên trang IR là bản scan không có lớp chữ, nên team không có chuỗi số liệu lịch sử. Vì vậy báo cáo neo vào nửa đầu 2026. Giờ đã có đủ chuỗi 2018–2026.
 
-**Đề xuất bổ sung vào báo cáo** (báo cáo đang ở mức 3.726 từ, đã vượt giới hạn 3.500, nên nên thay thế thay vì thêm):
+**Đề xuất bổ sung vào báo cáo.** Báo cáo hiện ở mức 3.796 từ, đã vượt giới hạn 3.500, nên nên thay thế thay vì thêm. Hai việc đã làm: bằng chứng 5,7% / 1,8% đã đưa vào mục 3.2, và đoạn về quỹ ở mục 6 đã sửa.
 
 | Thay đổi | Ở đâu | Giá trị |
 |---|---|---|
@@ -239,7 +254,7 @@ Biên LNTT dao động mạnh, 15–57%, do lãi/lỗ tự doanh. Có ba quý d�
 
 | Mã | Vấn đề | BCTC nói gì | Kết luận |
 |---|---|---|---|
-| P1 | Tài khoản nhiều, ít tiền | Tiền khách 1,15 triệu/tài khoản; không thiếu vốn cho vay (116%/200%) | **Mạnh hơn**, có bằng chứng sơ cấp |
+| P1 | Tài khoản nhiều, ít tiền | Tiền khách 1,15 triệu/tài khoản; chỉ 5,7% khách active và 1,8% có tài sản ròng từ 10 triệu; không thiếu vốn cho vay (116%/200%) | **Mạnh hơn nhiều**, có bằng chứng sơ cấp |
 | P2 | Tăng trưởng phi kinh tế | Lợi nhuận lõi đi ngang 2022–2025 trong khi doanh thu ×3,2 | **Mạnh hơn nhiều** |
 | P4 | Phụ thuộc bảng cân đối | 71,5% (H1/2026), từng lên 89% năm 2023. Phần phí tăng thêm đến từ phái sinh và bị lỗ | Sửa số (62,4% → 71,5%) |
 | P6 | Thua ở mảng cho vay | Lợi suất 11%, chênh lệch khoảng 6 điểm; điểm nghẽn là cầu vay chứ không phải vốn | Giữ, bổ sung nguyên nhân |
@@ -250,8 +265,123 @@ Biên LNTT dao động mạnh, 15–57%, do lãi/lỗ tự doanh. Có ba quý d�
 | 2.6 | Giá trị khuyến nghị | +1.000 tỷ dư nợ ≈ 49 tỷ LNTT/năm sau chi phí vốn | Sửa (110 → khoảng 49 tỷ) |
 | Mới | Lợi nhuận phụ thuộc tự doanh | 2023 và 2025: lãi tự doanh 158 và 146 tỷ | Nên thêm vào danh sách vấn đề |
 | Mới | Tiền gửi cầm cố | 41–48% tài sản, 92–93% cầm cố | Nên thêm, kèm 🔎 về cơ chế |
+| N3 | Môi giới lỗ (so với ngành) | 9/9 đối thủ niêm yết có lãi môi giới H1/2026 | **Mạnh hơn**: vấn đề riêng của DNSE, không phải của ngành |
+| 1.6 / 2.6 | Quản lý quỹ | NQ 01/2026 Điều 15: thông qua chủ trương sở hữu công ty quản lý quỹ làm công ty con (lần 2) | **Sửa**: câu "chưa có nghị quyết riêng" và phần báo chí về "tự lập thay vì M&A" không khớp văn bản |
+| 1.6 | VNDA 10 tỷ, sàn carbon | Không có trong nghị quyết và tờ trình | **Bỏ** hoặc ghi là thông tin báo chí từ phần thảo luận |
+| 1.6 | Kế hoạch 2026 | "Tổng doanh thu" 1.736 tỷ, gồm thu nhập tài chính | Sửa cách so tiến độ: 49,1% chứ không phải 48,9% |
 
 ---
+
+## 9. Nguồn gốc số liệu sau đợt thay thế (24/9/2026)
+
+| Nhóm số liệu | Nguồn hiện tại | Trạng thái |
+|---|---|---|
+| BCTC DNSE, mọi dòng, 2018–Q2/2026 | Vietcap (`01b`), đối chiếu BCTC bán niên soát xét | ✅ Sơ cấp |
+| Dư nợ, LNTT, kết quả môi giới của **mọi công ty chứng khoán có BCTC** (44 mã, 42 công ty báo cáo dư nợ Q2/2026), 2018–Q2/2026 | Vietcap (`01c`), BCTC hợp nhất nếu có công ty con | ✅ Sơ cấp. SSI Q2/2026: 1.529 tỷ, báo chí ghi 1.511 |
+| VPS Securities | **Đã niêm yết trên HOSE, mã VCK** (mã VPS là một công ty thuốc trừ sâu). Dư nợ 31.311,5 tỷ, LNTT Q2/2026 1.378,4 tỷ từ BCTC | ✅ Sơ cấp (thay 31.300 của báo chí; LNTT khớp) |
+| Tổng dư nợ toàn ngành 453.800 tỷ | Vietstock | ⚠️ Vẫn là báo chí. Tổng BCTC của 42 công ty là 345.309 tỷ (76%); phần còn lại thuộc các công ty không công bố trên Vietcap, chủ yếu vốn ngoại. Tăng trưởng quý của tổng BCTC là 7,3%, khớp mức 7% báo chí đưa |
+| Thị phần HOSE, HNX, UPCoM, phái sinh | **Thông báo gốc của hai sở**, kéo bằng `01d`: HNX 139 thông báo từ Q4/2017; HOSE 2023–Q2/2026 cộng Q4/2018, Q1/2019 | ✅ Sơ cấp. Web hai sở dùng JavaScript nhưng có API trả về từng thông báo. Báo chí sai 1 số: phái sinh Q2/2025 là 17,62%, báo ghi 17,33%. Đã có Q2–Q3/2024 (5,11% và 5,30%) |
+| Số tài khoản cuối năm 2020–2025, mở mới, active, tài sản ròng, tài sản quản lý | Báo cáo thường niên 2025, trang 29–30 | ✅ Sơ cấp |
+| Số tài khoản Q1/2026 (1,65 triệu), H1/2026 (1,7 triệu), 142.000 mở mới Q1/2026 | DNSE công bố, qua báo chí | ⚠️ Vẫn là báo chí; web tin tức DNSE hiển thị bằng JavaScript, BCTC không có số tài khoản |
+| Kế hoạch 2026, trái phiếu 2.500 + 1.000, IFC, quỹ | NQ 01/2026 và tờ trình 05, 08, 09, 11, 13 | ✅ Sơ cấp |
+| Tổng tài khoản toàn thị trường | VSDC: cuối năm 2018–2025 từ báo cáo thường niên VSDC (PDF); 13.887.603 từ bộ đếm trang chủ (24/9/2026) | ✅ Sơ cấp (thay 13,80 triệu + 52.633 của báo) |
+| Chỉ số, giá trị giao dịch HOSE/HNX/UPCoM, VN30F1M, giá DSE, 2018–nay | Dịch vụ giá ngày của Vietcap (`01d`) | ✅ Sơ cấp. Thay 17.336 và 43.925 của báo |
+| Vĩ mô 2018–2025 | World Bank WDI API, 15 chỉ tiêu (`01d`) | ✅ Sơ cấp |
+| Vĩ mô 2026 (GDP quý, CPI, xuất nhập khẩu, bán lẻ) | Thông cáo của NSO, ghi URL từng số | ✅ Sơ cấp. GDP Q1/2026 được NSO sửa từ 7,83% lên 7,94% |
+| Ngân hàng, thanh toán, bảo hiểm, doanh nghiệp (tab Vietnam reference) | FiinRatings, NHNN, Milliman… nhập tay | ⚠️ Chưa kiểm lại; không phục vụ luận điểm chính |
+| Tỷ lệ tham gia của NĐT nước ngoài ở phái sinh (3,84%), bán ròng khối ngoại, danh sách FTSE | Báo chí | ⚠️ Vẫn là báo chí; chỉ để tham khảo, báo cáo không dùng |
+
+---
+
+## 10. Thị phần, thị trường và vĩ mô 2018–2026 từ nguồn chính thống
+
+**Nguồn:** `01d_market_macro_fetch.py` ghi `market_macro.json`, gồm thông báo thị phần của HNX và HOSE, báo cáo thường niên và bộ đếm của VSDC, giá ngày từ Vietcap, World Bank WDI và thông cáo NSO. Tổng ngành lấy từ `01c`. Hình 12–14 nằm trong `fig/bctc/`. Trong data pack có thêm ba tab: *Market share history*, *Broker totals* và *Market and macro*.
+
+### 10.1 Tài khoản tăng, cho vay không theo kịp (Hình 12)
+
+![Tỷ trọng của DNSE ở ba thị trường](fig/bctc/bctc_12_dnse_shares.png)
+
+| Cuối năm | Tài khoản toàn thị trường (VSDC) | Tài khoản DNSE (BCTN 2025) | Tỷ trọng tài khoản | Tỷ trọng dư nợ trong các công ty có BCTC (Q4) | Dư nợ/vốn chủ DNSE |
+|---|---:|---:|---:|---:|---:|
+| 2018 | 2.182.327 | – | – | 0,05% | 12% |
+| 2019 | 2.374.894 | – | – | 0,08% | 19% |
+| 2020 | 2.771.409 | 5.548 | 0,20% | 0,04% | 14% |
+| 2021 | 4.310.211 | 44.727 | 1,04% | 0,86% | 113% |
+| 2022 | 6.897.071 | 189.845 | 2,75% | 2,74% | 73% |
+| 2023 | 7.292.361 | 561.279 | 7,70% | 1,91% | 75% |
+| 2024 | 9.297.988 | 994.811 | 10,70% | 2,21% | 96% |
+| 2025 | 11.871.933 | 1.512.920 | 12,74% | 1,85% | 136% |
+| 9/2026 | 13.887.603 | 1.700.000 (30/6) | 12,24%* | 1,82% (Q2) | 116% (Q2) |
+
+\* Tử số ngày 30/6, mẫu số ngày 24/9, nên tỷ trọng bị thấp đi một chút.
+
+- **Đến hết 2022, hai tỷ trọng đi cùng nhau** (2,75% và 2,74%). **Từ 2023, chúng tách ra:** tỷ trọng tài khoản tăng gấp 4,6 lần, còn tỷ trọng dư nợ giảm. Tài khoản mở từ 2023 vay rất ít. Đây là bằng chứng theo thời gian cho luận điểm "có khách nhưng không kiếm được tiền từ khách" của báo cáo; trước đây luận điểm này chỉ dựa vào một thời điểm.
+- DNSE chiếm 24,1% (2023), 20,3% (2024) và 19,3% (2025) số tài khoản VSDC mở mới trong năm. Đây là tăng ròng của DNSE chia cho mở mới gộp của VSDC, nên là cận dưới. BCTN 2025 ghi 20% vì dùng tăng ròng của VSDC (2.573.945) làm mẫu số.
+- DNSE không thiếu vốn so với ngành: dư nợ/vốn chủ Q2/2026 là 116%, cao hơn mức 96% của cả ngành. Khoảng cách của DNSE là so với số tài khoản, không phải so với vốn.
+
+### 10.2 Phái sinh: phần DNSE tăng gần bằng phần VPS mất
+
+| Quý | DNSE | Hạng | VPS | Hạng 10 |
+|---|---:|---:|---:|---:|
+| Q1/2024 | 4,01 | 5 | 58,90 | 1,96 |
+| Q2/2024 | 5,11 | 4 | 58,77 | 1,97 |
+| Q3/2024 | 5,30 | 3 | 58,92 | 2,04 |
+| Q4/2024 | 9,98 | 2 | 55,84 | 2,06 |
+| Q1/2025 | 16,72 | 2 | 50,64 | 2,00 |
+| Q2/2025 | 17,62 | 2 | 46,39 | 2,06 |
+| Q3/2025 | 23,67 | 2 | 36,14 | 2,09 |
+| Q4/2025 | 24,26 | 2 | 33,83 | 1,73 |
+| Q1/2026 | 25,50 | 2 | 33,34 | 1,51 |
+| Q2/2026 | 25,38 | 2 | 33,84 | 1,29 |
+
+- Từ Q1/2024 đến Q2/2026, VPS mất 25,1 điểm, DNSE tăng 21,4 điểm, còn tổng top 10 gần như không đổi (93,5% và 94,5%). 🔎 Phần lớn khách phái sinh DNSE giành được nhiều khả năng đến từ VPS, nhưng số liệu thị phần không chứng minh được dòng khách cụ thể.
+- VPS thống trị phái sinh từ Q1/2019 (37,5%, rồi 50–62% trong giai đoạn 2019–2024). DNSE là công ty đầu tiên làm giảm mạnh vị thế đó.
+- **Đà tăng của DNSE đã chững lại:** bốn quý gần nhất quanh 24–25,5%.
+- Quy mô thị trường tăng mạnh: giá trị danh nghĩa bình quân ngày của hợp đồng VN30 tháng gần nhất là 26.443 tỷ (2024), 39.552 tỷ (2025) và 44.995 tỷ (2026 đến 24/9).
+- Báo chí có một số sai: Q2/2025 là 17,62%, không phải 17,33%. Hai quý trước đây bị thiếu (Q2 và Q3/2024) giờ đã có.
+
+### 10.3 Cổ phiếu cơ sở: DNSE gần như vắng mặt trong top 10
+
+- **HOSE:** DNSE không vào top 10 ở cả 16 quý có dữ liệu (Q4/2018, Q1/2019, Q1/2023–Q2/2026). Hạng 10 cần 2,80–3,23%, nên thị phần HOSE của DNSE luôn dưới khoảng 3%.
+- **HNX niêm yết:** DNSE chỉ vào top 10 ở 3 trên 34 quý: Q2/2022 (3,79%, hạng 6), Q3/2025 (4,63%, hạng 6) và Q2/2026 (2,88%, hạng 8). **UPCoM:** một lần, Q1/2026 (2,49%, hạng 10).
+- **Mức tập trung của HOSE:** top 10 chiếm 66,8–69,8% từ 2023 đến Q1/2026, rồi giảm xuống 65,19% ở Q2/2026. Phần lớn mức giảm đến từ VPS: thị phần HOSE của VPS giảm từ 20,29% (Q1/2024) xuống 12,61%, riêng Q2/2026 mất 2,71 điểm.
+
+### 10.4 Toàn ngành: cho vay tăng gấp 10 lần, môi giới vẫn có lãi
+
+| Năm | Số công ty | Dư nợ cuối năm | Vốn chủ cuối năm | Dư nợ/vốn chủ | Doanh thu hoạt động | LNTT | Môi giới sau chi phí trực tiếp | Môi giới DNSE |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2018 | 43 | 34.649 | 51.196 | 68% | 21.380 | 8.668 | 2.371 | −1,1 |
+| 2019 | 42 | 38.595 | 58.949 | 65% | 20.932 | 7.334 | 930 | −3,4 |
+| 2020 | 42 | 62.355 | 66.698 | 93% | 28.662 | 11.061 | 1.556 | −2,5 |
+| 2021 | 39 | 138.722 | 105.111 | 132% | 58.449 | 25.514 | 6.052 | 38,5 |
+| 2022 | 38 | 83.176 | 150.674 | 55% | 54.226 | 11.887 | 3.912 | 10,4 |
+| 2023 | 40 | 129.785 | 175.287 | 74% | 52.583 | 18.347 | 2.054 | −43,5 |
+| 2024 | 40 | 175.975 | 215.115 | 82% | 59.625 | 24.279 | 2.329 | −30,0 |
+| 2025 | 42 | 315.745 | 316.649 | 100% | 93.286 | 42.161 | 3.547 | −60,8 |
+| H1/2026 | 42 | 345.309 | 358.334 | 96% | 53.907 | 19.939 | 1.463 | −44,5 |
+
+*Tỷ đồng. Là tổng các công ty có BCTC trên Vietcap, gồm cả DNSE; số công ty thay đổi theo năm.*
+
+- Cả ngành lãi môi giới sau chi phí trực tiếp ở mọi năm, dù biên mỏng dần. Vì vậy khoản lỗ môi giới của DNSE là vấn đề riêng của DNSE (miễn phí giao dịch), không phải của ngành. Ở H1/2026, 19 trên 42 công ty lỗ môi giới, nhưng DNSE lỗ nhiều nhất.
+- Dư nợ/vốn chủ của ngành quanh 100%, còn xa trần 200%, nên toàn ngành còn dư địa cho vay.
+- Tổng dư nợ theo BCTC tăng 7,3% trong Q2/2026, khớp mức 7% báo chí đưa cho con số 453.800 tỷ.
+
+### 10.5 Bối cảnh thị trường và vĩ mô (Hình 13, 14)
+
+![Thị trường DNSE tăng trưởng trong đó](fig/bctc/bctc_13_market_context.png)
+
+![DSE so với VN-Index](fig/bctc/bctc_14_dse_vs_vnindex.png)
+
+- **Thanh khoản HOSE (bình quân ngày):** 4.260 tỷ (2018), 2.936 (2019), 5.225 (2020), 20.084 (2021), 15.588 (2022), 13.549 (2023), 16.410 (2024), 25.151 (2025), 23.564 (2026 đến 24/9).
+- **Tài khoản VSDC** tăng 6,4 lần từ 2018 đến 9/2026. Hai năm tăng mạnh nhất là 2021 (+55,5%) và 2022 (+60,0%), trùng với lúc DNSE tái định vị và ra mắt Entrade X.
+- **VN-Index:** 892,54 (2018), 1.784,49 (2025), 1.775,09 (24/9/2026).
+- **Cổ phiếu DSE:** từ ngày giao dịch đầu tiên có dữ liệu (1/7/2024), DSE giảm 12% trong khi VN-Index tăng 41%. Thị trường chưa định giá cao câu chuyện tăng trưởng tài khoản.
+- **WDI:**
+  - Tăng trưởng GDP: 7,47% (2018), 2,87% (2020), 2,55% (2021), 8,54% (2022), 4,98% (2023), 7,04% (2024), 8,02% (2025).
+  - Lạm phát CPI trong khoảng 1,8–3,6%.
+  - Giá trị cổ phiếu giao dịch tăng từ 14,7% GDP (2018) lên 51,9% (2021), rồi 44,0% (2025).
+  - Vốn hóa bằng 61,4% GDP năm 2025. Tỷ lệ người dùng internet là 84,15% năm 2024.
+- **NSO 2026:** GDP Q1 tăng 7,94% (bản sửa; bản đầu là 7,83%), Q2 tăng 8,39%, H1 tăng 8,18%. CPI tháng 8 tăng 4,89% so với cùng kỳ, cao hơn mọi năm trong 2018–2025. 🔎 Lạm phát cao hơn thường kéo lãi suất lên, và điều này có thể giải thích một phần việc chi phí vốn của DNSE tăng (mục 5).
 
 ## Giới hạn
 
@@ -260,11 +390,17 @@ Biên LNTT dao động mạnh, 15–57%, do lãi/lỗ tự doanh. Có ba quý d�
 - Dòng "Đầu tư dài hạn" (`bsa43`) được coi là trái phiếu HTM dài hạn. Điều này đúng tại 1/1/2026 và 30/6/2026 theo thuyết minh 8(b); các năm trước chưa kiểm.
 - Lợi suất theo quý tính trên bình quân đầu và cuối kỳ, nên bị méo khi dư nợ tăng mạnh trong quý (đặc biệt năm 2021).
 - Kết quả môi giới chỉ tính chi phí trực tiếp, chưa phân bổ chi phí quản lý chung.
-- Số tài khoản (1,5 và 1,7 triệu) do DNSE tự công bố, không có trong BCTC.
+- Số tài khoản cuối năm lấy từ BCTN 2025; số 1,65 và 1,7 triệu của năm 2026 do DNSE công bố qua báo chí, không có trong BCTC.
+- Web tin tức của HOSE chỉ giữ thông báo từ 2023, cộng thêm Q4/2018 và Q1/2019. HNX thiếu thông báo niêm yết/UPCoM của Q1/2024 và thông báo phái sinh của Q2–Q3/2018.
+- Trước 2019, VPS còn tên là VPBS ("Ngân hàng TMCP Việt Nam Thịnh Vượng"). Code đã quy đổi tên này về VPS. VPBankS hiện nay là một công ty khác.
+- Giá trị giao dịch VN30F1M là ước tính: số hợp đồng × giá đóng cửa × 100.000 đồng. Trường giá trị gốc của nguồn không dùng được trước 22/7/2024. Từ đó trở đi, ước tính lệch so với số gốc tối đa khoảng 1% theo ngày và 0,06% theo bình quân Q2/2026 (40.855 so với 40.832 tỷ).
+- Tổng ngành chỉ gồm các công ty có BCTC trên Vietcap. Một số công ty vốn ngoại không công bố ở đây.
 
 ## Cách tái lập
 
 ```bash
-python 01b_dnse_financials_fetch.py   # kéo BCTC, ghi dnse_financials*.{json,csv}
-python 05c_charts_bctc.py             # 10 biểu đồ trong fig/bctc/ và các bảng đối chiếu
+python 01b_dnse_financials_fetch.py   # kéo BCTC DNSE, ghi dnse_financials*.{json,csv}
+python 01c_peer_financials_fetch.py   # kéo BCTC mọi công ty chứng khoán có trên Vietcap, ghi peer_financials.json
+python 01d_market_macro_fetch.py      # thị phần HOSE/HNX, VSDC, giá ngày, WDI, NSO; ghi market_macro.json
+python 05c_charts_bctc.py             # 14 biểu đồ trong fig/bctc/ và các bảng đối chiếu
 ```
