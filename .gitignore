@@ -30,3 +30,40 @@ desktop.ini
 *.log
 .env
 .env.local
+
+# Draft / versioned report exports (chi giu ban final can nop)
+*_v[0-9]*.docx
+*_v[0-9]*.pdf
+*.v[0-9]*.docx
+*.v[0-9]*.pdf
+
+# Backup snapshots & build scratch dirs khi soan bao cao
+_backup_*/
+_v*_build/
+
+# Cache du lieu tho, tai tao duoc bang script fetch (01*, 01b*, ...)
+*_raw.json
+
+diary.md
+weakness.md
+agent.md
+check_legit_table_figure.md
+bctc_analysis.md                      <- cân nhắc thêm, cùng dạng note phân tích nội bộ
+doc/code_audit.md
+doc/compass_artifact_wf-50fc291d-bab7-5d0a-a14c-178cb872cdc4_text_markdown.md
+doc/dnse.md
+doc/dnse_problems_and_product_strategy.md
+doc/final_report_review.md
+doc/v5_revision_discussion_recommendation.md
+
+FBAR2_2026_DNSE_Analysis.docx
+FBAR2_2026_Team_name.docx
+FBAR2_2026_Team_name.v4_bang_active.docx
+FBAR2_2026_Team_name.v5_3500w.docx
+FBAR2_2026_Team_name.v5_3500w.pdf
+FBAR2_2026_Team_name.v6_final.docx
+[FBAR2_2026]_KTQT FTUers, updatest.docx
+[FBAR2_2026]_KTQT FTUers.pdf          <- bản v6 cũ đã track, khác bản final bạn chọn
+[FBAR2_2026]_KTQT FTUers.zip          <- đã xoá khỏi ổ đĩa, còn vướng trong git (cần git rm để chốt)
+[FBA] - KTQT FTUers, 26-09-26.docx    <- tương tự, đã xoá khỏi ổ đĩa nhưng còn track
+doc/FBAR2_2026_DNSE_Analysis.docx     <- bản trùng nằm trong doc/
