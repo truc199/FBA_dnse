@@ -1,6 +1,6 @@
 # DNSE — Các vấn đề & Bài toán BA về chiến lược sản phẩm số
 
-*Ghi chú làm việc nội bộ cho team FBA Season 6, Round 2. Lập ngày 24/09/2026; cập nhật cùng ngày theo BCTC và tài liệu gốc; cập nhật 25/09/2026 theo thông báo gốc của HOSE, HNX, VSDC và BCTC toàn ngành.*
+*Ghi chú làm việc nội bộ cho team FBA Season 6, Round 2. Lập ngày 24/09/2026; cập nhật cùng ngày theo BCTC và tài liệu gốc; cập nhật 25/09/2026 theo thông báo gốc của HOSE, HNX, VSDC và BCTC toàn ngành; cập nhật 26/09/2026 mục 1.8 (tỷ lệ active, đối chiếu lại từ báo cáo thường niên các công ty).*
 *Hạn nộp: **21:00 ngày 27/09/2026**. Báo cáo tối đa 3.500 từ, viết bằng tiếng Anh, nộp PDF.*
 
 **Nguồn tổng hợp:**
@@ -35,6 +35,7 @@
 | P3: H2 cần bao nhiêu | "Gấp 2,2 lần quý tốt nhất" | **~219 tỷ/quý, gấp 1,28 lần quý tốt nhất** (Q3/2025: 171,1) | BCTC |
 | Tỷ trọng tài khoản của DNSE | 12,27% (1,7 triệu tại 30/6 chia cho 13,85 triệu tại 31/8) | Báo cáo dùng **12,24%**: mẫu số là bộ đếm VSDC 13.887.603 ngày 24/9/2026 (nguồn gốc, nhưng lệch ngày nên hơi thấp). Nếu dùng số VSDC cùng ngày 30/6/2026 (13.430.517, qua Tạp chí KT-TC) thì là **≥12,66%**. Tỷ số 0,24 và 0,11 gần như không đổi | VSDC; Tạp chí KT-TC, 8/7/2026 |
 | Tỷ lệ active so với ngành | Chưa có đối chiếu | DNSE 5,7% so với TCBS ~30% và VNDirect 30,8% (2021). Chi tiết ở mục 1.8 | BCTN 2025; báo cáo HSC; VietnamBiz |
+| Tỷ lệ active, rà soát lại (26/09) | VNDirect "không công bố"; chỉ 3 công ty | VNDirect **có** công bố: 134.507 khách dùng sản phẩm / ~1 triệu (**≤13,5%**). TCBS tháng 12/2025 đo lại **~34%** (0,40–0,42 triệu). Thêm SSI kênh số (19,2%, 90 ngày), VPBankS, MBS, CTS, Vietcap, và nhóm cùng mô hình app (Robinhood, Futu, Webull, eToro, Finhay, Anfin). Đã đưa vào báo cáo (Bảng B3, mục 2.5) | BCTN 2025 các công ty; Ban điều hành VNDirect; KQKD Q2/2026 Futu, Webull |
 | Thị phần HOSE, HNX, phái sinh | Bảng tổng hợp của báo | **Thông báo gốc của hai sở**, chuỗi 2018–Q2/2026. Phái sinh Q2/2025 là **17,62%** (báo ghi 17,33%); có thêm Q2–Q3/2024 (5,11%, 5,30%) | HNX, HOSE (`01d`) |
 | VPS | "Chưa niêm yết", dư nợ 31.300 và LNTT theo báo | **Niêm yết HOSE, mã VCK.** Dư nợ **31.312**, LNTT Q2/2026 **1.378,4** (+56,8%) từ BCTC | Vietcap (`01c`) |
 | Tỷ trọng tài khoản và cho vay theo thời gian | Chỉ có một thời điểm | Tài khoản 2,75% → **12,74%** (2022–2025), dư nợ 2,74% → **1,85%**: hai đường tách nhau từ 2023. Chi tiết ở `bctc_analysis.md` mục 10 | VSDC, BCTN 2025, BCTC toàn ngành |
@@ -304,15 +305,73 @@ Lãi/lỗ tự doanh thuần dao động từ −61 tỷ (2022) đến +158 tỷ
 - 🔎 **Tài khoản mở mới so với khách active tăng thêm:** năm 2025 mở mới 518.514 tài khoản, nhưng số khách active chỉ tăng khoảng 43.800 (từ 41.900 lên 85.739). Tức cứ 100 tài khoản mở mới chỉ tương ứng khoảng **8 khách active tăng thêm**. Đây là phép chia hai mức tăng ròng, không theo dõi từng nhóm khách, nên chỉ là ước lượng.
 - Tỷ lệ active **có cải thiện** (4,2% lên 5,7%). Báo cáo nên nói điều này để không bị coi là chọn số bất lợi.
 
-### B. Đối thủ và ngành
+### B. Công ty chứng khoán trong nước (rà soát lại 26/09/2026)
 
-| Công ty | Tổng tài khoản | Active | Tỷ lệ | Định nghĩa, kỳ đo | Nguồn | Mức tin cậy |
+*Đọc lại từng số từ file PDF gốc. Sửa so với bản 24/09: VNDirect **có** công bố số khách dùng sản phẩm (bản trước ghi "không công bố"); số TCBS tháng 12/2025 được đo lại bằng máy trên biểu đồ; thêm SSI, VPBankS, MBS, CTS, Vietcap, HSC.*
+
+**B.1. Có cả tổng tài khoản và số (hoặc tỷ lệ) hoạt động**
+
+| Công ty | Tổng tài khoản | Hoạt động | Tỷ lệ | Định nghĩa, kỳ đo | Nguồn | Mức tin cậy |
 |---|---:|---:|---:|---|---|---|
-| **DNSE** | 1.512.920 (31/12/2025) | 85.739 | **5,7%** | Dùng ≥1 sản phẩm trong tháng 12/2025 | BCTN 2025 | Sơ cấp |
-| **TCBS** | >1,1 triệu (Q1/2025) | — | **~30%** | "Hoạt động thường xuyên", không nêu kỳ đo | Báo cáo HSC 19/8/2025 đăng trên tcbs.com.vn, trang 8 | Phân tích của HSC dựa trên số của TCBS; đã đọc bản gốc |
-| **VNDirect** | 674.546 (cuối 2021) | 208.089 | **30,8%** | "Active (có giao dịch)", không nêu kỳ đo. Các năm trước đó dưới 25% | VietnamBiz 09/06/2022 | **(báo chí)**; chưa đối chiếu với BCTN 2021 của VNDirect |
-| **VPS** | 1.547.000 (9/2025), khoảng 15% tài khoản toàn thị trường | Không công bố | — | Chỉ công bố cơ cấu tuổi của khách cá nhân hoạt động: dưới 30 tuổi 32%, 30–50 tuổi 61%, trên 50 tuổi 7% | Tài liệu giới thiệu IPO VPS, 10/2025, trang 9 | Sơ cấp (tài liệu công ty) |
-| SSI, HSC, Vietcap, MBS, VPBankS | — | — | — | Không tìm thấy số công bố | — | — |
+| **DNSE** | 1.512.920 (31/12/2025) | 85.739 | **5,7%** | Dùng ≥1 sản phẩm trong tháng 12/2025 | BCTN 2025, trang in 56–58 | Sơ cấp |
+| DNSE (năm trước) | 994.811 (31/12/2024) | 41.900 | 4,2% | Như trên, tháng 12/2024 | Như trên | Sơ cấp |
+| **TCBS** | 1.203.039 (31/12/2025) | ~410.000 🔎 | **~34%** (33–35%) | Khách giao dịch trên TCInvest trong tháng 12/2025; đơn vị biểu đồ "triệu lượt" | BCTN TCBS 2025, trang in 58 (tổng) và 61 (biểu đồ) | Sơ cấp, nhưng số hoạt động đọc từ biểu đồ không ghi nhãn |
+| TCBS (Q1/2025) | >1,1 triệu | — | ~30% | "Hoạt động thường xuyên", không nêu kỳ đo | Báo cáo HSC 19/8/2025, trang 8 | Phân tích của HSC; đã đọc bản gốc |
+| **VNDirect** | ~1 triệu khách hàng (31/12/2025, số làm tròn) | 134.507 | **≤13,5%** | Khách cá nhân "sử dụng sản phẩm" năm 2025: Health 2.221 + Wealth 15.358 + Growth 116.928. Là phép cộng nên có thể đếm trùng; không nêu kỳ đo | Báo cáo Ban điều hành tại ĐHCĐ 2026, trang 4–5 | Sơ cấp |
+| VNDirect (2021) | 674.546 | 208.089 | 30,8% | "Active", không nêu kỳ đo; các năm trước đó dưới 25% | VietnamBiz 09/06/2022 | **(báo chí)** |
+| **SSI** (chỉ kênh Digital Sales) | Không công bố | — | **19,2%** | Có giao dịch trong 90 ngày; tăng hơn 26% so với 2024 (tức ~15,2% năm 2024) | BCTN SSI 2025, trang in 46 | Sơ cấp |
+
+**B.2. Chỉ có một trong hai số**
+
+| Công ty | Tổng tài khoản | Hoạt động | Ghi chú | Nguồn |
+|---|---:|---|---|---|
+| **VPS** | ~1,6 triệu (cuối 2025); 1.547.000 (9/2025) | Không công bố | Chỉ có cơ cấu tuổi khách cá nhân hoạt động: <30 tuổi 32%, 30–50 tuổi 61%, >50 tuổi 7% | Tài liệu IPO VPS 10/2025, trang 9; Người Quan Sát (ĐHCĐ 4/2026) |
+| **VPBankS** | 1.144.508 (31/12/2025) | Không công bố | Mở mới 684.480 tài khoản năm 2025 (26,3% thị trường) | BCTN VPBankS 2025, trang PDF 21 |
+| **FPTS** | 244.354 cơ sở + 37.881 phái sinh (31/12/2025) | Không công bố | Không cộng hai số: tài khoản phái sinh thường thuộc khách đã có tài khoản cơ sở | BCTN FPTS 2025, trang PDF 29 |
+| **MBS** | Không công bố | Không có số tuyệt đối | Số tài khoản active 2025 tăng 1,5 lần so với 2024; mục tiêu kênh số 2025 là active ≥25% | BCTN MBS 2025 (trang PDF 37, 52); Vietstock 25/3/2025 |
+| **CTS** (Vietinbank Securities) | Không công bố | 14.235 "TK Active" (2025) | Không tính được tỷ lệ | BCTN CTS 2025, trang in 44 |
+| **Vietcap** | ~235.000 | Không công bố | Chữ "tài khoản hoạt động" ở đây có vẻ là tài khoản đang mở, không phải tài khoản có giao dịch | BCTN Vietcap 2025, trang in 57 |
+| **HSC** | Không công bố | Không công bố | — | BCTN HSC 2025 |
+
+- 🔎 **Cách đo số TCBS:** ảnh biểu đồ 200 dpi, nhãn trục 0,4M ở y=416,5 và 0,6M ở y=303; tâm điểm tháng 12/2025 ở y≈411,5, tức khoảng 0,41 triệu (0,40–0,42). Biểu đồ không ghi số trên từng điểm.
+
+### B3. Công ty cùng mô hình với DNSE (app, miễn phí giao dịch), trong nước và quốc tế
+
+*Tra cứu ngày 26/09/2026. Công ty "cùng mô hình": chỉ qua app/web, không hoặc gần như không thu phí giao dịch, kiếm tiền từ cho vay, lãi trên tiền của khách và sản phẩm khác.*
+
+| Công ty | Mô hình | Mẫu số | Tử số | Tỷ lệ | Loại chỉ số, kỳ | Nguồn |
+|---|---|---:|---:|---:|---|---|
+| **DNSE** | VN; miễn phí trọn đời; chỉ app và web | 1.512.920 tài khoản | 85.739 dùng ≥1 sản phẩm | **5,7%** | Active tháng, 12/2025 | BCTN DNSE 2025 |
+| **TCBS** | VN; zero fee; 99% khách mở tài khoản online | 1.203.039 khách | ~410.000 giao dịch trên TCInvest | **~34%** | Active tháng, 12/2025 | BCTN TCBS 2025 |
+| **Finhay** | VN; app đầu tư, tích lũy từ 50.000đ | >3,3 triệu người dùng | >300.000 tài khoản đầu tư hoạt động thường xuyên | **~9%** | Không nêu kỳ; mẫu số là người dùng app, không phải tài khoản | DNSE Senses 15/4/2025, dẫn Người Quan Sát **(báo chí)** |
+| **Anfin** | VN; app mua cổ phiếu lẻ từ 10.000đ | ~1 triệu lượt tải (6/2022) | >100.000 tài khoản có hoạt động giao dịch | Không tính được | Lượt tải ≠ tài khoản. **Không có số nào sau 2022** | VnExpress 22/6/2022 **(báo chí)** |
+| **Pinetree** | VN; "không chi nhánh, không môi giới"; zero fee | Không công bố | Không công bố | — | Chỉ công bố "số khách tăng 17 lần" (2019 → đầu 2024) | VnExpress 27/3/2024; Thanh Niên 5/12/2024 |
+| **Robinhood** | Mỹ; miễn phí giao dịch | 23,4 triệu khách có tiền (funded) | 10,9 triệu MAU | **46,6%** | Active tháng, Q4/2023 (lần cuối công bố). MAU tính cả việc chỉ đăng nhập app | Robinhood, KQKD Q4/2023 |
+| Robinhood (mới nhất) | | 28,4 triệu funded; 29,9 triệu tài khoản đầu tư; tài sản 369 tỷ USD | Không còn công bố MAU | — | 30/6/2026 | Robinhood, KQKD Q2/2026 |
+| **Futu (moomoo)** | HK và quốc tế; chỉ app | 6.639.583 tài khoản môi giới (31,3 triệu người dùng) | 3.842.667 tài khoản có số dư dương | **57,9%** (12,3% nếu chia cho người dùng) | Funded, 30/6/2026 | Futu, KQKD Q2/2026 |
+| **Webull** | Mỹ và quốc tế; miễn phí giao dịch | 28,2 triệu người đăng ký (chưa chắc mở tài khoản) | 5,13 triệu funded | **18,2%** | Funded, 30/6/2026 | Webull, KQKD Q2/2026 (6-K) |
+| **eToro** | Toàn cầu; social trading | ~38 triệu người đăng ký | ~3,5 triệu funded | **~9,2%** | Funded, số công bố năm 2025. Q2/2026: 4,28 triệu funded, không công bố số đăng ký | Báo cáo HSC về TCBS, trang 23; eToro, KQKD Q2/2026 |
+
+**Cách đọc bảng:**
+1. **Có hai loại chỉ số, không trộn được:**
+   - *Tỷ lệ hoạt động* (bao nhiêu tài khoản dùng trong tháng): DNSE, TCBS, Robinhood, Finhay.
+   - *Tỷ lệ có tiền* (bao nhiêu tài khoản có số dư): Futu, Webull, eToro.
+   - DNSE không công bố số tài khoản có tiền. Con số gần nhất là 27.100 khách có tài sản ròng từ 10 triệu đồng, tức 1,8%, nhưng ngưỡng này cao hơn nhiều so với "số dư > 0".
+2. **So cùng loại, active tháng:** DNSE 5,7% so với TCBS ~34%. Đây là phép so công bằng nhất: cùng thị trường, cùng miễn phí giao dịch, cùng mở tài khoản online. Robinhood 47% cao hơn một phần vì cách đo: mẫu số chỉ gồm khách đã nạp tiền, và MAU tính cả việc chỉ đăng nhập.
+3. **Tỷ lệ có tiền:**
+   - Futu: 58% tài khoản đã mở có tiền.
+   - Webull (18%) và eToro (9%) thấp hơn vì mẫu số là người đăng ký app, gồm cả người chưa từng mở tài khoản. Mẫu số này rộng hơn mẫu số của DNSE (tài khoản đã eKYC).
+4. **Finhay (~9%)** dù dùng mẫu số rộng hơn (người dùng app) vẫn cao hơn DNSE 5,7%. Nhưng nguồn là báo chí và không nêu kỳ đo.
+5. **Kết luận:** mô hình app và miễn phí giao dịch **không tự nó giải thích** mức 5,7%. Các công ty cùng mô hình giữ được tỷ lệ khách hoạt động hoặc có tiền cao hơn nhiều lần. Vì định nghĩa khác nhau, chỉ nên nói về **hướng** chênh lệch, không nói con số chênh chính xác.
+6. **Anfin và Pinetree** không có số dùng được nên không đưa vào báo cáo. Anfin chỉ có số năm 2022.
+
+**Đã đưa vào báo cáo (26/09, bản `FBAR2_2026_Team_name.v4_bang_active.docx`):**
+- Đoạn mới cuối mục 2.5.
+- Một câu ở phần các giả thuyết thay thế (mục 3.2).
+- Một ý trong ô của Bảng 7.
+- Bảng B3 mới ở Phụ lục B.
+- Mục lục bảng và 7 tài liệu tham khảo mới; Futu Holdings (2026) đổi thành (2026a).
+- Bản trước khi sửa lưu ở `_backup_2026-09-26/`.
 
 **Tham chiếu quốc tế** (báo cáo HSC, trang 23). Đây là tỷ lệ *tài khoản có nạp tiền*, không phải tỷ lệ active:
 - Futu/Moomoo: khoảng 25,1 triệu người dùng, 2,4 triệu tài khoản có nạp tiền (khoảng 9,6%).
@@ -339,11 +398,21 @@ Cách này không phụ thuộc vào định nghĩa "active" của từng công 
 
 ### D. Kết luận
 
-1. Có khoảng cách lớn giữa tổng tài khoản và tài khoản active là **chuyện bình thường của ngành**.
-2. Nhưng **mức của DNSE thấp hơn rõ rệt**: 5,7% chỉ bằng khoảng 1/5 mức ~30% mà TCBS và VNDirect công bố. Ngay cả những năm tệ nhất của VNDirect (dưới 25%) vẫn cao gấp khoảng 4 lần.
-3. 🔎 Một phần chênh lệch đến từ định nghĩa: DNSE đo trong 1 tháng, còn TCBS và VNDirect không nêu kỳ đo, nhiều khả năng rộng hơn 1 tháng nên tỷ lệ tự nhiên cao hơn. Chênh 4–5 lần thì khó giải thích hết bằng định nghĩa, và cách so sánh ở mục C (không phụ thuộc định nghĩa) cho cùng kết quả.
-4. TCBS là đối chiếu công bằng nhất: cùng mô hình app và eKYC, cùng quy mô khoảng 1,1–1,2 triệu tài khoản.
-5. **Giới hạn phải ghi trong báo cáo:** chỉ 2 đối thủ công bố tỷ lệ active, định nghĩa không đồng nhất, số của VNDirect đã cũ (2021). Đây **không phải trung bình ngành**; nên viết "so với hai đối thủ có công bố".
+*(Cập nhật 26/09/2026 theo mục B, B3.)*
+
+1. Có khoảng cách lớn giữa tổng tài khoản và tài khoản active là **chuyện bình thường của ngành**, cả trong nước lẫn ở các app môi giới quốc tế.
+2. Nhưng **mức của DNSE thấp nhất** trong mọi công ty trong nước có công bố chỉ số hoạt động:
+   - TCBS ~34% (tháng 12/2025, cùng cách đo theo tháng, tức gấp khoảng 6 lần DNSE).
+   - SSI kênh số 19,2% (90 ngày).
+   - VNDirect ≤13,5% (không nêu kỳ đo).
+3. 🔎 Một phần chênh lệch đến từ định nghĩa: SSI đo 90 ngày, VNDirect không nêu kỳ đo, nên tỷ lệ tự nhiên cao hơn đo theo tháng. Riêng TCBS đo cùng kỳ (tháng) và cùng mô hình, nên khoảng 6 lần là chênh lệch thật. Cách so sánh ở mục C (không phụ thuộc định nghĩa) cũng cho cùng hướng.
+4. **Mô hình app miễn phí không phải lời giải thích:**
+   - TCBS cùng mô hình mà gấp khoảng 6 lần.
+   - Ở nước ngoài, 58% tài khoản đã mở của Futu có tiền, và 47% khách có tiền của Robinhood hoạt động mỗi tháng (Q4/2023).
+5. **Giới hạn phải ghi trong báo cáo:**
+   - Định nghĩa không đồng nhất; số TCBS đọc từ biểu đồ.
+   - Không có trung bình ngành, vì VSDC không công bố số tài khoản có giao dịch.
+   - Nên viết "so với các công ty có công bố", không viết "so với ngành".
 
 ## 1.9 Kiểm chứng số liệu tài khoản trong báo cáo (24/09/2026)
 
@@ -588,6 +657,24 @@ Data pack ban đầu dựng từ tin báo chí, mà báo chí chỉ đưa tin c�
 - [Mekong Asean — DNSE H1/2026: hơn 1,7 triệu khách hàng](https://mekongasean.vn/doanh-thu-hoat-dong-dnse-tang-gan-60-trong-6-thang-dau-nam-57583.html)
 - [Mekong Asean — Thị phần môi giới HOSE quý 2/2026](https://mekongasean.vn/thi-phan-moi-gioi-hose-quy-22026-vps-tiep-tuc-dan-dau-vpbanks-len-cao-ky-luc-57063.html)
 - [VnEconomy — DNSE 30% thị phần mở mới Q1/2024](https://vneconomy.vn/dnse-chiem-30-thi-phan-tai-khoan-chung-khoan-mo-moi-trong-quy-1.htm)
+
+*Rà soát tỷ lệ active 26/09/2026 (mục 1.8 B, B3):*
+- [TCBS — Báo cáo thường niên 2025](https://www.tcbs.com.vn/wp-content/uploads/2026/03/VIE_TCBS-BAO-CAO-THUONG-NIEN-2025-2603-compress.pdf): 1.203.039 khách (trang in 58); biểu đồ khách giao dịch theo tháng (trang in 61); 99% khách mở tài khoản online (trang in 62).
+- [VNDirect — Báo cáo Ban điều hành tại ĐHCĐ 2026](https://www.vndirect.com.vn/4.-Bao-cao-ban-dieu-hanh-VNDIRECT-2026.pdf): 1 triệu khách, 134.507 khách dùng sản phẩm (trang 4–5).
+- [SSI — Báo cáo thường niên 2025](https://www.ssi.com.vn/upload/files/IR/Reports/SSI_BCTN2025_VN.pdf): Digital Sales, active 90 ngày 19,2% (trang in 46).
+- [VPBankS — Báo cáo thường niên 2025](https://static2.vietstock.vn/data/HOSE/2025/BCTN/VN/VPX_Baocaothuongnien_2025.pdf): 1.144.508 tài khoản.
+- [FPTS — Báo cáo thường niên 2025](https://cafef1.mediacdn.vn/download/260326/fts-bao-cao-thuong-nien-nam-2025-0.pdf): 244.354 + 37.881 tài khoản (trang PDF 29).
+- [MBS — Báo cáo thường niên 2025](https://static2.vietstock.vn/vietstock/2026/3/16/1_mbs_2026_3_16_0104960_vi__bao_cao_thuong_nien_2025s.pdf); [Vietstock — Kế hoạch MBS 2025](https://vietstock.vn/2025/03/mbs-dat-muc-tieu-lai-truoc-thue-1300-ty-trong-nam-2025-737-1285291.htm)
+- [CTS — Báo cáo thường niên 2025](https://static2.vietstock.vn/data/HOSE/2025/BCTN/VN/CTS_Baocaothuongnien_2025.pdf): TK Active (trang in 44).
+- [Vietcap — Báo cáo thường niên 2025](https://static2.vietstock.vn/data/HOSE/2025/BCTN/VN/VCI_Baocaothuongnien_2025.pdf) (trang in 57); [HSC — Báo cáo thường niên 2025](https://static2.vietstock.vn/data/HOSE/2025/BCTN/VN/HCM_Baocaothuongnien_2025.pdf)
+- [Người Quan Sát — ĐHCĐ VPS 2026 (1,6 triệu tài khoản)](https://nguoiquansat.vn/dhdcd-chung-khoan-vps-vck-dat-muc-tieu-lai-ky-luc-he-lo-viec-viet-nam-sap-vao-danh-sach-nang-hang-msci-286117.html)
+- [Robinhood — KQKD Q4/2023 (MAU 10,9 triệu, funded 23,4 triệu)](https://www.globenewswire.com/news-release/2024/2/13/2828627/0/en/Robinhood-Reports-Fourth-Quarter-and-Full-Year-2023-Results.html); [Robinhood — KQKD Q2/2026](https://www.globenewswire.com/news-release/2026/07/29/3335576/0/en/robinhood-reports-second-quarter-2026-results.html)
+- [Futu — KQKD Q2/2026](https://www.globenewswire.com/news-release/2026/08/20/3348115/0/en/futu-announces-second-quarter-2026-unaudited-financial-results.html)
+- [Webull — KQKD Q2/2026 (6-K)](https://www.sec.gov/Archives/edgar/data/0001866364/000121390026091702/ea030257601ex99-1.htm)
+- [eToro — KQKD Q2/2026 (6-K)](https://www.sec.gov/Archives/edgar/data/1493318/000121390026087525/ea030151001ex99-1.htm)
+- [DNSE Senses — Finhay có lãi, 3,3 triệu người dùng (dẫn Người Quan Sát)](https://www.dnse.com.vn/senses/tin-tuc/finhay-a-co-lai-sau-giai-oan-ot-tien-can-moc-15-ty-usd-gia-tri-giao-dich-35030185)
+- [VnExpress — Anfin nhận vốn gần 5 triệu USD (6/2022)](https://vnexpress.net/anfin-nhan-von-gan-5-trieu-usd-4479064.html)
+- [VnExpress — Pinetree mở rộng thị phần (3/2024)](https://vnexpress.net/cach-mo-rong-thi-phan-cua-chung-khoan-pinetree-4726392.html); [Thanh Niên — Pinetree (12/2024)](https://thanhnien.vn/pinetree-loi-di-khac-biet-voi-chung-khoan-so-toan-dien-185241203184640098.htm)
 - Phân tích và biểu đồ: `bctc_analysis.md`, `fig/bctc/`.
 
 **Tài liệu nội bộ:** `doc/[FBA 6] QUESTION BOOKLET ROUND 2 (1).pdf`; `FBA_Round2_DNSE_data_pack.xlsx`; `FBAR2_2026_DNSE_Analysis.docx`; `doc/dnse.md`.
