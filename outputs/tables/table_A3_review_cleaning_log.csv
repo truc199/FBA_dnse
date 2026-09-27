@@ -1,0 +1,8 @@
+Stage,"DNSE, Play","VPS, Play","FPTS, Play","DNSE, iOS","VPS, iOS","FPTS, iOS"
+Reviews retrieved,867,"1,200",177,332,518,205
+Loan advertising removed,127,23,0,0,0,0
+Referral farming removed,70,3,0,73,6,0
+Duplicates removed,0,3,0,0,0,0
+Reviews retained,670,"1,171",177,259,512,205
+Mean rating before cleaning,3.29,2.60,2.18,3.37,1.57,2.31
+Mean rating after cleaning,3.22,2.58,2.18,2.94,1.53,2.31

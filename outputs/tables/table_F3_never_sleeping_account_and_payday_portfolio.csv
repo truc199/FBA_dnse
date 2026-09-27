@@ -1,0 +1,6 @@
+,Never-Sleeping Account,Payday Portfolio
+Job,Earns a return on cash already deposited,Brings new money in and invests it regularly
+Customers,Active traders with idle cash (E1),"Salaried intenders who have not funded (E2, N1)"
+Trigger,Customer decides to deposit,"Payday, automatically"
+Return,1.8% base plus bonuses for large balances and trading value,"Chosen bonds, funds and exchange-traded funds"
+Behavioural mechanism,None,"Default, automation and goal tracking"

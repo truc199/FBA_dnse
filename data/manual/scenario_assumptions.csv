@@ -1,0 +1,4 @@
+scenario,savers,monthly_contribution_vnd_m,share_kept,months,fee_yield_pct,top_rate_gap_pct
+Conservative,60000,1.0,0.60,18,0.5,2.5
+Base,150000,1.5,0.70,18,0.8,2.5
+Upside,300000,2.5,0.80,18,1.0,2.5

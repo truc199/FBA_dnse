@@ -1,0 +1,9 @@
+task,kind,start_month,end_month
+"Internal data: balances, cohorts, salary links",Test,0,2
+"Survey of 2,000 dormant customers",Test,1,2
+SSC pre-consultation; fund-partner terms,Gate,0,2
+Load tests and shadow payday runs,Gate,1,3
+A/B test of the trust screen,Test,2,3
+"Randomised pilot, 20,000 customers",Pilot,3,6
+Read-out and scale decision,Decide,6,6.6
+Extension to new salaried customers,Scale,6.6,9

@@ -1,0 +1,17 @@
+metric,date,value,source
+accounts_year_end,2021-12-31,44727,DNSE annual reports; DNSE Securities (2026c)
+accounts_year_end,2022-12-31,189845,DNSE annual reports; DNSE Securities (2026c)
+accounts_year_end,2023-12-31,561279,DNSE annual reports; DNSE Securities (2026c)
+accounts_year_end,2024-12-31,994811,DNSE annual reports; DNSE Securities (2026c)
+accounts_year_end,2025-12-31,1512920,DNSE Securities (2026c)
+accounts_mid_year,2026-06-30,1700000,Company statement reported by VnExpress (2026a)
+new_accounts,2025,518514,DNSE Securities (2026c)
+market_new_accounts,2025,2573945,VSDC annual report (market_macro.json)
+market_accounts_mid_year,2026-06-30,13850000,VnExpress (2026a)
+active_customers,2024-12,41900,DNSE Securities (2026c); approximate
+active_customers,2025-12,85739,DNSE Securities (2026c)
+net_assets_10m_plus,2025-12,27100,DNSE Securities (2026c)
+net_assets_1bn_plus,2025-12,2000,DNSE Securities (2026c); more than 2000
+customer_assets_vnd_bn,2025-12,53471,DNSE Securities (2026c)
+idle_cash_registered,2025-12,12100,DNSE Securities (2026c)
+golden_egg_active,2025-12,1037,DNSE Securities (2026c)

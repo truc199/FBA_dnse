@@ -1,0 +1,290 @@
+{
+  "totals": {
+    "retrieved": 2000,
+    "loan_spam": 32,
+    "referral_spam": 3,
+    "duplicates": 4,
+    "retained": 1961,
+    "raw_mean": 2.726,
+    "clean_mean": 2.724,
+    "removed_mean": 2.846,
+    "negative": 1071,
+    "neutral": 107,
+    "positive": 783,
+    "generic": 332,
+    "substantive_mean": 2.387,
+    "pct_1_star": 47.9,
+    "pct_5_star": 35.0
+  },
+  "by_year": [
+    {
+      "year": "2022",
+      "retrieved": 700,
+      "raw_mean": 2.989,
+      "removed": 6,
+      "removed_pct": 0.9,
+      "retained": 694,
+      "clean_mean": 3.0,
+      "generic": 160,
+      "generic_pct": 23.1,
+      "substantive": 534,
+      "substantive_mean": 2.579
+    },
+    {
+      "year": "2023",
+      "retrieved": 586,
+      "raw_mean": 3.063,
+      "removed": 27,
+      "removed_pct": 4.6,
+      "retained": 559,
+      "clean_mean": 3.048,
+      "generic": 79,
+      "generic_pct": 14.1,
+      "substantive": 480,
+      "substantive_mean": 2.856
+    },
+    {
+      "year": "2024",
+      "retrieved": 347,
+      "raw_mean": 2.297,
+      "removed": 6,
+      "removed_pct": 1.7,
+      "retained": 341,
+      "clean_mean": 2.308,
+      "generic": 47,
+      "generic_pct": 13.8,
+      "substantive": 294,
+      "substantive_mean": 1.946
+    },
+    {
+      "year": "2025",
+      "retrieved": 253,
+      "raw_mean": 2.107,
+      "removed": 0,
+      "removed_pct": 0.0,
+      "retained": 253,
+      "clean_mean": 2.107,
+      "generic": 32,
+      "generic_pct": 12.6,
+      "substantive": 221,
+      "substantive_mean": 1.783
+    },
+    {
+      "year": "2026",
+      "retrieved": 114,
+      "raw_mean": 2.061,
+      "removed": 0,
+      "removed_pct": 0.0,
+      "retained": 114,
+      "clean_mean": 2.061,
+      "generic": 14,
+      "generic_pct": 12.3,
+      "substantive": 100,
+      "substantive_mean": 1.74
+    }
+  ],
+  "themes": [
+    {
+      "theme": "stability",
+      "neg": 302,
+      "mid": 35,
+      "pos": 24,
+      "all": 361,
+      "pct_of_negatives": 28.2
+    },
+    {
+      "theme": "onboarding",
+      "neg": 142,
+      "mid": 9,
+      "pos": 10,
+      "all": 161,
+      "pct_of_negatives": 13.3
+    },
+    {
+      "theme": "ui",
+      "neg": 116,
+      "mid": 8,
+      "pos": 92,
+      "all": 216,
+      "pct_of_negatives": 10.8
+    },
+    {
+      "theme": "money",
+      "neg": 60,
+      "mid": 1,
+      "pos": 6,
+      "all": 67,
+      "pct_of_negatives": 5.6
+    },
+    {
+      "theme": "fraud",
+      "neg": 36,
+      "mid": 2,
+      "pos": 0,
+      "all": 38,
+      "pct_of_negatives": 3.4
+    },
+    {
+      "theme": "fees",
+      "neg": 21,
+      "mid": 1,
+      "pos": 1,
+      "all": 23,
+      "pct_of_negatives": 2.0
+    },
+    {
+      "theme": "promo",
+      "neg": 7,
+      "mid": 0,
+      "pos": 2,
+      "all": 9,
+      "pct_of_negatives": 0.7
+    },
+    {
+      "theme": "closure",
+      "neg": 3,
+      "mid": 0,
+      "pos": 0,
+      "all": 3,
+      "pct_of_negatives": 0.3
+    },
+    {
+      "theme": "influencer",
+      "neg": 2,
+      "mid": 0,
+      "pos": 0,
+      "all": 2,
+      "pct_of_negatives": 0.2
+    },
+    {
+      "theme": "yield",
+      "neg": 0,
+      "mid": 1,
+      "pos": 0,
+      "all": 1,
+      "pct_of_negatives": 0.0
+    },
+    {
+      "theme": "zalopay",
+      "neg": 0,
+      "mid": 0,
+      "pos": 0,
+      "all": 0,
+      "pct_of_negatives": 0.0
+    }
+  ],
+  "neg_by_year_header": [
+    "year",
+    "negative_n",
+    "onboarding",
+    "stability",
+    "money",
+    "promo",
+    "fees",
+    "fraud",
+    "closure",
+    "yield",
+    "influencer",
+    "zalopay",
+    "ui"
+  ],
+  "neg_by_year": [
+    [
+      "2022",
+      329,
+      8,
+      88,
+      8,
+      0,
+      3,
+      6,
+      0,
+      0,
+      0,
+      0,
+      48
+    ],
+    [
+      "2023",
+      259,
+      30,
+      73,
+      12,
+      2,
+      6,
+      5,
+      2,
+      0,
+      1,
+      0,
+      33
+    ],
+    [
+      "2024",
+      226,
+      59,
+      62,
+      11,
+      2,
+      2,
+      8,
+      1,
+      0,
+      1,
+      0,
+      19
+    ],
+    [
+      "2025",
+      176,
+      36,
+      51,
+      18,
+      3,
+      5,
+      16,
+      0,
+      0,
+      0,
+      0,
+      12
+    ],
+    [
+      "2026",
+      81,
+      9,
+      28,
+      11,
+      0,
+      5,
+      1,
+      0,
+      0,
+      0,
+      0,
+      4
+    ]
+  ],
+  "rating_histogram": {
+    "1": {
+      "raw": 959,
+      "clean": 940
+    },
+    "2": {
+      "raw": 133,
+      "clean": 131
+    },
+    "3": {
+      "raw": 107,
+      "clean": 107
+    },
+    "4": {
+      "raw": 99,
+      "clean": 97
+    },
+    "5": {
+      "raw": 702,
+      "clean": 686
+    }
+  }
+}

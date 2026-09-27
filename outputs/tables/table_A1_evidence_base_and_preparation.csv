@@ -1,0 +1,8 @@
+Dataset,Coverage,Main preparation step,Remaining limitation
+DNSE filed statements,"395 line items, first quarter of 2018 to second quarter of 2026",Pulled line by line from Vietcap IQ; reconciled to the half-year statements reviewed by KPMG,Template line 24 mixes provisions with borrowing cost
+DNSE annual report 2025,"Accounts, active customers, net-asset bands, product users",Figures read from the report and dated,Company-defined measures; active means at least one product used in the month
+Peer statements and indicators,"Four peers; accounts, lending, funding, profit",Same cost-of-funds method as for DNSE; each figure dated,Account counts differ in date and definition
+Exchange and industry data,"HOSE and HNX shares; industry lending, investor cash and profit",Each share kept within its own exchange; broadest industry total used,Press tallies differ slightly in coverage
+App store reviews,"867 Google Play and 332 App Store reviews of DNSE; 2,100 of VPS and FPTS",Spam and duplicates removed; one-word reviews flagged; themes coded,Self-selected sample; levels overstate dissatisfaction
+World Bank Global Findex 2024,51 indicators across 13 segments for Vietnam,Two indices built; segment weights recovered from the survey,"About 1,000 interviews; one dimension at a time"
+Macro and banking data,"Growth, inflation, credit, deposit rates, deposits",Dated at source; projections labelled,Some series reported only through the press

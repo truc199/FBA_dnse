@@ -1,0 +1,9 @@
+Proposal,What it would do,Main constraint,Decision
+Ensa suitability check and model portfolios,"Records goal, horizon, income and risk tolerance; proposes one of three model portfolios","This is investment advice; Circular 121/2020, Article 24 requires this client information",Adopt inside DNSE's advisory licence; the customer confirms
+Automatic rebalancing,Sells and buys to restore target weights,Article 4 bars investing on a client's behalf without a mandate; each sale incurs 0.1% tax,Adopt with new money only; changes confirmed in one tap
+Paid membership tier,Monthly fee for extra features,Fees before any return repeat the terms that customers call deceptive,Replace with free tiers earned by contributions
+ZaloPay round-up micro-investing,Rounds up wallet payments and invests the difference,Small amounts; needs ZaloPay's product work; funding of cashback unclear,Phase-2 test for young users
+Ensa Smart Vaults via Lightspeed API,Algorithmic portfolios executed automatically for an asset-based fee,"Portfolio management is outside a securities company's four licensed businesses (Law on Securities, Article 72); speed adds little for monthly savers",Set aside; possible later as funds from a licensed manager that DNSE distributes
+Margin-on-Wealth credit line,"Overdraft secured on Golden Egg, fund units and idle cash",Article 27 limits lending to margin and defined purposes; fund units are not listed securities; 2026 fine on unreported advance services,Reject
+Margin Deal discount as a tier reward,Cheaper leverage after twelve contributions,Conflicts with a saver's goal and with the 2026 inspection findings,Exclude from rewards
+Transparency dashboard and VNeID checks,Shows the segregated client account; faster identity checks,Needs a bank data feed; VNeID integration to be confirmed,Adopt the dashboard; test VNeID

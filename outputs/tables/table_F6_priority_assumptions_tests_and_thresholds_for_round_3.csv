@@ -1,0 +1,8 @@
+#,Assumption,Test,Threshold to proceed
+1,Many dormant accounts belong to salaried intenders,"Internal data; survey of 2,000 customers",30% or more intend to invest
+2,Advised automation turns intention into funding,"Randomised pilot with 20,000 customers",15% enrol in 60 days; 70% of money kept at day 90
+3,Tiers and the skip month raise persistence,Pilot arms with and without tiers,Six-contribution rate up 10 points
+4,Trust features raise set-up,A/B test of the trust screen,Set-up completion up 5 points
+5,The advice flow is compliant (gate),Compliance review; SSC notice,Written confirmation
+6,Transfers are reliable (gate),Load tests; shadow payday runs,99.5% transfer success
+7,Inflows are new money; unit costs fall,Tag inflow sources; track costs,80% new money; cost below VND 7.3 million per funded account

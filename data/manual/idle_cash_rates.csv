@@ -1,0 +1,12 @@
+label,low,high,group,source
+Bank payment account (legal cap),0.5,0.5,Bank,DNSE Securities (2025)
+"DNSE idle-cash account, base rate",1.8,1.8,DNSE,DNSE Securities (2026b)
+"DNSE idle-cash account, typical customer*",2.3,2.3,DNSE,DNSE Securities (2026b); balances of VND 1 to 500 million
+Bank auto-earning features (June 2025),3.5,4.3,Bank,DNSE Securities (2025)
+"DNSE idle-cash account, maximum",4.3,4.3,DNSE,DNSE Securities (2026b)
+"CPI inflation, January to August 2026 average",4.45,4.45,Inflation,Bao Dau Thau (2026)
+"TCBS iPower, base rate",4.5,4.5,Competing broker,TCBS (2026)
+"Big Four banks, 12-month deposit",6.8,6.8,Bank,VietnamNet (2026)
+Highest listed 12-month rate under VND 1 bn,7.9,7.9,Bank,VietnamNet (2026); VnExpress (2026b)
+"TCBS iPower, maximum",9.0,9.0,Competing broker,TCBS (2026)
+Referral-code deposit offers (NCB),9.35,9.35,Bank,VnExpress (2026b)

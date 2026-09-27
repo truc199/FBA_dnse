@@ -1,0 +1,9 @@
+measure,group,dnse_value,market_total,share_low,share_high,estimate,source,table_order,table_label,dnse_text,market_text
+"Share of new accounts opened, 2025",reach,518514,2573945,,,0,DNSE Securities (2026c); VSDC,2,"New accounts, 2025","518,514","2,573,945"
+"Derivatives brokerage (HNX), Q2 2026",reach,,,25.38,25.38,0,Hanoi Stock Exchange (2026),3,"Derivatives brokerage, Q2 2026",2nd place,HNX
+"Customer accounts, mid-2026",reach,1700000,13850000,,,0,VnExpress (2026a),1,"Securities accounts, mid-2026",1.70 million,13.85 million
+"Listed-share brokerage on HNX, Q2 2026",money,,,2.88,2.88,0,Hanoi Stock Exchange (2026),4,"Listed-share brokerage on HNX, Q2 2026",8th place,HNX
+"Cash equity trading, all exchanges, Q2 2026 (estimate)",money,,,2.1,2.6,1,Authors' estimate (Table C1 note),5,"Cash equity trading, Q2 2026 (estimate)",VND 62.9 trillion,all exchanges
+"Investor cash held at brokers, 30 June 2026",money,1960.8,86600,,,0,DNSE filings; VnEconomy (2026),6,"Investor cash at brokers, 30 June 2026","VND 1,961 billion",VND 86.6 trillion
+"Margin loans and advances, 30 June 2026",money,6303.1,453800,,,0,DNSE filings; Vietstock (2026c),7,"Margin lending, 30 June 2026","VND 6,303 billion",VND 453.8 trillion
+"Pre-tax profit of 77 brokers, Q2 2026",money,97.4,15200,,,0,DNSE filings; CafeF (2026),8,"Pre-tax profit, Q2 2026",VND 97.4 billion,"VND 15,200 billion"

@@ -1,0 +1,206 @@
+{
+  "totals": {
+    "retrieved": 177,
+    "loan_spam": 0,
+    "referral_spam": 0,
+    "duplicates": 0,
+    "retained": 177,
+    "raw_mean": 2.181,
+    "clean_mean": 2.181,
+    "removed_mean": null,
+    "negative": 121,
+    "neutral": 14,
+    "positive": 42,
+    "generic": 10,
+    "substantive_mean": 2.084,
+    "pct_1_star": 58.2,
+    "pct_5_star": 20.9
+  },
+  "by_year": [
+    {
+      "year": "2025",
+      "retrieved": 153,
+      "raw_mean": 2.0,
+      "removed": 0,
+      "removed_pct": 0.0,
+      "retained": 153,
+      "clean_mean": 2.0,
+      "generic": 6,
+      "generic_pct": 3.9,
+      "substantive": 147,
+      "substantive_mean": 1.959
+    },
+    {
+      "year": "2026",
+      "retrieved": 24,
+      "raw_mean": 3.333,
+      "removed": 0,
+      "removed_pct": 0.0,
+      "retained": 24,
+      "clean_mean": 3.333,
+      "generic": 4,
+      "generic_pct": 16.7,
+      "substantive": 20,
+      "substantive_mean": 3.0
+    }
+  ],
+  "themes": [
+    {
+      "theme": "ui",
+      "neg": 25,
+      "mid": 1,
+      "pos": 5,
+      "all": 31,
+      "pct_of_negatives": 20.7
+    },
+    {
+      "theme": "stability",
+      "neg": 21,
+      "mid": 2,
+      "pos": 5,
+      "all": 28,
+      "pct_of_negatives": 17.4
+    },
+    {
+      "theme": "money",
+      "neg": 6,
+      "mid": 1,
+      "pos": 1,
+      "all": 8,
+      "pct_of_negatives": 5.0
+    },
+    {
+      "theme": "onboarding",
+      "neg": 5,
+      "mid": 0,
+      "pos": 2,
+      "all": 7,
+      "pct_of_negatives": 4.1
+    },
+    {
+      "theme": "fraud",
+      "neg": 1,
+      "mid": 0,
+      "pos": 0,
+      "all": 1,
+      "pct_of_negatives": 0.8
+    },
+    {
+      "theme": "promo",
+      "neg": 0,
+      "mid": 0,
+      "pos": 0,
+      "all": 0,
+      "pct_of_negatives": 0.0
+    },
+    {
+      "theme": "fees",
+      "neg": 0,
+      "mid": 1,
+      "pos": 0,
+      "all": 1,
+      "pct_of_negatives": 0.0
+    },
+    {
+      "theme": "closure",
+      "neg": 0,
+      "mid": 0,
+      "pos": 0,
+      "all": 0,
+      "pct_of_negatives": 0.0
+    },
+    {
+      "theme": "yield",
+      "neg": 0,
+      "mid": 0,
+      "pos": 0,
+      "all": 0,
+      "pct_of_negatives": 0.0
+    },
+    {
+      "theme": "influencer",
+      "neg": 0,
+      "mid": 0,
+      "pos": 0,
+      "all": 0,
+      "pct_of_negatives": 0.0
+    },
+    {
+      "theme": "zalopay",
+      "neg": 0,
+      "mid": 0,
+      "pos": 0,
+      "all": 0,
+      "pct_of_negatives": 0.0
+    }
+  ],
+  "neg_by_year_header": [
+    "year",
+    "negative_n",
+    "onboarding",
+    "stability",
+    "money",
+    "promo",
+    "fees",
+    "fraud",
+    "closure",
+    "yield",
+    "influencer",
+    "zalopay",
+    "ui"
+  ],
+  "neg_by_year": [
+    [
+      "2025",
+      112,
+      4,
+      19,
+      6,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      22
+    ],
+    [
+      "2026",
+      9,
+      1,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3
+    ]
+  ],
+  "rating_histogram": {
+    "1": {
+      "raw": 103,
+      "clean": 103
+    },
+    "2": {
+      "raw": 18,
+      "clean": 18
+    },
+    "3": {
+      "raw": 14,
+      "clean": 14
+    },
+    "4": {
+      "raw": 5,
+      "clean": 5
+    },
+    "5": {
+      "raw": 37,
+      "clean": 37
+    }
+  }
+}

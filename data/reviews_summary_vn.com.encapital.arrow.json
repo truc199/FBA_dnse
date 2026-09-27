@@ -1,0 +1,346 @@
+{
+  "totals": {
+    "retrieved": 867,
+    "loan_spam": 127,
+    "referral_spam": 70,
+    "duplicates": 0,
+    "retained": 670,
+    "raw_mean": 3.29,
+    "clean_mean": 3.218,
+    "removed_mean": 3.533,
+    "negative": 278,
+    "neutral": 30,
+    "positive": 362,
+    "generic": 124,
+    "substantive_mean": 2.877,
+    "pct_1_star": 38.7,
+    "pct_5_star": 47.9
+  },
+  "by_year": [
+    {
+      "year": "2020",
+      "retrieved": 3,
+      "raw_mean": 3.667,
+      "removed": 0,
+      "removed_pct": 0.0,
+      "retained": 3,
+      "clean_mean": 3.667,
+      "generic": 0,
+      "generic_pct": 0.0,
+      "substantive": 3,
+      "substantive_mean": 3.667
+    },
+    {
+      "year": "2021",
+      "retrieved": 72,
+      "raw_mean": 2.306,
+      "removed": 8,
+      "removed_pct": 11.1,
+      "retained": 64,
+      "clean_mean": 2.031,
+      "generic": 4,
+      "generic_pct": 6.2,
+      "substantive": 60,
+      "substantive_mean": 1.833
+    },
+    {
+      "year": "2022",
+      "retrieved": 207,
+      "raw_mean": 3.343,
+      "removed": 96,
+      "removed_pct": 46.4,
+      "retained": 111,
+      "clean_mean": 3.18,
+      "generic": 20,
+      "generic_pct": 18.0,
+      "substantive": 91,
+      "substantive_mean": 2.846
+    },
+    {
+      "year": "2023",
+      "retrieved": 154,
+      "raw_mean": 3.019,
+      "removed": 83,
+      "removed_pct": 53.9,
+      "retained": 71,
+      "clean_mean": 2.676,
+      "generic": 7,
+      "generic_pct": 9.9,
+      "substantive": 64,
+      "substantive_mean": 2.422
+    },
+    {
+      "year": "2024",
+      "retrieved": 202,
+      "raw_mean": 4.361,
+      "removed": 9,
+      "removed_pct": 4.5,
+      "retained": 193,
+      "clean_mean": 4.352,
+      "generic": 65,
+      "generic_pct": 33.7,
+      "substantive": 128,
+      "substantive_mean": 4.148
+    },
+    {
+      "year": "2025",
+      "retrieved": 159,
+      "raw_mean": 2.66,
+      "removed": 1,
+      "removed_pct": 0.6,
+      "retained": 158,
+      "clean_mean": 2.646,
+      "generic": 19,
+      "generic_pct": 12.0,
+      "substantive": 139,
+      "substantive_mean": 2.381
+    },
+    {
+      "year": "2026",
+      "retrieved": 70,
+      "raw_mean": 3.057,
+      "removed": 0,
+      "removed_pct": 0.0,
+      "retained": 70,
+      "clean_mean": 3.057,
+      "generic": 9,
+      "generic_pct": 12.9,
+      "substantive": 61,
+      "substantive_mean": 2.852
+    }
+  ],
+  "themes": [
+    {
+      "theme": "stability",
+      "neg": 76,
+      "mid": 5,
+      "pos": 21,
+      "all": 102,
+      "pct_of_negatives": 27.3
+    },
+    {
+      "theme": "onboarding",
+      "neg": 59,
+      "mid": 4,
+      "pos": 7,
+      "all": 70,
+      "pct_of_negatives": 21.2
+    },
+    {
+      "theme": "fraud",
+      "neg": 49,
+      "mid": 2,
+      "pos": 1,
+      "all": 52,
+      "pct_of_negatives": 17.6
+    },
+    {
+      "theme": "promo",
+      "neg": 24,
+      "mid": 3,
+      "pos": 7,
+      "all": 34,
+      "pct_of_negatives": 8.6
+    },
+    {
+      "theme": "money",
+      "neg": 14,
+      "mid": 2,
+      "pos": 8,
+      "all": 24,
+      "pct_of_negatives": 5.0
+    },
+    {
+      "theme": "closure",
+      "neg": 10,
+      "mid": 0,
+      "pos": 1,
+      "all": 11,
+      "pct_of_negatives": 3.6
+    },
+    {
+      "theme": "ui",
+      "neg": 7,
+      "mid": 5,
+      "pos": 28,
+      "all": 40,
+      "pct_of_negatives": 2.5
+    },
+    {
+      "theme": "influencer",
+      "neg": 5,
+      "mid": 0,
+      "pos": 10,
+      "all": 15,
+      "pct_of_negatives": 1.8
+    },
+    {
+      "theme": "fees",
+      "neg": 3,
+      "mid": 1,
+      "pos": 4,
+      "all": 8,
+      "pct_of_negatives": 1.1
+    },
+    {
+      "theme": "zalopay",
+      "neg": 2,
+      "mid": 1,
+      "pos": 2,
+      "all": 5,
+      "pct_of_negatives": 0.7
+    },
+    {
+      "theme": "yield",
+      "neg": 0,
+      "mid": 0,
+      "pos": 3,
+      "all": 3,
+      "pct_of_negatives": 0.0
+    }
+  ],
+  "neg_by_year_header": [
+    "year",
+    "negative_n",
+    "onboarding",
+    "stability",
+    "money",
+    "promo",
+    "fees",
+    "fraud",
+    "closure",
+    "yield",
+    "influencer",
+    "zalopay",
+    "ui"
+  ],
+  "neg_by_year": [
+    [
+      "2020",
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      "2021",
+      46,
+      19,
+      6,
+      2,
+      1,
+      0,
+      4,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      "2022",
+      43,
+      13,
+      9,
+      1,
+      3,
+      0,
+      5,
+      2,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      "2023",
+      38,
+      3,
+      23,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      "2024",
+      25,
+      3,
+      6,
+      1,
+      2,
+      0,
+      5,
+      1,
+      0,
+      1,
+      0,
+      3
+    ],
+    [
+      "2025",
+      91,
+      15,
+      15,
+      7,
+      16,
+      3,
+      32,
+      6,
+      0,
+      3,
+      1,
+      1
+    ],
+    [
+      "2026",
+      34,
+      6,
+      17,
+      2,
+      2,
+      0,
+      2,
+      1,
+      0,
+      0,
+      1,
+      1
+    ]
+  ],
+  "rating_histogram": {
+    "1": {
+      "raw": 330,
+      "clean": 259
+    },
+    "2": {
+      "raw": 19,
+      "clean": 19
+    },
+    "3": {
+      "raw": 31,
+      "clean": 30
+    },
+    "4": {
+      "raw": 44,
+      "clean": 41
+    },
+    "5": {
+      "raw": 443,
+      "clean": 321
+    }
+  }
+}

@@ -1,0 +1,10 @@
+# Analysis, figures, tables and report build (tested with Python 3.11)
+matplotlib>=3.7
+numpy>=1.24
+pillow>=10.0
+python-docx>=1.1
+lxml>=4.9
+pypdf>=3.17
+
+# Only for re-downloading Google Play reviews (python run_all.py --fetch)
+google-play-scraper>=1.2
