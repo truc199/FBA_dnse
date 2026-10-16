@@ -1,0 +1,10 @@
+scenario,month,plan_balance_vnd_bn,plan_balance_pct_of_investor_cash_jun_2026,accounts_10m_plus_if_others_unchanged,change_vs_end_2025_pct,platform_cost_per_10m_account_vnd_m,platform_cost_per_10m_account_2025_vnd_m
+low,24,40.11,2.0,28240,4.2,6.99,7.29
+low,36,71.02,3.6,30011,10.7,6.58,7.29
+low,60,121.94,6.2,31677,16.9,6.23,7.29
+base,24,178.18,9.1,34814,28.5,5.67,7.29
+base,36,351.71,17.9,41971,54.9,4.71,7.29
+base,60,710.26,36.2,51998,91.9,3.8,7.29
+high,24,737.88,37.6,61880,128.3,3.19,7.29
+high,36,1596.97,81.4,78545,189.8,2.51,7.29
+high,60,3770.21,192.3,111875,312.8,1.77,7.29

@@ -1,0 +1,12 @@
+case,net_yield_pct,enrolled_m36,balance_m36_vnd_bn,cum_cash_m36_vnd_bn,cum_cash_m60_vnd_bn,breakeven_month,payback_month,npv_60m_vnd_bn,new_accounts_above_10m_m60,net_cost_per_new_10m_account_m60_vnd_m
+Base case,0.442,31133,351.71,-22.02,-32.0,,,-24.99,24898,1.29
+Partner bank waives the collection fee,0.442,31133,351.71,-20.74,-29.19,,,-23.04,24898,1.17
+"Lean team: 4 IT staff, lower overheads",0.442,31133,351.71,-15.32,-21.17,,,-16.78,24898,0.85
+"Upside yields: Golden Egg margin 1.5%, 40% of fund fees",0.679,31133,351.71,-21.11,-28.53,,,-22.74,24898,1.15
+Upside enrolment in every channel,0.442,58635,684.08,-22.88,-30.83,,,-24.53,45553,0.68
+Fee waived and lean team,0.442,31133,351.71,-14.04,-18.37,,,-14.83,24898,0.74
+"Fee waived, lean team, upside yields",0.679,31133,351.71,-13.13,-14.9,58,,-12.57,24898,0.6
+"Fee waived, lean team, upside yields and enrolment",0.679,58635,684.08,-11.87,-8.16,39,,-8.34,45553,0.18
+All inputs at upside (upside scenario),0.679,73494,1596.97,-5.05,21.89,24,44,10.98,84775,0.0
+"DNSE's own bonds in the Golden Egg core (margin about 1.2 points; rejected, decision D7)",0.712,31133,351.71,-20.99,-28.05,,,-22.43,24898,1.13
+Half of the team cost treated as shared platform spending (incremental view),0.442,31133,351.71,-15.23,-21.43,,,-16.84,24898,0.86

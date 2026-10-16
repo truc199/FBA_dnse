@@ -1,0 +1,36 @@
+check,expected,model,tolerance,pass
+Month 18: savers enrolled,55050,55050.0,0.5,yes
+Month 18: savers still contributing,49108,49107.6896,1.0,yes
+"Month 18: balance, VND trillion",0.33,0.3344,0.005,yes
+Month 36: savers enrolled,199050,199050.0,0.5,yes
+Month 36: savers still contributing,148257,148256.7173,1.0,yes
+"Month 36: balance, VND trillion",2.43,2.43,0.005,yes
+"Month 36: cumulative cash, VND billion",-53.7,-53.6713,0.05,yes
+Cohort sum equals the aggregate recursion (max gap),0.0,0.0,1e-06,yes
+"0.6%, VND 150k, bonus 0.3%: cumulative cash at month 36, VND billion",-53.7,-53.6713,0.05,yes
+"0.6%, VND 150k, bonus 0.3%: first month revenue covers cost",,,0,yes
+"0.6%, VND 150k, no bonus: cumulative cash at month 36, VND billion",-47.5,-47.4851,0.05,yes
+"0.6%, VND 150k, no bonus: first month revenue covers cost",,,0,yes
+"0.6%, VND 50k: cumulative cash at month 36, VND billion",-27.6,-27.5801,0.05,yes
+"0.6%, VND 50k: first month revenue covers cost",32,32,0,yes
+"1.0%, VND 150k: cumulative cash at month 36, VND billion",-39.2,-39.2369,0.05,yes
+"1.0%, VND 150k: first month revenue covers cost",34,34,0,yes
+"1.0%, VND 50k: cumulative cash at month 36, VND billion",-19.3,-19.3319,0.05,yes
+"1.0%, VND 50k: first month revenue covers cost",27,27,0,yes
+"0.6%, VND 50k, lending 10% from month 19: cumulative cash at month 36, VND billion",-18.9,-18.8651,0.05,yes
+"0.6%, VND 50k, lending 10% from month 19: first month revenue covers cost",26,26,0,yes
+"1.0%, VND 50k, lending 10%: cumulative cash at month 36, VND billion",-10.6,-10.6169,0.05,yes
+"1.0%, VND 50k, lending 10%: first month revenue covers cost",24,24,0,yes
+"PV of revenue per saver, 36 months, yield 0.6%",219000,219162.15,1000,yes
+"PV of revenue per saver, 36 months, yield 1.0%",365000,365270.2501,1000,yes
+"PV of revenue per saver, 60 months, yield 0.6%",416000,416497.1531,1000,yes
+"PV of revenue per saver, 60 months, yield 1.0%",694000,694161.9218,1000,yes
+"Saver and stopper balances add up to the cohort balance (max gap, VND)",0.0,0.0,0.001,yes
+"Calendar engine equals cohort engine, worked example (max relative gap)",0.0,0.0,1e-09,yes
+"Calendar engine equals cohort engine, base scenario with tiers (max relative gap)",0.0,0.0,1e-09,yes
+"Assumption: dormant accounts = accounts less active customers, end-2025",1427181.0,1427181.0,0.5,yes
+Assumption: share of active customers already above VND 10 million,0.316,0.316,1e-09,yes
+"Assumption: new accounts a month, H1 2026 pace",31180,31180.0,0.5,yes
+"Assumption: new accounts a month, 2025 pace (upside)",43210,43210.0,0.5,yes
+Assumption: active customers,85739.0,85739.0,0.5,yes
+Assumption: default asset mix adds up to 1,1.0,1.0,1e-09,yes

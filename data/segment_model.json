@@ -42,7 +42,7 @@
       "activation_gap_pp": 27.46,
       "pop_share_pct": 100.0,
       "unactivated_adults_m": 22.13,
-      "priority_score": 1064.9869946925296
+      "priority_score": 1064.9869946925298
     },
     {
       "segment": "Women",
@@ -54,7 +54,7 @@
       "activation_gap_pp": 24.81,
       "pop_share_pct": 51.2,
       "unactivated_adults_m": 10.24,
-      "priority_score": 499.7330497571166,
+      "priority_score": 499.7330497571165,
       "priority_rank": 7,
       "gap_to_next_pct": 20.52
     },
@@ -68,7 +68,7 @@
       "activation_gap_pp": 30.24,
       "pop_share_pct": 48.8,
       "unactivated_adults_m": 11.89,
-      "priority_score": 563.6663121546195,
+      "priority_score": 563.6663121546196,
       "priority_rank": 6,
       "gap_to_next_pct": 12.79
     },
@@ -96,7 +96,7 @@
       "activation_gap_pp": 26.1,
       "pop_share_pct": 81.8,
       "unactivated_adults_m": 17.21,
-      "priority_score": 825.9797152491496,
+      "priority_score": 825.9797152491498,
       "priority_rank": 4,
       "gap_to_next_pct": 26.44
     },
@@ -138,7 +138,7 @@
       "activation_gap_pp": 21.06,
       "pop_share_pct": 40.0,
       "unactivated_adults_m": 6.79,
-      "priority_score": 215.98396474927142,
+      "priority_score": 215.98396474927137,
       "priority_rank": 10,
       "gap_to_next_pct": 150.19
     },
@@ -166,7 +166,7 @@
       "activation_gap_pp": 26.9,
       "pop_share_pct": 67.0,
       "unactivated_adults_m": 14.53,
-      "priority_score": 653.257126503622,
+      "priority_score": 653.2571265036219,
       "priority_rank": 5,
       "gap_to_next_pct": 15.89
     },
@@ -208,7 +208,7 @@
       "activation_gap_pp": 29.5,
       "pop_share_pct": 79.9,
       "unactivated_adults_m": 18.99,
-      "priority_score": 1012.0254894319219,
+      "priority_score": 1012.0254894319222,
       "priority_rank": 2,
       "gap_to_next_pct": 11.87
     }

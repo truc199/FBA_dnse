@@ -1,0 +1,4 @@
+store,negative_reviews,reliability_keyword_pct,reliability_hand_pct,something_broke_hand_pct,trust_keyword_pct,trust_hand_pct
+Google Play,34,58.8,73.5,82.4,14.7,17.6
+App Store,24,75.0,75.0,83.3,12.5,20.8
+Both stores,58,65.5,74.1,82.8,13.8,19.0

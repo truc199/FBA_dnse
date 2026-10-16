@@ -1,0 +1,61 @@
+param,low,base,high,unit,type,source
+dormant_accounts,1427181,1427181,1427181,accounts,derived,"1,512,920 accounts less 85,739 active customers, December 2025 (DNSE Securities, 2026c)"
+active_customers,85739,85739,85739,accounts,sourced,"Active customers, December 2025 (DNSE Securities, 2026c)"
+active_share_already_10m,0.316,0.316,0.316,share,derived,"27,100 accounts with VND 10 million or more / 85,739 active customers (DNSE Securities, 2026c); assumes such accounts are active"
+new_accounts_per_month,20000,31180,43210,accounts a month,derived,"Base: (1,700,000 mid-2026 - 1,512,920 end-2025) / 6 (VnExpress, 2026a; DNSE Securities, 2026c). High: 518,514 opened in 2025 / 12. Low: assumption, about a third below base"
+eligible_share_dormant,0.15,0.25,0.35,share of dormant accounts,assumption,"Salaried, reachable holders. Anchor: 37.0% of Vietnamese adults and 45.2% of adults in the labour force receive wages into an account (World Bank, 2025); DNSE's base is younger. Test 1 (survey of 2,000 dormant customers)"
+pilot_accounts,45000,45000,45000,accounts,assumption,"Decision D4: 45,000 dormant accounts in three arms of 15,000 (control; Payday; Payday with the persistence package), sized so the tier effect on the six-contribution rate is detectable at about 10 points (payday_pilot_power.csv); Round 2 used 20,000"
+pilot_treated_share,0.6667,0.6667,0.6667,share,assumption,Design: two of three arms receive the offer (Payday; Payday with tiers); one arm is the control
+pilot_start_month,4,4,4,month,assumption,Design: roadmap Phase 1 (months 4 to 6)
+pilot_end_month,6,6,6,month,assumption,Design: pilot read-out and stop-or-scale decision at month 6
+rollout_start_month,7,7,7,month,assumption,Design: roadmap Phase 2
+rollout_months,12,12,12,months,assumption,Design: remaining eligible dormant accounts contacted evenly over months 7 to 18
+conv_dormant,0.01,0.02,0.04,share of contacted accounts,assumption,"Set-up and first contribution within 60 days. Anchors: Never-Sleeping Account reached 12,100 sign-ups, 0.8% of accounts, after about six months (DNSE Securities, 2026c); TCBS's goal-based TCWealth drew more than 20,000 customers in two months, about 1.7% of its 1.2 million accounts, counting trials rather than funded plans (TCBS, 2026); about 28% accept a commitment account when invited in person, an upper bound (Ashraf et al., 2006). Measured by the pilot"
+conv_active,0.02,0.04,0.06,share of active customers,assumption,"In-app offer over months 7 to 18. Anchor: Never-Sleeping Account sign-ups equal 14% of active customers (12,100 / 85,739; DNSE Securities, 2026c), for a simpler product with nothing to set up at a bank"
+new_account_offer_month,7,7,7,month,assumption,Design: the plan is offered during account opening from Phase 2
+conv_new_account,0.01,0.02,0.03,share of new accounts,assumption,Set-up within 60 days of opening; no sign-up reward. Measured from month 7
+employer_start_month,10,10,10,month,assumption,Design: first employers in quarter 4 of year 1 (go-to-market plan)
+employers_per_quarter,2,4,8,employers a quarter,assumption,Go-to-market plan: 3 to 5 employers in the first quarter of the channel
+employees_per_employer,200,300,500,employees,assumption,Mid-sized employers
+participation_employer,0.10,0.20,0.28,share of employees,assumption,"Opt-in through an HR session; about 28% accept a commitment account when invited in person (Ashraf et al., 2006), the upper bound. Automatic enrolment (Madrian & Shea, 2001) is not assumed"
+contribution,800000,1000000,1500000,VND a month,assumption,"About 11% of the average monthly income of VND 9.0 million, Q2 2026 (National Statistics Office, 2026); minimum VND 500,000"
+stop_rate_first_90_days,0.15,0.10,0.06,share a month,assumption,Applies to the second and third contributions: 72% / 81% / 88% of savers reach three contributions. Measured by the pilot
+stop_rate_monthly,0.04,0.025,0.015,share a month,assumption,After the third contribution (plan_payday.md section 4.4)
+withdrawal_rate_annual,0.15,0.10,0.05,share of balance a year,assumption,Spread evenly over the months (plan_payday.md section 4.4); inflows and outflows tagged in the pilot
+customer_return_annual,0,0,0.05,share a year,assumption,"Base and downside count contributions only, before investment returns (as in Round 2). Upside adds 5% a year, below Golden Egg's 6.20-7.60% (DNSE, 2026) and VCBF-FIF's 7.03% one-year return (VCBF, 2026), before tax on coupons"
+mix_golden_egg,0.45,0.45,0.45,share of balance,assumption,"Design: bond-tilted default; equities only for goals of three years or more (half of balances, 40% in equities)"
+mix_bond_funds,0.35,0.35,0.35,share of balance,assumption,Design: as above
+mix_equity_funds,0.10,0.10,0.10,share of balance,assumption,Design: as above
+mix_etf,0.10,0.10,0.10,share of balance,assumption,Design: as above
+yield_golden_egg,0.003,0.006,0.01,share of balance a year,assumption,"DNSE's margin on bank-issued bonds sold through Golden Egg (DNSE's own bonds are excluded from Payday's default core). Agribank's public bonds pay the Big Four 12-month deposit average plus 2.0 points, about 7.9% in October 2026 (Thi truong Tai chinh Tien te, 2026); Golden Egg pays 7.60% for 12 months and 7.10% for 3 months (DNSE, 2026): a margin of about 0.3 to 0.8 points. Base 0.6 for a mix of terms; margins are not published"
+yield_bond_funds,0.0022,0.0033,0.0044,share of balance a year,assumption,"Distributor's share of the management fee, assumed 20% / 30% / 40% of the 1.1% average of SSIBF 1.3%, DCBF 1.2% and VCBF-FIF 0.8% (prospectuses and factsheets, 2026); SIP purchases carry no subscription fee. Shares are set by contract and not published; TCBS's income from its sister fund manager implies about 0.2% of NAV (low confidence)"
+yield_equity_funds,0.0038,0.0056,0.0075,share of balance a year,assumption,"Distributor's share of the management fee, 20% / 30% / 40% of the 1.88% average of SSI-SCA 1.75%, DCDS 1.95%, DCDE 1.93% and VCBF-BCF 1.9% (prospectuses and factsheets, 2026)"
+yield_etf,0,0,0,share of balance a year,sourced,"DNSE charges no fee on cash share and ETF trades (DNSE Securities, 2026e)"
+build_months,6,6,6,months,assumption,"Design: MVP in months 1 to 3, hardening during the pilot in months 4 to 6"
+build_cost_team,3970000000,3180000000,2540000000,VND,derived,"10 staff for 6 months (product owner, designer at the front-end median as proxy, 3 back-end, 2 mobile, QA, data analyst, tech lead) at ITviec (2025) medians, VND 395.65 million a month in total, loaded x1.338 for employer insurance 21.5% (Law on Social Insurance 2024; Law on Employment 2025), trade-union fee 2% and a 13th-month salary. Low: medians read as net pay (x1.25). High: 8 staff, reusing Ensa, Never-Sleeping Account and Golden Egg components"
+build_cost_external,1500000000,1000000000,600000000,VND,assumption,"Virtual-account and fund-partner integration, security testing, legal opinions; VPBank charges VND 1 million to register a level-1 virtual account (VPBank, 2024)"
+run_start_month,4,4,4,month,assumption,Design: operations team from the pilot launch
+run_cost_team,4720000000,3780000000,2520000000,VND a year,derived,"6 IT staff from month 4 (half a product owner, 2 back-end, 1 mobile, 1 QA, 1 data analyst, half a tech lead) at ITviec (2025) medians, VND 235.25 million a month, loaded x1.338. Low: medians read as net pay (x1.25). High: 4 staff"
+run_cost_other,1800000000,1200000000,800000000,VND a year,assumption,"Operations and reconciliation staff, compliance and legal time, cloud and monitoring"
+marketing_fixed_annual,1500000000,1000000000,600000000,VND a year,assumption,"Content, creative, education material and legal review of promotions, from the pilot"
+reach_cost_per_account,2200,1300,1100,VND per contacted account,derived,"Base: two Zalo template messages at VND 200 plus 10% VAT (Zalo Business Solutions, 2026) and one SMS brandname customer-care message for securities at VND 862 including VAT (Viettel price on MobiFone, 2026). Low: two of each. High: one of each"
+inapp_cost_per_saver,30000,20000,10000,VND per saver,assumption,Help-desk time at set-up for in-app channels
+cost_per_employer,20000000,15000000,10000000,VND per employer,assumption,Sales and HR-integration time per employer
+fee_per_contribution,5500,3300,0,VND per contribution,assumption,"Bank fee for each virtual-account collection, negotiable. Base: VPBank list price of VND 3,000 plus VAT per system-connected transaction (VPBank, 2024). Low: KBSV passes VND 5,500 per bank-collected transfer to its clients (KBSV, 2026). High: waived by the partner bank, which keeps the deposits (BIDV waived collection fees for six months in 2024)"
+service_cost_per_active_month,2000,1000,500,VND per active saver a month,assumption,"Monthly Zalo confirmation (VND 220 with VAT), statements and language-model use per saver"
+tier_gift_3,0,0,0,VND,assumption,"Decision D1: no DNSE-funded cash reward in the MVP. Persistence features are non-cash (streak, one skipped month a year, payday reminders, priority access to new Golden Egg issues); fee waivers, if any, are funded by fund partners"
+tier_gift_6,0,0,0,VND,assumption,"Decision D1: no DNSE-funded cash reward in the MVP. Persistence features are non-cash (streak, one skipped month a year, payday reminders, priority access to new Golden Egg issues); fee waivers, if any, are funded by fund partners"
+tier_gift_12,0,0,0,VND,assumption,"Decision D1: no DNSE-funded cash reward in the MVP. Persistence features are non-cash (streak, one skipped month a year, payday reminders, priority access to new Golden Egg issues); fee waivers, if any, are funded by fund partners"
+tier_fee_discount,0,0,0,share of fund balance a year,assumption,"Decision D1: no DNSE-funded cash reward in the MVP. Persistence features are non-cash (streak, one skipped month a year, payday reminders, priority access to new Golden Egg issues); fee waivers, if any, are funded by fund partners"
+tier_rate_boost,0,0,0,share of Golden Egg balance a year,assumption,"Decision D1: no DNSE-funded cash reward in the MVP. Persistence features are non-cash (streak, one skipped month a year, payday reminders, priority access to new Golden Egg issues); fee waivers, if any, are funded by fund partners. Any later interest incentive is capped at VND 50 million (interest_cap)"
+interest_cap,50000000,50000000,50000000,VND per saver,assumption,Decision: every interest incentive is capped at VND 50 million
+tier_option_gift_12,30000,30000,30000,VND,assumption,Option tested in the hold-out arm only: fund units on the twelfth contribution in a row
+tier_option_fee_discount,0.001,0.001,0.001,share of fund balance a year,assumption,Option tested in the hold-out arm only: DNSE-funded fee rebate for savers with six or more contributions in a row
+bonus_flat_annual,0,0,0,share of balance a year,assumption,Not used (the flat bonus of the plan_payday.md example is replaced by the tiers above)
+lending_share,0,0,0,share of balance,assumption,Phase 2 lending is excluded from the three scenarios
+lending_share_option,0.10,0.10,0.10,share of balance,assumption,Option only: ETF-secured lending to suitable savers from month 19 (plan_payday.md section 6.2)
+lending_start_month,19,19,19,month,assumption,Option only: after 12 months of pilot and roll-out data
+lending_spread,0.045,0.045,0.045,share a year,derived,"Margin-loan yield about 11% (Q1 2026 10.1%, Q2 2026 12.4% annualised) less cost of funds 6.5% in Q2 2026, from DNSE filings (Vietcap Securities, 2026)"
+balance_threshold,10000000,10000000,10000000,VND,sourced,"DNSE's published measure: accounts with net assets of VND 10 million or more (DNSE Securities, 2026c)"
+discount_rate_annual,0.12,0.12,0.12,share a year,assumption,Hurdle rate for the present values
+contingency_share,0.15,0.15,0.15,share,assumption,Contingency on the Phase 0 and 1 budget

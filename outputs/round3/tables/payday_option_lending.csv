@@ -1,0 +1,4 @@
+scenario,lending_share_of_balance,start_month,cum_cash_m36_vnd_bn,cum_cash_m60_vnd_bn,breakeven_month,payback_month,npv_60m_vnd_bn
+low,0.1,19,-28.79,-44.66,,,-34.34
+base,0.1,19,-20.48,-25.61,,,-20.88
+high,0.1,19,1.61,52.71,19,35,30.67

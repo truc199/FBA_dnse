@@ -1,0 +1,7 @@
+label,low,high,unit,as_of,source_id
+"Demand deposits and terms under 1 month, legal cap",0.5,0.5,% a year,2024-11-20 (in force October 2026),S04
+"Terms of 1 to under 6 months, legal cap",4.75,4.75,% a year,2024-11-20 (in force October 2026),S04
+"Big Four banks, 12-month deposit at the counter",5.9,5.9,% a year,2026-10-01,S02
+"12-month deposits at 35 banks, range",3.7,7.8,% a year,2026-10-01,S02
+"Highest 12-month online deposit (Sacombank, from VND 500 million)",7.5,7.5,% a year,2026-10-10,S05
+"Certificates of deposit, 12 months (BIDV, VietinBank)",7.4,7.4,% a year,2026-10-01,S02

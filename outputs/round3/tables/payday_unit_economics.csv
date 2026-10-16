@@ -1,0 +1,21 @@
+measure,low,base,high
+"Net yield on plan balances, % a year",0.25,0.442,0.679
+"Revenue a year on VND 10 million of balance, VND",25000,44150,67900
+"Savers still contributing after 3 contributions, %",72.2,81.0,88.4
+"Savers still contributing after 6 contributions, %",63.9,75.1,84.4
+"Savers still contributing after 12 contributions, %",50.0,64.5,77.1
+Contributions in a row to pass VND 10 million,14,11,7
+"PV of revenue per saver, 36 months, VND",40580,116594,347991
+"PV of variable cost per saver, 36 months, VND",101010,76196,10891
+"CAC ceiling (PV of net revenue per saver), 36 months, VND",-60429,40397,337100
+"PV of revenue per saver, 60 months, VND",69387,220502,742306
+"PV of variable cost per saver, 60 months, VND",114325,92990,14231
+"CAC ceiling (PV of net revenue per saver), 60 months, VND",-44938,127512,728075
+"Acquisition cost per saver, dormant accounts, pilot, VND",220000,65000,27500
+"Acquisition cost per saver, dormant accounts, roll-out, VND",220000,65000,27500
+"Acquisition cost per saver, active customers, VND",30000,20000,10000
+"Acquisition cost per saver, new accounts at opening, VND",30000,20000,10000
+"Acquisition cost per saver, employers (payroll), VND",1000000,250000,71429
+"Reach cost per dormant account contacted, VND",2200,1300,1100
+"Break-even enrolment rate of contacted accounts, 60-month ceiling, %",,1.02,0.15
+"Break-even enrolment rate of contacted accounts, 36-month ceiling, %",,3.22,0.33

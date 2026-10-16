@@ -1,0 +1,5 @@
+case,active_m36,balance_m36_vnd_bn,new_accounts_above_10m_m36,cum_cash_m60_vnd_bn,npv_60m_vnd_bn,change_balance_m36_pct,change_accounts_m36_pct,change_cum_cash_m60_vnd_bn
+"Base case, no shock",17606,351.71,14871,-32.0,-24.99,0.0,-0.0,-0.0
+Market fall in year 2: stop and withdrawal rates three times normal in months 13 to 15,16261,312.6,13043,-32.34,-25.2,-11.1,-12.3,-0.35
+Failed payday run in month 9: 15% of contributing savers stop; enrolment 30% lower in months 9 to 11,16784,323.21,13725,-32.21,-25.11,-8.1,-7.7,-0.21
+Both shocks,15591,288.66,12118,-32.51,-25.29,-17.9,-18.5,-0.51

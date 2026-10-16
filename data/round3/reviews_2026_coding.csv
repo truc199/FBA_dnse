@@ -1,0 +1,59 @@
+store,review_id,causes,primary,after_update,outage_4_5_march,gist_en,note
+play,d0f9e647-5153-4ab2-9255-31b0ea4d710a,login_otp|ekyc_opening|scam_reward,login_otp,0,0,"Cannot log in; a new account claiming gift shares is told it is already registered; nothing received",
+play,d8d9b00a-8210-4943-bc56-7bcb0506a1c0,fees_terms,fees_terms,0,0,"Renewed automatically although I never pressed renew, so I lost money",Product not named
+play,2410abca-805a-4c35-9a38-cc3cf454f003,crash_freeze,crash_freeze,0,0,"App lags and updates slowly",
+play,faac87dd-3c76-4aab-aa33-167721ff869a,orders_prices|crash_freeze,orders_prices,0,0,"Not smooth; prices and cash after a sale update slowly; use another app such as SSI",
+play,cd8f0366-4a2a-477e-b93d-3a4a2cc1f3f7,orders_prices,orders_prices,0,0,"Status says 'waiting to send' and the shares take a very long time to arrive",May refer to gift shares rather than an order
+play,ba69f433-80ab-4f28-a63b-3e124b9cbc11,orders_prices,orders_prices,0,0,"Buying and selling take up to two days",Probably settlement timing
+play,bd338c23-d94b-4a50-b6eb-157b055218d1,cash_not_credited,cash_not_credited,0,0,"The bank confirmed the transfer but the deposit never appeared in the app; money lost",
+play,3a55e350-289f-4a9f-9439-696bc7bf2f2b,cash_not_credited,cash_not_credited,0,0,"Deposit still not credited after two days",
+play,7338c435-f32b-4aa9-97a3-f3b46556cf9e,orders_prices|crash_freeze,orders_prices,0,1,"System failure in the afternoon session of 4 March 2026; could not place orders; will switch apps",
+play,ea5eb1c3-ab3d-493d-b873-c2cdbea363f9,crash_freeze|other,crash_freeze,0,1,"Frequent errors with no notice; nobody answers on Zalo or in the app",Support and incident communication
+play,be943705-c23e-40d0-a93b-dc4681fb8b20,crash_freeze,crash_freeze,0,1,"The app fails on the days that matter",
+play,01993d94-700c-45e8-a42d-af345b950f64,crash_freeze,crash_freeze,0,1,"App down on 5 March, still not fixed late at night",
+play,5f0e58b6-09a6-4416-ad1e-4e5f43c81ada,crash_freeze,crash_freeze,0,0,"Lags so badly that nothing can be done",
+play,3452f476-c5c4-4256-9c39-7f3f8ef7ec48,orders_prices,orders_prices,0,0,"Proceeds of a share sale take far too long to arrive",Probably settlement timing
+play,47014745-b73b-441c-9431-626e64e50e9d,fees_terms,fees_terms,0,0,"Cannot delete the account; the procedure is too cumbersome",Account closure
+play,18e45422-dca5-4222-bf7f-6d9977ed0996,scam_reward,scam_reward,0,0,"Where is my VND 200,000 reward? (rude)",
+play,cb4c52fa-c2cb-4208-9f9d-3274a209ee83,login_otp,login_otp,0,0,"Selling shares but the OTP never arrives",
+play,96e94bea-1342-4a76-b80e-a0e516a65d2b,other,other,0,0,"Attack on the chairman's record; nothing about the app",Leadership reputation
+play,b6313c60-b9db-4d89-afbe-473701606b8a,crash_freeze,crash_freeze,0,0,"The app uses a huge amount of memory",
+play,10bb6a9c-cd2f-48c5-be44-550cc1ab90cf,crash_freeze|other,other,0,0,"Remove Ensa: it uses memory and space and does not answer questions",Ensa assistant
+play,1c650019-012f-4eac-8bb4-0e5a99122ad1,ekyc_opening,ekyc_opening,0,0,"ID-card scan fails here although it works in other apps",
+play,59bdfac4-74f4-451e-a035-eb6b84163ba1,cash_not_credited|crash_freeze,cash_not_credited,0,0,"Many bugs; often cannot withdraw money",
+play,c175aafb-10f3-4026-9701-5e337d8394a9,cash_not_credited,cash_not_credited,0,0,"Withdrew to the bank three times; only the last one arrived",
+play,fba87626-203f-455c-b8a9-2c55d3617ef9,orders_prices|crash_freeze,crash_freeze,0,0,"Freezes often, and freezes solid when buying or selling",
+play,69a4a06c-0f30-4089-aa19-cb2fccf2758f,other,other,0,0,"'Trash' (no reason given)",No cause stated
+play,31147446-3514-4204-b36f-8a28ddab8eae,crash_freeze|fees_terms|scam_reward,scam_reward,0,0,"Not transparent, slow, many charges; lured by a ZaloPay 'VND 50,000 back' share offer",Partner promotion
+play,55f426bb-f8d4-4d93-a2f2-6ceba3eba5dc,login_otp,login_otp,0,0,"Slow login; phone verification fails",
+play,042dbd9d-abe9-4c05-a54c-1860171d2711,other,other,0,0,"Poor interface and functions",Interface
+play,17588fe6-a6ff-432c-9c02-72fe4c598574,ekyc_opening,ekyc_opening,0,0,"Identity details complete, yet changing a lost phone number is cumbersome",
+play,04900b27-6842-429b-a264-840cbafc545e,crash_freeze,crash_freeze,1,0,"Every update makes it lag and freeze more",
+play,12133a22-37ba-4e87-abea-de34dbb5b312,crash_freeze|other,crash_freeze,0,0,"Too cluttered; lags badly and keeps throwing me out",Interface
+play,8568514e-df67-4e27-8cf8-ba32c07e7323,ekyc_opening,ekyc_opening,0,0,"Account application rejected again and again over missing diacritics in the name; name cannot be corrected",
+play,643e59ce-b659-41c8-b570-fa033270131b,crash_freeze,crash_freeze,1,0,"Every update makes it worse; lag",
+play,ecc2bfbe-a6b0-4d62-9205-43606e0ba642,ekyc_opening|scam_reward,ekyc_opening,0,0,"My phone number was stored before I registered and cannot be removed; 'scammers'",
+ios,13601207065,crash_freeze,crash_freeze,1,0,"Updates freeze and take all day to finish, especially on 4G",
+ios,13607434109,login_otp|other,login_otp,0,0,"Hard-to-use interface; logged out every next day because the token expires",Interface
+ios,13664925751,other,other,0,0,"Ugly interface; should be more intuitive",Interface
+ios,13721517718,crash_freeze|ekyc_opening,crash_freeze,0,0,"App freezes; cannot activate",
+ios,13725161638,cash_not_credited|ekyc_opening|fees_terms|scam_reward,cash_not_credited,0,0,"'Withdrawal trap': the pre-filled name with diacritics cannot be edited, so withdrawals need a matching bank account; no way to delete the account",
+ios,13774081209,crash_freeze|ekyc_opening,ekyc_opening,0,0,"NFC identity check fails on a working phone; terrible lag",
+ios,13809737684,ekyc_opening,ekyc_opening,0,0,"Cannot scan the ID card",
+ios,13812541476,cash_not_credited|orders_prices|crash_freeze,orders_prices,0,1,"4 March 2026: app froze, no orders all afternoon on a falling day, no buying at the rebound, no withdrawals",
+ios,13812032440,orders_prices,orders_prices,0,1,"Orders cannot be sent",
+ios,13812020765,orders_prices|crash_freeze,orders_prices,0,1,"Orders rejected; it fails whenever the market surges",
+ios,13811930604,orders_prices|crash_freeze|scam_reward|other,orders_prices,0,1,"'Scam': the app fails on important days and orders; nobody answers the phone",Support unreachable
+ios,13814757992,crash_freeze|other,crash_freeze,0,1,"'Sue': an apology is not enough while investors bear the losses",Follow-up to the 4 March outage; asks for compensation
+ios,13828965356,cash_not_credited,cash_not_credited,0,0,"Morning deposits arrive only in the afternoon, about ten times",
+ios,13828916689,cash_not_credited|crash_freeze|ekyc_opening,cash_not_credited,0,0,"Approval is slow, withdrawals never arrive, errors everywhere",
+ios,13888067737,orders_prices|fees_terms|other,fees_terms,0,0,"Staff blame an app bug on margin limits; advance fee quoted at 13.5% a year costs 27%; hidden or wrong fees",Customer service
+ios,13902935047,login_otp|cash_not_credited,cash_not_credited,0,0,"Cannot withdraw to the bank: the OTP confirmation never arrives",
+ios,13913261105,login_otp,login_otp,0,0,"Frequent errors confirming the OTP",
+ios,13960755979,scam_reward,scam_reward,0,0,"'A total con'",
+ios,13978077628,cash_not_credited,cash_not_credited,0,0,"Deposit from the bank not credited",
+ios,14087885208,other,other,0,0,"Rude advisers; the app is fine but customer service is poor",Customer service
+ios,14141903628,crash_freeze,crash_freeze,0,0,"The app will not open even after updating and reinstalling",
+ios,14276325505,login_otp|crash_freeze,crash_freeze,1,0,"Forced updates with little new disrupt logging in and waste storage",
+ios,14309197300,fees_terms|other,other,0,0,"Not transparent; slow, outdated processes; customer service cannot help",Customer service
+ios,14438963865,login_otp|crash_freeze,crash_freeze,1,0,"Updates four or five times a week; each brings bugs and wipes login details and settings",

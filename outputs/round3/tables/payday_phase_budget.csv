@@ -1,0 +1,19 @@
+scenario,phase,months,cost_vnd_bn,of_which_build_vnd_bn,of_which_run_and_marketing_vnd_bn,of_which_acquisition_vnd_bn,of_which_rewards_payments_vnd_bn,revenue_vnd_bn,net_cash_vnd_bn,cumulative_cash_at_end_vnd_bn
+low,Phase 0: build and comply,1-3,2.73,2.73,0.0,0.0,0.0,0.0,-2.73,-2.73
+low,Phase 1: pilot,4-6,4.81,2.73,2.0,0.07,0.0,0.0,-4.81,-7.54
+low,Phase 2: scale in the base,7-12,4.37,0.0,4.01,0.29,0.07,0.01,-4.36,-11.91
+low,Phase 3: outside channels,13-24,8.8,0.0,8.02,0.44,0.33,0.06,-8.74,-20.64
+low,Phase 4: optimise,25-36,8.62,0.0,8.02,0.23,0.37,0.14,-8.48,-29.12
+low,Years 4 and 5,37-60,17.25,0.0,16.04,0.46,0.75,0.49,-16.76,-45.88
+base,Phase 0: build and comply,1-3,2.09,2.09,0.0,0.0,0.0,0.0,-2.09,-2.09
+base,Phase 1: pilot,4-6,3.63,2.09,1.5,0.04,0.0,0.0,-3.63,-5.72
+base,Phase 2: scale in the base,7-12,3.49,0.0,2.99,0.37,0.13,0.03,-3.46,-9.17
+base,Phase 3: outside channels,13-24,7.28,0.0,5.98,0.63,0.68,0.46,-6.82,-15.99
+base,Phase 4: optimise,25-36,7.23,0.0,5.98,0.39,0.86,1.2,-6.03,-22.02
+base,Years 4 and 5,37-60,14.73,0.0,11.96,0.78,1.99,4.76,-9.98,-32.0
+high,Phase 0: build and comply,1-3,1.57,1.57,0.0,0.0,0.0,0.0,-1.57,-1.57
+high,Phase 1: pilot,4-6,2.58,1.57,0.98,0.03,0.0,0.0,-2.58,-4.15
+high,Phase 2: scale in the base,7-12,2.43,0.0,1.96,0.43,0.04,0.18,-2.25,-6.4
+high,Phase 3: outside channels,13-24,4.88,0.0,3.92,0.75,0.21,2.84,-2.04,-8.44
+high,Phase 4: optimise,25-36,4.68,0.0,3.92,0.48,0.29,8.07,3.39,-5.05
+high,Years 4 and 5,37-60,9.52,0.0,7.84,0.95,0.72,36.45,26.94,21.89

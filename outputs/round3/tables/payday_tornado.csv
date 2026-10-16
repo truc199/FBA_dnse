@@ -1,0 +1,10 @@
+driver,parameters,cum_cash_m60_low_vnd_bn,cum_cash_m60_base_vnd_bn,cum_cash_m60_high_vnd_bn,swing_vnd_bn,breakeven_month_low,breakeven_month_high,cum_cash_m36_low_vnd_bn,cum_cash_m36_high_vnd_bn
+Build and running cost,build_cost_team; build_cost_external; run_cost_team; run_cost_other,-40.6,-32.0,-23.07,17.53,,,-27.55,-16.42
+Net yield on balances,yield_golden_egg; yield_bond_funds; yield_equity_funds; yield_etf,-34.8,-32.0,-28.53,6.27,,,-22.76,-21.11
+Bank fee per contribution,fee_per_contribution,-33.87,-32.0,-29.19,4.68,,,-22.87,-20.74
+Monthly contribution,contribution,-33.29,-32.0,-28.77,4.52,,,-22.36,-21.18
+Acquisition cost per saver,reach_cost_per_account; inapp_cost_per_saver; cost_per_employer,-33.02,-32.0,-31.22,1.8,,,-22.73,-21.55
+Stop rates,stop_rate_first_90_days; stop_rate_monthly,-32.45,-32.0,-31.61,0.84,,,-21.97,-22.07
+Withdrawals,withdrawal_rate_annual,-32.37,-32.0,-31.59,0.78,,,-22.08,-21.97
+Enrolment rates (cost per saver held),conv_dormant; conv_active; conv_new_account; participation_employer; employers_per_quarter,-32.07,-32.0,-32.63,0.56,,,-21.18,-23.62
+Investment returns on balances (0% to 5%),customer_return_annual,-32.0,-32.0,-31.59,0.41,,,-22.02,-21.97

@@ -5,7 +5,7 @@
 Collection method
 -----------------
 Source: Google Play public review listing, pulled with 02b_playstore_scrape_python.py
-(file date 2026-09-27) and cut at 2026-09-21. No authentication, no private data. Fields
+(file date 2026-10-14) and cut at 2026-09-21. No authentication, no private data. Fields
 captured per review: review id, author display name, star rating, free text, date,
 thumbs-up count.
 
@@ -35,7 +35,7 @@ tone-mark-sensitive matching for syllables that collide once accents are strippe
 """
 
 # ---------------------------------------------------------------- headline counts
-DNSE_TOTALS = {'raw_n': 867, 'loan_spam': 127, 'referral_spam': 70, 'duplicates': 0, 'clean_n': 670, 'raw_mean': 3.29, 'clean_mean': 3.218, 'removed_mean': 3.533, 'negative_1_2': 278, 'neutral_3': 30, 'positive_4_5': 362, 'generic_in_clean': 124, 'substantive_mean': 2.877, 'first_date': '2020-10-22', 'last_date': '2026-09-10', 'pulled': '2026-09-27', 'cutoff': '2026-09-21'}
+DNSE_TOTALS = {'raw_n': 867, 'loan_spam': 127, 'referral_spam': 70, 'duplicates': 0, 'clean_n': 670, 'raw_mean': 3.29, 'clean_mean': 3.218, 'removed_mean': 3.533, 'negative_1_2': 278, 'neutral_3': 30, 'positive_4_5': 362, 'generic_in_clean': 124, 'substantive_mean': 2.877, 'first_date': '2020-10-22', 'last_date': '2026-09-10', 'pulled': '2026-10-14', 'cutoff': '2026-09-21'}
 
 # rating, raw count, clean count
 RATING_HIST = [

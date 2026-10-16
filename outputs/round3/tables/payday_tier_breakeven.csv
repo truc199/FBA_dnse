@@ -1,0 +1,7 @@
+bank_fee,design,pv_reward_cost_per_saver_vnd,reward_cost_pct_of_pv_revenue,cac_ceiling_60m_vnd,stop_rate_needed_pct,twelve_contribution_rate_base_pct,twelve_contribution_rate_needed_pct,uplift_needed_points
+base bank fee,"Round 2 tiers made small: 10k / 20k / 50k gifts, 0.1-point fee rebate from 6, Golden Egg +0.2 points from 12",90800,41.2,36712,not reachable,64.5,not reachable,not reachable
+base bank fee,"Tested option: 30k gift at 12, 0.1-point fee rebate from 6",31354,14.2,96158,not reachable,64.5,not reachable,not reachable
+base bank fee,MVP (decision D1): non-cash features only,0,0.0,127512,2.5,64.5,64.5,0.0
+bank fee waived,"Round 2 tiers made small: 10k / 20k / 50k gifts, 0.1-point fee rebate from 6, Golden Egg +0.2 points from 12",90800,41.2,108077,not reachable,64.5,not reachable,not reachable
+bank fee waived,"Tested option: 30k gift at 12, 0.1-point fee rebate from 6",31354,14.2,167523,1.1,64.5,73.3,8.8
+bank fee waived,MVP (decision D1): non-cash features only,0,0.0,198876,2.5,64.5,64.5,0.0
