@@ -1,0 +1,11 @@
+Activity,CEO,CFO,CTO,Head of Product,Compliance and Legal,Marketing and CRM,Customer Service,Licensed adviser
+Gate decisions (months 3; 6; 12; 24),A,R,C,R,C,I,I,I
+"Partner terms: virtual-account bank, fund managers, bond supply",I,A/R,C,C,C,-,-,-
+"SSC notice, legal opinions, review of promotions",I,I,I,C,A/R,C,-,C
+Model plans and suitability rules,I,-,I,C,A,-,-,R
+"MVP build: scheduler, virtual accounts, allocation, dashboard",I,I,A/R,C,C,-,I,-
+Shadow payday runs and the 99.5% reliability gate,I,I,A/R,C,I,-,I,-
+Randomised pilot: design and read-out,I,C,C,A/R,C,C,I,C
+Outreach and messages,I,I,I,A,C,R,I,-
+"Complaints, withdrawals and recovery after failures",I,I,C,A,C,I,R,-
+Monthly service metrics published,I,I,R,A,C,C,C,-

@@ -1,0 +1,6 @@
+Phase,Months,Objective,Key initiatives,Gate and result (base)
+0. Build and comply,1–3,"A safe, legal MVP",Virtual accounts (fee target VND 0); fund contracts; adviser-signed plans; SSC notice,Gate 0; {p0_cash} cumulative
+1. Pilot,4–6,"Measure enrolment, persistence, new money","Randomised pilot, {pilot} accounts, 3 arms",Gate 1; {p1_savers} savers
+2. Scale in the base,7–12,Controlled scale,Dormant roll-out; in-app; account opening; first employers,Gate 2; {p2_funded} funded
+3. Outside channels,13–24,Channels that create a default,Employers; salary percentage via Open API from March 2027; step-up with pay rises,Gate 3; {p3_new} new accounts above VND 10 million
+4. Optimise,25–36,"Better economics, a managed option",Partner or DNSE-owned fund manager; Golden Egg with more bank partners,Quarterly review; {p4_new} new accounts above VND 10 million

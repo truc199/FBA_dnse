@@ -1,0 +1,7 @@
+Area,Round 2,"Round 3A, and why"
+Main barrier,Trust,Reliability: {broke_pct} of 2026 negative reviews describe a failure; trust {trust_hand_pct}
+Business case,"Static: 150,000 savers for 18 months; target of 85,000 accounts above VND 10 million","Monthly cohorts over 60 months: about {m36_total_10m_r} accounts above VND 10 million by month 36 ({funded_2025} + {m36_new}), because a saver needs {months_to_10m} contributions to pass VND 10 million"
+Pilot,"20,000 accounts; go ahead at 15% enrolment","{pilot} accounts; scale at {enrol_scale}, stop below {enrol_stop} (break-even {breakeven})"
+Rewards,"Cash tiers, including a 4.3% idle-cash rate",Non-cash persistence package; cash tiers would cost {tier_cost_pct} of revenue per saver
+Bond core,"Golden Egg, which also holds DNSE's own bonds","Bank-issued bonds only, to avoid a conflict of interest"
+Differentiator,The salary-day trigger,Recurring transfers are standard (VinaSIP since 2021); we compete on asset range and published delivery metrics

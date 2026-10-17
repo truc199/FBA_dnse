@@ -701,8 +701,8 @@ def decision_gates(rows_csv, runs):
             "The 4 March 2026 outage stopped orders for two hours (DNSE disclosure)", "CTO"),
         row("Gate 1: pilot read-out", 6, "Projected net cost per new account above VND 10 million by month 60 "
             "(model re-run with the pilot's measured values and the signed terms), VND million",
-            f"<= {1.25 * cpa_plan / 1e6:.2f} (1.25 x plan)", f"{1.25 * cpa_plan / 1e6:.2f} to {2 * cpa_plan / 1e6:.2f}",
-            f"> {2 * cpa_plan / 1e6:.2f} (2 x plan)", f"{cpa_plan / 1e6:.2f}",
+            f"<= {1.25 * cpa_plan / 1e6:.1f} (1.25 x plan)", f"{1.25 * cpa_plan / 1e6:.1f} to {2 * cpa_plan / 1e6:.1f}",
+            f"> {2 * cpa_plan / 1e6:.1f} (2 x plan)", f"{cpa_plan / 1e6:.2f}",
             "Programme test. The plan is the Board's budget per funded account; downside path "
             f"{cost_per_funded_account(low_res[-1]) / 1e6:.2f}", "CFO"),
         row("Gate 1: pilot read-out", 6, "Enrolment rate of treated dormant accounts (set-up and first "
@@ -761,12 +761,15 @@ def decision_gates(rows_csv, runs):
             f"employees, a saver costs less than the CAC ceiling only from {emp_part * 100:.0f}% enrolment",
             "Head of Product"),
         row("Gate 3: scale-up review", 24, "Net cost per new account above VND 10 million to date, VND million",
-            f"<= {1.25 * cpa_plan24 / 1e6:.2f} (1.25 x plan)", f"{1.25 * cpa_plan24 / 1e6:.2f} to "
-            f"{2 * cpa_plan24 / 1e6:.2f}", f"> {2 * cpa_plan24 / 1e6:.2f}: fold into the core app team or stop",
+            f"<= {1.25 * cpa_plan24 / 1e6:.1f} (1.25 x plan)", f"{1.25 * cpa_plan24 / 1e6:.1f} to "
+            f"{2 * cpa_plan24 / 1e6:.1f}", f"> {2 * cpa_plan24 / 1e6:.1f}: fold into the core app team or stop",
             f"{cpa_plan24 / 1e6:.2f}", "Same programme test as Gate 1, on actual results", "CFO"),
     ]
     return out, {"cac_ceiling_60m": ceiling, "breakeven_enrolment": r_star, "cac_base_dormant": cac_base,
-                 "persistence_stop": persist_stop, "contribution_stop": c_stop}
+                 "persistence_stop": persist_stop, "contribution_stop": c_stop, "fee_limit": fee_limit,
+                 "ceiling_no_fee": ceiling_no_fee, "employer_participation_needed": emp_part,
+                 "cost_per_account_plan_m60": cpa_plan, "cost_per_account_plan_m24": cpa_plan24,
+                 "persistence_3_base": surv[2]}
 
 
 def main():

@@ -49,8 +49,8 @@ tier_gift_12,0,0,0,VND,assumption,"Decision D1: no DNSE-funded cash reward in th
 tier_fee_discount,0,0,0,share of fund balance a year,assumption,"Decision D1: no DNSE-funded cash reward in the MVP. Persistence features are non-cash (streak, one skipped month a year, payday reminders, priority access to new Golden Egg issues); fee waivers, if any, are funded by fund partners"
 tier_rate_boost,0,0,0,share of Golden Egg balance a year,assumption,"Decision D1: no DNSE-funded cash reward in the MVP. Persistence features are non-cash (streak, one skipped month a year, payday reminders, priority access to new Golden Egg issues); fee waivers, if any, are funded by fund partners. Any later interest incentive is capped at VND 50 million (interest_cap)"
 interest_cap,50000000,50000000,50000000,VND per saver,assumption,Decision: every interest incentive is capped at VND 50 million
-tier_option_gift_12,30000,30000,30000,VND,assumption,Option tested in the hold-out arm only: fund units on the twelfth contribution in a row
-tier_option_fee_discount,0.001,0.001,0.001,share of fund balance a year,assumption,Option tested in the hold-out arm only: DNSE-funded fee rebate for savers with six or more contributions in a row
+tier_option_gift_12,30000,30000,30000,VND,assumption,Option tested in a separate test arm only: fund units on the twelfth contribution in a row
+tier_option_fee_discount,0.001,0.001,0.001,share of fund balance a year,assumption,Option tested in a separate test arm only: DNSE-funded fee rebate for savers with six or more contributions in a row
 bonus_flat_annual,0,0,0,share of balance a year,assumption,Not used (the flat bonus of the plan_payday.md example is replaced by the tiers above)
 lending_share,0,0,0,share of balance,assumption,Phase 2 lending is excluded from the three scenarios
 lending_share_option,0.10,0.10,0.10,share of balance,assumption,Option only: ETF-secured lending to suitable savers from month 19 (plan_payday.md section 6.2)

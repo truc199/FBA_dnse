@@ -1,0 +1,27 @@
+Giả định,Bất lợi,Cơ sở,Thuận lợi,Loại,Căn cứ
+"TK ngủ (không dùng sản phẩm nào, 12/2025)",1.427.181,1.427.181,1.427.181,suy ra,DNSE Securities (2026c)
+Tỷ lệ TK ngủ là người đi làm và liên hệ được,15%,25%,35%,giả định,World Bank (2025); khảo sát trong pilot
+Số TK pilot (ba nhánh),45.000,45.000,45.000,giả định,Quyết định D4
+Tỷ lệ ghi danh của TK ngủ được liên hệ,1%,2%,4%,giả định,"Tài khoản Không Ngủ đạt 0,8% số TK; TCBS (2026)"
+Tỷ lệ ghi danh của khách hoạt động trong 12 tháng,2%,4%,6%,giả định,Số đăng ký Tài khoản Không Ngủ bằng 14% số khách hoạt động
+TK mới mỗi tháng,20.000,31.180,43.210,suy ra,DNSE Securities (2026c); VnExpress (2026a)
+Cài đặt trong 60 ngày sau khi mở TK,1%,2%,3%,giả định,Giả định
+Số doanh nghiệp ký mỗi quý,2,4,8,giả định,Kế hoạch go-to-market
+Tỷ lệ nhân viên ghi danh sau buổi giới thiệu,10%,20%,28%,giả định,Ashraf et al. (2006) làm cận trên
+Mức góp hằng tháng,800.000 đồng,1.000.000 đồng,1.500.000 đồng,giả định,"Khoảng 11% thu nhập bình quân 9,0 triệu đồng (National Statistics Office, 2026)"
+Tỷ lệ dừng ở kỳ góp thứ 2 và 3 (mỗi tháng),"15,0%","10,0%","6,0%",giả định,Giả định; pilot sẽ đo
+Tỷ lệ dừng sau kỳ góp thứ 3 (mỗi tháng),"4,0%","2,5%","1,5%",giả định,Giả định; pilot sẽ đo
+Tỷ lệ số dư bị rút mỗi năm,15%,10%,5%,giả định,Giả định; dòng tiền vào được gắn nguồn
+Biên của DNSE trên trái phiếu ngân hàng trong Trứng Vàng,"0,30%","0,60%","1,00%",giả định,Thi truong Tai chinh Tien te (2026a); DNSE Securities (n.d.-b)
+Phần phí quỹ trái phiếu trả cho đại lý phân phối,"0,22%","0,33%","0,44%",giả định,SSI Asset Management (2026); VCBF (2026); bản cáo bạch của quỹ
+Phần phí quỹ cổ phiếu trả cho đại lý phân phối,"0,38%","0,56%","0,75%",giả định,"Bản cáo bạch và factsheet của quỹ, 2026"
+"Đội xây dựng, tháng 1 đến 6","3,97 tỷ đồng","3,18 tỷ đồng","2,54 tỷ đồng",suy ra,Lương trung vị theo ITviec (2025)
+"Tích hợp, kiểm thử bảo mật, ý kiến pháp lý","1,50 tỷ đồng","1,00 tỷ đồng","0,60 tỷ đồng",giả định,VPBank (2024); giả định
+"Đội vận hành, mỗi năm","4,72 tỷ đồng","3,78 tỷ đồng","2,52 tỷ đồng",suy ra,Lương trung vị theo ITviec (2025)
+"Vận hành, tuân thủ và cloud, mỗi năm","1,80 tỷ đồng","1,20 tỷ đồng","0,80 tỷ đồng",giả định,Giả định
+"Nội dung và duyệt khuyến mại, mỗi năm","1,50 tỷ đồng","1,00 tỷ đồng","0,60 tỷ đồng",giả định,Giả định
+Chi phí tiếp cận mỗi TK ngủ được liên hệ,2.200 đồng,1.300 đồng,1.100 đồng,suy ra,Zalo Business Solutions (n.d.); MobiFone (n.d.)
+Phí ngân hàng mỗi kỳ góp,5.500 đồng,3.300 đồng,0 đồng,giả định,Giá niêm yết của VPBank (2024)
+Chi phí phục vụ mỗi người đang góp mỗi tháng,2.000 đồng,1.000 đồng,500 đồng,giả định,"Tin xác nhận qua Zalo, sao kê"
+Lãi suất chiết khấu,12%,12%,12%,giả định,Suất sinh lời tối thiểu
+Cơ cấu tài sản: Trứng Vàng / quỹ trái phiếu / quỹ cổ phiếu / ETF,như cơ sở,45/35/10/10,như cơ sở,giả định,Thiết kế: danh mục theo kỳ hạn mục tiêu

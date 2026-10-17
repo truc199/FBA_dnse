@@ -207,6 +207,8 @@ TK ≥10tr(t) = 27.100 + số saver có lũy kế đóng góp giữ lại ≥10 
 | Tháng 12 | Funded savers và số dư đạt ≥80% kế hoạch mô hình; CAC ≤ trần | 50–80% kế hoạch | <50% kế hoạch hai quý liên tiếp |
 | Tháng 24 | Doanh thu tháng ≥ chi phí vận hành tháng | — | Xem lại mô hình doanh thu (gói phí, phase 2) |
 
+*Đã điền số ngày 16/10: xem `outputs/round3/tables/payday_decision_gates.csv` và bảng test ở §9. Mẫu trên giữ lại để thấy logic. Chỗ nào khác nhau thì dùng số trong bảng cổng, ví dụ ngưỡng persistence nay là 81% để mở rộng, <60% thì dừng.*
+
 ---
 
 ## 6. Business case (slide của CFO): phương pháp và ví dụ minh họa
@@ -270,57 +272,97 @@ Viết `src/payday_model.py`, đọc `data/manual/payday_assumptions.csv`, xuấ
 
 ## 7. Go-to-market năm đầu (tháng 0 = Board duyệt)
 
-| Quý | Mục tiêu | Phân khúc | Kênh | Thông điệp | KPI |
-|---|---|---|---|---|---|
-| Q1 (tháng 1–3) | Xây MVP, tuân thủ, **beta nội bộ với nhân viên DNSE** | Nhân viên DNSE (dùng thật, thử độ ổn định) | Nội bộ | — | Shadow run ≥99,5%; xác nhận tuân thủ; lỗi nghiêm trọng = 0 |
-| Q2 (tháng 4–6) | **Pilot RCT** 20.000 TK ngủ (3 nhánh) | E2 có dấu hiệu đi làm | SMS, Zalo OA, email, push, Ensa | *"Your account is ready. Let payday do the investing."* Bước đầu 500k, không thưởng có điều kiện | Ghi danh ≥ ngưỡng hòa vốn; 3 kỳ ≥60%; tiền mới ≥80% |
-| Q3 (tháng 7–9) | Mở rộng trong tệp | E2 theo cohort tốt nhất; E1 theo kiểu core–satellite | Như trên + banner trong app cho khách hoạt động | *"Keep a core that grows while you trade."* | Funded savers theo kế hoạch; CAC ≤ trần |
-| Q4 (tháng 10–12) | Kênh mới | N1 | **Ngân hàng giữ VA** (khách nhận lương), **ZaloPay**, **3–5 doanh nghiệp** (phúc lợi nhân viên) | *"An employee benefit that invests your salary."* | Số doanh nghiệp ký; tỷ lệ tham gia trong doanh nghiệp |
+*Cập nhật 16/10 (Phase 2). Số lấy từ mô hình cohort, kịch bản base (`outputs/round3/tables/gtm_year1.csv`). Chi tiết ở `payday_spec.md` §11.1. Pilot tăng từ 20.000 lên 45.000 TK theo quyết định D4: cỡ mẫu này đủ để phát hiện chênh lệch khoảng 10 điểm về tỷ lệ đạt 6 kỳ giữa hai nhánh (`payday_pilot_power.csv`).*
 
-- **Giá:** miễn phí; doanh thu đến từ quỹ và Trứng Vàng; tier thưởng trên tiền đã đầu tư; điều khoản trên một màn hình.
-- **Không làm:** thưởng tiền khi mở TK; KOL kiểu "nhận tiền miễn phí"; nhắn tin dồn dập khi đã có tín hiệu từ chối.
-- **Ngân sách:** chia theo kênh, có trần CAC, giải ngân theo cổng.
-- **Nội dung giáo dục** (quản lý tài chính cá nhân, DCA, rủi ro) phải theo quy định quảng cáo chứng khoán, được pháp chế duyệt.
+| Quý | Mục tiêu | Phân khúc và kênh | Thông điệp | Cổng / KPI | Ghi danh trong quý | Cuối quý: funded / số dư | Chi phí |
+|---|---|---|---|---|---:|---|---:|
+| Q1 (tháng 1–3) | Xây MVP, ký đối tác, **beta nội bộ với TK nhân viên DNSE** | Nhân viên DNSE; nội bộ | — | Cổng 0: phí VA mục tiêu 0đ; chia phí quỹ ≥30%; biên trái phiếu ≥0,6 điểm; shadow run ≥99,5%; xác nhận tuân thủ bằng văn bản | 0 | 0 / 0 | 2,09 tỷ |
+| Q2 (tháng 4–6) | **Pilot RCT 45.000 TK ngủ**, 3 nhánh × 15.000 | E2 có dấu hiệu nhận lương; SMS, Zalo, push, email, Ensa; tối đa 3 lần liên hệ mỗi TK | *"Your account is ready. Let payday do the investing."* Từ 500.000đ, không thưởng khi đăng ký | Cổng 1: ghi danh ≥1,5% thì mở rộng, <1,0% thì dừng; ≥81% đạt 3 kỳ; ≥80% tiền mới; chi phí ròng dự báo ≤1,6 triệu/TK mới ≥10 triệu | 600 | 162 / 1,1 tỷ | 3,63 tỷ |
+| Q3 (tháng 7–9) | Mở rộng trong tệp | TK ngủ đủ điều kiện (E2); khách hoạt động (E1) qua banner trong app; TK mới qua bước lập kế hoạch khi mở TK | *"Keep a core that grows while you trade."* / *"Start your plan with your first deposit."* | Hằng tháng: funded và số dư so với đường kế hoạch; CAC/funded ≤127.512đ | 4.287 | 1.620 / 10,5 tỷ | 1,69 tỷ |
+| Q4 (tháng 10–12) | Mở kênh ngoài đầu tiên | Nhân viên của 3–5 doanh nghiệp (N1), qua buổi HR có người tư vấn; khách nhận lương của ngân hàng giữ VA | *"An employee benefit that invests your salary."* | Cổng 2: funded ≥3.962 (80% kế hoạch); số dư ≥24,1 tỷ; theo dõi tỷ lệ tham gia so với mức 39% cần đạt ở năm 2 | 4.527 | 4.953 / 30,1 tỷ | 1,80 tỷ |
+
+- **Năm 1 (base):** 9.414 saver ghi danh; 4.953 funded (≥3 kỳ liền); số dư 30,1 tỷ; chi 9,2 tỷ, trong đó marketing và chi phí tiếp cận 1,17 tỷ (13%). Downside: 1.503 funded, 7,9 tỷ số dư.
+- **Giá:** không phí nền tảng. Doanh thu từ phần chia phí quỹ và biên Trứng Vàng. Gói giữ chân phi tiền mặt (D1). Điều khoản trên một màn hình.
+- **Không làm:**
+  - thưởng tiền khi mở TK; KOL kiểu "nhận tiền miễn phí"; thưởng có điều kiện;
+  - nhắn lại người đã từ chối (tối đa 3 lần liên hệ);
+  - khuyến mại hoàn tiền qua đối tác. Một review 07/2026 viết "bị zalopay lừa mua chứng khoán hoàn 50k".
+- **ZaloPay:** không có trong năm 1 và không có trong mô hình. Để Phase 3 làm kênh nạp tiền thứ hai và thử round-up (`plan_tech.md` §3.8).
+- **Ngân sách:** giải ngân theo cổng. Board chỉ duyệt Phase 0–1 (6,6 tỷ).
+- **Nội dung giáo dục** (quản lý tài chính cá nhân, DCA, rủi ro) theo quy định quảng cáo chứng khoán, được pháp chế duyệt.
 
 ---
 
 ## 8. Lộ trình chiến lược
 
-| Phase | Thời gian | Mục tiêu | Sáng kiến | KPI / cổng |
-|---|---|---|---|---|
-| 0. Xây và tuân thủ | Tháng 0–3 | MVP an toàn, hợp pháp | Mục tiêu, khẩu vị rủi ro, 3 danh mục mẫu (người có chứng chỉ duyệt), VA, scheduler, order routing, dashboard minh bạch; thông báo UBCKNN; hợp đồng ngân hàng VA và quỹ; SLO reliability | Shadow run ≥99,5%; xác nhận bằng văn bản |
-| 1. Pilot | Tháng 3–6 | Kiểm giả định 1–7 | RCT 3 nhánh (đối chứng; Payday; Payday + tier mới); survey 2.000 TK ngủ | Ngưỡng §5.6 |
-| 2. Mở rộng trong tệp | Tháng 7–12 | Đạt quy mô có kiểm soát | Cohort tốt nhất; core–satellite cho E1; ZaloPay; bậc thang Trứng Vàng | Funded savers, CAC, persistence |
-| 3. Mở rộng ra ngoài | Tháng 13–24 | Kênh tạo mặc định | Chủ lao động (B2B2C); liên kết ngân hàng qua Open API (sau 01/03/2027) để **trích % lương**; tự động tăng tỷ lệ khi tăng lương; thử round-up; ETF làm tài sản đảm bảo (opt-in, nếu cơ quan quản lý chấp thuận) | TK ≥10 triệu; tháng hòa vốn vận hành |
-| 4. Tối ưu | Tháng 24–36 | Bản quản lý hoàn toàn | Hợp tác công ty quản lý quỹ, hoặc công ty con quản lý quỹ (ĐHĐCĐ đã duyệt chủ trương) | Doanh thu/saver; NPS |
+*Số từ `outputs/round3/tables/roadmap_phases.csv` (base). Chi tiết ở `payday_spec.md` §11.2. Slide 13 ghép thêm lộ trình hệ sinh thái của `plan_tech.md` §5.*
+
+| Phase | Tháng | Mục tiêu | Sáng kiến | Cổng | Chi phí | Cuối phase (base) |
+|---|---|---|---|---|---:|---|
+| 0. Xây và tuân thủ | 1–3 | MVP an toàn, hợp pháp | VA với ngân hàng đối tác (phí mục tiêu 0đ); hợp đồng 1–2 công ty quỹ; danh mục mẫu do người có chứng chỉ ký; thông báo UBCKNN và tham vấn về vai trò Trứng Vàng; scheduler tách khỏi bước kiểm sức mua; dashboard và trang số đo | Cổng 0 (tháng 3): điều khoản đối tác không kém mô hình; shadow run ≥99,5%; xác nhận tuân thủ | 2,09 tỷ | Tiền lũy kế −2,1 tỷ |
+| 1. Pilot | 4–6 | Đo ghi danh, duy trì, mức góp, tiền mới | RCT 45.000 TK: đối chứng / Payday / Payday + gói giữ chân; survey 2.000 TK ngủ do DNSE chạy | Cổng 1 (tháng 6): chi phí ròng dự báo ≤1,6 triệu/TK mới ≥10 triệu (kế hoạch 1,29); ghi danh ≥1,5%, dừng <1,0% | 3,63 tỷ | 600 saver; −5,7 tỷ |
+| 2. Mở rộng trong tệp | 7–12 | Quy mô có kiểm soát | Roll-out TK ngủ; in-app cho khách hoạt động; bước lập kế hoạch khi mở TK; nhóm hold-out cho gói giữ chân; 3–5 doanh nghiệp đầu tiên | Cổng 2 (tháng 12): funded ≥80% kế hoạch; CAC/funded ≤127.512đ | 3,49 tỷ | 9.414 ghi danh; 4.953 funded; 30,1 tỷ; −9,2 tỷ |
+| 3. Kênh ngoài | 13–24 | Kênh tạo mặc định | Doanh nghiệp qua buổi HR; trích % lương qua Open API (ngân hàng phải tuân thủ TT 64/2024 trước 01/03/2027, vẫn cần thỏa thuận riêng); tự tăng mức góp khi tăng lương; ZaloPay làm kênh nạp thứ hai, thử round-up | Cổng 3 (tháng 24): TK ≥10 triệu ≥80% kế hoạch; chi phí ròng ≤1,25 lần kế hoạch; doanh nghiệp tham gia ≥39% | 7,28 tỷ | 13.952 funded; 178 tỷ; 7.714 TK mới ≥10 triệu; −16,0 tỷ |
+| 4. Tối ưu | 25–36 | Bản quản lý hoàn toàn, kinh tế tốt hơn | Công ty quỹ đối tác hoặc công ty quỹ của DNSE (ĐHĐCĐ 2026); Trứng Vàng mở rộng với trái phiếu và chứng chỉ quỹ của Vietcombank, VietinBank, BIDV (kế hoạch 2026 của DNSE, tài liệu ĐHĐCĐ tr. 75) | Rà hằng quý: doanh thu so với chi phí vận hành; chi phí ròng/TK | 7,23 tỷ | 16.269 funded; 352 tỷ; 14.871 TK mới ≥10 triệu; −22,0 tỷ |
+
+- **Base không hòa vốn trong 60 tháng.** NPV −25,0 tỷ; tiền lũy kế tháng 60 là −32,0 tỷ; chi phí ròng 1,29 triệu cho mỗi TK mới ≥10 triệu. Upside: NPV +11,0 tỷ, hòa vốn tháng 24. Vì vậy đề nghị với Board là một quyền chọn theo giai đoạn (`review_phase1.md` D4, D6).
+- **Phương án để sau, không tính trong base:** khách tự chọn dùng ETF trong kế hoạch làm tài sản đảm bảo cho TK ký quỹ thường (mô hình giả định 10% số dư, từ tháng 19).
+  - NPV base cải thiện từ −25,0 lên −20,9 tỷ nhưng vẫn âm (`payday_option_lending.csv`).
+  - Phương án này đi ngược mục đích tiết kiệm và chạm đúng mảng ký quỹ bị phạt năm 2026.
+  - Vì vậy chỉ xét ở Cổng 3, khi pháp chế đồng ý và chủ đề trust dưới 10% review tiêu cực liên quan Payday.
 
 ---
 
 ## 9. Triển khai và kiểm chứng
 
-**RACI rút gọn:**
+**RACI:** bảng đầy đủ (10 việc × 8 vai) ở `payday_spec.md` §11.3 và `outputs/round3/tables/raci.csv`. Tóm tắt:
 
-| Vai trò | Phụ trách chính |
+| Vai trò | Vai trò chính |
 |---|---|
-| CEO | Bảo trợ dự án, quyết định ở các cổng |
-| CFO | Ngân sách, unit economics, chi phí tier |
-| CTO | Tích hợp VA, scheduler, SLO reliability, gắn nhãn dữ liệu |
-| Head of Product | Hành trình khách hàng, thử nghiệm, KPI |
-| Tuân thủ / Pháp chế | Thông báo UBCKNN, duyệt danh mục mẫu, rà quy định khuyến mại và quảng cáo |
-| Marketing / CRM | Tiếp cận khách, thông điệp |
-| Chăm sóc khách hàng | Chỉ số trust, rút tiền |
-| Đối tác | Ngân hàng, quỹ, ZaloPay, doanh nghiệp |
+| CEO | Bảo trợ dự án; quyết định ở các cổng (A), CFO và Head of Product chuẩn bị |
+| CFO | Điều khoản đối tác: ngân hàng VA, quỹ, nguồn trái phiếu (A/R); chuẩn bị quyết định ở các cổng: ngân sách, unit economics (R) |
+| CTO | MVP (scheduler, VA, phân bổ, dashboard); shadow run và cổng 99,5%; công bố số đo (R) |
+| Head of Product | Thiết kế và đọc RCT; tiếp cận khách (A); phàn nàn, rút tiền, xử lý sau sự cố (A); công bố số đo (A) |
+| Pháp chế | Thông báo UBCKNN, ý kiến pháp lý, duyệt khuyến mại; chịu trách nhiệm cuối về danh mục mẫu và quy tắc phù hợp |
+| Marketing / CRM | Thực hiện tiếp cận và thông điệp (R) |
+| Chăm sóc khách hàng | Phàn nàn, rút tiền, xử lý sau sự cố (R); chỉ số trust |
+| Người có chứng chỉ | Soạn và ký danh mục mẫu, quy tắc phù hợp (R) |
+
+**Risk register:** 6 rủi ro, chấm khả năng × tác động trên thang 1–5 (`risk_register.csv`; chi tiết ở `payday_spec.md` §11.4):
+- R1 app hoặc chuyển tiền lỗi đúng ngày lương: 20 (cao);
+- R2 quá ít TK ngủ ghi danh: 16 (cao);
+- R4 cơ quan quản lý phản đối vai trò Trứng Vàng hoặc luồng tư vấn: 15 (cao);
+- R3 điều khoản đối tác: 12;
+- R5 thị trường giảm hoặc xung đột lợi ích: 12;
+- R6 tiền kế hoạch bị chuyển sang giao dịch: 9.
+
+Stress test: cả hai cú sốc làm TK ≥10 triệu tháng 36 giảm 18,5%, nhưng tiền tháng 60 chỉ thay đổi −0,5 tỷ.
 
 **Chuỗi phụ thuộc:**
-- Ngân hàng VA → scheduler → pilot.
-- Đối tác quỹ → kệ sản phẩm.
-- Thông báo UBCKNN → ra mắt.
-- Cổng reliability → pilot.
+- Ngân hàng VA → scheduler → shadow run → pilot.
+- Hợp đồng quỹ → kệ sản phẩm. Nếu chậm, ra mắt với Trứng Vàng + ETF.
+- Thông báo UBCKNN và tham vấn Trứng Vàng → ra mắt. Quỹ trái phiếu là lõi dự phòng.
 - Gắn nhãn nguồn tiền → KPI tiền mới.
+- Thỏa thuận Open API (sau 01/03/2027) → trích % lương ở Phase 3.
 
-**Test (Table F6 cập nhật):** giữ test 1–7 của Round 2, sửa ngưỡng theo §5.5, và **thêm** 2 test:
-- **Test 8:** tỷ lệ tiền Payday rút sang sức mua (guardrail).
-- **Test 9:** CAC trên mỗi funded saver không vượt trần.
+**Test (Table F6 cập nhật bằng số của mô hình; `payday_decision_gates.csv`):**
+
+| # | Giả định | Test | Ngưỡng Round 2 | Ngưỡng Round 3 | Cổng |
+|---|---|---|---|---|---|
+| 1 | Nhiều TK ngủ là người đi làm có ý định đầu tư | Dữ liệu nội bộ; survey 2.000 TK ngủ | ≥30% có ý định | Giữ ≥30%. Mô hình giả định 25% TK ngủ đủ điều kiện (15–35%) | 1 |
+| 2 | Tư vấn và tự động biến ý định thành tiền | RCT 45.000 TK | 15% ghi danh trong 60 ngày; giữ 70% tiền ở ngày 90 | Ghi danh ≥1,5% để mở rộng, <1,0% thì dừng (hòa vốn 1,02% = 1.300đ ÷ 127.512đ); ≥81% đạt 3 kỳ, <60% thì dừng | 1 |
+| 3 | Gói giữ chân tăng persistence | Nhánh có và không có gói giữ chân | Tỷ lệ 6 kỳ tăng 10 điểm | Giữ 10 điểm; pilot 45.000 TK phát hiện được 9,9 điểm. Tier bằng tiền chỉ bật khi phí VA được miễn và tỷ lệ 12 kỳ đạt ≥73,3% (base 64,5%) | 2 |
+| 4 | Tính năng minh bạch tăng tỷ lệ cài đặt | A/B màn hình phí và số đo | Tỷ lệ cài đặt +5 điểm | Giữ | 1 |
+| 5 | Luồng tư vấn tuân thủ | Rà tuân thủ; thông báo UBCKNN | Xác nhận bằng văn bản | Giữ; thêm tham vấn về vai trò Trứng Vàng | 0 |
+| 6 | Chuyển tiền tin cậy | Load test; shadow run | 99,5% chuyển thành công | ≥99,5% ghi có trong cùng ngày làm việc; đo lại hằng tháng sau ra mắt | 0, hằng tháng |
+| 7 | Tiền vào là tiền mới; chi phí đơn vị giảm | Gắn nhãn nguồn tiền; theo dõi chi phí | 80% tiền mới; chi phí dưới 7,3 triệu/TK có tiền | ≥80% tiền mới; chi phí ròng ≤1,6 triệu/TK mới ≥10 triệu (kế hoạch 1,29), dừng >2,6 triệu | 1, 3 |
+| 8 (mới) | Tiền kế hoạch không bị chuyển sang giao dịch | Tỷ lệ tiền rút sang sức mua | — | ≤10% số tiền rút | Hằng tháng |
+| 9 (mới) | CAC trên mỗi funded saver không vượt trần | CAC ÷ tỷ lệ đạt 3 kỳ | — | ≤127.512đ (base 80.247đ) | 2 |
+| 10 (mới) | Mức góp đủ để hoàn vốn | Mức góp bình quân | — | ≥1.000.000đ; dừng <716.502đ | 1 |
+| 11 (mới) | Điều khoản đối tác giữ được kinh tế | Phí VA mỗi kỳ góp | — | Mục tiêu 0đ; dừng >6.191đ (miễn phí thì trần CAC tăng từ 127.512đ lên 198.876đ) | 0 |
+| 12 (mới) | Kênh doanh nghiệp đáng làm | Tỷ lệ tham gia sau buổi HR | — | ≥39%; dừng <20% | 3 |
+
+*Ngưỡng 15% của Round 2 cao gần 20 lần mức Tài khoản Không Ngủ đạt được (0,8% số TK sau khoảng 6 tháng). Ngưỡng mới suy ra từ trần CAC. Đây là một mục của slide "What changed".*
 
 ---
 

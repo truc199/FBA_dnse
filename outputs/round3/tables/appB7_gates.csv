@@ -1,0 +1,18 @@
+Gate,Measure,Scale if,Adjust if,Stop if,Owner
+Gate 0: before the pilot,Partner terms signed: bank fee per contribution; share of fund fees paid to DNSE; DNSE's margin on bank bonds in Golden Egg,"Fee ≤ VND 3,300; fund share ≥ 30%; margin ≥ 0.6 points",Worse on any term: re-run the model and renegotiate before the pilot,Fund or bank partner not signed (launch dependency),CFO
+Gate 0: before the pilot,"Bank fee per contribution (virtual-account collection), VND",0 (partner bank keeps the deposits),"1 to 3,300 (list price)","> 6,191: a dormant saver no longer pays back",CFO
+Gate 0: before the pilot,Shadow payday runs with staff accounts: transfers credited on time,≥ 99.5%,-,< 99.5%: delay the pilot,CTO
+Gate 1: pilot read-out,"Projected net cost per new account above VND 10 million by month 60 (model re-run with the pilot's measured values and the signed terms), VND million",≤ 1.6 (1.25 x plan),1.6 to 2.6,> 2.6 (2 x plan),CFO
+Gate 1: pilot read-out,Enrolment rate of treated dormant accounts (set-up and first contribution within 60 days),≥ 1.5%,1.0% to 1.5%,< 1.0%,Head of Product
+Gate 1: pilot read-out,Savers making three contributions in a row,≥ 81.0%,60.0% to 81.0%,< 60.0%,Head of Product
+Gate 1: pilot read-out,"Average monthly contribution, VND","≥ 1,000,000","716,502 to 1,000,000","< 716,502",CFO
+Gate 1: pilot read-out,Share of plan inflows that is new money (tagged by source),≥ 80%,60% to 80%,< 60%,CFO
+Gate 1: pilot read-out,Scheduled transfers credited on time,≥ 99.5%,-,< 99.5% (launch gate),CTO
+Gate 1: pilot read-out,Compliance: SSC notice filed; model portfolios signed off by a licensed adviser,Written confirmation,-,Missing (launch gate),Compliance
+Gate 2: first roll-out year,Funded savers (three or more contributions in a row),"≥ 3,962 (80% of plan)","2,476 to 3,962","< 2,476 for two quarters",Head of Product
+Gate 2: first roll-out year,"Plan balances, VND billion",≥ 24.1 (80% of plan),15.1 to 24.1,< 15.1 for two quarters,CFO
+Gate 2: first roll-out year,"Acquisition cost per funded saver, VND","≤ 127,512 (CAC ceiling)",-,"> 127,512 for two quarters",CFO
+Gate 3: scale-up review,Monthly plan revenue against monthly running cost,≥ 16% (plan),-,< 2% (downside path): review the revenue model,CFO
+Gate 3: scale-up review,New accounts above VND 10 million from the plan,"≥ 6,171 (80% of plan)",-,"< 1,140 (downside path)",CEO
+Gate 3: scale-up review,Employer channel: share of employees who enrol after the HR session,≥ 39%,20% to 39%: lower the cost per employer,< 20%: stop the channel,Head of Product
+Gate 3: scale-up review,"Net cost per new account above VND 10 million to date, VND million",≤ 2.6 (1.25 x plan),2.6 to 4.1,> 4.1: fold into the core app team or stop,CFO

@@ -1,0 +1,266 @@
+table,en,vi
+,"MVP build: scheduler, virtual accounts, allocation, dashboard","Xây MVP: bộ lập lịch, VA, phân bổ, dashboard"
+,Shadow payday runs and the ⟦0⟧% reliability gate,Chạy thử ngày lương và cổng độ ổn định ⟦0⟧%
+,Randomised pilot: design and read-out,Pilot ngẫu nhiên: thiết kế và đọc kết quả
+,Outreach and messages,Tiếp cận và thông điệp
+,"Complaints, withdrawals and recovery after failures","Khiếu nại, rút tiền và khắc phục sau sự cố"
+,Monthly service metrics published,Công bố số đo dịch vụ hằng tháng
+,Risk,Rủi ro
+,Likelihood × impact,Khả năng × tác động
+,Mitigation,Giảm thiểu
+,Early warning,Cảnh báo sớm
+,A payday transfer or the app fails on a payday,Lệnh chuyển ngày lương hoặc app lỗi đúng ngày lương
+,Shadow payday runs before launch; contribution scheduler kept apart from the pre-trade buying-power check; no app release in the days before peak contribution dates; staged releases; status page and post-incident note,Chạy thử ngày lương trước khi ra mắt; bộ lập lịch kỳ góp tách khỏi bước kiểm tra sức mua trước giao dịch; không phát hành app trong các ngày trước ngày góp cao điểm; phát hành theo đợt; trang trạng thái và ghi chú sau sự cố
+,Contributions credited on time below ⟦0⟧% in any month,Tỷ lệ kỳ góp được ghi có đúng hạn dưới ⟦0⟧% trong bất kỳ tháng nào
+,Too few dormant accounts enrol,Quá ít TK ngủ ghi danh
+,Randomised pilot with ⟦0⟧ accounts before any roll-out; Gate ⟦1⟧ stop line at ⟦2⟧%; plan step at account opening; message tests across arms,Pilot ngẫu nhiên với ⟦0⟧ TK trước mọi bước mở rộng; ngưỡng dừng ở Cổng ⟦1⟧ là ⟦2⟧%; bước lập kế hoạch khi mở TK; thử thông điệp giữa các nhánh
+,Enrolment of treated accounts below ⟦0⟧% at month ⟦1⟧,Tỷ lệ ghi danh của TK được can thiệp dưới ⟦0⟧% ở tháng ⟦1⟧
+,The regulator objects to Golden Egg's role or to the advice flow,Cơ quan quản lý phản đối vai trò của Trứng Vàng hoặc luồng tư vấn
+,SSC notice and pre-consultation before launch; model plans signed by a licensed adviser; bond funds ready as the alternative safe core,Thông báo và tham vấn trước UBCKNN trước khi ra mắt; danh mục mẫu do người hành nghề có chứng chỉ ký; quỹ trái phiếu sẵn sàng làm lõi an toàn thay thế
+,Written query or objection from the SSC,UBCKNN có văn bản hỏi hoặc phản đối
+,"Partner terms leave too little per saver (bank fee, fund-fee share, bond margin)","Điều khoản đối tác để lại quá ít cho mỗi người tích lũy (phí ngân hàng, phần phí quỹ, biên trái phiếu)"
+,"Gate ⟦0⟧ terms: collection fee target VND ⟦1⟧ (the bank keeps the deposits), fund-fee share >= ⟦2⟧%, bond margin >= ⟦3⟧ points; re-run the model before the pilot","Điều khoản ở Cổng ⟦0⟧: mục tiêu phí thu hộ ⟦1⟧ đồng (ngân hàng giữ tiền gửi), phần phí quỹ ≥ ⟦2⟧%, biên trái phiếu ≥ ⟦3⟧ điểm; chạy lại mô hình trước pilot"
+,Signed fee above VND ⟦0⟧ per contribution,Phí ký kết trên ⟦0⟧ đồng mỗi kỳ góp
+,A market fall or a conflict of interest damages trust,Thị trường giảm hoặc xung đột lợi ích làm tổn hại niềm tin
+,Plans follow the goal horizon (no equities for goals under ⟦0⟧ years); no DNSE-issued bonds in the default plan; bad-month cost shown in VND before confirming,Danh mục theo kỳ hạn mục tiêu (không có cổ phiếu cho mục tiêu dưới ⟦0⟧ năm); không có trái phiếu do DNSE phát hành trong danh mục mặc định; hiện mức lỗ của một tháng xấu bằng đồng trước khi xác nhận
+,Trust themes above ⟦0⟧% of Payday-related negative reviews,Chủ đề niềm tin vượt ⟦0⟧% review tiêu cực liên quan Payday
+,Plan money is moved to trading or comes from existing balances,Tiền kế hoạch bị chuyển sang giao dịch hoặc đến từ số dư sẵn có
+,Inflows tagged by source; withdrawals go to the linked bank by default; a separate step with a goal reminder before moving money to buying power,Gắn nguồn cho dòng tiền vào; mặc định rút về ngân hàng liên kết; có bước riêng kèm nhắc mục tiêu trước khi chuyển tiền sang sức mua
+,"New money below ⟦0⟧% of inflows, or more than ⟦1⟧% of withdrawals moved to buying power","Tiền mới dưới ⟦0⟧% dòng tiền vào, hoặc hơn ⟦1⟧% tiền rút được chuyển sang sức mua"
+,Ask,Đề nghị
+,Detail,Chi tiết
+,Budget,Ngân sách
+,VND ⟦0⟧ billion for months ⟦1⟧ to ⟦2⟧ (⟦3⟧ plus ⟦4⟧% contingency),⟦0⟧ tỷ đồng cho tháng ⟦1⟧ đến ⟦2⟧ (⟦3⟧ tỷ cộng ⟦4⟧% dự phòng)
+,Decision ⟦0⟧,Quyết định ⟦0⟧
+,Choose the virtual-account bank; collection fee target VND ⟦0⟧,Chọn ngân hàng VA; mục tiêu phí thu hộ ⟦0⟧ đồng
+,Sign ⟦0⟧ to ⟦1⟧ fund managers,Ký với ⟦0⟧–⟦1⟧ công ty quỹ
+,File the SSC notice; pre-consult on Golden Egg's role,Nộp thông báo UBCKNN; tham vấn trước về vai trò của Trứng Vàng
+,Have a licensed adviser sign the model plans,Có người hành nghề có chứng chỉ ký danh mục mẫu
+,Accept about VND ⟦0⟧ million per new funded account as the gate yardstick,Chấp nhận khoảng ⟦0⟧ triệu đồng mỗi TK mới trên 10 triệu làm thước đo ở các cổng
+,Data,Dữ liệu
+,Used for,Dùng cho
+,"Accounts, active customers and funded accounts, December ⟦0⟧","Số TK, khách hoạt động và TK có từ 10 triệu, tháng 12/⟦0⟧"
+,DNSE Annual Report ⟦0⟧ (DNSE Securities 2026c),Báo cáo thường niên ⟦0⟧ của DNSE (DNSE Securities 2026c)
+,"Problem, sizing, model inputs","Vấn đề, quy mô, thông số mô hình"
+,"DNSE financial statements, Q1 ⟦0⟧ to Q2 ⟦1⟧","BCTC của DNSE, Q1/⟦0⟧ đến Q2/⟦1⟧"
+,DNSE filings via Vietcap Securities (⟦0⟧),Hồ sơ công bố của DNSE qua Vietcap Securities (⟦0⟧)
+,"Brokerage loss, platform cost per funded account","Lỗ môi giới, chi phí nền tảng mỗi TK có từ 10 triệu"
+,"Market shares of accounts, investor cash, margin loans and profit","Thị phần TK, tiền nhà đầu tư, dư nợ margin và lợi nhuận"
+,"HNX, VSDC and press reports, reconciled in Round ⟦0⟧","HNX, VSDC và báo chí, đối chiếu ở Vòng ⟦0⟧"
+,Slide ⟦0⟧,Slide ⟦0⟧
+,"App reviews of DNSE, VPS and FPTS, ⟦0⟧ to ⟦1⟧","Review app của DNSE, VPS và FPTS, ⟦0⟧ đến ⟦1⟧"
+,Google Play and App Store; Round ⟦0⟧ cleaning; ⟦1⟧ negative ⟦2⟧ reviews coded by hand,Google Play và App Store; làm sạch theo Vòng ⟦0⟧; ⟦1⟧ review tiêu cực năm ⟦2⟧ được mã hóa thủ công
+,Slides ⟦0⟧ and ⟦1⟧; Appendices D and F,Slide ⟦0⟧ và ⟦1⟧; Phụ lục D và F của deck
+,"Rates, fees and product terms, October ⟦0⟧","Lãi suất, phí và điều khoản sản phẩm, tháng 10/⟦0⟧"
+,⟦0⟧ web sources with access dates (sources_round3.csv),⟦0⟧ nguồn web có ngày truy cập (sources_round3.csv)
+,"Model inputs; slides ⟦0⟧, ⟦1⟧ and ⟦2⟧","Thông số mô hình; slide ⟦0⟧, ⟦1⟧ và ⟦2⟧"
+,Wages paid into an account,Lương trả qua tài khoản
+,World Bank (⟦0⟧) Global Findex,World Bank (⟦0⟧) Global Findex
+,Share of salaried dormant holders,Tỷ lệ người đi làm trong nhóm TK ngủ
+,Method,Phương pháp
+,What it does,Làm gì
+,How it was checked,Kiểm tra thế nào
+,Monthly cohort model,Mô hình cohort theo tháng
+,"Follows each month's new savers: stop rates, contributions, withdrawals and who passes VND ⟦0⟧ million","Theo dõi người tích lũy mới của từng tháng: tỷ lệ dừng, kỳ góp, rút tiền và ai vượt ⟦0⟧ triệu đồng"
+,"⟦0⟧ tests pass, including the worked example of the Round ⟦1⟧ plan","⟦0⟧ phép kiểm đều đạt, gồm ví dụ tính tay của kế hoạch Vòng ⟦1⟧"
+,Calendar engine,Bộ máy theo lịch
+,"Runs the same cohorts in calendar time, so a shock hits every cohort at once","Chạy cùng các cohort theo thời gian lịch, nên một cú sốc tác động đến mọi cohort cùng lúc"
+,Matches the cohort engine exactly when there is no shock,Khớp hoàn toàn với bộ máy cohort khi không có cú sốc
+,Unit economics,Kinh tế đơn vị
+,CAC ceiling = present value of net revenue per saver over ⟦0⟧ months at ⟦1⟧%,"Trần CAC = giá trị hiện tại của doanh thu ròng mỗi người tích lũy trong ⟦0⟧ tháng, chiết khấu ⟦1⟧%"
+,Break-even enrolment = reach cost ÷ CAC ceiling,Tỷ lệ ghi danh hòa vốn = chi phí tiếp cận ÷ trần CAC
+,Decision gates,Cổng quyết định
+,Stop and scale lines solved from the model by bisection,Ngưỡng dừng và ngưỡng mở rộng được giải từ mô hình bằng phương pháp chia đôi
+,Programme test: net cost per new funded account,Phép thử cho cả chương trình: chi phí ròng mỗi TK mới trên 10 triệu
+,Review coding,Mã hóa review
+,"⟦0⟧ negative ⟦1⟧ reviews read one by one; ⟦2⟧ cause codes, several allowed per review","⟦0⟧ review tiêu cực năm ⟦1⟧ được đọc từng cái; ⟦2⟧ mã nguyên nhân, một review có thể mang nhiều mã"
+,⟦0⟧% Wilson intervals; compared with the Round ⟦1⟧ keyword rule,Khoảng tin cậy Wilson ⟦0⟧%; so với quy tắc từ khóa của Vòng ⟦1⟧
+,Cost,Chi phí
+,of which build,trong đó xây dựng
+,Revenue,Doanh thu
+,Cumulative cash at end,Dòng tiền lũy kế cuối kỳ
+,Phase ⟦0⟧: build and comply,Phase ⟦0⟧: xây dựng và tuân thủ
+,Phase ⟦0⟧: pilot,Phase ⟦0⟧: pilot
+,Phase ⟦0⟧: scale in the base,Phase ⟦0⟧: mở rộng trong tệp khách
+,Phase ⟦0⟧: outside channels,Phase ⟦0⟧: kênh bên ngoài
+,Phase ⟦0⟧: optimise,Phase ⟦0⟧: tối ưu
+,Years ⟦0⟧ and ⟦1⟧,Năm ⟦0⟧ và ⟦1⟧
+,Bank fee,Phí ngân hàng
+,Reward design,Thiết kế phần thưởng
+,"Reward cost, % of revenue","Chi phí thưởng, % doanh thu"
+,CAC ceiling,Trần CAC
+,⟦0⟧-contribution rate needed,Tỷ lệ đạt ⟦0⟧ kỳ cần có
+,Base bank fee,Phí ngân hàng cơ sở
+,"Round ⟦0⟧ tiers made small: 10k / 20k / 50k gifts, ⟦1⟧-point fee rebate from ⟦2⟧, Golden Egg +⟦3⟧ points from ⟦4⟧","Bậc thưởng Vòng ⟦0⟧ thu nhỏ: quà 10k / 20k / 50k, hoàn phí ⟦1⟧ điểm từ kỳ ⟦2⟧, Trứng Vàng +⟦3⟧ điểm từ kỳ ⟦4⟧"
+,not reachable,không thể đạt
+,"Tested option: 30k gift at ⟦0⟧, ⟦1⟧-point fee rebate from ⟦2⟧","Phương án thử: quà 30k ở kỳ ⟦0⟧, hoàn phí ⟦1⟧ điểm từ kỳ ⟦2⟧"
+,MVP (decision D1): non-cash features only,MVP (quyết định D1): chỉ có tính năng không bằng tiền
+,Bank fee waived,Miễn phí ngân hàng
+,Cause,Nguyên nhân
+,Google Play,Google Play
+,App Store,App Store
+,Both stores,Cả hai kho
+,⟦0⟧% interval,Khoảng tin cậy ⟦0⟧%
+,"Login, OTP and authentication","Đăng nhập, OTP và xác thực"
+,Deposits or withdrawals not credited,Nạp hoặc rút không được ghi có
+,"Orders, prices and settlement","Lệnh, giá và thanh toán"
+,"Crashes, freezes and lag","Văng app, treo và giật lag"
+,eKYC and account opening,eKYC và mở TK
+,"Fees and terms (closure, auto-renewal)","Phí và điều khoản (đóng TK, tự tái tục)"
+,Scam claims and rewards,Tố lừa đảo và phần thưởng
+,"Other (service, interface, Ensa, no reason)","Khác (dịch vụ, giao diện, Ensa, không nêu lý do)"
+,Something broke (any of the first five causes),Có thứ bị hỏng (bất kỳ nguyên nhân nào trong năm nhóm đầu)
+,"Fees, terms, scam claims or rewards","Phí, điều khoản, tố lừa đảo hoặc phần thưởng"
+,Login/OTP failures or money not credited,Lỗi đăng nhập/OTP hoặc tiền không được ghi có
+,"Posted ⟦0⟧-⟦1⟧ March ⟦2⟧, after the outage DNSE disclosed for ⟦3⟧ March","Đăng ngày ⟦0⟧–⟦1⟧/3/⟦2⟧, sau sự cố DNSE công bố ngày ⟦3⟧/3"
+,Blames an app update,Đổ lỗi cho bản cập nhật app
+,Negative reviews coded,Số review tiêu cực đã mã hóa
+,Month,Tháng
+,Negative reviews,Review tiêu cực
+,Something broke,Có thứ bị hỏng
+,Posted ⟦0⟧–⟦1⟧ March,Đăng ngày ⟦0⟧–⟦1⟧/3
+,⟦0⟧. Notice the offer,⟦0⟧. Thấy lời mời
+,⟦0⟧. Make a plan,⟦0⟧. Lập kế hoạch
+,⟦0⟧. Set up the money,⟦0⟧. Cài đặt dòng tiền
+,⟦0⟧. First payday,⟦0⟧. Ngày lương đầu tiên
+,⟦0⟧. Build the habit (to day ⟦1⟧),⟦0⟧. Tạo thói quen (đến ngày ⟦1⟧)
+,⟦0⟧. Withdraw or keep going,⟦0⟧. Rút tiền hoặc tiếp tục
+,Goal,Mục tiêu
+,Decide whether this is worth a look,Quyết định có đáng xem không
+,Know what to put in and why,Biết nên góp gì và vì sao
+,Make saving automatic,Tự động hóa việc tiết kiệm
+,See the first money arrive and get invested,Thấy khoản tiền đầu tiên về và được đầu tư
+,Keep going without thinking about it,Tiếp tục mà không phải nghĩ
+,Get money out when needed,Rút được tiền khi cần
+,Actions,Hành động
+,Opens a Zalo message or app banner,Mở tin nhắn Zalo hoặc banner trong app
+,"Sets a goal, answers ⟦0⟧ questions, confirms the plan","Đặt mục tiêu, trả lời ⟦0⟧ câu hỏi, xác nhận kế hoạch"
+,Creates a monthly transfer in the salary bank's app,Lập lệnh chuyển hằng tháng trong app ngân hàng nhận lương
+,Gets paid; the bank sends the transfer,Nhận lương; ngân hàng thực hiện lệnh chuyển
+,Reads the payday reminder; skips a month if needed,Đọc lời nhắc ngày lương; bỏ qua một tháng nếu cần
+,Withdraws to the bank or skips a month,Rút về ngân hàng hoặc bỏ qua một tháng
+,Touchpoints,Điểm chạm
+,"Zalo template message, SMS, push, banner","Tin nhắn mẫu Zalo, SMS, push, banner"
+,"Ensa, plan screen, fee screen","Ensa, màn hình kế hoạch, màn hình phí"
+,"Personal account card, bank app link, QR","Thẻ số tài khoản riêng, link app ngân hàng, QR"
+,"""Received"" and ""Invested"" notices","Thông báo ""Đã nhận"" và ""Đã đầu tư"""
+,Reminder naming the goal; streak; statement,Lời nhắc có tên mục tiêu; chuỗi kỳ góp; sao kê
+,Withdrawal screen,Màn hình rút tiền
+,Thinking,Suy nghĩ
+,"""Is this another reward with conditions?""","""Lại là một kiểu thưởng có điều kiện à?"""
+,"""What am I buying, and what can I lose?""","""Mình đang mua gì, và có thể mất bao nhiêu?"""
+,"""Will my bank transfer actually reach DNSE?""","""Tiền chuyển từ ngân hàng có về DNSE thật không?"""
+,"""Did it arrive? Where is my money now?""","""Tiền về chưa? Giờ tiền của mình đang ở đâu?"""
+,"""Is it still worth it this month?""","""Tháng này còn đáng góp không?"""
+,"""How fast, and what does it cost to take it out?""","""Rút ra mất bao lâu, tốn bao nhiêu?"""
+,Feeling (to test in the pilot),Cảm xúc (kiểm chứng trong pilot)
+,Sceptical,Hoài nghi
+,Unsure,Phân vân
+,Impatient,Sốt ruột
+,Anxious then relieved,Lo rồi nhẹ nhõm
+,Motivated or forgetful,Có động lực hoặc hay quên
+,Wary,Dè chừng
+,Pain points today (evidence),Điểm đau hiện nay (bằng chứng)
+,Distrusting offers after the ⟦0⟧ sign-up reward (trust themes ⟦1⟧% of negative Google Play reviews in H1 ⟦2⟧),Nghi ngờ ưu đãi sau đợt thưởng mở TK ⟦0⟧ (chủ đề niềm tin chiếm ⟦1⟧% review tiêu cực trên Google Play H1/⟦2⟧)
+,Finding portfolio choices hard (⟦0⟧% of investors find managing a portfolio difficult),Thấy khó chọn danh mục (⟦0⟧% nhà đầu tư thấy tự quản lý danh mục là khó)
+,Leaving the app to set up a transfer; failing eKYC and account steps (⟦0⟧% of ⟦1⟧ negative reviews),Phải rời app để lập lệnh chuyển; lỗi eKYC và các bước mở TK (⟦0⟧% review tiêu cực năm ⟦1⟧)
+,Waiting for deposits the bank says were sent (⟦0⟧% of ⟦1⟧ negative reviews),Chờ khoản nạp mà ngân hàng báo đã chuyển (⟦0⟧% review tiêu cực năm ⟦1⟧)
+,"Postponing each month; apps that crash, freeze or lag (⟦0⟧% of ⟦1⟧ negative reviews)","Trì hoãn mỗi tháng; app văng, treo hoặc giật lag (⟦0⟧% review tiêu cực năm ⟦1⟧)"
+,"Losing money on a ⟦0⟧-month Golden Egg without seeing why (⟦1⟧ review) or on an auto-renewal the customer did not want (⟦2⟧ review, product not named); withdrawals blocked when the bank-account name does not match (⟦3⟧ review)","Mất tiền với Trứng Vàng ⟦0⟧ tháng mà không hiểu vì sao (review ⟦1⟧) hoặc vì tự tái tục ngoài ý muốn (review ⟦2⟧, không nêu tên sản phẩm); bị chặn rút khi tên tài khoản ngân hàng không khớp (review ⟦3⟧)"
+,Remove sign-up rewards; say in one line what the plan is and who approves it,Bỏ thưởng mở TK; nói trong một dòng kế hoạch là gì và ai duyệt
+,Ask ⟦0⟧ questions; set the plan by goal horizon; show a bad month in VND,Hỏi ⟦0⟧ câu; lập kế hoạch theo kỳ hạn mục tiêu; hiện một tháng xấu bằng đồng
+,Give a personal account number with a bank-app link and QR; aim for ⟦0⟧ minutes and no more steps than VCB Digibank SIP,Cấp số tài khoản riêng kèm link app ngân hàng và QR; nhắm ⟦0⟧ phút và số bước không nhiều hơn SIP trên VCB Digibank
+,Credit to a personal virtual account automatically; confirm within minutes; publish the on-time rate,Tự động ghi có vào VA riêng; xác nhận trong vài phút; công bố tỷ lệ đúng hạn
+,Send a reminder that names the goal; keep a streak; allow one skip a year,Gửi lời nhắc có tên mục tiêu; giữ chuỗi kỳ góp; cho bỏ qua 1 tháng mỗi năm
+,Show arrival time and cost in VND before confirming; withdraw to the linked bank free; add a step before moving money to trading,Hiện giờ tiền về và chi phí bằng đồng trước khi xác nhận; rút miễn phí về ngân hàng liên kết; thêm một bước trước khi chuyển tiền sang giao dịch
+,Metric,Số đo
+,Open and tap-through rates,Tỷ lệ mở và bấm xem
+,Plans confirmed after the suitability check,Tỷ lệ kế hoạch được xác nhận sau bước đánh giá phù hợp
+,Set-up completion and time,Tỷ lệ và thời gian cài đặt xong
+,Contributions credited on the same banking day (>= ⟦0⟧%),Kỳ góp được ghi có trong cùng ngày làm việc (≥ ⟦0⟧%)
+,Savers making ⟦0⟧ contributions in a row,Tỷ lệ người tích lũy góp ⟦0⟧ kỳ liền
+,Median withdrawal time; share moved to buying power,Thời gian rút trung vị; tỷ lệ chuyển sang sức mua
+,Head of Product; licensed adviser,Trưởng sản phẩm; người hành nghề tư vấn
+,CTO; partner bank,CTO; ngân hàng đối tác
+,Yes: first money in,Có: tiền vào lần đầu
+,Yes: first money out,Có: tiền ra lần đầu
+,Assumption,Giả định
+,Type,Loại
+,Basis,Căn cứ
+,"Dormant accounts (used no product, Dec ⟦0⟧)","TK ngủ (không dùng sản phẩm nào, 12/⟦0⟧)"
+,derived,suy ra
+,DNSE Securities (2026c),DNSE Securities (2026c)
+,Share of dormant accounts salaried and reachable,Tỷ lệ TK ngủ là người đi làm và liên hệ được
+,assumption,giả định
+,World Bank (⟦0⟧); pilot survey,World Bank (⟦0⟧); khảo sát trong pilot
+,Pilot accounts (three arms),Số TK pilot (ba nhánh)
+,Decision D4,Quyết định D4
+,Enrolment of contacted dormant accounts,Tỷ lệ ghi danh của TK ngủ được liên hệ
+,Never-Sleeping Account reached ⟦0⟧% of accounts; TCBS (⟦1⟧),Tài khoản Không Ngủ đạt ⟦0⟧% số TK; TCBS (⟦1⟧)
+,Enrolment of active customers over ⟦0⟧ months,Tỷ lệ ghi danh của khách hoạt động trong ⟦0⟧ tháng
+,Never-Sleeping Account sign-ups equal ⟦0⟧% of active customers,Số đăng ký Tài khoản Không Ngủ bằng ⟦0⟧% số khách hoạt động
+,New accounts a month,TK mới mỗi tháng
+,DNSE Securities (2026c); VnExpress (2026a),DNSE Securities (2026c); VnExpress (2026a)
+,Set-up within ⟦0⟧ days of opening,Cài đặt trong ⟦0⟧ ngày sau khi mở TK
+,Employers signed a quarter,Số doanh nghiệp ký mỗi quý
+,Go-to-market plan,Kế hoạch go-to-market
+,Employees who enrol after an HR session,Tỷ lệ nhân viên ghi danh sau buổi giới thiệu
+,Ashraf et al. (⟦0⟧) as upper bound,Ashraf et al. (⟦0⟧) làm cận trên
+,Monthly contribution,Mức góp hằng tháng
+,"About ⟦0⟧% of the VND ⟦1⟧ million average income (National Statistics Office, ⟦2⟧)","Khoảng ⟦0⟧% thu nhập bình quân ⟦1⟧ triệu đồng (National Statistics Office, ⟦2⟧)"
+,"Stop rate, 2nd and 3rd contributions (a month)",Tỷ lệ dừng ở kỳ góp thứ 2 và 3 (mỗi tháng)
+,Assumption; pilot measures it,Giả định; pilot sẽ đo
+,Stop rate after the 3rd contribution (a month),Tỷ lệ dừng sau kỳ góp thứ 3 (mỗi tháng)
+,Balances withdrawn a year,Tỷ lệ số dư bị rút mỗi năm
+,Assumption; inflows tagged,Giả định; dòng tiền vào được gắn nguồn
+,DNSE margin on bank bonds in Golden Egg,Biên của DNSE trên trái phiếu ngân hàng trong Trứng Vàng
+,Thi truong Tai chinh Tien te (2026a); DNSE Securities (n.d.-b),Thi truong Tai chinh Tien te (2026a); DNSE Securities (n.d.-b)
+,Distributor share of bond-fund fees,Phần phí quỹ trái phiếu trả cho đại lý phân phối
+,SSI Asset Management (⟦0⟧); VCBF (⟦1⟧); fund prospectuses,SSI Asset Management (⟦0⟧); VCBF (⟦1⟧); bản cáo bạch của quỹ
+,Distributor share of equity-fund fees,Phần phí quỹ cổ phiếu trả cho đại lý phân phối
+,"Fund prospectuses and factsheets, ⟦0⟧","Bản cáo bạch và factsheet của quỹ, ⟦0⟧"
+,"Build team, months ⟦0⟧ to ⟦1⟧","Đội xây dựng, tháng ⟦0⟧ đến ⟦1⟧"
+,ITviec (⟦0⟧) salary medians,Lương trung vị theo ITviec (⟦0⟧)
+,"Integration, security tests, legal opinions","Tích hợp, kiểm thử bảo mật, ý kiến pháp lý"
+,VPBank (⟦0⟧); assumption,VPBank (⟦0⟧); giả định
+,"Running team, a year","Đội vận hành, mỗi năm"
+,"Operations, compliance and cloud, a year","Vận hành, tuân thủ và cloud, mỗi năm"
+,"Content and promotion review, a year","Nội dung và duyệt khuyến mại, mỗi năm"
+,Zalo Business Solutions (n.d.); MobiFone (n.d.),Zalo Business Solutions (n.d.); MobiFone (n.d.)
+,Bank fee per contribution,Phí ngân hàng mỗi kỳ góp
+,VPBank (⟦0⟧) list price,Giá niêm yết của VPBank (⟦0⟧)
+,Service cost per active saver a month,Chi phí phục vụ mỗi người đang góp mỗi tháng
+,"Zalo confirmation, statements","Tin xác nhận qua Zalo, sao kê"
+,Discount rate,Lãi suất chiết khấu
+,Hurdle rate,Suất sinh lời tối thiểu
+,Asset mix: Golden Egg / bond funds / equity funds / ETF,Cơ cấu tài sản: Trứng Vàng / quỹ trái phiếu / quỹ cổ phiếu / ETF
+,same,như cơ sở
+,Design: glide path by goal horizon,Thiết kế: danh mục theo kỳ hạn mục tiêu
+,Question,Câu hỏi
+,Short answer,Trả lời ngắn
+,Why not just a bank deposit?,Sao không gửi tiết kiệm ngân hàng cho xong?
+,"Golden Egg pays ⟦0⟧–⟦1⟧% against ⟦2⟧% for a Big Four ⟦3⟧-month deposit, but bond coupons are taxed ⟦4⟧% and deposits are not. We compete on short terms, automation, a goal and published proof, not on the rate.","Trứng Vàng trả ⟦0⟧–⟦1⟧% so với ⟦2⟧% của tiền gửi ⟦3⟧ tháng ở Big4, nhưng coupon trái phiếu chịu thuế ⟦4⟧% còn tiền gửi thì không. Payday cạnh tranh bằng kỳ hạn ngắn, sự tự động, một mục tiêu và bằng chứng công bố, chứ không bằng mức lãi."
+,"DNSE Securities (n.d.-a, n.d.-b); Thi truong Tai chinh Tien te (2026b)","DNSE Securities (n.d.-a, n.d.-b); Thi truong Tai chinh Tien te (2026b)"
+,Is VPS Smart Indexing the same thing?,VPS Smart Indexing có giống Payday không?
+,"No. VPS decides for the customer, holds shares only, starts at VND ⟦0⟧ million plus ⟦1⟧ million a month and charges ⟦2⟧% a year. Payday is customer-confirmed, holds four asset types and starts at VND ⟦3⟧.","Không. VPS quyết định thay khách, chỉ nắm cổ phiếu, bắt đầu từ ⟦0⟧ triệu đồng cộng ⟦1⟧ triệu mỗi tháng và thu ⟦2⟧%/năm. Payday do khách xác nhận, gồm bốn loại tài sản và bắt đầu từ ⟦3⟧ đồng."
+,Who is liable if Ensa's advice is wrong?,Nếu Ensa tư vấn sai thì ai chịu trách nhiệm?
+,"Ensa only collects the facts. A licensed adviser signs the model plans, every recommendation is logged, and nothing is invested without the customer's confirmation.","Ensa chỉ thu thập thông tin. Người hành nghề có chứng chỉ ký danh mục mẫu, mọi khuyến nghị đều được lưu log, và không khoản nào được đầu tư khi khách chưa xác nhận."
+,"Ministry of Finance (⟦0⟧), Articles ⟦1⟧ and ⟦2⟧; National Assembly (⟦3⟧), Article ⟦4⟧","Ministry of Finance (⟦0⟧), Điều ⟦1⟧ và ⟦2⟧; National Assembly (⟦3⟧), Điều ⟦4⟧"
+,What happens in a market fall?,Chuyện gì xảy ra khi thị trường giảm?
+,"Goals under a year hold only bank bonds. In the stress test, a fall in year ⟦0⟧ cuts new funded accounts at month ⟦1⟧ by ⟦2⟧% and month-⟦3⟧ cash by VND ⟦4⟧ billion.","Mục tiêu dưới một năm chỉ nắm trái phiếu ngân hàng. Trong stress test, một đợt giảm ở năm ⟦0⟧ làm số TK mới trên 10 triệu ở tháng ⟦1⟧ giảm ⟦2⟧% và dòng tiền tháng ⟦3⟧ giảm ⟦4⟧ tỷ đồng."
+,Authors' cohort model; VnExpress (2026b),Mô hình cohort của nhóm; VnExpress (2026b)
+,Why not use DNSE's own bonds?,Sao không dùng trái phiếu của chính DNSE?
+,"They would improve month-⟦0⟧ cash by about VND ⟦1⟧ billion, but they create a conflict of interest in an advised product. New Golden Egg openings were paused at the regulator's request in December ⟦2⟧.","Làm vậy cải thiện dòng tiền tháng ⟦0⟧ khoảng ⟦1⟧ tỷ đồng, nhưng tạo xung đột lợi ích trong một sản phẩm có tư vấn. Trứng Vàng từng bị tạm dừng mở mới theo yêu cầu của cơ quan quản lý vào tháng 12/⟦2⟧."
+,Authors' cohort model; DNSE Securities (⟦0⟧),Mô hình cohort của nhóm; DNSE Securities (⟦0⟧)
+,Why not lend against the plan's ETFs?,Sao không cho vay cầm cố ETF trong kế hoạch?
+,"Base NPV would improve only from −VND ⟦0⟧ billion to −VND ⟦1⟧ billion. It would also cut against the savings purpose and the ⟦2⟧ margin findings, so we review it only at Gate ⟦3⟧.","NPV cơ sở chỉ cải thiện từ −⟦0⟧ tỷ lên −⟦1⟧ tỷ đồng. Phương án này còn đi ngược mục đích tiết kiệm và các vi phạm ký quỹ bị nêu năm ⟦2⟧, nên chỉ xem xét ở Cổng ⟦3⟧."
+,Authors' cohort model; Market Times (⟦0⟧),Mô hình cohort của nhóm; Market Times (⟦0⟧)
+,What if the bank charges its list fee?,Nếu ngân hàng thu phí niêm yết thì sao?
+,At VND ⟦0⟧ per contribution the CAC ceiling falls from VND ⟦1⟧ to VND ⟦2⟧; above VND ⟦3⟧ the dormant channel stops paying back. Gate ⟦4⟧ targets VND ⟦5⟧.,"Ở mức ⟦0⟧ đồng mỗi kỳ góp, trần CAC giảm từ ⟦1⟧ xuống ⟦2⟧ đồng; trên ⟦3⟧ đồng thì kênh TK ngủ không còn hoàn vốn. Cổng ⟦4⟧ nhắm mức ⟦5⟧ đồng."
+,VPBank (⟦0⟧); authors' cohort model,VPBank (⟦0⟧); mô hình cohort của nhóm
+,What if only ⟦0⟧% of dormant accounts enrol?,Nếu chỉ ⟦0⟧% TK ngủ ghi danh thì sao?
+,"That is the break-even rate, so we would not scale: we scale at ⟦0⟧% and stop below ⟦1⟧%. The downside path costs about VND ⟦2⟧ million per new funded account and is stopped at month ⟦3⟧.",Đó là tỷ lệ hòa vốn nên sẽ không mở rộng: chỉ mở rộng từ ⟦0⟧% và dừng nếu dưới ⟦1⟧%. Đường bất lợi tốn khoảng ⟦2⟧ triệu đồng mỗi TK mới trên 10 triệu và bị dừng ở tháng ⟦3⟧.
+,Authors' cohort model,Mô hình cohort của nhóm
+,Is Open API a threat or an opportunity?,Open API là mối đe dọa hay cơ hội?
+,Banks must comply by ⟦0⟧ March ⟦1⟧ and customer consent lasts up to ⟦2⟧ days. Our virtual-account bank is the natural first Open API partner for salary-percentage contributions in Phase ⟦3⟧.,Ngân hàng phải tuân thủ chậm nhất ngày ⟦0⟧/3/⟦1⟧ và sự đồng ý của khách có hiệu lực tối đa ⟦2⟧ ngày. Ngân hàng VA của Payday là đối tác Open API đầu tiên tự nhiên cho việc góp theo % lương ở Phase ⟦3⟧.
+,State Bank of Vietnam (⟦0⟧),State Bank of Vietnam (⟦0⟧)

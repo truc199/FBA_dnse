@@ -1,0 +1,6 @@
+Insight,Evidence,Design decision,KPI it moves
+Accounts are opened but not funded,{below10m_pct} of accounts hold under VND 10 million,A monthly plan funded by a standing order from the salary bank,New accounts above VND 10 million: +{m36_new} by month 36
+Intention stalls without a plan,77% of investors find managing a portfolio hard,"A plan by goal horizon, signed by a licensed adviser and confirmed by the customer",Three contributions in a row: {persist_scale} (stop below {persist_stop})
+Conditional rewards broke trust,"Trust themes: {trust_h1_2025} of negative Google Play reviews, H1 2025",No cash rewards; all terms on one screen; free withdrawal,Trust themes below 10% of Payday reviews
+2026 update: reliability now dominates,{broke_pct} of 2026 negative reviews describe something that broke,Payday scheduler kept apart from the pre-trade check; {gate_on_time} launch gate,{gate_on_time} credited on the same banking day
+Small tickets carry heavy unit costs,"A VND 1 million contribution pays a VND {fee_base} bank fee and earns VND {revenue_per_m} a month",Gate 0: collection fee target VND 0,"CAC ceiling rises from VND {ceiling_r} to {ceiling_no_fee_r}"

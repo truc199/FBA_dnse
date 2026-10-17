@@ -1,0 +1,27 @@
+Assumption,Downside,Base,Upside,Type,Basis
+"Dormant accounts (used no product, Dec 2025)","1,427,181","1,427,181","1,427,181",derived,DNSE Securities (2026c)
+Share of dormant accounts salaried and reachable,15%,25%,35%,assumption,World Bank (2025); pilot survey
+Pilot accounts (three arms),"45,000","45,000","45,000",assumption,Decision D4
+Enrolment of contacted dormant accounts,1%,2%,4%,assumption,Never-Sleeping Account reached 0.8% of accounts; TCBS (2026)
+Enrolment of active customers over 12 months,2%,4%,6%,assumption,Never-Sleeping Account sign-ups equal 14% of active customers
+New accounts a month,"20,000","31,180","43,210",derived,DNSE Securities (2026c); VnExpress (2026a)
+Set-up within 60 days of opening,1%,2%,3%,assumption,Assumption
+Employers signed a quarter,2,4,8,assumption,Go-to-market plan
+Employees who enrol after an HR session,10%,20%,28%,assumption,Ashraf et al. (2006) as upper bound
+Monthly contribution,"VND 800,000","VND 1,000,000","VND 1,500,000",assumption,"About 11% of the VND 9.0 million average income (National Statistics Office, 2026)"
+"Stop rate, 2nd and 3rd contributions (a month)",15.0%,10.0%,6.0%,assumption,Assumption; pilot measures it
+Stop rate after the 3rd contribution (a month),4.0%,2.5%,1.5%,assumption,Assumption; pilot measures it
+Balances withdrawn a year,15%,10%,5%,assumption,Assumption; inflows tagged
+DNSE margin on bank bonds in Golden Egg,0.30%,0.60%,1.00%,assumption,Thi truong Tai chinh Tien te (2026a); DNSE Securities (n.d.-b)
+Distributor share of bond-fund fees,0.22%,0.33%,0.44%,assumption,SSI Asset Management (2026); VCBF (2026); fund prospectuses
+Distributor share of equity-fund fees,0.38%,0.56%,0.75%,assumption,"Fund prospectuses and factsheets, 2026"
+"Build team, months 1 to 6",VND 3.97 billion,VND 3.18 billion,VND 2.54 billion,derived,ITviec (2025) salary medians
+"Integration, security tests, legal opinions",VND 1.50 billion,VND 1.00 billion,VND 0.60 billion,assumption,VPBank (2024); assumption
+"Running team, a year",VND 4.72 billion,VND 3.78 billion,VND 2.52 billion,derived,ITviec (2025) salary medians
+"Operations, compliance and cloud, a year",VND 1.80 billion,VND 1.20 billion,VND 0.80 billion,assumption,Assumption
+"Content and promotion review, a year",VND 1.50 billion,VND 1.00 billion,VND 0.60 billion,assumption,Assumption
+Reach cost per dormant account contacted,"VND 2,200","VND 1,300","VND 1,100",derived,Zalo Business Solutions (n.d.); MobiFone (n.d.)
+Bank fee per contribution,"VND 5,500","VND 3,300",VND 0,assumption,VPBank (2024) list price
+Service cost per active saver a month,"VND 2,000","VND 1,000",VND 500,assumption,"Zalo confirmation, statements"
+Discount rate,12%,12%,12%,assumption,Hurdle rate
+Asset mix: Golden Egg / bond funds / equity funds / ETF,same,45/35/10/10,same,assumption,Design: glide path by goal horizon

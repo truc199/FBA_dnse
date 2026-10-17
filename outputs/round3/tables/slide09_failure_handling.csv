@@ -1,0 +1,5 @@
+When this fails,What happens,Owner
+Money not in by the grace date (the 15th),Suggest skipping the month; streak kept,CTO; Operations
+An order fails,Retried next session; cash keeps earning in the Never-Sleeping Account,CTO
+Two months missed,"Suggest a pause, not a cancellation",Head of Product
+Transfer to the bank fails,Money returns to plan cash; a call within 1 business day,Customer Service

@@ -1,0 +1,79 @@
+{
+  "_note": "Microcopy of the low-fi wireframes (English, for the deck). Brackets mark values the live app fills in; nothing in brackets is a real figure. Rules: screen titles in title case, buttons in sentence case, errors say what happened, why, and what to do. To be redrawn in Figma for the slides.",
+  "main": [
+    {"id": "S1", "caption": "1  Set a goal", "elements": [
+      ["title", "What Are You Saving For?"],
+      ["chips", ["Emergency fund", "Home", "Education", "Retirement", "Something else"], 1],
+      ["field", "Target amount", "VND 36,000,000"],
+      ["field", "Target date", "October 2029"],
+      ["card", "About VND 1,000,000 a month gets you there, before investment returns."],
+      ["button", "Continue", "primary"]]},
+    {"id": "S2", "caption": "2  Check your risk", "elements": [
+      ["title", "Your Risk Profile"],
+      ["text", "When will you need this money?"],
+      ["chips", ["Within 1 year", "1 to 3 years", "3 years or more"], 2],
+      ["text", "If your plan fell 10% in a month, you would..."],
+      ["chips", ["Sell everything", "Wait it out", "Add more"], 1],
+      ["note", "We ask because advice must fit you (Circular 121/2020, Article 24)."],
+      ["button", "See my plan", "primary"]]},
+    {"id": "S3", "caption": "3  Confirm the plan", "elements": [
+      ["title", "Your Plan for Home"],
+      ["alloc", [["Golden Egg bank bonds", 30], ["Bond funds", 30], ["Equity funds", 20], ["VN30 ETF", 20]]],
+      ["card", "A bad month could cost about VND [x] on every VND 10 million."],
+      ["text", "No platform fee. Fund fees of 0.8-1.95% a year are inside fund prices. Bond interest is taxed at 5%."],
+      ["note", "Designed and approved by a licensed adviser, licence no. [ ]."],
+      ["button", "Confirm plan", "primary"],
+      ["button", "Change plan", "secondary"]]},
+    {"id": "S4", "caption": "4  Link your salary", "elements": [
+      ["title", "Send Money on Payday"],
+      ["card", "Your personal account\n[Partner bank]  9704 xxxx 1234\n[YOUR NAME]"],
+      ["field", "Amount and payday", "VND 1,000,000 on the 10th"],
+      ["steps", ["Open your bank app", "Create a monthly transfer to this account", "We confirm when it arrives"]],
+      ["button", "Open my bank app", "primary"],
+      ["note", "Money waits in your Never-Sleeping Account (Tài khoản Không Ngủ) and earns interest until it is invested, usually the next business day."]]},
+    {"id": "S5", "caption": "5  First money in", "elements": [
+      ["banner", "VND 1,000,000 received, October 10, 09:12", "success"],
+      ["title", "Invested"],
+      ["card", "Golden Egg 3-month\nBank bond, [rate]% a year\nVND 1,000,000"],
+      ["text", "Next month's money goes to bond funds, the part of your plan furthest below target."],
+      ["note", "Held in your name in your securities account."],
+      ["badge", "Streak: 1 month"],
+      ["button", "View my plan", "primary"]]},
+    {"id": "S6", "caption": "6  Day 90", "elements": [
+      ["title", "3 Months in a Row"],
+      ["progress", "VND 3,000,000 of VND 36,000,000", 0.083],
+      ["badge", "Streak: 3"],
+      ["card", "Unlocked: priority access to new Golden Egg issues.\nNext: a plan review with Ensa at month 6."],
+      ["note", "You can skip 1 month a year and keep your streak."],
+      ["button", "See my progress", "primary"]]}
+  ],
+  "errors": [
+    {"id": "E1", "caption": "Transfer not received", "elements": [
+      ["banner", "We haven't received your October 10 transfer.", "warning"],
+      ["text", "Banks can take up to 1 business day. Check your bank app, or send it now."],
+      ["note", "Your streak is safe until October 15."],
+      ["button", "Send it now", "primary"],
+      ["button", "Skip this month", "secondary"]]},
+    {"id": "E2", "caption": "Salary late", "elements": [
+      ["title", "Payday Moved?"],
+      ["text", "We'll wait until October 15 before counting this month. No fee, no lost streak."],
+      ["field", "New payday", "The 15th of each month"],
+      ["button", "Change my payday", "primary"],
+      ["button", "Keep the 10th", "tertiary"]]},
+    {"id": "E3", "caption": "Pause or skip", "elements": [
+      ["title", "Skip October?"],
+      ["text", "You have 1 free skip a year. Your streak stays at 3."],
+      ["note", "Pausing stops new contributions. What you have stays invested."],
+      ["button", "Skip October", "primary"],
+      ["button", "Pause plan", "secondary"],
+      ["button", "Keep my plan", "tertiary"]]},
+    {"id": "E4", "caption": "Withdraw to bank", "elements": [
+      ["title", "Withdraw Money"],
+      ["field", "Amount", "VND 2,000,000"],
+      ["card", "To [linked bank] xxxx 1234\nFree. Arrives by 22:00 today."],
+      ["banner", "Selling this Golden Egg before [date] pays 2.0% a year instead of [rate]%. You get VND [x].", "warning"],
+      ["button", "Withdraw to my bank", "primary"],
+      ["button", "Move to trading account", "tertiary"],
+      ["note", "Moving money to trading needs one more step, because this money is for Home."]]}
+  ]
+}

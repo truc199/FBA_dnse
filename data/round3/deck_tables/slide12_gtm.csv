@@ -1,0 +1,5 @@
+Quarter,Who and where,Message,Gate,"End of quarter, base: funded savers; balances; spend"
+Q1: build,"DNSE staff, internal beta",–,Gate 0: partner terms; {gate_on_time} shadow runs; SSC notice,{q1_funded}; {q1_bal}; VND {q1_cost} bn
+Q2: pilot,"{pilot} dormant accounts in 3 arms; Zalo, SMS, push, Ensa","""Your account is ready. Let payday do the investing.""","Gate 1: enrolment ≥{enrol_scale}, stop below {enrol_stop}",{q2_funded}; {q2_bal}; VND {q2_cost} bn
+Q3: roll out,Dormant accounts; in-app for traders; plan step at account opening,"""Keep a core that grows while you trade.""",Monthly: acquisition cost per funded saver ≤VND {ceiling_r},{q3_funded}; {q3_bal}; VND {q3_cost} bn
+Q4: first employers,3 to 5 employers through HR sessions,"""An employee benefit that invests your salary.""","Gate 2: funded ≥{m12_funded_80}; balances ≥VND {m12_bal_80} billion",{q4_funded}; {q4_bal}; VND {q4_cost} bn

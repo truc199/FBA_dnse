@@ -162,7 +162,7 @@ Giá trị gián tiếp trình bày riêng: số dư bằng 18% tiền NĐT tạ
 | Phương án | Kinh tế học (tiền lũy kế 60 tháng) | Rủi ro |
 |---|---|---|
 | Dùng cả trái phiếu DNSE (biên khoảng 1,2 điểm) | −28,1 tỷ (tốt hơn base khoảng 4 tỷ trong 5 năm) | Xung đột lợi ích trong sản phẩm có tư vấn; tiền tiết kiệm của khách phụ thuộc rủi ro tín dụng của chính DNSE; DNSE từng bị phạt (8/2026), và chính Trứng Vàng từng bị dừng mở mới theo yêu cầu cơ quan quản lý (25/12/2023, S32) |
-| **Chỉ trái phiếu do ngân hàng phát hành** (Agribank, BVBank; Big4 theo kế hoạch hợp tác 2026) | −32,0 tỷ (base) | Thấp; đúng nguyên tắc ở `plan_tech.md` §3.4 |
+| **Chỉ trái phiếu do ngân hàng phát hành** (Agribank, BVBank; Vietcombank, VietinBank, BIDV theo kế hoạch hợp tác 2026) | −32,0 tỷ (base) | Thấp; đúng nguyên tắc ở `plan_tech.md` §3.4 |
 | Cho khách tự chọn trái phiếu DNSE ngoài kế hoạch, ghi rõ người phát hành | Như base | Trung bình |
 
 **Chọn: chỉ trái phiếu do ngân hàng phát hành trong danh mục mặc định.** Cái giá khoảng 4 tỷ trong 5 năm nhỏ so với rủi ro: sản phẩm được dựng để sửa trust lại bán nợ của chính DNSE cho người mới tiết kiệm. Trên slide nói thẳng: *"We give up about VND 4 billion over five years to keep DNSE's own bonds out of the default plan."*

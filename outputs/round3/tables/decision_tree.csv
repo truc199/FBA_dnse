@@ -1,0 +1,5 @@
+gate,month,checks,scale,adjust,stop
+Gate 0,3,Partner terms; shadow paydays; SSC notice,"Fee up to VND 3,300; on time 99.5%; notice filed: start the pilot","Fee above VND 3,300: renegotiate","Fee above VND 6,200 or on time below 99.5%: delay"
+Gate 1,6,Pilot read-out,"Enrolment 1.5%+, 81% make three in a row, cost up to VND 1.6 million: scale",Enrolment 1.0% to 1.5%: change message or channel,"Enrolment below 1.0%, persistence below 60% or cost above VND 2.6 million"
+Gate 2,12,First roll-out year,"Funded savers 3,962+ and balances VND 24.1 billion+","Funded savers 2,476 to 3,962: review channels","Funded savers below 2,476 for two quarters"
+Gate 3,24,Scale-up review,"New accounts above VND 10 million 6,171+; employers 39%+",Employers 20% to 39%: cut cost per employer,"New accounts below 1,140; employer channel below 20%"

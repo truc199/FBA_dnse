@@ -1,0 +1,9 @@
+Yêu cầu,Quy định,Cách thiết kế đáp ứng,Trạng thái
+Tư vấn phải phù hợp với khách,"Thông tư 121/2020/TT-BTC, Điều 24 (thông tin khách hàng khi tư vấn đầu tư)","Ensa ghi nhận mục tiêu, kỳ hạn, thu nhập và mức chịu lỗ; người hành nghề có chứng chỉ thiết kế và ký danh mục mẫu; lưu log tư vấn",Áp dụng
+Không đầu tư thay khách khi không có ủy quyền,"Thông tư 121/2020/TT-BTC, Điều 4",Khách xác nhận kế hoạch và mọi thay đổi; hệ thống chỉ đầu tư tiền mới đúng theo kế hoạch đã xác nhận,Áp dụng
+Chỉ cho vay ký quỹ và các mục đích được quy định,"Thông tư 121/2020/TT-BTC, Điều 27",Không cấp hạn mức tín dụng trên khoản tiết kiệm; margin không dùng làm phần thưởng,Loại
+Quản lý danh mục không phải nghiệp vụ của công ty chứng khoán,"Luật Chứng khoán 2019, Điều 72",Không làm dịch vụ ủy thác; bản quản lý trọn gói chỉ qua công ty quản lý quỹ được cấp phép,Loại (Phase 4 qua công ty quỹ)
+Open API ngân hàng,Thông tư 64/2024/TT-NHNN: ngân hàng phải tuân thủ chậm nhất ngày 1/3/2027; sự đồng ý của khách có hiệu lực tối đa 180 ngày,Phase 1 dùng lệnh chuyển định kỳ do khách tự lập trong app ngân hàng; góp theo % lương chỉ sau khi có thỏa thuận với ngân hàng (Phase 3),Giai đoạn sau
+Dịch vụ mới phải được báo cáo,"Quyết định 461/QĐ-XPHC (17/8/2026): 275 triệu trong khoản phạt 802,5 triệu đồng là vì các dịch vụ không báo cáo UBCKNN",Thông báo UBCKNN trước khi ra mắt; xác nhận bằng văn bản là điều kiện của Cổng 0,Cổng ra mắt
+Lịch sử quản lý của Trứng Vàng,Trứng Vàng bị tạm dừng mở mới theo yêu cầu của cơ quan quản lý từ ngày 25/12/2023 (thông báo của DNSE),Tham vấn trước UBCKNN về vai trò của Trứng Vàng trong Payday; chuẩn bị sẵn quỹ trái phiếu làm lõi thay thế,Tham vấn trước
+Phân phối chứng chỉ quỹ,"DNSE đã đăng ký đại lý phân phối chứng chỉ quỹ (15/12/2021) nhưng chưa có tên trong danh sách đại lý của SSIAM, Dragon Capital hay VCBF",Ký hợp đồng phân phối với 1–2 công ty quỹ ở Phase 0; nếu chậm thì ra mắt với Trứng Vàng và ETF,Phụ thuộc ở Phase 0

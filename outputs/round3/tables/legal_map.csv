@@ -1,0 +1,9 @@
+requirement,rule,design_response,status
+Advice must fit the client,"Circular 121/2020/TT-BTC, Article 24 (client information for investment advice)","Ensa records goal, horizon, income and loss tolerance; a licensed adviser designs and signs the model plans; advice is logged",Adopt
+No investing on a client's behalf without a mandate,"Circular 121/2020/TT-BTC, Article 4",The customer confirms the plan and every change; the system only invests new money as the confirmed plan says,Adopt
+Lending only for margin and defined purposes,"Circular 121/2020/TT-BTC, Article 27",No credit line on savings; margin is not a reward,Exclude
+Portfolio management is not a securities-company business,"Law on Securities 2019, Article 72",No discretionary service; a fully managed version only through a licensed fund manager,Exclude (Phase 4 via a fund manager)
+Bank Open API,Circular 64/2024/TT-NHNN: banks must comply by 1 March 2027; customer consent lasts at most 180 days,Phase 1 uses standing orders the customer sets in the bank app; salary-linked percentage contributions only after bank agreements (Phase 3),Later phase
+New services must be reported,Decision 461/QD-XPHC (17 August 2026): VND 275 million of the VND 802.5 million fine was for services not reported to the SSC,Notify the SSC before launch; written confirmation is a Gate 0 condition,Launch gate
+Golden Egg's regulatory history,New Golden Egg openings were paused at the regulator's request from 25 December 2023 (DNSE notice),Pre-consult the SSC on Golden Egg's role in Payday; keep bond funds ready as the alternative core,Pre-consult
+Fund distribution,"DNSE registered as a fund-certificate distribution agent (15 December 2021) but is not on the distributor lists of SSIAM, Dragon Capital or VCBF",Sign distribution agreements with 1 to 2 managers in Phase 0; launch with Golden Egg and an ETF if they are late,Phase 0 dependency

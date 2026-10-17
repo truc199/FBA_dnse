@@ -1,0 +1,7 @@
+Data,Source,Used for
+"Accounts, active customers and funded accounts, December 2025",DNSE Annual Report 2025 (DNSE Securities 2026c),"Problem, sizing, model inputs"
+"DNSE financial statements, Q1 2018 to Q2 2026",DNSE filings via Vietcap Securities (2026),"Brokerage loss, platform cost per funded account"
+"Market shares of accounts, investor cash, margin loans and profit","HNX, VSDC and press reports, reconciled in Round 2",Slide 2
+"App reviews of DNSE, VPS and FPTS, 2021 to 2026",Google Play and App Store; Round 2 cleaning; 58 negative 2026 reviews coded by hand,Slides 4 and 5; Appendices D and F
+"Rates, fees and product terms, October 2026",44 web sources with access dates (sources_round3.csv),"Model inputs; slides 3, 7 and 10"
+Wages paid into an account,World Bank (2025) Global Findex,Share of salaried dormant holders

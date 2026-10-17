@@ -1,0 +1,12 @@
+#,Feature,Design note
+F1,"Set a goal: type, amount and date",Shows the monthly amount needed before investment returns
+F2,"Suitability check: horizon, reaction to a loss, income","Circular 121/2020, Article 24; every recommendation is logged"
+F3,Plan by goal horizon,Model plans signed by a licensed adviser; the customer confirms
+F4,Virtual account in the customer's name and a standing-order guide (bank-app link and QR),"Design target: set-up in 5 minutes, with no more steps than VCB Digibank SIP"
+F5,Each contribution buys the most underweight asset,"New money only, nothing sold; the ETF is bought in 100-unit lots when the cash allows"
+F6,The Never-Sleeping Account as the waiting place,"Cash is usually invested the next business day"
+F7,"Dashboard: progress to the goal, assets by class, where the money sits, fees paid",–
+F8,Persistence package without cash,"Streak; one free skip a year; payday reminder naming the goal; priority on new Golden Egg issues; Ensa review at month 6"
+F9,"Pause, skip or cancel in one tap; free withdrawal to the linked bank",Moving plan money to buying power needs a separate step with a goal reminder
+F10,"Notices: received, invested, not received, salary late","A five-day grace window; the streak survives the wait"
+F11,Monthly service-metrics page,The seven commitments of Table 7

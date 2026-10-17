@@ -1,0 +1,13 @@
+{
+  "_note": "Text of the solution diagram on slide 7 (redraws Round 2 Figure 7 with the Round 3A design: non-cash persistence package, no 4.3% tier, no ZaloPay in step 2). Edit here, then run python src/round3/diagrams_round3.py.",
+  "steps": [
+    {"title": "1  Advise", "lines": ["Ensa asks the goal, horizon,", "loss tolerance and income", "", "A licensed adviser signs the", "plan; the customer confirms it"]},
+    {"title": "2  Fund on payday", "lines": ["Standing order set once in", "the salary bank's app", "", "Money goes to a virtual", "account in the customer's name"]},
+    {"title": "3  Hold briefly", "lines": ["Cash waits in the", "Never-Sleeping Account", "(Tài khoản Không Ngủ)", "", "Free withdrawal to the bank"]},
+    {"title": "4  Invest new money", "lines": ["Buys the most underweight", "asset: Golden Egg bank bonds,", "funds or the VN30 ETF", "", "Nothing is sold to rebalance"]}
+  ],
+  "bands": [
+    {"title": "Persistence package (no cash from DNSE)", "items": ["Streak of monthly contributions", "One free skip a year", "Payday reminder naming the goal", "Priority on new Golden Egg issues", "Plan review with Ensa at month 6"]},
+    {"title": "Trust controls", "items": ["All terms and fees on one screen", "Free withdrawal to the linked bank", "Delivery metrics published monthly", "SSC notified before launch"]}
+  ]
+}

@@ -1,15 +1,15 @@
-cause,code,google_play_n,google_play_pct,app_store_n,app_store_pct,both_n,both_pct,primary_n,primary_pct
-"Login, OTP and authentication",login_otp,3,8.8,5,20.8,8,13.8,5,8.6
-Deposits or withdrawals not credited,cash_not_credited,4,11.8,6,25.0,10,17.2,9,15.5
-"Orders, prices and settlement",orders_prices,6,17.6,5,20.8,11,19.0,9,15.5
-"Crashes, freezes and lag",crash_freeze,15,44.1,11,45.8,26,44.8,16,27.6
-eKYC and account opening,ekyc_opening,5,14.7,5,20.8,10,17.2,6,10.3
-"Fees and terms (closure, auto-renewal)",fees_terms,3,8.8,3,12.5,6,10.3,3,5.2
-Scam claims and rewards,scam_reward,4,11.8,3,12.5,7,12.1,3,5.2
-"Other (service, interface, Ensa, no reason)",other,6,17.6,7,29.2,13,22.4,7,12.1
-Something broke (any of the first five causes),group,28,82.4,20,83.3,48,82.8,,
-"Fees, terms, scam claims or rewards",group,6,17.6,5,20.8,11,19.0,,
-Login/OTP failures or money not credited,group,7,20.6,10,41.7,17,29.3,,
-"Posted 4-5 March 2026, after the outage DNSE disclosed for 4 March",group,4,11.8,5,20.8,9,15.5,,
-Blames an app update,group,2,5.9,3,12.5,5,8.6,,
-Negative reviews coded,n,34,100.0,24,100.0,58,100.0,58,100.0
+cause,code,google_play_n,google_play_pct,app_store_n,app_store_pct,both_n,both_pct,both_ci95_low,both_ci95_high,primary_n,primary_pct
+"Login, OTP and authentication",login_otp,3,8.8,5,20.8,8,13.8,7.2,24.9,5,8.6
+Deposits or withdrawals not credited,cash_not_credited,4,11.8,6,25.0,10,17.2,9.6,28.9,9,15.5
+"Orders, prices and settlement",orders_prices,6,17.6,5,20.8,11,19.0,10.9,30.9,9,15.5
+"Crashes, freezes and lag",crash_freeze,15,44.1,11,45.8,26,44.8,32.7,57.5,16,27.6
+eKYC and account opening,ekyc_opening,5,14.7,5,20.8,10,17.2,9.6,28.9,6,10.3
+"Fees and terms (closure, auto-renewal)",fees_terms,3,8.8,3,12.5,6,10.3,4.8,20.8,3,5.2
+Scam claims and rewards,scam_reward,4,11.8,3,12.5,7,12.1,6.0,22.9,3,5.2
+"Other (service, interface, Ensa, no reason)",other,6,17.6,7,29.2,13,22.4,13.6,34.7,7,12.1
+Something broke (any of the first five causes),group,28,82.4,20,83.3,48,82.8,71.1,90.4,,
+"Fees, terms, scam claims or rewards",group,6,17.6,5,20.8,11,19.0,10.9,30.9,,
+Login/OTP failures or money not credited,group,7,20.6,10,41.7,17,29.3,19.2,42.0,,
+"Posted 4-5 March 2026, after the outage DNSE disclosed for 4 March",group,4,11.8,5,20.8,9,15.5,8.4,26.9,,
+Blames an app update,group,2,5.9,3,12.5,5,8.6,3.7,18.6,,
+Negative reviews coded,n,34,100.0,24,100.0,58,100.0,,,58,100.0

@@ -1,0 +1,11 @@
+Hoạt động,CEO,CFO,CTO,Trưởng sản phẩm,Pháp chế và tuân thủ,Marketing và CRM,CSKH,Người hành nghề tư vấn
+Quyết định ở các cổng (tháng 3; 6; 12; 24),A,R,C,R,C,I,I,I
+"Điều khoản đối tác: ngân hàng VA, công ty quỹ, nguồn trái phiếu",I,A/R,C,C,C,-,-,-
+"Thông báo UBCKNN, ý kiến pháp lý, duyệt nội dung khuyến mại",I,I,I,C,A/R,C,-,C
+Danh mục mẫu và quy tắc đánh giá phù hợp,I,-,I,C,A,-,-,R
+"Xây MVP: bộ lập lịch, VA, phân bổ, dashboard",I,I,A/R,C,C,-,I,-
+"Chạy thử ngày lương và cổng độ ổn định 99,5%",I,I,A/R,C,I,-,I,-
+Pilot ngẫu nhiên: thiết kế và đọc kết quả,I,C,C,A/R,C,C,I,C
+Tiếp cận và thông điệp,I,I,I,A,C,R,I,-
+"Khiếu nại, rút tiền và khắc phục sau sự cố",I,I,C,A,C,I,R,-
+Công bố số đo dịch vụ hằng tháng,I,I,R,A,C,C,C,-

@@ -1,0 +1,8 @@
+Cam kết,Khách thấy gì,Số đo công bố,Mục tiêu,Tần suất,Phụ trách
+Tiền về đúng hẹn,"Thông báo ""đã nhận"" vài phút sau khi ngân hàng ghi có",Tỷ lệ kỳ góp theo lịch được ghi có trong cùng ngày làm việc,"≥ 99,5% (cổng ra mắt)",Hằng tháng,CTO
+Tiền được đầu tư nhanh,"Trạng thái ""đã đầu tư"" kèm tài sản đã mua",Thời gian trung vị từ khi ghi có đến khi đầu tư,≤ 1 ngày làm việc,Hằng tháng,CTO
+Rút tiền nhanh và miễn phí,"""Arrives by 22:00 today"" khi bán Trứng Vàng trong khung 09:00–14:30 (FAQ của DNSE: khoảng 21:00–22:00 ngày bán); ngày thanh toán của quỹ hiện trước khi xác nhận",Thời gian trung vị từ lệnh rút đến khi tiền vào ngân hàng liên kết,Trong ngày với lệnh bán Trứng Vàng,Hằng tháng,Trưởng sản phẩm
+Rời đi dễ dàng,"Tạm dừng, bỏ qua hoặc hủy bằng một chạm","Tỷ lệ lệnh hủy hoàn tất trong app, không phải gọi điện",100%,Hằng tháng,Trưởng sản phẩm
+Không chi phí ẩn,Một màn hình liệt kê mọi phí và thuế bằng đồng trước khi xác nhận,Tỷ lệ kế hoạch được xác nhận sau khi đã hiện màn hình phí (kiểm toán),100%,Hằng quý,Pháp chế và tuân thủ
+"Sự cố được nhận trách nhiệm, không bị giấu",Trang trạng thái và ghi chú sau sự cố,Sự cố ảnh hưởng kỳ góp có ghi chú công bố trong 5 ngày làm việc,100%,Mỗi sự cố,CTO
+Phàn nàn được đếm,-,Tỷ trọng chủ đề niềm tin trong review tiêu cực liên quan Payday,< 10%,Hằng quý,CSKH

@@ -1,0 +1,4 @@
+Moment of truth,What the customer sees,Measure we publish
+First money in,"""Received"" within minutes; invested the next business day",Contributions credited on the same banking day: ≥{gate_on_time}
+First money out,Arrival time and cost in VND before confirming; free to the linked bank,Median time from request to the bank
+First failure,Streak kept; one clear next step: send now or skip,Incident note within 5 business days

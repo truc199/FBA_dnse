@@ -1,0 +1,6 @@
+label,asset_types,minimum_vnd,payday,source_ids
+VPS Smart Indexing,1,50000000,no,S39; S40
+VNDIRECT retirement plan,2,1000000,no,S34
+VCB Digibank SIP,1,100000,no,S42
+VinaSIP,1,500000,no,S43
+Payday Portfolio,4,500000,yes,authors' design

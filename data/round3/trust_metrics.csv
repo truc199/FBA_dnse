@@ -1,0 +1,8 @@
+commitment,customer_sees,published_metric,target,cadence,owner
+Money arrives when we say,"A ""received"" notice within minutes of the bank credit",Share of scheduled contributions credited on the same banking day,>= 99.5% (launch gate),Monthly,CTO
+Money is invested quickly,"An ""invested"" status with the asset bought",Median time from credit to invested,<= 1 business day,Monthly,CTO
+Withdrawals are fast and free,"""Arrives by 22:00 today"" for Golden Egg sales placed 09:00-14:30 (DNSE FAQ: about 21:00-22:00 on the sale day); the fund settlement date before confirming",Median time from request to money in the linked bank,"Same day for Golden Egg sales",Monthly,Head of Product
+Leaving is easy,"Pause, skip or cancel in one tap",Share of cancellations completed in the app without a call,100%,Monthly,Head of Product
+No hidden costs,"One screen with every fee and tax in VND before confirming",Plans confirmed with the fee screen shown (audit),100%,Quarterly,Compliance and Legal
+"Problems are owned, not hidden",Status page and a post-incident note,Incidents affecting contributions with a note published within 5 business days,100%,Per incident,CTO
+Complaints are counted,-,Trust themes in Payday-related negative reviews,< 10%,Quarterly,Customer Service

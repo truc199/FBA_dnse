@@ -1,0 +1,7 @@
+Gate (month),Measure,Scale if,Stop if,Owner
+0 (3),Shadow payday runs credited on time,≥99.5%,Below 99.5%: delay the pilot,CTO
+0 (3),Bank fee per contribution,"VND 0 target, ≤3,300","Above VND 6,200",CFO
+1 (6),Enrolment of treated dormant accounts,≥1.5%,Below 1.0%,Head of Product
+1 (6),Projected net cost per new funded account,≤VND 1.6 million,Above VND 2.6 million,CFO
+2 (12),Funded savers,"≥3,962","Below 2,476 for two quarters",Head of Product
+3 (24),New accounts above VND 10 million; employer participation,"≥6,171; ≥39%","Below 1,140; below 20%",CEO

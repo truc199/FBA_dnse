@@ -1,4 +1,6 @@
-"""Runs the Round 3 pipeline: model test, cohort model, review coding, figures.
+"""Runs the Round 3 pipeline: model test, cohort model, plan tables, review coding, deck tables, charts,
+diagrams, the check of the deck content and reports, the Word file for team review, and the English and
+Vietnamese companion reports (Word and PDF).
 
 Round 2 files are only read, never written; run_all.py is unchanged.
 
@@ -10,7 +12,9 @@ import time
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-STEPS = ["test_payday_model.py", "payday_model.py", "reviews_2026.py", "figures_round3.py"]
+STEPS = ["test_payday_model.py", "payday_model.py", "plan_tables.py", "reviews_2026.py", "deck_tables.py",
+         "figures_round3.py", "diagrams_round3.py", "check_deck_content.py", "build_content_docx.py",
+         "build_report_docx.py"]
 
 
 def main():

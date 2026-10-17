@@ -1,0 +1,5 @@
+goal_horizon,golden_egg_bank_bonds_pct,bond_funds_pct,equity_funds_pct,vn30_etf_pct,rule
+Under 1 year,100,0,0,0,"Golden Egg terms of 1 to 6 months that end before the goal date; renews only into a term that still ends before the goal date, with a notice 3 days ahead and a one-tap opt-out"
+1 to 3 years,50,50,0,0,Only bond funds with no exit fee after 12 months (for example VCBF-FIF)
+3 years or more,30,30,20,20,Equities at most 40%; ETF bought in 100-unit lots once the balance allows
+Last 12 months before the goal date,new money only,-,-,-,New contributions go to Golden Egg; nothing is sold to rebalance

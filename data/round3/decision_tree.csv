@@ -1,0 +1,5 @@
+gate,month,checks,scale,adjust,stop
+Gate 0,3,"Partner terms; shadow paydays; SSC notice","Fee up to VND {fee_base}; on time {gate_on_time}; notice filed: start the pilot","Fee above VND {fee_base}: renegotiate","Fee above VND {fee_limit_r} or on time below {gate_on_time}: delay"
+Gate 1,6,"Pilot read-out","Enrolment {enrol_scale}+, {persist_scale} make three in a row, cost up to VND {cpa_scale} million: scale","Enrolment {enrol_stop} to {enrol_scale}: change message or channel","Enrolment below {enrol_stop}, persistence below {persist_stop} or cost above VND {cpa_stop} million"
+Gate 2,12,"First roll-out year","Funded savers {m12_funded_80}+ and balances VND {m12_bal_80} billion+","Funded savers {m12_funded_50} to {m12_funded_80}: review channels","Funded savers below {m12_funded_50} for two quarters"
+Gate 3,24,"Scale-up review","New accounts above VND 10 million {m24_new_80}+; employers {emp_part}+","Employers {emp_stop} to {emp_part}: cut cost per employer","New accounts below {m24_new_low}; employer channel below {emp_stop}"

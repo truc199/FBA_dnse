@@ -1,0 +1,18 @@
+Cổng,Chỉ tiêu,Mở rộng nếu,Điều chỉnh nếu,Dừng nếu,Phụ trách
+Cổng 0: trước pilot,Điều khoản đối tác đã ký: phí ngân hàng mỗi kỳ góp; phần phí quỹ trả cho DNSE; biên của DNSE trên trái phiếu ngân hàng trong Trứng Vàng,"Phí ≤ 3.300 đồng; phần phí quỹ ≥ 30%; biên ≥ 0,6 điểm",Kém hơn ở bất kỳ điều khoản nào: chạy lại mô hình và đàm phán lại trước pilot,Chưa ký được công ty quỹ hoặc ngân hàng (phụ thuộc để ra mắt),CFO
+Cổng 0: trước pilot,"Phí ngân hàng mỗi kỳ góp (thu hộ qua VA), đồng",0 (ngân hàng đối tác giữ tiền gửi),1 đến 3.300 (giá niêm yết),> 6.191: người tích lũy từ TK ngủ không còn hoàn vốn,CFO
+Cổng 0: trước pilot,Chạy thử ngày lương bằng TK nhân viên: tỷ lệ chuyển tiền được ghi có đúng hạn,"≥ 99,5%",-,"< 99,5%: hoãn pilot",CTO
+Cổng 1: đọc kết quả pilot,"Chi phí ròng dự phóng mỗi TK mới trên 10 triệu đồng đến tháng 60 (chạy lại mô hình với số đo của pilot và điều khoản đã ký), triệu đồng","≤ 1,6 (1,25 lần kế hoạch)","1,6 đến 2,6","> 2,6 (2 lần kế hoạch)",CFO
+Cổng 1: đọc kết quả pilot,Tỷ lệ ghi danh của TK ngủ được can thiệp (cài đặt và góp kỳ đầu trong 60 ngày),"≥ 1,5%","1,0% đến 1,5%","< 1,0%",Trưởng sản phẩm
+Cổng 1: đọc kết quả pilot,Tỷ lệ người tích lũy góp 3 kỳ liền,"≥ 81,0%","60,0% đến 81,0%","< 60,0%",Trưởng sản phẩm
+Cổng 1: đọc kết quả pilot,"Mức góp bình quân mỗi tháng, đồng",≥ 1.000.000,716.502 đến 1.000.000,< 716.502,CFO
+Cổng 1: đọc kết quả pilot,Tỷ trọng tiền mới trong dòng tiền vào kế hoạch (gắn nguồn),≥ 80%,60% đến 80%,< 60%,CFO
+Cổng 1: đọc kết quả pilot,Lệnh chuyển theo lịch được ghi có đúng hạn,"≥ 99,5%",-,"< 99,5% (cổng ra mắt)",CTO
+Cổng 1: đọc kết quả pilot,Tuân thủ: đã nộp thông báo UBCKNN; danh mục mẫu đã được người hành nghề có chứng chỉ ký duyệt,Xác nhận bằng văn bản,-,Thiếu (cổng ra mắt),Pháp chế
+Cổng 2: năm mở rộng đầu tiên,Người góp từ 3 kỳ liền trở lên,≥ 3.962 (80% kế hoạch),2.476 đến 3.962,< 2.476 trong hai quý,Trưởng sản phẩm
+Cổng 2: năm mở rộng đầu tiên,"Số dư kế hoạch, tỷ đồng","≥ 24,1 (80% kế hoạch)","15,1 đến 24,1","< 15,1 trong hai quý",CFO
+Cổng 2: năm mở rộng đầu tiên,"Chi phí thu hút mỗi người góp từ 3 kỳ, đồng",≤ 127.512 (trần CAC),-,> 127.512 trong hai quý,CFO
+Cổng 3: rà soát mở rộng,Doanh thu kế hoạch hằng tháng so với chi phí vận hành hằng tháng,≥ 16% (kế hoạch),-,< 2% (đường bất lợi): xem lại mô hình doanh thu,CFO
+Cổng 3: rà soát mở rộng,TK mới trên 10 triệu đồng nhờ kế hoạch,≥ 6.171 (80% kế hoạch),-,< 1.140 (đường bất lợi),CEO
+Cổng 3: rà soát mở rộng,Kênh doanh nghiệp: tỷ lệ nhân viên ghi danh sau buổi giới thiệu,≥ 39%,20% đến 39%: giảm chi phí mỗi doanh nghiệp,< 20%: dừng kênh,Trưởng sản phẩm
+Cổng 3: rà soát mở rộng,"Chi phí ròng mỗi TK mới trên 10 triệu đồng tính đến nay, triệu đồng","≤ 2,6 (1,25 lần kế hoạch)","2,6 đến 4,1","> 4,1: gộp vào đội app chính hoặc dừng",CFO

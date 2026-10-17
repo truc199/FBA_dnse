@@ -1,0 +1,7 @@
+Bank fee,Reward design,"Reward cost, % of revenue",CAC ceiling,12-contribution rate needed
+Base bank fee,"Round 2 tiers made small: 10k / 20k / 50k gifts, 0.1-point fee rebate from 6, Golden Egg +0.2 points from 12",41.2%,"VND 36,712",not reachable
+Base bank fee,"Tested option: 30k gift at 12, 0.1-point fee rebate from 6",14.2%,"VND 96,158",not reachable
+Base bank fee,MVP (decision D1): non-cash features only,0.0%,"VND 127,512",64.5%
+Bank fee waived,"Round 2 tiers made small: 10k / 20k / 50k gifts, 0.1-point fee rebate from 6, Golden Egg +0.2 points from 12",41.2%,"VND 108,077",not reachable
+Bank fee waived,"Tested option: 30k gift at 12, 0.1-point fee rebate from 6",14.2%,"VND 167,523",73.3%
+Bank fee waived,MVP (decision D1): non-cash features only,0.0%,"VND 198,876",64.5%

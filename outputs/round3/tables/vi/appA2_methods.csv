@@ -1,0 +1,6 @@
+Phương pháp,Làm gì,Kiểm tra thế nào
+Mô hình cohort theo tháng,"Theo dõi người tích lũy mới của từng tháng: tỷ lệ dừng, kỳ góp, rút tiền và ai vượt 10 triệu đồng","35 phép kiểm đều đạt, gồm ví dụ tính tay của kế hoạch Vòng 2"
+Bộ máy theo lịch,"Chạy cùng các cohort theo thời gian lịch, nên một cú sốc tác động đến mọi cohort cùng lúc",Khớp hoàn toàn với bộ máy cohort khi không có cú sốc
+Kinh tế đơn vị,"Trần CAC = giá trị hiện tại của doanh thu ròng mỗi người tích lũy trong 60 tháng, chiết khấu 12%",Tỷ lệ ghi danh hòa vốn = chi phí tiếp cận ÷ trần CAC
+Cổng quyết định,Ngưỡng dừng và ngưỡng mở rộng được giải từ mô hình bằng phương pháp chia đôi,Phép thử cho cả chương trình: chi phí ròng mỗi TK mới trên 10 triệu
+Mã hóa review,"58 review tiêu cực năm 2026 được đọc từng cái; 8 mã nguyên nhân, một review có thể mang nhiều mã",Khoảng tin cậy Wilson 95%; so với quy tắc từ khóa của Vòng 2

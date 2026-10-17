@@ -1,0 +1,6 @@
+,Downside,Base,Upside
+"Cash need, Phase 0–1, with {contingency} contingency",VND {need_c_low} billion,VND {need_c_base} billion,VND {need_c_high} billion
+"New accounts above VND 10 million, month 36",{m36_new_low},{m36_new_base},{m36_new_high}
+NPV over 60 months at 12%,{npv_low},{npv_base},{npv_high}
+Payback month,{payback_low},{payback_base},{payback_high}
+"Net cost per new funded account, month 60",{cpa60_low},{cpa60_base},{cpa60_high}

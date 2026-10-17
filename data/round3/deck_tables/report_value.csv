@@ -1,0 +1,6 @@
+Stakeholder,What Payday offers,Evidence
+Customer,"A monthly plan from VND 500,000 toward a named goal; bank bonds for short goals, funds and an ETF for long ones; confirm every change; no platform fee; pause, skip or withdraw in one tap","Golden Egg pays 6.20–7.60% by term from VND 100,000; Big Four 12-month deposits pay 5.9%; bond coupons are taxed 5%"
+DNSE,"Funded accounts at a net cost of about VND {cpa_plan_1d} million each; payment rails that also tackle deposit-crediting failures","{m36_new} new accounts above VND 10 million by month 36 (base); deposits not credited in {cash_pct} of 2026 negative reviews"
+Partner bank,"Contributions land in the bank's virtual accounts as current-account balances, which gives the bank a reason to waive the collection fee","List price VND {fee_base} per contribution with VAT; waiving it raises the CAC ceiling from VND {ceiling_r} to {ceiling_no_fee_r}"
+Fund managers,"A new flow of periodic subscriptions from DNSE's {accounts_m} million accounts",No subscription fee on the bond and equity funds compared; DNSE is a registered distribution agent
+Regulator,"Advice inside the suitability rules, a licensed adviser's sign-off, no discretionary management and published service metrics","Circular 121/2020, Articles 4, 24 and 27; Law on Securities 2019, Article 72"

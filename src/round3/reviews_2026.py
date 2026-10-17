@@ -57,6 +57,16 @@ def pct(a, b):
     return round(a / b * 100, 1) if b else 0.0
 
 
+def wilson(k, n, z=1.96):
+    """95% Wilson interval of a share k / n, in per cent (low, high)."""
+    if not n:
+        return "", ""
+    p = k / n
+    centre = (p + z * z / (2 * n)) / (1 + z * z / n)
+    half = z * ((p * (1 - p) / n + z * z / (4 * n * n)) ** 0.5) / (1 + z * z / n)
+    return round((centre - half) * 100, 1), round((centre + half) * 100, 1)
+
+
 def selected():
     version = {r["review_id"]: r["version"] for r in read(RAW_IOS)}
     out = []
@@ -108,6 +118,7 @@ def main():
             "google_play_n": count(has, store_label["play"]), "google_play_pct": pct(count(has, store_label["play"]), n["play"]),
             "app_store_n": count(has, store_label["ios"]), "app_store_pct": pct(count(has, store_label["ios"]), n["ios"]),
             "both_n": count(has), "both_pct": pct(count(has), n["both"]),
+            "both_ci95_low": wilson(count(has), n["both"])[0], "both_ci95_high": wilson(count(has), n["both"])[1],
             "primary_n": count(prim), "primary_pct": pct(count(prim), n["both"]),
         })
     groups = [("Something broke (any of the first five causes)", lambda r: bool(set(r["causes"].split("|")) & BROKE)),
@@ -120,10 +131,12 @@ def main():
         summary.append({"cause": label, "code": "group",
                         "google_play_n": count(f, store_label["play"]), "google_play_pct": pct(count(f, store_label["play"]), n["play"]),
                         "app_store_n": count(f, store_label["ios"]), "app_store_pct": pct(count(f, store_label["ios"]), n["ios"]),
-                        "both_n": count(f), "both_pct": pct(count(f), n["both"]), "primary_n": "", "primary_pct": ""})
+                        "both_n": count(f), "both_pct": pct(count(f), n["both"]),
+                        "both_ci95_low": wilson(count(f), n["both"])[0], "both_ci95_high": wilson(count(f), n["both"])[1],
+                        "primary_n": "", "primary_pct": ""})
     summary.append({"cause": "Negative reviews coded", "code": "n", "google_play_n": n["play"], "google_play_pct": 100.0,
                     "app_store_n": n["ios"], "app_store_pct": 100.0, "both_n": n["both"], "both_pct": 100.0,
-                    "primary_n": n["both"], "primary_pct": 100.0})
+                    "both_ci95_low": "", "both_ci95_high": "", "primary_n": n["both"], "primary_pct": 100.0})
     write("reviews_2026_cause_summary.csv", summary)
 
     # Keyword themes of Round 2 against hand coding, same reviews

@@ -1,0 +1,6 @@
+Method,What it does,How it was checked
+Monthly cohort model,"Follows each month's new savers: stop rates, contributions, withdrawals and who passes VND 10 million","{n_tests} tests pass, including the worked example of the Round 2 plan"
+Calendar engine,"Runs the same cohorts in calendar time, so a shock hits every cohort at once",Matches the cohort engine exactly when there is no shock
+Unit economics,CAC ceiling = present value of net revenue per saver over 60 months at 12%,Break-even enrolment = reach cost ÷ CAC ceiling
+Decision gates,Stop and scale lines solved from the model by bisection,Programme test: net cost per new funded account
+Review coding,"58 negative 2026 reviews read one by one; 8 cause codes, several allowed per review",95% Wilson intervals; compared with the Round 2 keyword rule

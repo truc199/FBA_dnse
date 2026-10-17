@@ -1,0 +1,12 @@
+Case,"Net cost per new funded account, month 60 (VND million)","Cumulative cash, month 60 (VND billion)",NPV (VND billion),Break-even month
+Base case,1.29,−32.0,−25.0,none
+Partner bank waives the collection fee,1.17,−29.2,−23.0,none
+"Lean team: 4 IT staff, lower overheads",0.85,−21.2,−16.8,none
+"Upside yields: Golden Egg margin 1.5%, 40% of fund fees",1.15,−28.5,−22.7,none
+Upside enrolment in every channel,0.68,−30.8,−24.5,none
+Fee waived and lean team,0.74,−18.4,−14.8,none
+"Fee waived, lean team, upside yields",0.60,−14.9,−12.6,58
+"Fee waived, lean team, upside yields and enrolment",0.18,−8.2,−8.3,39
+All inputs at upside (upside scenario),0.00,21.9,11.0,24
+"DNSE's own bonds in the Golden Egg core (margin about 1.2 points; rejected, decision D7)",1.13,−28.1,−22.4,none
+Half of the team cost treated as shared platform spending (incremental view),0.86,−21.4,−16.8,none
